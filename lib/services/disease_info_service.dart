@@ -1,0 +1,111 @@
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+
+import '../models/disease_info.dart';
+import 'language_service.dart';
+
+class DiseaseInfoService {
+  DiseaseInfoService._internal();
+
+  factory DiseaseInfoService() => _instance;
+
+  static final DiseaseInfoService _instance = DiseaseInfoService._internal();
+
+  static const String diseaseAssetPath = 'assets/data/disease_info.json';
+  static const String treatmentAssetPath = 'assets/data/treatment_info.json';
+
+  Map<String, Map<String, dynamic>>? _diseasesById;
+  Map<String, Map<String, dynamic>>? _treatmentsById;
+
+  Future<DiseaseInfo> findByPredictionLabel(
+    String label, {
+    AppLanguage language = AppLanguage.english,
+  }) async {
+    await _ensureLoaded();
+
+    final id = _idFromLabel(label);
+    final disease = _diseasesById![id] ?? _diseasesById![_fallbackId(label)];
+
+    if (disease == null) {
+      return DiseaseInfo.fallback(label);
+    }
+
+    return DiseaseInfo.fromJson(
+      disease,
+      _treatmentsById![disease['id']],
+      language,
+    );
+  }
+
+  Future<List<DiseaseInfo>> getAllDiseases({
+    AppLanguage language = AppLanguage.english,
+  }) async {
+    await _ensureLoaded();
+
+    final diseases =
+        _diseasesById!.values
+            .map(
+              (disease) => DiseaseInfo.fromJson(
+                disease,
+                _treatmentsById![disease['id']],
+                language,
+              ),
+            )
+            .toList(growable: false)
+          ..sort((a, b) {
+            final cropComparison = a.crop.compareTo(b.crop);
+            if (cropComparison != 0) {
+              return cropComparison;
+            }
+            return a.diseaseName.compareTo(b.diseaseName);
+          });
+
+    return diseases;
+  }
+
+  Future<void> _ensureLoaded() async {
+    if (_diseasesById != null && _treatmentsById != null) {
+      return;
+    }
+
+    final diseaseData = jsonDecode(
+      await rootBundle.loadString(diseaseAssetPath),
+    );
+    final treatmentData = jsonDecode(
+      await rootBundle.loadString(treatmentAssetPath),
+    );
+
+    _diseasesById = {
+      for (final item in diseaseData.whereType<Map<String, dynamic>>())
+        if (item['id'] is String) item['id'] as String: item,
+    };
+
+    _treatmentsById = {
+      for (final item in treatmentData.whereType<Map<String, dynamic>>())
+        if (item['disease_id'] is String) item['disease_id'] as String: item,
+    };
+  }
+
+  String _idFromLabel(String label) {
+    final normalized = label
+        .toLowerCase()
+        .replaceAll(RegExp(r'\(.*?\)'), '')
+        .replaceAll('___', '_')
+        .replaceAll(RegExp(r'[^a-z0-9]+'), '_')
+        .replaceAll(RegExp(r'_+'), '_')
+        .replaceAll(RegExp(r'^_|_$'), '');
+
+    if (normalized.endsWith('_healthy')) {
+      return 'healthy';
+    }
+
+    return normalized;
+  }
+
+  String _fallbackId(String label) {
+    return label.toLowerCase().contains('healthy')
+        ? 'healthy'
+        : _idFromLabel(label);
+  }
+}
