@@ -1,15 +1,17 @@
-import 'dart:io';
+import 'dart:convert';
+import 'dart:math' as math;
+import 'dart:typed_data';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:image/image.dart' as img;
 import 'package:image_picker/image_picker.dart';
-import 'package:path/path.dart' as p;
-import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 import '../models/scan_record.dart';
 import '../services/database_service.dart';
 import '../services/disease_info_service.dart';
+import '../services/image_storage_service.dart';
 import '../services/language_service.dart';
 import '../services/ml_service.dart';
 import 'result_screen.dart';
@@ -29,6 +31,7 @@ class _CameraScreenState extends State<CameraScreen>
   bool _isInitializingCamera = true;
   bool _isCapturing = false;
   bool _isProcessing = false;
+  Uint8List? _capturedImageBytes;
   String? _capturedImagePath;
   String? _cameraError;
 
@@ -123,13 +126,15 @@ class _CameraScreenState extends State<CameraScreen>
 
     try {
       final captured = await controller.takePicture();
-      final savedPath = await _saveCapture(captured);
+      final imageBytes = await captured.readAsBytes();
+      final savedPath = await ImageStorageService().saveScanImage(imageBytes);
 
       if (!mounted) {
         return;
       }
 
       setState(() {
+        _capturedImageBytes = imageBytes;
         _capturedImagePath = savedPath;
       });
     } catch (error) {
@@ -141,19 +146,6 @@ class _CameraScreenState extends State<CameraScreen>
         });
       }
     }
-  }
-
-  Future<String> _saveCapture(XFile captured) async {
-    final directory = await getApplicationDocumentsDirectory();
-    final captureDirectory = Directory(p.join(directory.path, 'captures'));
-    if (!captureDirectory.existsSync()) {
-      captureDirectory.createSync(recursive: true);
-    }
-
-    final timestamp = DateTime.now().millisecondsSinceEpoch;
-    final savedPath = p.join(captureDirectory.path, 'leaf_$timestamp.jpg');
-    await File(captured.path).copy(savedPath);
-    return savedPath;
   }
 
   Future<void> _selectGalleryImage() async {
@@ -170,19 +162,27 @@ class _CameraScreenState extends State<CameraScreen>
       return;
     }
 
-    await _analyzeImagePath(pickedImage.path);
+    final imageBytes = await pickedImage.readAsBytes();
+    final savedPath = await ImageStorageService().saveScanImage(imageBytes);
+    await _analyzeImage(imageBytes: imageBytes, imagePath: savedPath);
   }
 
   Future<void> _analyzeCapturedImage() async {
-    final imagePath = _capturedImagePath;
-    if (imagePath == null) {
+    final imageBytes = _capturedImageBytes;
+    if (imageBytes == null) {
       return;
     }
 
-    await _analyzeImagePath(imagePath);
+    await _analyzeImage(
+      imageBytes: imageBytes,
+      imagePath: _capturedImagePath,
+    );
   }
 
-  Future<void> _analyzeImagePath(String imagePath) async {
+  Future<void> _analyzeImage({
+    required Uint8List imageBytes,
+    required String? imagePath,
+  }) async {
     if (_isProcessing) {
       return;
     }
@@ -192,7 +192,6 @@ class _CameraScreenState extends State<CameraScreen>
     });
 
     try {
-      final imageBytes = await File(imagePath).readAsBytes();
       final predictions = await MLService().classifyImageBytes(imageBytes);
       final topPrediction = predictions.isEmpty ? null : predictions.first;
 
@@ -204,7 +203,8 @@ class _CameraScreenState extends State<CameraScreen>
 
         await DatabaseService().insertScan(
           ScanRecord(
-            imagePath: imagePath,
+            imagePath: imagePath ?? '',
+            imageBytesBase64: _historyImageBase64(imageBytes),
             diseaseName: topPrediction.label,
             confidence: topPrediction.confidence,
             timestamp: DateTime.now(),
@@ -219,8 +219,11 @@ class _CameraScreenState extends State<CameraScreen>
 
       await Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (_) =>
-              ResultScreen(imagePath: imagePath, predictions: predictions),
+          builder: (_) => ResultScreen(
+            imageBytes: imageBytes,
+            imagePath: imagePath,
+            predictions: predictions,
+          ),
         ),
       );
     } catch (error) {
@@ -236,8 +239,29 @@ class _CameraScreenState extends State<CameraScreen>
 
   void _retakeImage() {
     setState(() {
+      _capturedImageBytes = null;
       _capturedImagePath = null;
     });
+  }
+
+  String _historyImageBase64(Uint8List imageBytes) {
+    final decodedImage = img.decodeImage(imageBytes);
+    if (decodedImage == null) {
+      return base64Encode(imageBytes);
+    }
+
+    final orientedImage = img.bakeOrientation(decodedImage);
+    final longestSide = math.max(orientedImage.width, orientedImage.height);
+    final historyImage = longestSide > 640
+        ? img.copyResize(
+            orientedImage,
+            width: orientedImage.width >= orientedImage.height ? 640 : null,
+            height: orientedImage.height > orientedImage.width ? 640 : null,
+            interpolation: img.Interpolation.linear,
+          )
+        : orientedImage;
+
+    return base64Encode(img.encodeJpg(historyImage, quality: 82));
   }
 
   void _showError(String message) {
@@ -273,12 +297,12 @@ class _CameraScreenState extends State<CameraScreen>
           const SizedBox(height: 12),
           _CameraStage(
             controller: _cameraController,
-            capturedImagePath: _capturedImagePath,
+            capturedImageBytes: _capturedImageBytes,
             isInitializing: _isInitializingCamera,
             error: _cameraError,
           ),
           const SizedBox(height: 12),
-          if (_capturedImagePath == null)
+          if (_capturedImageBytes == null)
             FilledButton.icon(
               onPressed: _isCapturing ? null : _captureImage,
               icon: _isCapturing
@@ -369,20 +393,20 @@ class _CameraScreenState extends State<CameraScreen>
 class _CameraStage extends StatelessWidget {
   const _CameraStage({
     required this.controller,
-    required this.capturedImagePath,
+    required this.capturedImageBytes,
     required this.isInitializing,
     required this.error,
   });
 
   final CameraController? controller;
-  final String? capturedImagePath;
+  final Uint8List? capturedImageBytes;
   final bool isInitializing;
   final String? error;
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final capturedImagePath = this.capturedImagePath;
+    final capturedImageBytes = this.capturedImageBytes;
     final controller = this.controller;
 
     return ClipRRect(
@@ -394,21 +418,17 @@ class _CameraStage extends StatelessWidget {
           child: Stack(
             fit: StackFit.expand,
             children: [
-              switch ((capturedImagePath, controller, isInitializing, error)) {
-                (final path?, _, _, _) => Image.file(
-                  File(path),
-                  fit: BoxFit.cover,
-                ),
-                (_, final controller?, _, _)
-                    when controller.value.isInitialized =>
-                  CameraPreview(controller),
-                (_, _, true, _) => const Center(
-                  child: CircularProgressIndicator(),
-                ),
-                (_, _, _, final message?) => _CameraMessage(message: message),
-                _ => const _CameraMessage(message: 'Open Camera'),
-              },
-              if (capturedImagePath == null && error == null)
+              if (capturedImageBytes != null)
+                Image.memory(capturedImageBytes, fit: BoxFit.cover)
+              else if (controller != null && controller.value.isInitialized)
+                CameraPreview(controller)
+              else if (isInitializing)
+                const Center(child: CircularProgressIndicator())
+              else if (error != null)
+                _CameraMessage(message: error!)
+              else
+                const _CameraMessage(message: 'Open Camera'),
+              if (capturedImageBytes == null && error == null)
                 const _LeafGuideOverlay(),
             ],
           ),

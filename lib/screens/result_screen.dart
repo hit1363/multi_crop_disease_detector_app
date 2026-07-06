@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -8,15 +8,18 @@ import '../models/prediction.dart';
 import '../services/disease_info_service.dart';
 import '../services/language_service.dart';
 import '../services/report_service.dart';
+import '../widgets/scan_image_view.dart';
 
 class ResultScreen extends StatefulWidget {
   const ResultScreen({
     super.key,
-    required this.imagePath,
+    required this.imageBytes,
+    this.imagePath,
     required this.predictions,
   });
 
-  final String imagePath;
+  final Uint8List imageBytes;
+  final String? imagePath;
   final List<Prediction> predictions;
 
   @override
@@ -62,7 +65,7 @@ class _ResultScreenState extends State<ResultScreen> {
         language: AppLanguage.english,
       );
       await ReportService().shareScanReport(
-        imagePath: widget.imagePath,
+        imageBytes: widget.imageBytes,
         prediction: prediction,
         diseaseInfo: englishInfo,
       );
@@ -126,8 +129,9 @@ class _ResultScreenState extends State<ResultScreen> {
                       borderRadius: BorderRadius.circular(8),
                       child: AspectRatio(
                         aspectRatio: 1,
-                        child: Image.file(
-                          File(widget.imagePath),
+                        child: ScanImageView(
+                          imageBytes: widget.imageBytes,
+                          imagePath: widget.imagePath,
                           fit: BoxFit.cover,
                         ),
                       ),

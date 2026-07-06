@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -9,15 +9,11 @@ import '../models/prediction.dart';
 
 class ReportService {
   Future<void> shareScanReport({
-    required String imagePath,
+    required Uint8List imageBytes,
     required Prediction prediction,
     required DiseaseInfo diseaseInfo,
   }) async {
     final document = pw.Document();
-    final imageFile = File(imagePath);
-    final imageBytes = imageFile.existsSync()
-        ? await imageFile.readAsBytes()
-        : null;
 
     document.addPage(
       pw.MultiPage(
@@ -34,7 +30,7 @@ class ReportService {
             pw.SizedBox(height: 8),
             pw.Text('Multi Crop Disease Detector'),
             pw.SizedBox(height: 20),
-            if (imageBytes != null)
+            if (imageBytes.isNotEmpty)
               pw.Container(
                 height: 180,
                 width: double.infinity,
