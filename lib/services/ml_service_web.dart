@@ -1,6 +1,5 @@
 import 'dart:developer' as developer;
 import 'dart:math' as math;
-import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -250,13 +249,18 @@ class MLService {
   }
 
   Future<List<num>> _outputScores(Object output) async {
-    if (output is Tensor) {
-      return _numbersFromTensor(output);
+    try {
+      return _numbersFromTensor(output as Tensor);
+    } catch (_) {
+      // Not a Tensor, try NamedTensorMap
     }
 
-    if (output is NamedTensorMap) {
+    try {
+      final namedMap = output as NamedTensorMap;
       final outputName = model.outputs.first.name;
-      return _numbersFromTensor(output[outputName]);
+      return _numbersFromTensor(namedMap[outputName]);
+    } catch (_) {
+      // Not a NamedTensorMap, flatten the values
     }
 
     return _flattenNumbers(output);
@@ -268,10 +272,17 @@ class MLService {
   }
 
   void _disposeOutput(Object output) {
-    if (output is Tensor) {
-      output.dispose();
-    } else if (output is NamedTensorMap) {
-      output[model.outputs.first.name].dispose();
+    try {
+      (output as Tensor).dispose();
+    } catch (_) {
+      // Not a Tensor, try NamedTensorMap
+    }
+
+    try {
+      final namedMap = output as NamedTensorMap;
+      namedMap[model.outputs.first.name].dispose();
+    } catch (_) {
+      // Not a NamedTensorMap, nothing to dispose
     }
   }
 
