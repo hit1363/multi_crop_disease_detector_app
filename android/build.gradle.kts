@@ -15,8 +15,12 @@ val newBuildDir: Directory =
 rootProject.layout.buildDirectory.value(newBuildDir)
 
 subprojects {
-    val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
-    project.layout.buildDirectory.value(newSubprojectBuildDir)
+    // Only redirect build directory for projects within the same drive/root to avoid "different roots" errors
+    // for plugins located in the Pub cache on a different drive.
+    if (project.projectDir.path.startsWith(rootProject.projectDir.path)) {
+        val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
+        project.layout.buildDirectory.value(newSubprojectBuildDir)
+    }
 }
 subprojects {
     project.evaluationDependsOn(":app")
@@ -34,6 +38,25 @@ subprojects {
         }
     }
 }
+
+/*
+allprojects {
+    plugins.withId("com.android.application") {
+        extensions.getByType<com.android.build.gradle.BaseExtension>().externalNativeBuild {
+            cmake {
+                version = "3.22.1"
+            }
+        }
+    }
+    plugins.withId("com.android.library") {
+        extensions.getByType<com.android.build.gradle.BaseExtension>().externalNativeBuild {
+            cmake {
+                version = "3.22.1"
+            }
+        }
+    }
+}
+*/
 
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)

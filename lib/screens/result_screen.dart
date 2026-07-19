@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../models/disease_info.dart';
 import '../models/prediction.dart';
 import '../services/disease_info_service.dart';
+import '../services/app_localizations.dart';
 import '../services/language_service.dart';
 import '../services/report_service.dart';
 import '../widgets/scan_image_view.dart';
@@ -60,21 +61,27 @@ class _ResultScreenState extends State<ResultScreen> {
     });
 
     try {
-      final englishInfo = await DiseaseInfoService().findByPredictionLabel(
+      final diseaseInfo = await DiseaseInfoService().findByPredictionLabel(
         prediction.label,
-        language: AppLanguage.english,
+        language: context.read<LanguageService>().language,
       );
       await ReportService().shareScanReport(
         imageBytes: widget.imageBytes,
         prediction: prediction,
-        diseaseInfo: englishInfo,
+        diseaseInfo: diseaseInfo,
       );
     } catch (error) {
       if (!mounted) {
         return;
       }
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Could not export report: $error')),
+        SnackBar(
+          content: Text(
+            AppLocalizations.of(
+              context,
+            ).text('export_failed', values: {'error': '$error'}),
+          ),
+        ),
       );
     } finally {
       if (mounted) {
@@ -91,15 +98,16 @@ class _ResultScreenState extends State<ResultScreen> {
         ? null
         : widget.predictions.first;
     final language = context.watch<LanguageService>().language;
+    final strings = AppLocalizations.of(context);
     final diseaseInfoFuture = _futureForLanguage(language);
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Disease Information'),
+        title: Text(strings.text('disease_information')),
         centerTitle: true,
       ),
       body: topPrediction == null
-          ? const Center(child: Text('No predictions available.'))
+          ? Center(child: Text(strings.text('no_predictions')))
           : FutureBuilder<DiseaseInfo>(
               future: diseaseInfoFuture,
               builder: (context, snapshot) {
@@ -112,7 +120,10 @@ class _ResultScreenState extends State<ResultScreen> {
                     child: Padding(
                       padding: const EdgeInsets.all(24),
                       child: Text(
-                        'Failed to load disease information.\n${snapshot.error}',
+                        strings.text(
+                          'load_disease_failed',
+                          values: {'error': '${snapshot.error}'},
+                        ),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -120,7 +131,11 @@ class _ResultScreenState extends State<ResultScreen> {
                 }
 
                 final diseaseInfo =
-                    snapshot.data ?? DiseaseInfo.fallback(topPrediction.label);
+                    snapshot.data ??
+                    DiseaseInfo.fallback(
+                      topPrediction.label,
+                      language: language,
+                    );
 
                 return ListView(
                   padding: const EdgeInsets.all(16),
@@ -153,7 +168,9 @@ class _ResultScreenState extends State<ResultScreen> {
                             )
                           : const Icon(Icons.picture_as_pdf_outlined),
                       label: Text(
-                        _isExporting ? 'Preparing Report' : 'Export PDF Report',
+                        _isExporting
+                            ? strings.text('preparing_report')
+                            : strings.text('export_pdf'),
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -163,36 +180,36 @@ class _ResultScreenState extends State<ResultScreen> {
 
                     const SizedBox(height: 16),
                     _InfoSection(
-                      title: 'Description',
+                      title: strings.text('description'),
                       children: [diseaseInfo.description],
                     ),
                     _InfoSection(
-                      title: 'Symptoms',
+                      title: strings.text('symptoms'),
                       children: diseaseInfo.symptoms,
                     ),
                     _InfoSection(
-                      title: 'Cultural Control',
+                      title: strings.text('cultural_control'),
                       children: diseaseInfo.culturalControl,
                     ),
                     _InfoSection(
-                      title: 'Chemical Control',
+                      title: strings.text('chemical_control'),
                       children: diseaseInfo.chemicalControl,
                     ),
                     _InfoSection(
-                      title: 'Biological Control',
+                      title: strings.text('biological_control'),
                       children: diseaseInfo.biologicalControl,
                     ),
                     _InfoSection(
-                      title: 'Favorable Conditions',
+                      title: strings.text('favorable_conditions'),
                       children: diseaseInfo.favorableConditions,
                     ),
                     if (diseaseInfo.spread.isNotEmpty)
                       _InfoSection(
-                        title: 'Spread',
+                        title: strings.text('spread'),
                         children: [diseaseInfo.spread],
                       ),
                     _InfoSection(
-                      title: 'Recommendations',
+                      title: strings.text('recommendations'),
                       children: diseaseInfo.recommendations,
                     ),
                   ],
@@ -232,7 +249,16 @@ class _SummaryCard extends StatelessWidget {
                 ),
                 Chip(
                   avatar: const Icon(Icons.speed, size: 18),
-                  label: Text('Severity: ${diseaseInfo.severity}'),
+                  label: Text(
+                    AppLocalizations.of(context).text(
+                      'severity_label',
+                      values: {
+                        'severity': AppLocalizations.of(
+                          context,
+                        ).severity(diseaseInfo.severity),
+                      },
+                    ),
+                  ),
                 ),
                 Chip(
                   backgroundColor: colorScheme.primaryContainer,
@@ -264,7 +290,7 @@ class _PredictionList extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Top-3 Predictions',
+              AppLocalizations.of(context).text('top_predictions'),
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 12),
@@ -328,7 +354,10 @@ class _StatusBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final severity = diseaseInfo.severity.toLowerCase();
-    final (title, message, icon, color) = _bannerContent(severity);
+    final (title, message, icon, color) = _bannerContent(
+      severity,
+      AppLocalizations.of(context),
+    );
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -369,40 +398,41 @@ class _StatusBanner extends StatelessWidget {
 
   (String title, String message, IconData icon, Color color) _bannerContent(
     String severity,
+    AppLocalizations strings,
   ) {
     switch (severity) {
       case 'severe':
         return (
-          'Severe Infection Detected',
-          'Immediate action is recommended. The disease may spread rapidly and significantly reduce crop yield if left untreated.',
+          strings.text('severe_title'),
+          strings.text('severe_message'),
           Icons.error_outline,
           Colors.red,
         );
       case 'moderate':
         return (
-          'Moderate Infection Detected',
-          'The disease is present and should be managed soon to prevent further spread and damage.',
+          strings.text('moderate_title'),
+          strings.text('moderate_message'),
           Icons.warning_amber_rounded,
           Colors.orange,
         );
       case 'mild':
         return (
-          'Mild Infection Detected',
-          'Early signs of disease are visible. Monitor the plant closely and apply preventive measures if necessary.',
+          strings.text('mild_title'),
+          strings.text('mild_message'),
           Icons.info_outline,
           Colors.lightGreen,
         );
       case 'none':
         return (
-          'Plant Appears Healthy',
-          'No visible disease symptoms were detected. Continue regular monitoring and good crop management practices.',
+          strings.text('healthy_title'),
+          strings.text('healthy_message'),
           Icons.check_circle_outline,
           const Color.fromARGB(255, 25, 82, 27),
         );
       default:
         return (
-          'Prediction Available',
-          'Disease severity information is unavailable. Review symptoms carefully before taking action.',
+          strings.text('unknown_title'),
+          strings.text('unknown_message'),
           Icons.help_outline,
           Colors.grey,
         );

@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:provider/provider.dart';
 
 import '../models/scan_record.dart';
+import '../models/disease_info.dart';
 import '../services/database_service.dart';
+import '../services/disease_info_service.dart';
+import '../services/language_service.dart';
+import '../services/app_localizations.dart';
 
 class StatisticsScreen extends StatefulWidget {
   const StatisticsScreen({super.key});
@@ -13,6 +18,8 @@ class StatisticsScreen extends StatefulWidget {
 
 class _StatisticsScreenState extends State<StatisticsScreen> {
   late Future<List<ScanRecord>> _scansFuture;
+  String? _diseaseCacheKey;
+  Future<Map<String, DiseaseInfo>>? _diseaseInfoFuture;
 
   @override
   void initState() {
@@ -22,6 +29,42 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
 
   void _loadScans() {
     _scansFuture = DatabaseService().getAllScans();
+    _diseaseCacheKey = null;
+    _diseaseInfoFuture = null;
+  }
+
+  Future<Map<String, DiseaseInfo>> _diseasesFor(
+    List<ScanRecord> scans,
+    AppLanguage language,
+  ) {
+    final keys =
+        scans.map((scan) => scan.diseaseId ?? scan.diseaseName).toSet().toList()
+          ..sort();
+    final cacheKey = '${language.code}:${keys.join('|')}';
+    if (_diseaseCacheKey != cacheKey || _diseaseInfoFuture == null) {
+      _diseaseCacheKey = cacheKey;
+      _diseaseInfoFuture =
+          Future.wait([
+            for (final scan in scans)
+              if (scan.diseaseId != null)
+                DiseaseInfoService().findById(
+                  scan.diseaseId!,
+                  language: language,
+                )
+              else
+                DiseaseInfoService().findByPredictionLabel(
+                  scan.diseaseName,
+                  language: language,
+                ),
+          ]).then((diseases) {
+            return {
+              for (var index = 0; index < scans.length; index++)
+                scans[index].diseaseId ?? scans[index].diseaseName:
+                    diseases[index],
+            };
+          });
+    }
+    return _diseaseInfoFuture!;
   }
 
   Future<void> _refreshScans() async {
@@ -31,8 +74,13 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
+    final language = context.watch<LanguageService>().language;
     return Scaffold(
-      appBar: AppBar(title: const Text('Statistics'), centerTitle: true),
+      appBar: AppBar(
+        title: Text(strings.text('statistics')),
+        centerTitle: true,
+      ),
       body: FutureBuilder<List<ScanRecord>>(
         future: _scansFuture,
         builder: (context, snapshot) {
@@ -45,7 +93,10 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(24),
                 child: Text(
-                  'Could not load statistics.\n${snapshot.error}',
+                  strings.text(
+                    'statistics_failed',
+                    values: {'error': '${snapshot.error}'},
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -54,29 +105,36 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
 
           final scans = snapshot.data ?? const <ScanRecord>[];
           if (scans.isEmpty) {
-            return const Center(
+            return Center(
               child: Padding(
                 padding: EdgeInsets.all(24),
                 child: Text(
-                  'No scan data yet. Run predictions to build statistics.',
+                  strings.text('no_statistics'),
                   textAlign: TextAlign.center,
                 ),
               ),
             );
           }
 
-          return RefreshIndicator(
-            onRefresh: _refreshScans,
-            child: ListView(
-              padding: const EdgeInsets.all(16),
-              children: [
-                _TotalScansCard(totalScans: scans.length),
-                const SizedBox(height: 16),
-                _HealthBalanceCard(scans: scans),
-                const SizedBox(height: 16),
-                _CropDistributionCard(scans: scans),
-              ],
-            ),
+          return FutureBuilder<Map<String, DiseaseInfo>>(
+            future: _diseasesFor(scans, language),
+            builder: (context, diseaseSnapshot) {
+              final diseases =
+                  diseaseSnapshot.data ?? const <String, DiseaseInfo>{};
+              return RefreshIndicator(
+                onRefresh: _refreshScans,
+                child: ListView(
+                  padding: const EdgeInsets.all(16),
+                  children: [
+                    _TotalScansCard(totalScans: scans.length),
+                    const SizedBox(height: 16),
+                    _HealthBalanceCard(scans: scans),
+                    const SizedBox(height: 16),
+                    _CropDistributionCard(scans: scans, diseases: diseases),
+                  ],
+                ),
+              );
+            },
           );
         },
       ),
@@ -99,7 +157,9 @@ class _TotalScansCard extends StatelessWidget {
             const Icon(Icons.analytics_outlined, size: 36),
             const SizedBox(width: 12),
             Text(
-              'Total scans: $totalScans',
+              AppLocalizations.of(
+                context,
+              ).text('total_scans', values: {'count': '$totalScans'}),
               style: Theme.of(context).textTheme.titleLarge,
             ),
           ],
@@ -131,7 +191,7 @@ class _HealthBalanceCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Healthy vs Disease',
+              AppLocalizations.of(context).text('healthy_vs_disease'),
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 16),
@@ -169,12 +229,12 @@ class _HealthBalanceCard extends StatelessWidget {
             const SizedBox(height: 12),
             _LegendRow(
               color: colorScheme.primary,
-              label: 'Healthy',
+              label: AppLocalizations.of(context).text('healthy'),
               value: '${healthyPercent.toStringAsFixed(1)}%',
             ),
             _LegendRow(
               color: Colors.redAccent,
-              label: 'Disease',
+              label: AppLocalizations.of(context).text('disease'),
               value: '${diseasedPercent.toStringAsFixed(1)}%',
             ),
           ],
@@ -185,13 +245,14 @@ class _HealthBalanceCard extends StatelessWidget {
 }
 
 class _CropDistributionCard extends StatelessWidget {
-  const _CropDistributionCard({required this.scans});
+  const _CropDistributionCard({required this.scans, required this.diseases});
 
   final List<ScanRecord> scans;
+  final Map<String, DiseaseInfo> diseases;
 
   @override
   Widget build(BuildContext context) {
-    final counts = _cropCounts(scans);
+    final counts = _cropCounts(scans, diseases);
     final maxValue = counts.values.reduce((a, b) => a > b ? a : b).toDouble();
     final colorScheme = Theme.of(context).colorScheme;
     final entries = counts.entries.toList();
@@ -203,7 +264,7 @@ class _CropDistributionCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Crop Scan Counts',
+              AppLocalizations.of(context).text('crop_scan_counts'),
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 16),
@@ -272,10 +333,15 @@ class _CropDistributionCard extends StatelessWidget {
     );
   }
 
-  Map<String, int> _cropCounts(List<ScanRecord> scans) {
+  Map<String, int> _cropCounts(
+    List<ScanRecord> scans,
+    Map<String, DiseaseInfo> diseases,
+  ) {
     final counts = <String, int>{};
     for (final scan in scans) {
-      counts.update(scan.cropName, (value) => value + 1, ifAbsent: () => 1);
+      final key = scan.diseaseId ?? scan.diseaseName;
+      final crop = diseases[key]?.crop ?? scan.cropName;
+      counts.update(crop, (value) => value + 1, ifAbsent: () => 1);
     }
 
     final sortedEntries = counts.entries.toList()

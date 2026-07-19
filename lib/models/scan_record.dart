@@ -7,6 +7,7 @@ class ScanRecord {
     required this.imagePath,
     this.imageBytesBase64,
     required this.diseaseName,
+    this.diseaseId,
     required this.confidence,
     required this.timestamp,
     required this.cropName,
@@ -16,6 +17,7 @@ class ScanRecord {
   final String imagePath;
   final String? imageBytesBase64;
   final String diseaseName;
+  final String? diseaseId;
   final double confidence;
   final DateTime timestamp;
   final String cropName;
@@ -26,6 +28,7 @@ class ScanRecord {
       'image_path': imagePath,
       'image_bytes': imageBytesBase64,
       'disease_name': diseaseName,
+      'disease_id': diseaseId,
       'confidence': confidence,
       'timestamp': timestamp.toIso8601String(),
       'crop_name': cropName,
@@ -38,6 +41,7 @@ class ScanRecord {
       imagePath: map['image_path'] as String? ?? '',
       imageBytesBase64: map['image_bytes'] as String?,
       diseaseName: map['disease_name'] as String? ?? 'Unknown',
+      diseaseId: map['disease_id'] as String?,
       confidence: (map['confidence'] as num?)?.toDouble() ?? 0,
       timestamp:
           DateTime.tryParse(map['timestamp'] as String? ?? '') ??
@@ -53,6 +57,7 @@ class ScanRecord {
     String? imagePath,
     String? imageBytesBase64,
     String? diseaseName,
+    String? diseaseId,
     double? confidence,
     DateTime? timestamp,
     String? cropName,
@@ -62,6 +67,7 @@ class ScanRecord {
       imagePath: imagePath ?? this.imagePath,
       imageBytesBase64: imageBytesBase64 ?? this.imageBytesBase64,
       diseaseName: diseaseName ?? this.diseaseName,
+      diseaseId: diseaseId ?? this.diseaseId,
       confidence: confidence ?? this.confidence,
       timestamp: timestamp ?? this.timestamp,
       cropName: cropName ?? this.cropName,

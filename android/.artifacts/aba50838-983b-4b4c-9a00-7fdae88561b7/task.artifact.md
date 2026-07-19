@@ -1,0 +1,4 @@
+- [x] Update `gradle.properties` with AGP 9 compatibility flags
+- [x] Update `app/build.gradle.kts` to apply `org.jetbrains.kotlin.android`
+- [/] Verify Gradle sync
+- [ ] Verify build with `./gradlew :app:assembleDebug`

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
+import '../services/app_localizations.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -29,6 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final strings = AppLocalizations.of(context);
 
     return Scaffold(
       body: Center(
@@ -43,12 +45,12 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 18),
             Text(
-              'Multi Crop Disease Detector',
+              strings.text('app_title'),
               style: Theme.of(context).textTheme.titleLarge,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 8),
-            const Text('AI-assisted crop care'),
+            Text(strings.text('app_subtitle')),
           ],
         ),
       ),

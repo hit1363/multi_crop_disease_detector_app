@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../models/disease_info.dart';
 import '../services/disease_info_service.dart';
+import '../services/app_localizations.dart';
 import '../services/language_service.dart';
 
 class BrowseDiseasesScreen extends StatelessWidget {
@@ -11,9 +12,13 @@ class BrowseDiseasesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final language = context.watch<LanguageService>().language;
+    final strings = AppLocalizations.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Browse Diseases'), centerTitle: true),
+      appBar: AppBar(
+        title: Text(strings.text('browse_diseases')),
+        centerTitle: true,
+      ),
       body: FutureBuilder<List<DiseaseInfo>>(
         future: DiseaseInfoService().getAllDiseases(language: language),
         builder: (context, snapshot) {
@@ -26,7 +31,10 @@ class BrowseDiseasesScreen extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(24),
                 child: Text(
-                  'Could not load disease encyclopedia.\n${snapshot.error}',
+                  strings.text(
+                    'encyclopedia_failed',
+                    values: {'error': '${snapshot.error}'},
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -44,7 +52,12 @@ class BrowseDiseasesScreen extends StatelessWidget {
                   child: ExpansionTile(
                     leading: const Icon(Icons.eco_outlined),
                     title: Text(entry.key),
-                    subtitle: Text('${entry.value.length} conditions'),
+                    subtitle: Text(
+                      strings.text(
+                        'conditions',
+                        values: {'count': '${entry.value.length}'},
+                      ),
+                    ),
                     children: [
                       for (final disease in entry.value)
                         ListTile(
@@ -86,6 +99,7 @@ class DiseaseDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(title: Text(diseaseInfo.diseaseName), centerTitle: true),
       body: ListView(
@@ -111,7 +125,16 @@ class DiseaseDetailScreen extends StatelessWidget {
                       ),
                       Chip(
                         avatar: const Icon(Icons.speed, size: 18),
-                        label: Text('Severity: ${diseaseInfo.severity}'),
+                        label: Text(
+                          strings.text(
+                            'severity_label',
+                            values: {
+                              'severity': strings.severity(
+                                diseaseInfo.severity,
+                              ),
+                            },
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -120,24 +143,24 @@ class DiseaseDetailScreen extends StatelessWidget {
             ),
           ),
           _DiseaseInfoSection(
-            title: 'Description',
+            title: strings.text('description'),
             children: [diseaseInfo.description],
           ),
           _DiseaseInfoSection(
-            title: 'Symptoms',
+            title: strings.text('symptoms'),
             children: diseaseInfo.symptoms,
           ),
           _DiseaseInfoSection(
-            title: 'Favorable Conditions',
+            title: strings.text('favorable_conditions'),
             children: diseaseInfo.favorableConditions,
           ),
           if (diseaseInfo.spread.isNotEmpty)
             _DiseaseInfoSection(
-              title: 'Spread',
+              title: strings.text('spread'),
               children: [diseaseInfo.spread],
             ),
           _DiseaseInfoSection(
-            title: 'Recommendations',
+            title: strings.text('recommendations'),
             children: diseaseInfo.recommendations,
           ),
         ],

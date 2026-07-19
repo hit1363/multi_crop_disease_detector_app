@@ -88,7 +88,10 @@ class MLService {
 
     final inputInfo = model.inputs.first;
     final outputInfo = model.outputs.first;
-    final inputShape = _usableShape(inputInfo.shape, fallbackSize: inputImageSize);
+    final inputShape = _usableShape(
+      inputInfo.shape,
+      fallbackSize: inputImageSize,
+    );
     final inputTensor = Tensor(
       _zeroFlatInput(inputShape, inputInfo.dataType),
       shape: inputShape,
@@ -142,7 +145,10 @@ class MLService {
     );
 
     final inputInfo = model.inputs.first;
-    final inputShape = _usableShape(inputInfo.shape, fallbackSize: inputImageSize);
+    final inputShape = _usableShape(
+      inputInfo.shape,
+      fallbackSize: inputImageSize,
+    );
     final inputTensor = Tensor(
       _imageToFlatInput(resizedImage, inputInfo.dataType),
       shape: inputShape,
@@ -199,9 +205,7 @@ class MLService {
       return [1, fallbackSize];
     }
 
-    return [
-      for (final value in shape) value <= 0 ? 1 : value,
-    ];
+    return [for (final value in shape) value <= 0 ? 1 : value];
   }
 
   Object _zeroFlatInput(List<int> shape, TFLiteDataType dataType) {

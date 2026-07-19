@@ -49,6 +49,26 @@ class DiseaseInfo {
       suffix,
       fallback: 'Unknown condition',
     );
+    final culturalControl = _localizedStringList(
+      treatment,
+      'cultural_control',
+      suffix,
+    );
+    final chemicalControl = _localizedStringList(
+      treatment,
+      'chemical_control',
+      suffix,
+    );
+    final biologicalControl = _localizedStringList(
+      treatment,
+      'biological_control',
+      suffix,
+    );
+    final preventionTips = _localizedStringList(
+      treatment,
+      'prevention_tips',
+      suffix,
+    );
 
     return DiseaseInfo(
       id: _string(disease['id']),
@@ -63,26 +83,16 @@ class DiseaseInfo {
         fallback: 'No disease information is available for this class yet.',
       ),
       symptoms: _localizedStringList(disease, 'symptoms', suffix),
-      culturalControl: _localizedStringList(
-        treatment,
-        'cultural_control',
-        suffix,
-      ),
-      chemicalControl: _localizedStringList(
-        treatment,
-        'chemical_control',
-        suffix,
-      ),
-      biologicalControl: _localizedStringList(
-        treatment,
-        'biological_control',
-        suffix,
-      ),
-      preventionTips: _localizedStringList(
-        treatment,
-        'prevention_tips',
-        suffix,
-      ),
+      culturalControl: culturalControl,
+      chemicalControl: chemicalControl,
+      biologicalControl: biologicalControl,
+      preventionTips:
+          culturalControl.isEmpty &&
+              chemicalControl.isEmpty &&
+              biologicalControl.isEmpty &&
+              preventionTips.isEmpty
+          ? _genericRecommendations(language)
+          : preventionTips,
       favorableConditions: _localizedStringList(
         disease,
         'favorable_conditions',
@@ -92,7 +102,10 @@ class DiseaseInfo {
     );
   }
 
-  factory DiseaseInfo.fallback(String label) {
+  factory DiseaseInfo.fallback(
+    String label, {
+    AppLanguage language = AppLanguage.english,
+  }) {
     final parts = label.split('___');
     final crop = parts.isNotEmpty
         ? parts.first.replaceAll('_', ' ')
@@ -114,11 +127,7 @@ class DiseaseInfo {
       culturalControl: const [],
       chemicalControl: const [],
       biologicalControl: const [],
-      preventionTips: const [
-        'Capture a clear, well-lit leaf image.',
-        'Compare with symptoms in the field before treatment.',
-        'Consult a local agriculture expert for severe infections.',
-      ],
+      preventionTips: _genericRecommendations(language),
       favorableConditions: const [],
       spread: '',
     );
@@ -135,11 +144,27 @@ class DiseaseInfo {
       return recommendations;
     }
 
-    return const [
-      'Remove heavily infected leaves where practical.',
-      'Improve field sanitation and avoid overhead watering.',
-      'Consult a local agriculture expert before applying chemicals.',
-    ];
+    return const [];
+  }
+
+  static List<String> _genericRecommendations(AppLanguage language) {
+    return switch (language) {
+      AppLanguage.bangla => const [
+        'পরিষ্কার ও পর্যাপ্ত আলোতে পাতার ছবি তুলুন।',
+        'চিকিৎসার আগে মাঠের উপসর্গের সঙ্গে মিলিয়ে দেখুন।',
+        'তীব্র সংক্রমণে স্থানীয় কৃষি বিশেষজ্ঞের পরামর্শ নিন।',
+      ],
+      AppLanguage.urdu => const [
+        'صاف اور مناسب روشنی میں پتے کی تصویر لیں۔',
+        'علاج سے پہلے کھیت کی علامات سے موازنہ کریں۔',
+        'شدید انفیکشن کی صورت میں مقامی زرعی ماہر سے مشورہ کریں۔',
+      ],
+      AppLanguage.english => const [
+        'Capture a clear, well-lit leaf image.',
+        'Compare with symptoms in the field before treatment.',
+        'Consult a local agriculture expert for severe infections.',
+      ],
+    };
   }
 
   static String _string(Object? value, {String fallback = ''}) {

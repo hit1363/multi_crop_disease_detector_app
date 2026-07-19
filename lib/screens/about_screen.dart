@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '../services/app_localizations.dart';
+
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
-
-  static const String disclaimer =
-      'This application provides AI-assisted disease detection and should not '
-      'replace professional agricultural consultation.';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('About'), centerTitle: true),
+      appBar: AppBar(
+        title: Text(AppLocalizations.of(context).text('about')),
+        centerTitle: true,
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -23,13 +24,12 @@ class AboutScreen extends StatelessWidget {
                   const Icon(Icons.eco, size: 56, color: Colors.green),
                   const SizedBox(height: 12),
                   Text(
-                    'Multi Crop Disease Detector',
+                    AppLocalizations.of(context).text('app_title'),
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'Offline crop disease prediction with scan history, '
-                    'statistics, disease encyclopedia, and PDF reporting.',
+                  Text(
+                    AppLocalizations.of(context).text('offline_description'),
                   ),
                 ],
               ),
@@ -43,11 +43,11 @@ class AboutScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Disclaimer',
+                    AppLocalizations.of(context).text('disclaimer'),
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(height: 8),
-                  const Text(disclaimer),
+                  Text(AppLocalizations.of(context).text('disclaimer')),
                 ],
               ),
             ),

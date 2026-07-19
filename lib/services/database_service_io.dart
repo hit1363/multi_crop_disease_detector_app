@@ -11,7 +11,7 @@ class DatabaseService {
   static final DatabaseService _instance = DatabaseService._internal();
 
   static const String _databaseName = 'scan_history.db';
-  static const int _databaseVersion = 3;
+  static const int _databaseVersion = 4;
   static const String _tableName = 'scans';
 
   Database? _database;
@@ -35,6 +35,7 @@ class DatabaseService {
             image_path TEXT,
             image_bytes TEXT,
             disease_name TEXT,
+            disease_id TEXT,
             confidence REAL,
             timestamp TEXT,
             crop_name TEXT
@@ -46,7 +47,14 @@ class DatabaseService {
           await db.execute('ALTER TABLE $_tableName ADD COLUMN crop_name TEXT');
         }
         if (oldVersion < 3) {
-          await db.execute('ALTER TABLE $_tableName ADD COLUMN image_bytes TEXT');
+          await db.execute(
+            'ALTER TABLE $_tableName ADD COLUMN image_bytes TEXT',
+          );
+        }
+        if (oldVersion < 4) {
+          await db.execute(
+            'ALTER TABLE $_tableName ADD COLUMN disease_id TEXT',
+          );
         }
       },
     );

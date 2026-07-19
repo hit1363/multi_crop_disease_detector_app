@@ -28,7 +28,7 @@ class DiseaseInfoService {
     final disease = _diseasesById![id] ?? _diseasesById![_fallbackId(label)];
 
     if (disease == null) {
-      return DiseaseInfo.fallback(label);
+      return DiseaseInfo.fallback(label, language: language);
     }
 
     return DiseaseInfo.fromJson(
@@ -36,6 +36,18 @@ class DiseaseInfoService {
       _treatmentsById![disease['id']],
       language,
     );
+  }
+
+  Future<DiseaseInfo> findById(
+    String id, {
+    AppLanguage language = AppLanguage.english,
+  }) async {
+    await _ensureLoaded();
+    final disease = _diseasesById![id];
+    if (disease == null) {
+      return DiseaseInfo.fallback(id, language: language);
+    }
+    return DiseaseInfo.fromJson(disease, _treatmentsById![id], language);
   }
 
   Future<List<DiseaseInfo>> getAllDiseases({
@@ -83,7 +95,10 @@ class DiseaseInfoService {
 
     _treatmentsById = {
       for (final item in treatmentData.whereType<Map<String, dynamic>>())
-        if (item['disease_id'] is String) item['disease_id'] as String: item,
+        if (item['disease_id'] is String)
+          item['disease_id'] as String: item
+        else if (item['id'] is String)
+          item['id'] as String: item,
     };
   }
 
@@ -96,16 +111,20 @@ class DiseaseInfoService {
         .replaceAll(RegExp(r'_+'), '_')
         .replaceAll(RegExp(r'^_|_$'), '');
 
-    if (normalized.endsWith('_healthy')) {
-      return 'healthy';
-    }
-
-    return normalized;
+    return _labelAliases[normalized] ?? normalized;
   }
 
   String _fallbackId(String label) {
-    return label.toLowerCase().contains('healthy')
-        ? 'healthy'
-        : _idFromLabel(label);
+    return _idFromLabel(label);
   }
+
+  static const Map<String, String> _labelAliases = {
+    'apple_apple_scab': 'apple_scab',
+    'corn_cercospora_leaf_spot_gray_leaf_spot': 'corn_cercospora_leaf_spot',
+    'orange_haunglongbing': 'orange_citrus_greening',
+    'pepper_bell_bacterial_spot': 'pepper_bacterial_spot',
+    'pepper_bell_healthy': 'pepper_healthy',
+    'tomato_spider_mites_two_spotted_spider_mite': 'tomato_spider_mites',
+    'tomato_tomato_yellow_leaf_curl_virus': 'tomato_yellow_leaf_curl_virus',
+  };
 }

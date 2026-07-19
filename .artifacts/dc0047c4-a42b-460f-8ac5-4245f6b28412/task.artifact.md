@@ -1,0 +1,2 @@
+- [ ] Remove deprecated flags from `gradle.properties`
+- [ ] Verify Gradle sync

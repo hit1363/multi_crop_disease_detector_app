@@ -1,9 +1,13 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../models/scan_record.dart';
+import '../models/disease_info.dart';
 import '../services/database_service.dart';
+import '../services/disease_info_service.dart';
+import '../services/language_service.dart';
+import '../services/app_localizations.dart';
+import '../widgets/scan_image_view.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({super.key});
@@ -36,21 +40,42 @@ class _HistoryScreenState extends State<HistoryScreen> {
       return;
     }
 
-    await DatabaseService().deleteScan(id);
+    try {
+      await DatabaseService().deleteScan(id);
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            '${AppLocalizations.of(context).text('history_failed')}: $error',
+          ),
+        ),
+      );
+      return;
+    }
     if (!mounted) {
       return;
     }
 
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text('Scan deleted')));
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(AppLocalizations.of(context).text('scan_deleted')),
+      ),
+    );
     setState(_loadScans);
   }
 
   @override
   Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
+    final language = context.watch<LanguageService>().language;
     return Scaffold(
-      appBar: AppBar(title: const Text('Scan History'), centerTitle: true),
+      appBar: AppBar(
+        title: Text(strings.text('scan_history')),
+        centerTitle: true,
+      ),
       body: FutureBuilder<List<ScanRecord>>(
         future: _scansFuture,
         builder: (context, snapshot) {
@@ -61,17 +86,17 @@ class _HistoryScreenState extends State<HistoryScreen> {
           if (snapshot.hasError) {
             return _HistoryMessage(
               icon: Icons.error_outline,
-              title: 'Could not load history',
+              title: strings.text('history_failed'),
               message: '${snapshot.error}',
             );
           }
 
           final scans = snapshot.data ?? const <ScanRecord>[];
           if (scans.isEmpty) {
-            return const _HistoryMessage(
+            return _HistoryMessage(
               icon: Icons.history,
-              title: 'No scans yet',
-              message: 'Completed predictions will appear here.',
+              title: strings.text('no_scans'),
+              message: strings.text('no_scans_hint'),
             );
           }
 
@@ -93,6 +118,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   for (final scan in entry.value)
                     _ScanHistoryTile(
                       scan: scan,
+                      language: language,
                       onDelete: () => _deleteScan(scan),
                     ),
                 ],
@@ -134,59 +160,71 @@ class _HistoryScreenState extends State<HistoryScreen> {
 }
 
 class _ScanHistoryTile extends StatelessWidget {
-  const _ScanHistoryTile({required this.scan, required this.onDelete});
+  const _ScanHistoryTile({
+    required this.scan,
+    required this.language,
+    required this.onDelete,
+  });
 
   final ScanRecord scan;
+  final AppLanguage language;
   final VoidCallback onDelete;
 
   @override
   Widget build(BuildContext context) {
-    final imageFile = File(scan.imagePath);
-
-    return Card(
-      child: ListTile(
-        contentPadding: const EdgeInsets.all(12),
-        leading: ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: SizedBox.square(
-            dimension: 64,
-            child: imageFile.existsSync()
-                ? Image.file(imageFile, fit: BoxFit.cover)
-                : ColoredBox(
-                    color: Theme.of(
+    return FutureBuilder<DiseaseInfo>(
+      future: scan.diseaseId == null
+          ? DiseaseInfoService().findByPredictionLabel(
+              scan.diseaseName,
+              language: language,
+            )
+          : DiseaseInfoService().findById(scan.diseaseId!, language: language),
+      builder: (context, snapshot) {
+        final disease =
+            snapshot.data ??
+            DiseaseInfo.fallback(scan.diseaseName, language: language);
+        return Card(
+          child: ListTile(
+            contentPadding: const EdgeInsets.all(12),
+            leading: ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: SizedBox.square(
+                dimension: 64,
+                child: ScanImageView(
+                  imageBytes: scan.imageBytes,
+                  imagePath: scan.imagePath,
+                ),
+              ),
+            ),
+            title: Text(
+              disease.displayName,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: 6),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    AppLocalizations.of(
                       context,
-                    ).colorScheme.surfaceContainerHighest,
-                    child: const Icon(Icons.image_not_supported_outlined),
+                    ).text('crop', values: {'crop': disease.crop}),
                   ),
+                  Text(scan.confidencePercent),
+                  Text(_formatTime(scan.timestamp)),
+                ],
+              ),
+            ),
+            trailing: IconButton(
+              tooltip: AppLocalizations.of(context).text('delete_scan'),
+              onPressed: onDelete,
+              icon: const Icon(Icons.delete_outline),
+            ),
           ),
-        ),
-        title: Text(
-          _formatDiseaseName(scan.diseaseName),
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-        ),
-        subtitle: Padding(
-          padding: const EdgeInsets.only(top: 6),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('${scan.cropName} crop'),
-              Text(scan.confidencePercent),
-              Text(_formatTime(scan.timestamp)),
-            ],
-          ),
-        ),
-        trailing: IconButton(
-          tooltip: 'Delete scan',
-          onPressed: onDelete,
-          icon: const Icon(Icons.delete_outline),
-        ),
-      ),
+        );
+      },
     );
-  }
-
-  static String _formatDiseaseName(String label) {
-    return label.replaceAll('___', ' - ').replaceAll('_', ' ');
   }
 
   static String _formatTime(DateTime timestamp) {

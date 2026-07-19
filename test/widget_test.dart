@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:multi_crop_disease_detector/main.dart';
 import 'package:multi_crop_disease_detector/services/language_service.dart';
+import 'package:multi_crop_disease_detector/services/theme_service.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -9,8 +10,11 @@ Future<void> pumpApp(WidgetTester tester) async {
   final preferences = await SharedPreferences.getInstance();
 
   await tester.pumpWidget(
-    ChangeNotifierProvider(
-      create: (_) => LanguageService(preferences),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => LanguageService(preferences)),
+        ChangeNotifierProvider(create: (_) => ThemeService(preferences)),
+      ],
       child: const CropDiseaseApp(),
     ),
   );
@@ -31,22 +35,13 @@ void main() {
     expect(find.text('Start Scan'), findsOneWidget);
   });
 
-  testWidgets('Start Scan opens camera capture pipeline', (tester) async {
+  testWidgets('Start Scan opens camera screen', (tester) async {
     await pumpApp(tester);
 
     await tester.tap(find.text('Start Scan'));
     await tester.pump();
 
+    expect(find.text('Scan Leaf'), findsOneWidget);
     expect(find.text('Live Camera Preview'), findsOneWidget);
-
-    await tester.scrollUntilVisible(
-      find.text('Disease Information Screen'),
-      500,
-    );
-
-    expect(find.text('Tensor Conversion'), findsOneWidget);
-    expect(find.text('TFLite Inference'), findsOneWidget);
-    expect(find.text('Top-3 Predictions'), findsOneWidget);
-    expect(find.text('Disease Information Screen'), findsOneWidget);
   });
 }

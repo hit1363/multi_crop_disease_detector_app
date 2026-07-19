@@ -11,6 +11,7 @@ import 'package:provider/provider.dart';
 import '../models/scan_record.dart';
 import '../services/database_service.dart';
 import '../services/disease_info_service.dart';
+import '../services/app_localizations.dart';
 import '../services/image_storage_service.dart';
 import '../services/language_service.dart';
 import '../services/ml_service.dart';
@@ -106,7 +107,9 @@ class _CameraScreenState extends State<CameraScreen>
       setState(() {
         _cameraController = null;
         _isInitializingCamera = false;
-        _cameraError = 'Camera unavailable: $error';
+        _cameraError = AppLocalizations.of(
+          context,
+        ).text('camera_unavailable', values: {'error': '$error'});
       });
     }
   }
@@ -138,7 +141,14 @@ class _CameraScreenState extends State<CameraScreen>
         _capturedImagePath = savedPath;
       });
     } catch (error) {
-      _showError('Could not capture image: $error');
+      if (!mounted) {
+        return;
+      }
+      _showError(
+        AppLocalizations.of(
+          context,
+        ).text('capture_failed', values: {'error': '$error'}),
+      );
     } finally {
       if (mounted) {
         setState(() {
@@ -153,18 +163,31 @@ class _CameraScreenState extends State<CameraScreen>
       return;
     }
 
-    final pickedImage = await _imagePicker.pickImage(
-      source: ImageSource.gallery,
-      imageQuality: 100,
-    );
+    try {
+      final pickedImage = await _imagePicker.pickImage(
+        source: ImageSource.gallery,
+        imageQuality: 85,
+        maxWidth: 1920,
+        maxHeight: 1920,
+      );
 
-    if (pickedImage == null) {
-      return;
+      if (pickedImage == null) {
+        return;
+      }
+
+      final imageBytes = await pickedImage.readAsBytes();
+      final savedPath = await ImageStorageService().saveScanImage(imageBytes);
+      await _analyzeImage(imageBytes: imageBytes, imagePath: savedPath);
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      _showError(
+        AppLocalizations.of(
+          context,
+        ).text('analysis_failed', values: {'error': '$error'}),
+      );
     }
-
-    final imageBytes = await pickedImage.readAsBytes();
-    final savedPath = await ImageStorageService().saveScanImage(imageBytes);
-    await _analyzeImage(imageBytes: imageBytes, imagePath: savedPath);
   }
 
   Future<void> _analyzeCapturedImage() async {
@@ -173,10 +196,7 @@ class _CameraScreenState extends State<CameraScreen>
       return;
     }
 
-    await _analyzeImage(
-      imageBytes: imageBytes,
-      imagePath: _capturedImagePath,
-    );
+    await _analyzeImage(imageBytes: imageBytes, imagePath: _capturedImagePath);
   }
 
   Future<void> _analyzeImage({
@@ -186,6 +206,7 @@ class _CameraScreenState extends State<CameraScreen>
     if (_isProcessing) {
       return;
     }
+    final language = context.read<LanguageService>().language;
 
     setState(() {
       _isProcessing = true;
@@ -198,7 +219,7 @@ class _CameraScreenState extends State<CameraScreen>
       if (topPrediction != null) {
         final diseaseInfo = await DiseaseInfoService().findByPredictionLabel(
           topPrediction.label,
-          language: AppLanguage.english,
+          language: language,
         );
 
         await DatabaseService().insertScan(
@@ -206,9 +227,10 @@ class _CameraScreenState extends State<CameraScreen>
             imagePath: imagePath ?? '',
             imageBytesBase64: _historyImageBase64(imageBytes),
             diseaseName: topPrediction.label,
+            diseaseId: diseaseInfo.id,
             confidence: topPrediction.confidence,
             timestamp: DateTime.now(),
-            cropName: diseaseInfo.crop,
+            cropName: _cropFromPredictionLabel(topPrediction.label),
           ),
         );
       }
@@ -227,7 +249,14 @@ class _CameraScreenState extends State<CameraScreen>
         ),
       );
     } catch (error) {
-      _showError('Could not analyze image: $error');
+      if (!mounted) {
+        return;
+      }
+      _showError(
+        AppLocalizations.of(
+          context,
+        ).text('analysis_failed', values: {'error': '$error'}),
+      );
     } finally {
       if (mounted) {
         setState(() {
@@ -252,16 +281,20 @@ class _CameraScreenState extends State<CameraScreen>
 
     final orientedImage = img.bakeOrientation(decodedImage);
     final longestSide = math.max(orientedImage.width, orientedImage.height);
-    final historyImage = longestSide > 640
+    final historyImage = longestSide > 360
         ? img.copyResize(
             orientedImage,
-            width: orientedImage.width >= orientedImage.height ? 640 : null,
-            height: orientedImage.height > orientedImage.width ? 640 : null,
+            width: orientedImage.width >= orientedImage.height ? 360 : null,
+            height: orientedImage.height > orientedImage.width ? 360 : null,
             interpolation: img.Interpolation.linear,
           )
         : orientedImage;
 
-    return base64Encode(img.encodeJpg(historyImage, quality: 82));
+    return base64Encode(img.encodeJpg(historyImage, quality: 70));
+  }
+
+  String _cropFromPredictionLabel(String label) {
+    return label.split('___').first.replaceAll('_', ' ').trim();
   }
 
   void _showError(String message) {
@@ -277,23 +310,17 @@ class _CameraScreenState extends State<CameraScreen>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final selectedLanguage = context.watch<LanguageService>().language;
+    final strings = AppLocalizations.of(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Scan Leaf'),
-        centerTitle: true,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12),
-            child: Center(child: Text(selectedLanguage.label)),
-          ),
-        ],
-      ),
+      appBar: AppBar(title: Text(strings.text('scan_leaf')), centerTitle: true),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Text('Live Camera Preview', style: theme.textTheme.titleMedium),
+          Text(
+            strings.text('live_preview'),
+            style: theme.textTheme.titleMedium,
+          ),
           const SizedBox(height: 12),
           _CameraStage(
             controller: _cameraController,
@@ -311,7 +338,11 @@ class _CameraScreenState extends State<CameraScreen>
                       child: CircularProgressIndicator(strokeWidth: 2),
                     )
                   : const Icon(Icons.camera_alt),
-              label: Text(_isCapturing ? 'Saving Image' : 'Capture Image'),
+              label: Text(
+                _isCapturing
+                    ? strings.text('saving_image')
+                    : strings.text('capture_image'),
+              ),
             )
           else
             Row(
@@ -320,7 +351,7 @@ class _CameraScreenState extends State<CameraScreen>
                   child: OutlinedButton.icon(
                     onPressed: _isProcessing ? null : _retakeImage,
                     icon: const Icon(Icons.refresh),
-                    label: const Text('Retake'),
+                    label: Text(strings.text('retake')),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -333,7 +364,11 @@ class _CameraScreenState extends State<CameraScreen>
                             child: CircularProgressIndicator(strokeWidth: 2),
                           )
                         : const Icon(Icons.analytics_outlined),
-                    label: Text(_isProcessing ? 'Analyzing' : 'Analyze Image'),
+                    label: Text(
+                      _isProcessing
+                          ? strings.text('analyzing')
+                          : strings.text('analyze_image'),
+                    ),
                   ),
                 ),
               ],
@@ -342,47 +377,7 @@ class _CameraScreenState extends State<CameraScreen>
           TextButton.icon(
             onPressed: _isProcessing ? null : _selectGalleryImage,
             icon: const Icon(Icons.photo_library_outlined),
-            label: const Text('Select Image from Gallery'),
-          ),
-          const SizedBox(height: 24),
-          Text('Camera Integration', style: theme.textTheme.titleMedium),
-          const SizedBox(height: 12),
-          const _PipelineStep(
-            icon: Icons.camera_alt_outlined,
-            title: 'Open Camera',
-          ),
-          const _PipelineStep(
-            icon: Icons.preview_outlined,
-            title: 'Show Live Preview',
-          ),
-          const _PipelineStep(
-            icon: Icons.radio_button_checked,
-            title: 'Capture Image',
-          ),
-          const _PipelineStep(icon: Icons.save_alt, title: 'Save Image'),
-          const _PipelineStep(
-            icon: Icons.image_outlined,
-            title: 'Preview Image',
-            isLast: true,
-          ),
-          const SizedBox(height: 24),
-          Text('After Camera Works', style: theme.textTheme.titleMedium),
-          const SizedBox(height: 12),
-          const _PipelineStep(icon: Icons.image, title: 'Captured Image'),
-          const _PipelineStep(icon: Icons.crop_free, title: 'Resize 224×224'),
-          const _PipelineStep(
-            icon: Icons.data_object,
-            title: 'Tensor Conversion',
-          ),
-          const _PipelineStep(icon: Icons.memory, title: 'TFLite Inference'),
-          const _PipelineStep(
-            icon: Icons.workspace_premium_outlined,
-            title: 'Top-3 Predictions',
-          ),
-          const _PipelineStep(
-            icon: Icons.medical_information_outlined,
-            title: 'Disease Information Screen',
-            isLast: true,
+            label: Text(strings.text('select_gallery')),
           ),
         ],
       ),
@@ -427,9 +422,13 @@ class _CameraStage extends StatelessWidget {
               else if (error != null)
                 _CameraMessage(message: error!)
               else
-                const _CameraMessage(message: 'Open Camera'),
+                _CameraMessage(
+                  message: AppLocalizations.of(context).text('scan_leaf'),
+                ),
               if (capturedImageBytes == null && error == null)
-                const _LeafGuideOverlay(),
+                _LeafGuideOverlay(
+                  message: AppLocalizations.of(context).text('put_leaf_here'),
+                ),
             ],
           ),
         ),
@@ -439,7 +438,9 @@ class _CameraStage extends StatelessWidget {
 }
 
 class _LeafGuideOverlay extends StatelessWidget {
-  const _LeafGuideOverlay();
+  const _LeafGuideOverlay({required this.message});
+
+  final String message;
 
   @override
   Widget build(BuildContext context) {
@@ -459,11 +460,11 @@ class _LeafGuideOverlay extends StatelessWidget {
                   color: Colors.black.withValues(alpha: 0.35),
                   borderRadius: BorderRadius.circular(6),
                 ),
-                child: const Padding(
+                child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   child: Text(
-                    'Put Leaf Here',
-                    style: TextStyle(
+                    message,
+                    style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w700,
                     ),
@@ -490,52 +491,6 @@ class _CameraMessage extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Text(message, textAlign: TextAlign.center),
       ),
-    );
-  }
-}
-
-class _PipelineStep extends StatelessWidget {
-  const _PipelineStep({
-    required this.icon,
-    required this.title,
-    this.isLast = false,
-  });
-
-  final IconData icon;
-  final String title;
-  final bool isLast;
-
-  @override
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Column(
-          children: [
-            CircleAvatar(
-              radius: 20,
-              backgroundColor: colorScheme.primaryContainer,
-              foregroundColor: colorScheme.onPrimaryContainer,
-              child: Icon(icon, size: 20),
-            ),
-            if (!isLast)
-              Container(
-                width: 2,
-                height: 28,
-                color: colorScheme.outlineVariant,
-              ),
-          ],
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 8),
-            child: Text(title, style: Theme.of(context).textTheme.titleSmall),
-          ),
-        ),
-      ],
     );
   }
 }
