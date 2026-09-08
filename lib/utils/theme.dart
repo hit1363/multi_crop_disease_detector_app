@@ -13,7 +13,7 @@ class AppTheme {
 
   static ThemeData _buildTheme(Brightness brightness) {
     final colorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.green,
+      seedColor: const Color(0xFF087A4A),
       brightness: brightness,
     );
 

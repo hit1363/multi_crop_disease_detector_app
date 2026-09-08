@@ -43,7 +43,7 @@ class MLService {
 
   static final MLService _instance = MLService._internal();
 
-  static const String modelAssetPath = 'assets/models/mobilenetv2_int8.tflite';
+  static const String modelAssetPath = 'assets/models/mobilenetv2_dynamic.tflite';
   static const String labelsAssetPath = 'assets/labels/labels.txt';
   static const int inputImageSize = 224;
 
