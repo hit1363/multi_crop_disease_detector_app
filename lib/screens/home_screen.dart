@@ -159,6 +159,7 @@ class _DashboardHeader extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      fontSize: 12,
                       color: colorScheme.onSurfaceVariant,
                     ),
                   ),
@@ -240,13 +241,16 @@ class _HeroDetectionCard extends StatelessWidget {
                     left: 24,
                     right: descriptionRight,
                     top: compact ? 132 : 116,
+                    bottom: compact ? 76 : 78,
                     child: Text(
                       strings.text('home_hero_description'),
-                      maxLines: compact ? 3 : 3,
+                      maxLines: compact ? 4 : 3,
+                      softWrap: true,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        fontSize: compact ? 12 : 13,
                         color: foreground.withValues(alpha: 0.72),
-                        height: 1.34,
+                        height: 1.25,
                       ),
                     ),
                   ),
@@ -272,7 +276,7 @@ class _HeroDetectionCard extends StatelessWidget {
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                            fontSize: 16,
+                            fontSize: 14,
                             fontWeight: FontWeight.w800,
                           ),
                         ),
@@ -391,7 +395,7 @@ class _QuickActions extends StatelessWidget {
             for (final action in actions)
               SizedBox(
                 width: cardWidth,
-                height: compact ? 148 : 140,
+                height: compact ? 160 : 150,
                 child: action,
               ),
           ],
@@ -458,9 +462,10 @@ class _ActionCard extends StatelessWidget {
                     const SizedBox(height: 4),
                     Text(
                       subtitle,
-                      maxLines: 2,
+                      maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        fontSize: compact ? 12 : 13,
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                         height: 1.25,
                       ),

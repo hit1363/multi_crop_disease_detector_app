@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- The generator renders Flutter's exact Material leaf glyph over this layout. -->
+  <rect width="1024" height="1024" rx="224" fill="#005032"/>
+  <rect x="288" y="288" width="448" height="448" rx="112" fill="#93D5AA"/>
+  <text x="512" y="618" fill="#005032" font-family="Material Icons" font-size="300" text-anchor="middle">&#xF07F8;</text>
+</svg>

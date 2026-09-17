@@ -25,6 +25,20 @@ static void my_application_activate(GApplication* application) {
   GtkWindow* window =
       GTK_WINDOW(gtk_application_window_new(GTK_APPLICATION(application)));
 
+  // Flutter bundles this asset beside the executable. Using the executable
+  // path keeps the window/task-switcher icon working from both `flutter run`
+  // and a packaged Linux bundle.
+  g_autoptr(GError) icon_error = nullptr;
+  g_autofree gchar* executable_path =
+      g_file_read_link("/proc/self/exe", &icon_error);
+  if (executable_path != nullptr) {
+    g_autofree gchar* bundle_path = g_path_get_dirname(executable_path);
+    g_autofree gchar* icon_path = g_build_filename(
+        bundle_path, "data", "flutter_assets", "assets", "icons",
+        "app_icon.png", nullptr);
+    gtk_window_set_icon_from_file(window, icon_path, nullptr);
+  }
+
   // Use a header bar when running in GNOME as this is the common style used
   // by applications and is the setup most users will be using (e.g. Ubuntu
   // desktop).
