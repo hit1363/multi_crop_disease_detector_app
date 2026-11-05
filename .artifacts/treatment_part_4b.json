@@ -1,0 +1,230 @@
+[
+  {
+    "id": "tomato_healthy",
+    "cultural_control_en": [
+      "Scout plants weekly for early signs of disease",
+      "Ensure proper spacing for good air circulation",
+      "Apply balanced fertilizer and water at the base only",
+      "Remove any diseased-looking leaves immediately"
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার গাছ পরীক্ষা করে রোগের প্রাথমিক লক্ষণ খুঁজুন",
+      "ভালো বাতাস চলাচলের জন্য সঠিক দূরত্বে চারা রোপণ করুন",
+      "সুষম সার প্রয়োগ করুন এবং গোড়ায় পানি দিন",
+      "রোগাক্রান্ত দেখায় এমন পাতা সাথে সাথেই তুলে ধ্বংস করুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے پودوں کا معائنہ کریں تاکہ بیماری کی ابتدائی علامات مل سکیں",
+      "ہوا کی اچھی گردش کے لیے پودوں میں مناسب فاصلہ رکھیں",
+      "متوازن کھاد ڈالیں اور پانی صرف جڑوں کے پاس دیں",
+      "بیمار نظر آنے والے پتے فوراً ہٹا کر تباہ کر دیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Rotate tomatoes with unrelated crops each season",
+      "Use certified disease-free seed and resistant varieties",
+      "Treat seed before sowing if disease occurred previously",
+      "Keep the field free of old crop debris"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি মৌসুমে টমেটোর সাথে ভিন্ন ফসলে ফসল পরিবর্তন করুন",
+      "রোগমুক্ত প্রত্যয়িত বীজ ও রোগ প্রতিরোধী জাত ব্যবহার করুন",
+      "আগে রোগ হয়ে থাকলে বপনের আগে বীজ শোধন করুন",
+      "মাঠে পুরনো ফসলের অবশিষ্টাংশ জমতে দেবেন না"
+    ],
+    "prevention_tips_ur": [
+      "ہر موسم میں ٹماٹر کے ساتھ مختلف فصل کی روٹیشن کریں",
+      "تصدیق شدہ بیماری سے پاک بیج اور بیماری برداشت کرنے والی اقسام استعمال کریں",
+      "اگر پہلے بیماری ہو چکی ہو تو بوائی سے پہلے بیج کا علاج کریں",
+      "کھیت میں پرانی فصل کے ملبے کو جمع نہ ہونے دیں"
+    ]
+  },
+  {
+    "id": "wheat_brown_rust",
+    "cultural_control_en": [
+      "Remove and destroy infected stubble and volunteer wheat",
+      "Grow brown-rust-resistant wheat varieties",
+      "Avoid excess nitrogen; apply balanced fertilizer",
+      "Rotate crops and scout fields weekly in warm, humid spells"
+    ],
+    "cultural_control_bn": [
+      "সংক্রামিত খড়কুটো ও আগাছা-সদৃশ গম তুলে ধ্বংস করুন",
+      "বাদামি মরিচা প্রতিরোধী গমের জাত চাষ করুন",
+      "অতিরিক্ত ইউরিয়া এড়িয়ে সুষম সার প্রয়োগ করুন",
+      "ফসল পরিবর্তন করুন এবং উষ্ণ-আর্দ্র আবহাওয়ায় সপ্তাহে জমি পরীক্ষা করুন"
+    ],
+    "cultural_control_ur": [
+      "متاثرہ پوش اور خود رو گندم ہٹا کر تباہ کریں",
+      "براؤن رسٹ برداشت کرنے والی گندم کی اقسام اگائیں",
+      "زائد نائٹروجن سے پرہیز کریں؛ متوازن کھاد استعمال کریں",
+      "فصل کی روٹیشن کریں اور گرم مرطوب موسم میں ہر ہفتے کھیت کا معائنہ کریں"
+    ],
+    "chemical_control_en": [
+      "Spray triazole fungicides such as tebuconazole or propiconazole at first rust signs",
+      "Strobilurin fungicides (e.g. azoxystrobin) provide good protectant cover",
+      "Always follow the product label and local agricultural extension advice"
+    ],
+    "chemical_control_bn": [
+      "মরিচার প্রথম লক্ষণে টেবুকোনাজল বা প্রোপিকোনাজল জাতীয় ট্রায়াজল ছত্রাকনাশক স্প্রে করুন",
+      "অ্যাজোক্সিস্ট্রোবিন জাতীয় স্ট্রোবিলুরিন ছত্রাকনাশক ভালো প্রতিরোধক সুরক্ষা দেয়",
+      "সর্বদা পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তার পরামর্শ মেনে চলুন"
+    ],
+    "chemical_control_ur": [
+      "رسٹ کی پہلی علامت پر ٹیبوکونازول یا پروپیکونازول جیسی ٹرائزول فنگی سائیڈ اسپرے کریں",
+      "اسٹروبیلورین فنگی سائیڈ (جیسے ایزوکسی سٹروبین) اچھی حفاظتی صورت فراہم کرتے ہیں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Apply Bacillus subtilis-based biofungicide sprays",
+      "Use Trichoderma products to improve soil health",
+      "Neem oil spray can serve as a supplementary protectant"
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস-ভিত্তিক জৈব ছত্রাকনাশক স্প্রে করুন",
+      "মাটির স্বাস্থ্য উন্নত করতে ট্রাইকোডার্মা ব্যবহার করুন",
+      "পরিপূরক সুরক্ষা হিসেবে নিমের তেল স্প্রে করা যেতে পারে"
+    ],
+    "biological_control_ur": [
+      "بیسیل سبٹیلیس پر مبنی بائیو فنگی سائیڈ اسپرے کریں",
+      "مٹی کی صحت بہتر بنانے کے لیے ٹرائی کوڈرما مصنوعات استعمال کریں",
+      "نیم کے تیل کا اسپرے اضافی تحفظ کے طور پر کام کر سکتا ہے"
+    ],
+    "prevention_tips_en": [
+      "Treat seed with an approved fungicide before sowing",
+      "Manage stubble; plough under or remove old crop residue",
+      "Sow resistant varieties at the recommended time, not too early",
+      "Plan regular rust scouting for next season"
+    ],
+    "prevention_tips_bn": [
+      "বপনের আগে অনুমোদিত ছত্রাকনাশক দিয়ে বীজ শোধন করুন",
+      "খড়কুটো ব্যবস্থাপনা করুন; পুরনো ফসলের অবশিষ্টাংশ মাটিতে মিশিয়ে দিন বা সরিয়ে ফেলুন",
+      "প্রস্তাবিত সময়ে রোগ প্রতিরোধী জাত বপন করুন, খুব তাড়াতাড়ি নয়",
+      "পরের মৌসুমে নিয়মিত মরিচা পর্যবেক্ষণের পরিকল্পনা করুন"
+    ],
+    "prevention_tips_ur": [
+      "بوائی سے پہلے منظور شدہ فنگی سائیڈ سے بیج کا علاج کریں",
+      "پوش کا انتظام کریں؛ پرانی فصل کے ملبے کو زمین میں ملا دیں یا ہٹا دیں",
+      "تجویز کردہ وقت پر بیماری برداشت کرنے والی اقسام بوئیں، بہت جلدی نہیں",
+      "اگلے موسم کے لیے باقاعدہ رسٹ نگرانی کا منصوبہ بنائیں"
+    ]
+  },
+  {
+    "id": "wheat_healthy",
+    "cultural_control_en": [
+      "Scout the crop weekly for rust or other symptoms",
+      "Keep field borders free of volunteer wheat",
+      "Apply balanced fertilizer; avoid excess nitrogen",
+      "Ensure good drainage and timely irrigation"
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার মরিচা বা অন্য রোগের লক্ষণের জন্য ফসল পরীক্ষা করুন",
+      "মাঠের কিনারায় আগাছা-সদৃশ গম জমতে দেবেন না",
+      "সুষম সার প্রয়োগ করুন; অতিরিক্ত ইউরিয়া এড়িয়ে চলুন",
+      "ভালো নিষ্কাশন ও সময়মতো সেচ নিশ্চিত করুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے رسٹ یا دیگر علامات کے لیے فصل کا معائنہ کریں",
+      "کھیت کی کناروں پر خود رو گندم جمع نہ ہونے دیں",
+      "متوازن کھاد ڈالیں؛ زائد نائٹروجن سے پرہیز کریں",
+      "اچھی نکاسی اور بروقت آبپاشی یقینی بنائیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Treat seed before sowing next season",
+      "Rotate wheat with pulses or oilseed crops",
+      "Choose rust-resistant varieties for next sowing",
+      "Clear and incorporate stubble promptly after harvest"
+    ],
+    "prevention_tips_bn": [
+      "পরের মৌসুমে বপনের আগে বীজ শোধন করুন",
+      "গমের সাথে ডাল বা তেলবীজ ফসলে ফসল পরিবর্তন করুন",
+      "পরের বপনের জন্য মরিচা প্রতিরোধী জাত বেছে নিন",
+      "ফসল তোলার পরপরই খড়কুটো পরিষ্কার করে মাটিতে মিশিয়ে দিন"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں بوائی سے پہلے بیج کا علاج کریں",
+      "گندم کے بجائے دالیں یا تیل بیج والی فصلوں سے روٹیشن کریں",
+      "اگلی بوائی کے لیے رسٹ برداشت کرنے والی اقسام منتخب کریں",
+      "کٹائی کے فوراً بعد پوش صاف کر کے زمین میں شامل کر دیں"
+    ]
+  },
+  {
+    "id": "wheat_yellow_rust",
+    "cultural_control_en": [
+      "Remove infected leaves and destroy diseased stubble after harvest",
+      "Plant yellow-rust-resistant varieties",
+      "Avoid very early sowing and excess nitrogen",
+      "Scout weekly in cool, damp weather for yellow stripes on leaves"
+    ],
+    "cultural_control_bn": [
+      "সংক্রামিত পাতা তুলে ফেলুন এবং ফসল তোলার পর আক্রান্ত খড়কুটো ধ্বংস করুন",
+      "হলুদ মরিচা প্রতিরোধী জাত চাষ করুন",
+      "খুব তাড়াতাড়ি বপন ও অতিরিক্ত ইউরিয়া এড়িয়ে চলুন",
+      "ঠান্ডা-আর্দ্র আবহাওয়ায় পাতায় হলুদ ডোরা দেখতে সপ্তাহে জমি পরীক্ষা করুন"
+    ],
+    "cultural_control_ur": [
+      "متاثرہ پتے ہٹا دیں اور کٹائی کے بعد بیمار پوش تباہ کر دیں",
+      "یلو رسٹ برداشت کرنے والی اقسام اگائیں",
+      "بہت جلدی بوائی اور زائد نائٹروجن سے پرہیز کریں",
+      "ٹھنڈی مرطوب موسم میں پتوں پر پیلے دھاری دار نشانات کے لیے ہر ہفتے کھیت چیک کریں"
+    ],
+    "chemical_control_en": [
+      "At the first yellow stripes, spray a triazole such as tebuconazole or propiconazole",
+      "Alternating or mixing fungicide groups improves control",
+      "Always follow the product label and local agricultural extension advice"
+    ],
+    "chemical_control_bn": [
+      "হলুদ ডোরা দেখা মাত্রই টেবুকোনাজল বা প্রোপিকোনাজল জাতীয় ট্রায়াজল স্প্রে করুন",
+      "বিভিন্ন গোষ্ঠীর ছত্রাকনাশক পালাক্রমে ব্যবহারে ভালো ফল মেলে",
+      "সর্বদা পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তার পরামর্শ মেনে চলুন"
+    ],
+    "chemical_control_ur": [
+      "پیلے دھاری دار نشانات نظر آتے ہی ٹیبوکونازول یا پروپیکونازول جیسی ٹرائزول فنگی سائیڈ اسپرے کریں",
+      "مختلف گروپوں کی فنگی سائیڈ باری باری استعمال کرنے سے بہتر نتیجہ ملتا ہے",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis biofungicide as a supplement",
+      "Use Trichoderma-enriched compost to strengthen plants",
+      "Neem oil sprays may add some protective effect"
+    ],
+    "biological_control_bn": [
+      "সম্পূরক হিসেবে ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক স্প্রে করুন",
+      "ট্রাইকোডার্মা-সমৃদ্ধ জৈব সার গাছের রোগ প্রতিরোধ ক্ষমতা বাড়ায়",
+      "নিমের তেল স্প্রে কিছুটা সুরক্ষা দিতে পারে"
+    ],
+    "biological_control_ur": [
+      "اضافی تحفظ کے طور پر بیسیل سبٹیلیس بائیو فنگی سائیڈ اسپرے کریں",
+      "ٹرائی کوڈرما سے تیار کمپوسٹ پودوں کی قوت مدافعت بڑھاتا ہے",
+      "نیم کے تیل کا اسپرے کچھ تحفظ فراہم کر سکتا ہے"
+    ],
+    "prevention_tips_en": [
+      "Treat seed with a systemic fungicide before sowing",
+      "Manage stubble and volunteer wheat between seasons",
+      "Sow resistant varieties; avoid overly early sowing",
+      "Schedule regular rust monitoring for next season"
+    ],
+    "prevention_tips_bn": [
+      "বপনের আগে সিস্টেমিক ছত্রাকনাশক দিয়ে বীজ শোধন করুন",
+      "মৌসুমের মাঝে খড়কুটো ও আগাছা-সদৃশ গম ব্যবস্থাপনা করুন",
+      "রোগ প্রতিরোধী জাত বপন করুন; অতিরিক্ত আগে বপন করবেন না",
+      "পরের মৌসুমের জন্য নিয়মিত মরিচা পর্যবেক্ষণের সময়সূচি রাখুন"
+    ],
+    "prevention_tips_ur": [
+      "بوائی سے پہلے سسٹیمک فنگی سائیڈ سے بیج کا علاج کریں",
+      "موسموں کے درمیان پوش اور خود رو گندم کا انتظام کریں",
+      "بیماری برداشت کرنے والی اقسام بوئیں؛ بہت پہلے بوائی نہ کریں",
+      "اگلے موسم کے لیے باقاعدہ رسٹ نگرانی کا شیڈول بنائیں"
+    ]
+  }
+]

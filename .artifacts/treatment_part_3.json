@@ -1,0 +1,296 @@
+[
+  {
+    "id": "raspberry_healthy",
+    "cultural_control_en": [
+      "Prune canes regularly to keep an open canopy with good airflow",
+      "Remove wild bramble plants nearby that harbor pests and diseases",
+      "Keep rows weed-free and mulch to reduce disease splashing"
+    ],
+    "cultural_control_bn": [
+      "নিয়মিত ডালপালা ছেঁটে ভালো বাতাস চলাচলের জন্য খোলা ক্যানোপি রাখুন",
+      "যেখানে কীট ও রোগ লুকিয়ে থাকে সেই আশপাশের বুনো রাস্পবেরি-জাতীয় ঝোপ সরিয়ে ফেলুন",
+      "সারিগুলো আগাছামুক্ত রাখুন এবং রোগ ছড়ানো কমাতে মালচ ব্যবহার করুন"
+    ],
+    "cultural_control_ur": [
+      "اچھی ہواداری کے لیے باقاعدگی سے شاخیں کاٹ کر کھلی چھتری برقرار رکھیں",
+      "کیڑوں اور بیماریوں کو چھپائے رکھنے والی قریبی جنگلی رسبیری نما جھاڑیاں ہٹا دیں",
+      "قطاروں کو جڑی بوٹیوں سے پاک رکھیں اور بیماری کے پھیلاؤ کم کرنے کے لیے ملچ کریں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Scout plants weekly for spots, wilting, or insect pests",
+      "Water at the base to keep foliage dry",
+      "Test soil yearly and fertilize according to results"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি সপ্তাহে গাছে দাগ, নেতিয়ে পড়া বা কীটপতঙ্গ আছে কিনা পর্যবেক্ষণ করুন",
+      "পাতা শুকনো রাখতে গাছের গোড়ায় পানি দিন",
+      "প্রতি বছর মাটি পরীক্ষা করে ফলাফল অনুযায়ী সার প্রয়োগ করুন"
+    ],
+    "prevention_tips_ur": [
+      "ہر ہفتے پودوں میں داغ، مرجھاؤ یا کیڑوں کی نگرانی کریں",
+      "پتوں کو خشک رکھنے کے لیے پودے کی بنیاد پر پانی دیں",
+      "ہر سال مٹی کا تجزیہ کروائیں اور نتائج کے مطابق کھاد دیں"
+    ]
+  },
+  {
+    "id": "rice_brown_spot",
+    "cultural_control_en": [
+      "Remove and burn infected crop debris after harvest",
+      "Grow resistant varieties and use certified seed",
+      "Balance fertilizer to prevent potassium deficiency",
+      "Keep fields well-drained and avoid water stress"
+    ],
+    "cultural_control_bn": [
+      "ফসল কাটার পর রোগাক্রান্ত আবর্জনা সরিয়ে পুড়িয়ে ফেলুন",
+      "রোগ প্রতিরোধী জাত চাষ করুন এবং প্রত্যয়িত বীজ ব্যবহার করুন",
+      "পটাশিয়ামের ঘাটতি রোধে সুষম সার প্রয়োগ করুন",
+      "মাঠের নিষ্কাশন ঠিক রাখুন এবং পানির অভাবজনিত চাপ এড়িয়ে চলুন"
+    ],
+    "cultural_control_ur": [
+      "کٹائی کے بعد متاثرہ فصلی ملبہ ہٹا کر جلا دیں",
+      "بیماری برداشت کرنے والی اقسام اگائیں اور تصدیق شدہ بیج استعمال کریں",
+      "پوٹاشیم کی کمی روکنے کے لیے متوازن کھاد دیں",
+      "کھیت کی نکاسی برقرار رکھیں اور پانی کے تناؤ سے بچیں"
+    ],
+    "chemical_control_en": [
+      "At early symptoms spray a fungicide with actives such as propiconazole or mancozeb",
+      "Always follow the product label and local agricultural extension advice"
+    ],
+    "chemical_control_bn": [
+      "প্রাথমিক লক্ষণ দেখা দিলে প্রোপিকোনাজল বা ম্যানকোজেব জাতীয় সক্রিয় উপাদানযুক্ত ছত্রাকনাশক স্প্রে করুন",
+      "সর্বদা পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুসরণ করুন"
+    ],
+    "chemical_control_ur": [
+      "ابتدائی علامات پر پروپیکونازول یا مینکوزیب جیسے فعال اجزاء والا فنگسائڈ اسپرے کریں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis or Trichoderma-based biofungicides",
+      "Apply neem-based sprays at early infection"
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস বা ট্রাইকোডার্মা-ভিত্তিক জৈব ছত্রাকনাশক স্প্রে করুন",
+      "প্রাথমিক সংক্রমণে নিম-ভিত্তিক স্প্রে প্রয়োগ করুন"
+    ],
+    "biological_control_ur": [
+      "بیسیلس سبٹیلیس یا ٹرائیکوڈرما پر مبنی حیاتیاتی فنگسائڈ اسپرے کریں",
+      "ابتدائی انفیکشن پر نیم پر مبنی اسپرے کریں"
+    ],
+    "prevention_tips_en": [
+      "Treat seed before the next planting",
+      "Rotate crops to break the disease cycle",
+      "Maintain balanced NPK and silicon nutrition"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী রোপণের আগে বীজ শোধন করুন",
+      "রোগের জীবনচক্র ভাঙতে ফসল পর্যায়াবৃত্তি করুন",
+      "সুষম এনপিকে ও সিলিকন পুষ্টি বজায় রাখুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلی کاشت سے پہلے بیج کا علاج کریں",
+      "بیماری کے چکر توڑنے کے لیے فصل کی تبدیلی کریں",
+      "متوازن این پی کے اور سلیکون غذائیت برقرار رکھیں"
+    ]
+  },
+  {
+    "id": "rice_healthy",
+    "cultural_control_en": [
+      "Scout fields weekly for leaf spots, blight, or pests",
+      "Keep bunds clean and remove volunteer rice plants",
+      "Maintain steady water and balanced fertilization"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে পাতায় দাগ, ঝলসানো বা কীটপতঙ্গের জন্য মাঠ পর্যবেক্ষণ করুন",
+      "মাঠের আইল পরিষ্কার রাখুন এবং স্বেচ্ছাবীজী ধানগাছ সরিয়ে ফেলুন",
+      "নিয়মিত সেচ ও সুষম সার ব্যবস্থাপনা বজায় রাখুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے پتوں کے داغ، جھلساؤ یا کیڑوں کے لیے کھیت کا معائنہ کریں",
+      "کھیت کی بنڈ صاف رکھیں اور خود رو دھان کے پودے ہٹا دیں",
+      "مسلسل پانی اور متوازن کھاد کا انتظام برقرار رکھیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Plant resistant varieties with certified seed next season",
+      "Rotate crops and incorporate dried stubble into the soil",
+      "Dry paddy well and store it properly to prevent mold"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী মৌসুমে প্রত্যয়িত বীজ দিয়ে রোগ প্রতিরোধী জাত রোপণ করুন",
+      "ফসল পর্যায়াবৃত্তি করুন এবং শুকনো খড় মাটিতে মিশিয়ে দিন",
+      "ছাঁচ প্রতিরোধে ধান ভালোভাবে শুকিয়ে সংরক্ষণ করুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں تصدیق شدہ بیج سے بیماری برداشت کرنے والی اقسام لگائیں",
+      "فصل کی تبدیلی کریں اور خشک پوجھل کو مٹی میں ملا دیں",
+      "سڑن سے بچنے کے لیے دھان اچھی طرح خشک کر کے محفوظ کریں"
+    ]
+  },
+  {
+    "id": "rice_hispa",
+    "cultural_control_en": [
+      "Clip and destroy leaf tips carrying hispa eggs and mining damage",
+      "Avoid excess nitrogen that favors beetle buildup",
+      "Remove grassy weeds and alternate hosts around the field"
+    ],
+    "cultural_control_bn": [
+      "হিসপা পোকার ডিম ও সুড়ঙ্গযুক্ত পাতার ডগা কেটে ধ্বংস করুন",
+      "পোকার বিস্তার বাড়ায় এমন অতিরিক্ত নাইট্রোজেন সার এড়িয়ে চলুন",
+      "মাঠের চারপাশের ঘাসজাতীয় আগাছা ও বিকল্প পোষক উদ্ভিদ সরান"
+    ],
+    "cultural_control_ur": [
+      "ہسپا کے انڈے اور سرنگوں والی پتیوں کی نوکیں کاٹ کر تباہ کریں",
+      "کیڑوں کی افزائش بڑھانے والی زائد نائٹروجن کھاد سے پرہیز کریں",
+      "کھیت کے ارد گرد گھاس جیسی جڑی بوٹیاں اور متبادل میزبان پودے ہٹائیں"
+    ],
+    "chemical_control_en": [
+      "When leaf damage crosses the economic threshold, apply a labeled insecticide such as spinosad or malathion",
+      "Always follow the product label and local agricultural extension advice"
+    ],
+    "chemical_control_bn": [
+      "পাতার ক্ষতি অর্থনৈতিক ক্ষতির সীমা ছাড়ালে স্পিনোস্যাড বা ম্যালাথিয়ন জাতীয় নির্ধারিত কীটনাশক প্রয়োগ করুন",
+      "সর্বদা পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুসরণ করুন"
+    ],
+    "chemical_control_ur": [
+      "جب پتوں کا نقصان معاشی حد سے بڑھ جائے تو اسپائنوسڈ یا میلاتھیان جیسی منظور شدہ کیڑے مار دوا لگائیں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Conserve natural enemies such as spiders, ladybird beetles, and egg parasitoids",
+      "Avoid broad-spectrum insecticides that kill beneficial insects"
+    ],
+    "biological_control_bn": [
+      "মাকড়সা, মুখি পোকা ও ডিম-পরজীবী কীটের মতো প্রাকৃতিক শত্রু সংরক্ষণ করুন",
+      "উপকারী পোকা মারে এমন বিস্তৃত পরিসরের কীটনাশক এড়িয়ে চলুন"
+    ],
+    "biological_control_ur": [
+      "مکڑیوں، لیڈی بیٹلز اور انڈے پیراسائٹائیڈز جیسے قدرتی دشمنوں کی حفاظت کریں",
+      "فائدہ مند کیڑوں کو مارنے والے وسیع اثر والے کیڑے مار ادویات سے بچیں"
+    ],
+    "prevention_tips_en": [
+      "Plow and flood fields after harvest to expose pupae",
+      "Monitor seedlings closely and use light traps early in the season",
+      "Remove volunteer rice and grassy hosts before the next planting"
+    ],
+    "prevention_tips_bn": [
+      "ফসল কাটার পর মাঠ চাষ ও প্লাবন করে মূককীট ধ্বংস করুন",
+      "মৌসুমের শুরুতে চারা ঘনিষ্ঠভাবে পর্যবেক্ষণ করুন এবং আলোক ফাঁদ ব্যবহার করুন",
+      "পরবর্তী রোপণের আগে স্বেচ্ছাবীজী ধান ও ঘাসজাতীয় পোষক সরিয়ে ফেলুন"
+    ],
+    "prevention_tips_ur": [
+      "کٹائی کے بعد کھیت جوت کر پانی بھر دیں تاکہ پیوپا بے نقاب ہوں",
+      "موسم کے شروع میں پودوں کی باریک بینی سے نگرانی کریں اور روشنی کے جال لگائیں",
+      "اگلی کاشت سے پہلے خود رو دھان اور گھاس جیسے میزبان ہٹائیں"
+    ]
+  },
+  {
+    "id": "rice_leaf_blast",
+    "cultural_control_en": [
+      "Grow resistant varieties and use certified seed",
+      "Avoid excessive nitrogen and split fertilizer doses",
+      "Keep fields steadily flooded to avoid drought stress",
+      "Remove infected debris and volunteer rice plants"
+    ],
+    "cultural_control_bn": [
+      "রোগ প্রতিরোধী জাত চাষ করুন এবং প্রত্যয়িত বীজ ব্যবহার করুন",
+      "অতিরিক্ত নাইট্রোজেন এড়িয়ে সারের ডোজ ভাগ করে দিন",
+      "খরার চাপ এড়াতে মাঠে নিয়মিত পানি ধরে রাখুন",
+      "রোগাক্রান্ত আবর্জনা ও স্বেচ্ছাবীজী ধানগাছ সরিয়ে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "بیماری برداشت کرنے والی اقسام اگائیں اور تصدیق شدہ بیج استعمال کریں",
+      "زائد نائٹروجن سے پرہیز کریں اور کھاد کی خوراک تقسیم کر کے دیں",
+      "خشک سالی کے تناؤ سے بچنے کے لیے کھیت میں مسلسل پانی رکھیں",
+      "بیمار ملبہ اور خود رو دھان کے پودے ہٹا دیں"
+    ],
+    "chemical_control_en": [
+      "At first lesions spray a fungicide with actives such as tricyclazole or azoxystrobin",
+      "Always follow the product label and local agricultural extension advice"
+    ],
+    "chemical_control_bn": [
+      "প্রথম দাগ দেখা দিলে ট্রাইসাইক্লাজল বা অ্যাজোক্সিস্ট্রোবিন জাতীয় সক্রিয় উপাদানযুক্ত ছত্রাকনাশক স্প্রে করুন",
+      "সর্বদা পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুসরণ করুন"
+    ],
+    "chemical_control_ur": [
+      "پہلے دھبے نمودار ہوتے ہی ٹرائی سائیکلانزول یا ایزوکسی سٹروبین جیسے فعال اجزاء والا فنگسائڈ اسپرے کریں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Apply Bacillus subtilis or Trichoderma-based biofungicides",
+      "Use neem-based sprays to supplement disease suppression"
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস বা ট্রাইকোডার্মা-ভিত্তিক জৈব ছত্রাকনাশক প্রয়োগ করুন",
+      "রোগ দমনে সহায়ক হিসেবে নিম-ভিত্তিক স্প্রে ব্যবহার করুন"
+    ],
+    "biological_control_ur": [
+      "بیسیلس سبٹیلیس یا ٹرائیکوڈرما پر مبنی حیاتیاتی فنگسائڈ استعمال کریں",
+      "بیماری دبانے میں معاون کے طور پر نیم پر مبنی اسپرے استعمال کریں"
+    ],
+    "prevention_tips_en": [
+      "Treat seed before sowing next season",
+      "Adjust planting dates to avoid cool, dewy nights",
+      "Balance nutrients and manage water consistently"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী মৌসুমে বপনের আগে বীজ শোধন করুন",
+      "ঠান্ডা ও শিশিরভেজা রাত এড়াতে রোপণের সময় সামঞ্জস্য করুন",
+      "পুষ্টি সুষম রাখুন এবং পানি ব্যবস্থাপনা নিয়মিত করুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں بوائی سے پہلے بیج کا علاج کریں",
+      "ٹھنڈی اور شبنم آلود راتوں سے بچنے کے لیے کاشت کا وقت موزوں کریں",
+      "غذائیت متوازن رکھیں اور پانی کا مستقل انتظام کریں"
+    ]
+  },
+  {
+    "id": "soybean_healthy",
+    "cultural_control_en": [
+      "Scout weekly for rust, leaf spots, or defoliating pests",
+      "Rotate with non-legume crops and keep field borders clean",
+      "Irrigate at the base to keep foliage dry"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে রাস্ট, পাতায় দাগ বা পাতা খাওয়া কীটের জন্য পর্যবেক্ষণ করুন",
+      "নন-লিগিউম ফসলের সাথে পর্যায়াবৃত্তি করুন এবং মাঠের সীমানা পরিষ্কার রাখুন",
+      "পাতা শুকনো রাখতে গোড়ায় সেচ দিন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے رسٹ، پتوں کے دھبوں یا پت کھانے والے کیڑوں کی نگرانی کریں",
+      "غیر لگوم فصلوں کے ساتھ فصل کی تبدیلی کریں اور کھیت کے کنارے صاف رکھیں",
+      "پتوں کو خشک رکھنے کے لیے بنیاد پر آبپاشی کریں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Inoculate seed with Bradyrhizobium before the next planting",
+      "Rotate with cereals to break pest and disease cycles",
+      "Save clean seed and test germination before sowing"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী রোপণের আগে ব্রেডিরাইজোবিয়াম দিয়ে বীজ শোধন করুন",
+      "কীট ও রোগের চক্র ভাঙতে খাদ্যশস্যের সাথে পর্যায়াবৃত্তি করুন",
+      "পরিষ্কার বীজ সংরক্ষণ করুন এবং বপনের আগে অঙ্কুরণ পরীক্ষা করুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلی کاشت سے پہلے برائیڈی رائزوبیم سے بیج کا علاج کریں",
+      "کیڑوں اور بیماریوں کے چکر توڑنے کے لیے اناج کے ساتھ فصل کی تبدیلی کریں",
+      "صاف بیج محفوظ کریں اور بوائی سے پہلے انکرن کی جانچ کریں"
+    ]
+  }
+]

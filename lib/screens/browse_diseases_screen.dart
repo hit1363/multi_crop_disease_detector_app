@@ -41,7 +41,13 @@ class BrowseDiseasesScreen extends StatelessWidget {
             );
           }
 
-          final diseases = snapshot.data ?? const <DiseaseInfo>[];
+          final diseases =
+              (snapshot.data ?? const <DiseaseInfo>[])
+                  // The "invalid" entry is a sentinel for unrecognized
+                  // images, not a real disease — keep it out of the
+                  // encyclopedia.
+                  .where((disease) => disease.id != 'invalid')
+                  .toList(growable: false);
           final groupedDiseases = _groupByCrop(diseases);
 
           return ListView(
@@ -62,7 +68,7 @@ class BrowseDiseasesScreen extends StatelessWidget {
                       for (final disease in entry.value)
                         ListTile(
                           title: Text(disease.diseaseName),
-                          subtitle: Text(disease.severity),
+                          subtitle: Text(strings.severity(disease.severity)),
                           trailing: const Icon(Icons.chevron_right),
                           onTap: () {
                             Navigator.of(context).push(

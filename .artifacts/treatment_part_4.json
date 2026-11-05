@@ -1,0 +1,272 @@
+[
+  {
+    "id": "tomato_septoria_leaf_spot",
+    "cultural_control_en": [
+      "Remove and destroy infected leaves; do not compost them.",
+      "Rotate away from tomatoes for at least 2 years and control solanaceous weeds.",
+      "Space and stake plants for airflow; clean tools and stakes with disinfectant."
+    ],
+    "cultural_control_bn": [
+      "আক্রান্ত পাতা সরিয়ে ধ্বংস করুন; কম্পোস্টে দেবেন না।",
+      "কমপক্ষে ২ বছর টমেটো ছাড়া অন্য ফসল চাষ করুন ও সোলানেসি আগাছা পরিষ্কার রাখুন।",
+      "বাতাসের জন্য দূরত্ব ও খুঁটি দিন; যন্ত্রপাতি ও খুঁটি জীবাণুমুক্ত করুন।"
+    ],
+    "cultural_control_ur": [
+      "متاثرہ پتے ہٹا کر تلف کریں؛ انہیں کمپوسٹ میں نہ ڈالیں۔",
+      "کم از کم 2 سال ٹماٹر کے بجائے دوسری فصل اگائیں اور سولانسی جڑی بوٹیاں صاف رکھیں۔",
+      "ہوا کے لیے فاصلہ اور سہارا دیں؛ اوزار اور سہارے جراثیم سے پاک کریں۔"
+    ],
+    "chemical_control_en": [
+      "Apply protectant fungicides such as chlorothalonil or mancozeb when symptoms first appear.",
+      "Alternate active ingredients to slow resistance; follow the product label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "লক্ষণ দেখা দেওয়ার শুরুতে ক্লোরোথালোনিল বা ম্যানকোজেব জাতীয় প্রতিরক্ষামূলক ছত্রাকনাশক ব্যবহার করুন।",
+      "প্রতিরোধ ক্ষমতা কমাতে ভিন্ন উপাদান পালাক্রমে দিন; পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "علامات ظاہر ہونے پر کلوروتھالونل یا مینکوزیب جیسی حفاظتی فنگس کش استعمال کریں۔",
+      "مزاحمت کم کرنے کے لیے مختلف اجزاء باری باری دیں؛ مصنوعات کا لیبل اور مقامی زرعی مشورہ مانگیں۔"
+    ],
+    "biological_control_en": [
+      "Spray neem oil or Bacillus subtilis-based biocontrols to reduce leaf surface infection.",
+      "Apply insecticidal soap only for secondary pests, not for the fungus itself."
+    ],
+    "biological_control_bn": [
+      "পাতার সংক্রমণ কমাতে নিম তেল বা ব্যাসিলাস সাবটিলিস ভিত্তিক জৈব নিয়ন্ত্রণ স্প্রে করুন।",
+      "ইনসেক্টিসাইডাল সাবান কেবল গৌণ পোকার জন্য ব্যবহার করুন, ছত্রাকের জন্য নয়।"
+    ],
+    "biological_control_ur": [
+      "پتوں پر انفیکشن کم کرنے کے لیے نیم تیل یا Bacillus subtilis پر مبنی حیاتیاتی کنٹرول چھڑکیں۔",
+      "کیڑے مار صابن صرف ثانوی کیڑوں کے لیے استعمال کریں، خود فنگس کے لیے نہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Mulch the soil to stop rain splash and remove crop debris after harvest.",
+      "Use certified disease-free seed and resistant varieties next season."
+    ],
+    "prevention_tips_bn": [
+      "বৃষ্টির ছিটা আটকাতে মাটিতে মালচ দিন এবং ফসল তোলার পর গাছের অবশেষ সরিয়ে ফেলুন।",
+      "আগামী মৌসুমে রোগমুক্ত প্রত্যয়িত বীজ ও প্রতিরোধী জাত ব্যবহার করুন।"
+    ],
+    "prevention_tips_ur": [
+      "بارش کی چھڑکاؤ روکنے کے لیے مٹی پر ملچ ڈالیں اور کٹائی کے بعد پودوں کی باقیات ہٹائیں۔",
+      "اگلے موسم میں تصدیق شدہ بیماری سے پاک بیج اور مزاحم اقسام استعمال کریں۔"
+    ]
+  },
+  {
+    "id": "tomato_spider_mites",
+    "cultural_control_en": [
+      "Remove heavily infested leaves and destroy badly affected plants away from the field.",
+      "Keep plants well watered and mulched; drought stress favours mite outbreaks.",
+      "Keep field margins weed-free and clean tools, stakes and clothing to limit spread."
+    ],
+    "cultural_control_bn": [
+      "বেশি আক্রান্ত পাতা সরান এবং খেত থেকে দূরে ক্ষতিগ্রস্ত গাছ ধ্বংস করুন।",
+      "গাছে নিয়মিত পানি ও মালচ দিন; খরা চাপে মাইটের বিস্তার বাড়ে।",
+      "খেতের পাশ আগাছামুক্ত রাখুন এবং যন্ত্রপাতি, খুঁটি ও পোশাক পরিষ্কার রাখুন।"
+    ],
+    "cultural_control_ur": [
+      "زیادہ متاثرہ پتے ہٹائیں اور بری طرح متاثرہ پودے کھیت سے دور تلف کریں۔",
+      "پودوں کو باقاعدہ پانی اور ملچ دیں؛ خشکی کی کمی سے مائٹ کا پھیلاؤ بڑھتا ہے۔",
+      "کھیت کے کنارے جڑی بوٹیوں سے پاک رکھیں اور اوزار، سہارے اور کپڑے صاف رکھیں۔"
+    ],
+    "chemical_control_en": [
+      "Use a suitable acaricide or insecticidal soap, covering leaf undersides thoroughly.",
+      "Rotate acaricide groups and follow the product label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "উপযুক্ত অ্যাকারিসাইড বা ইনসেক্টিসাইডাল সাবান ব্যবহার করুন, পাতার নিচের অংশ ভালোভাবে ঢাকুন।",
+      "অ্যাকারিসাইডের গ্রুপ পালাক্রমে দিন এবং পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "مناسب ایٹراسائیڈ یا کیڑے مار صابن استعمال کریں اور پتوں کے نچلے حصے اچھی طرح ڈھکیں۔",
+      "ایٹراسائیڈ کے گروپ باری باری دیں اور مصنوعات کا لیبل اور مقامی زرعی مشورہ مانگیں۔"
+    ],
+    "biological_control_en": [
+      "Release predatory mites such as Phytoseiulus persimilis on affected plants.",
+      "Spray neem oil or insecticidal soap, which suppress mites with low residue."
+    ],
+    "biological_control_bn": [
+      "আক্রান্ত গাছে ফাইটোসিয়ুলাস পারসিমিলিস জাতীয় শিকারি মাইট ছাড়ুন।",
+      "নিম তেল বা ইনসেক্টিসাইডাল সাবান স্প্রে করুন, এগুলো কম অবশেষে মাইট দমন করে।"
+    ],
+    "biological_control_ur": [
+      "متاثرہ پودوں پر Phytoseiulus persimilis جیسے شکاری مائٹ چھوڑیں۔",
+      "نیم تیل یا کیڑے مار صابن چھڑکیں، یہ کم باقیات کے ساتھ مائٹ کو دباتے ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Monitor leaf undersides weekly, especially in hot dry weather.",
+      "Avoid excess nitrogen and keep field margins free of host weeds next season."
+    ],
+    "prevention_tips_bn": [
+      "বিশেষত গরম শুষ্ক আবহাওয়ায় সপ্তাহে একবার পাতার নিচের অংশ পরীক্ষা করুন।",
+      "অতিরিক্ত নাইট্রোজেন এড়িয়ে চলুন এবং আগামী মৌসুমে খেতের পাশ আগাছামুক্ত রাখুন।"
+    ],
+    "prevention_tips_ur": [
+      "خاص طور پر گرم خشک موسم میں ہر ہفتے پتوں کے نچلے حصے کا معائنہ کریں۔",
+      "ضرورت سے زیادہ نائٹروجن سے بچیں اور اگلے موسم میں کھیت کے کنارے جڑی بوٹیوں سے پاک رکھیں۔"
+    ]
+  },
+  {
+    "id": "tomato_target_spot",
+    "cultural_control_en": [
+      "Remove and destroy infected leaves and fruit; avoid composting diseased debris.",
+      "Rotate with non-host crops for 2 years and remove volunteer tomato plants.",
+      "Improve airflow by spacing and staking; disinfect tools and supports."
+    ],
+    "cultural_control_bn": [
+      "আক্রান্ত পাতা ও ফল সরিয়ে ধ্বংস করুন; রোগাক্রান্ত অবশেষ কম্পোস্টে দেবেন না।",
+      "২ বছর অ-আশ্রয়ী ফসলের সাথে ফসল আবর্তন করুন এবং স্বতঃস্ফূর্ত টমেটো গাছ তুলে ফেলুন।",
+      "দূরত্ব ও খুঁটি দিয়ে বাতাস চলাচল বাড়ান এবং যন্ত্রপাতি ও সাপোর্ট জীবাণুমুক্ত করুন।"
+    ],
+    "cultural_control_ur": [
+      "متاثرہ پتے اور پھل ہٹا کر تلف کریں؛ بیمار باقیات کو کمپوسٹ میں نہ ڈالیں۔",
+      "2 سال غیر میزبان فصلوں کے ساتھ فصل بدلیں اور خودرو ٹماٹر کے پودے اکھاڑ دیں۔",
+      "فاصلہ اور سہارا دے کر ہوا کی آمدورفت بہتر کریں اور اوزار جراثیم سے پاک رکھیں۔"
+    ],
+    "chemical_control_en": [
+      "Apply fungicides such as chlorothalonil, mancozeb or azoxystrobin at first symptoms.",
+      "Alternate modes of action to limit resistance; follow the label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "প্রথম লক্ষণে ক্লোরোথালোনিল, ম্যানকোজেব বা অ্যাজক্সিস্ট্রোবিন জাতীয় ছত্রাকনাশক দিন।",
+      "প্রতিরোধ কমাতে ভিন্ন কার্যপদ্ধতি পালাক্রমে দিন; লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "پہلی علامات پر کلوروتھالونل، مینکوزیب یا ازوکسسٹروبن جیسی فنگس کش دیں۔",
+      "مزاحمت کم کرنے کے لیے مختلف طریقہ ہائے کار باری باری دیں؛ لیبل اور مقامی زرعی مشورہ مانیں۔"
+    ],
+    "biological_control_en": [
+      "Use Bacillus subtilis-based biocontrols as part of a preventive spray program.",
+      "Neem oil can reduce spread; insecticidal soap targets only secondary insects."
+    ],
+    "biological_control_bn": [
+      "প্রতিরোধমূলক স্প্রে কর্মসূচির অংশ হিসেবে ব্যাসিলাস সাবটিলিস ভিত্তিক জৈব নিয়ন্ত্রণ ব্যবহার করুন।",
+      "নিম তেল বিস্তার কমাতে পারে; ইনসেক্টিসাইডাল সাবান কেবল গৌণ পোকার জন্য।"
+    ],
+    "biological_control_ur": [
+      "حفاظتی سپرے پروگرام کے حصے کے طور پر Bacillus subtilis پر مبنی حیاتیاتی کنٹرول استعمال کریں۔",
+      "نیم تیل پھیلاؤ کم کر سکتا ہے؛ کیڑے مار صابن صرف ثانوی کیڑوں کے لیے ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Mulch and stake plants to reduce soil splash onto lower leaves.",
+      "Clear crop residue after harvest and use resistant varieties next season."
+    ],
+    "prevention_tips_bn": [
+      "নিচের পাতায় মাটির ছিটা কমাতে মালচ দিন ও গাছে খুঁটি দিন।",
+      "ফসল তোলার পর অবশেষ পরিষ্কার করুন এবং আগামী মৌসুমে প্রতিরোধী জাত ব্যবহার করুন।"
+    ],
+    "prevention_tips_ur": [
+      "نچلے پتوں پر مٹی کے چھڑکاؤ کو کم کرنے کے لیے ملچ اور سہارا دیں۔",
+      "کٹائی کے بعد باقیات صاف کریں اور اگلے موسم میں مزاحم اقسام استعمال کریں۔"
+    ]
+  },
+  {
+    "id": "tomato_yellow_leaf_curl_virus",
+    "cultural_control_en": [
+      "No cure exists for the virus: rogue out and destroy infected plants promptly.",
+      "Remove infected plants and weeds that host whiteflies, the virus vector.",
+      "Use virus-tested transplants and TYLCV-resistant varieties; disinfect tools and stakes."
+    ],
+    "cultural_control_bn": [
+      "এই ভাইরাসের কোনো প্রতিকার নেই: আক্রান্ত গাছ দ্রুত তুলে ধ্বংস করুন।",
+      "আক্রান্ত গাছ ও সাদা মাছি (ভাইরাসের বাহক) আশ্রয় দেওয়া আগাছা সরিয়ে ফেলুন।",
+      "ভাইরাসমুক্ত চারা ও TYLCV প্রতিরোধী জাত ব্যবহার করুন; যন্ত্রপাতি ও খুঁটি জীবাণুমুক্ত রাখুন।"
+    ],
+    "cultural_control_ur": [
+      "اس وائرس کا کوئی علاج نہیں: متاثرہ پودے فوراً اکھاڑ کر تلف کریں۔",
+      "متاثرہ پودے اور وہ جڑی بوٹیاں ہٹائیں جو سفید مکھی (وائرس کی ناقل) کی میزبانی کرتی ہیں۔",
+      "وائرس سے پاک پودے اور TYLCV مزاحم اقسام استعمال کریں؛ اوزار جراثیم سے پاک رکھیں۔"
+    ],
+    "chemical_control_en": [
+      "No chemical cure exists for the virus; insecticides only suppress whitefly vectors.",
+      "If using vector control, rotate actives and follow the label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "এই ভাইরাসের কোনো রাসায়নিক প্রতিকার নেই; কীটনাশক কেবল সাদা মাছি বাহক দমন করে।",
+      "বাহক দমন করলে উপাদান পালাক্রমে দিন এবং লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "اس وائرس کا کوئی کیمیائی علاج نہیں؛ کیڑے مار دوا صرف سفید مکھی ناقل کو دباتی ہے۔",
+      "ناقل کنٹرول میں اجزاء باری باری دیں اور لیبل اور مقامی زرعی مشورہ مانیں۔"
+    ],
+    "biological_control_en": [
+      "Encourage predators and parasitoids of whitefly, and use yellow sticky traps for monitoring.",
+      "Neem oil or insecticidal soap can reduce whitefly numbers on foliage."
+    ],
+    "biological_control_bn": [
+      "সাদা মাছির শিকারি ও পরজীবীর বিস্তার ঘটান, পর্যবেক্ষণে হলুদ আঠালো ফাঁদ ব্যবহার করুন।",
+      "নিম তেল বা ইনসেক্টিসাইডাল সাবান পাতায় সাদা মাছির সংখ্যা কমাতে পারে।"
+    ],
+    "biological_control_ur": [
+      "سفید مکھی کے شکاری اور پرجیویوں کی حوصلہ افزائی کریں، نگرانی کے لیے زرد چپکنے والے جال لگائیں۔",
+      "نیم تیل یا کیڑے مار صابن پتوں پر سفید مکھی کی تعداد کم کر سکتے ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Use insect-proof nursery netting and transplant only virus-free seedlings.",
+      "Control whiteflies early and avoid planting next to infected older crops."
+    ],
+    "prevention_tips_bn": [
+      "পোকারোধক নেট দিয়ে নার্সারি ঢাকুন এবং কেবল ভাইরাসমুক্ত চারা রোপণ করুন।",
+      "শুরুতেই সাদা মাছি দমন করুন এবং আক্রান্ত পুরোনো ফসলের পাশে রোপণ এড়িয়ে চলুন।"
+    ],
+    "prevention_tips_ur": [
+      "کیڑوں سے محفوظ جالی سے نرسری ڈھکیں اور صرف وائرس سے پاک پودے لگائیں۔",
+      "شروع ہی میں سفید مکھی کو قابو کریں اور متاثرہ پرانی فصلوں کے پاس پودے نہ لگائیں۔"
+    ]
+  },
+  {
+    "id": "tomato_tomato_mosaic_virus",
+    "cultural_control_en": [
+      "No cure exists for the virus: remove and destroy infected plants immediately.",
+      "Wash hands and disinfect tools; the virus spreads easily by touch and sap.",
+      "Avoid tobacco near plants; use resistant varieties, virus-free seed and weed control."
+    ],
+    "cultural_control_bn": [
+      "এই ভাইরাসের কোনো প্রতিকার নেই: আক্রান্ত গাছ দ্রুত সরিয়ে ধ্বংস করুন।",
+      "হাত ধুয়ে যন্ত্রপাতি জীবাণুমুক্ত করুন; স্পর্শ ও রসের মাধ্যমে ভাইরাস সহজে ছড়ায়।",
+      "গাছের কাছে তামাক এড়িয়ে চলুন; প্রতিরোধী জাত, ভাইরাসমুক্ত বীজ ও আগাছা নিয়ন্ত্রণ করুন।"
+    ],
+    "cultural_control_ur": [
+      "اس وائرس کا کوئی علاج نہیں: متاثرہ پودے فوراً ہٹا کر تلف کریں۔",
+      "ہاتھ دھوئیں اور اوزار جراثیم سے پاک کریں؛ وائرس چھونے اور رس سے آسانی سے پھیلتا ہے۔",
+      "پودوں کے قریب تمباکو سے بچیں؛ مزاحم اقسام، وائرس سے پاک بیج اور جڑی بوٹی کنٹرول کریں۔"
+    ],
+    "chemical_control_en": [
+      "No chemical cure exists for the virus; sprays cannot eliminate it from plants.",
+      "Insecticides only target vectors such as aphids; follow the label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "এই ভাইরাসের কোনো রাসায়নিক প্রতিকার নেই; স্প্রে গাছ থেকে ভাইরাস দূর করতে পারে না।",
+      "কীটনাশক কেবল জাব পোকা জাতীয় বাহক দমন করে; লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "اس وائرس کا کوئی کیمیائی علاج نہیں؛ سپرے پودوں سے وائرس ختم نہیں کر سکتے۔",
+      "کیڑے مار دوا صرف جوں جیسے ناقلوں کو نشانہ بناتی ہے؛ لیبل اور مقامی زرعی مشورہ مانیں۔"
+    ],
+    "biological_control_en": [
+      "Neem oil or insecticidal soap can reduce aphid vectors but will not cure the virus.",
+      "Encourage beneficial insects and remove weeds that shelter vector aphids."
+    ],
+    "biological_control_bn": [
+      "নিম তেল বা ইনসেক্টিসাইডাল সাবান জাব পোকা বাহক কমাতে পারে, তবে ভাইরাস সারায় না।",
+      "উপকারী পোকা সংরক্ষণ করুন এবং বাহক জাব পোকার আশ্রয় আগাছা সরান।"
+    ],
+    "biological_control_ur": [
+      "نیم تیل یا کیڑے مار صابن جوں ناقل کم کر سکتے ہیں مگر وائرس کا علاج نہیں۔",
+      "مفید کیڑوں کی حوصلہ افزائی کریں اور ناقل جوں کو پناہ دینے والی جڑی بوٹیاں ہٹائیں۔"
+    ],
+    "prevention_tips_en": [
+      "Buy certified virus-free seed and resistant cultivars for the next season.",
+      "Clean and disinfect stakes, trays and tools; do not smoke while handling plants."
+    ],
+    "prevention_tips_bn": [
+      "আগামী মৌসুমে ভাইরাসমুক্ত প্রত্যয়িত বীজ ও প্রতিরোধী জাত কিনুন।",
+      "খুঁটি, ট্রে ও যন্ত্রপাতি পরিষ্কার করে জীবাণুমুক্ত করুন; গাছ নাড়াচাড়ার সময় ধূমপান করবেন না।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم کے لیے وائرس سے پاک تصدیق شدہ بیج اور مزاحم اقسام خریدیں۔",
+      "سہارے، ٹرے اور اوزار صاف کر کے جراثیم سے پاک کریں؛ پودے چھوتے وقت سگریٹ نہ پئیں۔"
+    ]
+  }
+]

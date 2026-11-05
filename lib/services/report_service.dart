@@ -1,19 +1,33 @@
 import 'dart:typed_data';
 
+import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 
 import '../models/disease_info.dart';
 import '../models/prediction.dart';
+import 'app_localizations.dart';
+import 'language_service.dart';
 
 class ReportService {
+  static const String _bengaliFontAsset =
+      'assets/fonts/NotoSansBengali-Regular.ttf';
+  static const String _arabicFontAsset =
+      'assets/fonts/NotoSansArabic-Regular.ttf';
+
+  pw.Font? _bengaliFont;
+  pw.Font? _arabicFont;
+
   Future<void> shareScanReport({
     required Uint8List imageBytes,
     required Prediction prediction,
     required DiseaseInfo diseaseInfo,
+    AppLanguage language = AppLanguage.english,
   }) async {
-    final document = pw.Document();
+    final document = pw.Document(theme: await _documentTheme());
+    final strings = AppLocalizations(language);
 
     document.addPage(
       pw.MultiPage(
@@ -24,11 +38,14 @@ class ReportService {
         build: (context) {
           return [
             pw.Text(
-              'Scan Report',
-              style: pw.TextStyle(fontSize: 26, fontWeight: pw.FontWeight.bold),
+              strings.text('report_title'),
+              style: pw.TextStyle(
+                fontSize: 26,
+                fontWeight: pw.FontWeight.bold,
+              ),
             ),
             pw.SizedBox(height: 8),
-            pw.Text('Multi Crop Disease Detector'),
+            pw.Text(strings.text('app_title')),
             pw.SizedBox(height: 20),
             if (imageBytes.isNotEmpty)
               pw.Container(
@@ -43,21 +60,37 @@ class ReportService {
                 ),
               ),
             pw.SizedBox(height: 20),
-            _labelValue('Disease', diseaseInfo.displayName),
-            _labelValue('Crop', diseaseInfo.crop),
-            _labelValue('Confidence', prediction.confidencePercent),
-            _labelValue('Severity', diseaseInfo.severity),
-            _section('Description', [diseaseInfo.description]),
-            _section('Symptoms', diseaseInfo.symptoms),
-            _section('Recommendations', diseaseInfo.recommendations),
+            _labelValue(strings, 'disease', diseaseInfo.displayName),
+            _labelValue(strings, 'crop', diseaseInfo.crop),
+            _labelValue(strings, 'confidence', prediction.confidencePercent),
+            _labelValue(
+              strings,
+              'severity_label_value',
+              diseaseInfo.severity,
+            ),
+            _section(strings, 'description', [diseaseInfo.description]),
+            _section(strings, 'symptoms', diseaseInfo.symptoms),
+            _section(strings, 'cultural_control', diseaseInfo.culturalControl),
+            _section(strings, 'chemical_control', diseaseInfo.chemicalControl),
+            _section(
+              strings,
+              'biological_control',
+              diseaseInfo.biologicalControl,
+            ),
+            _section(strings, 'prevention_tips', diseaseInfo.preventionTips),
+            _section(
+              strings,
+              'favorable_conditions',
+              diseaseInfo.favorableConditions,
+            ),
+            if (diseaseInfo.spread.isNotEmpty)
+              _section(strings, 'spread', [diseaseInfo.spread]),
             pw.SizedBox(height: 18),
             pw.Container(
               padding: const pw.EdgeInsets.all(10),
               color: PdfColors.grey200,
               child: pw.Text(
-                'Disclaimer: This application provides AI-assisted disease '
-                'detection and should not replace professional agricultural '
-                'consultation.',
+                strings.text('disclaimer'),
                 style: const pw.TextStyle(fontSize: 10),
               ),
             ),
@@ -72,15 +105,46 @@ class ReportService {
     );
   }
 
-  pw.Widget _labelValue(String label, String value) {
+  Future<pw.ThemeData> _documentTheme() async {
+    // Default Helvetica cannot encode Bengali or Arabic script; load the
+    // bundled Noto fonts as fallbacks so bn/ur report values stay readable.
+    try {
+      _bengaliFont ??= pw.Font.ttf(
+        await rootBundle.load(_bengaliFontAsset),
+      );
+      _arabicFont ??= pw.Font.ttf(
+        await rootBundle.load(_arabicFontAsset),
+      );
+    } catch (error) {
+      assert(() {
+        debugPrint('Report font fallback unavailable: $error');
+        return true;
+      }());
+    }
+
+    final fallback = [
+      ?_bengaliFont,
+      ?_arabicFont,
+    ];
+
+    return pw.ThemeData.withFont(
+      fontFallback: fallback,
+      bold: pw.Font.helveticaBold(),
+    );
+  }
+
+  pw.Widget _labelValue(AppLocalizations strings, String key, String value) {
     return pw.Padding(
       padding: const pw.EdgeInsets.only(bottom: 10),
       child: pw.Column(
         crossAxisAlignment: pw.CrossAxisAlignment.start,
         children: [
           pw.Text(
-            label,
-            style: pw.TextStyle(fontSize: 11, fontWeight: pw.FontWeight.bold),
+            strings.text(key),
+            style: pw.TextStyle(
+              fontSize: 11,
+              fontWeight: pw.FontWeight.bold,
+            ),
           ),
           pw.SizedBox(height: 3),
           pw.Text(value, style: const pw.TextStyle(fontSize: 15)),
@@ -89,7 +153,11 @@ class ReportService {
     );
   }
 
-  pw.Widget _section(String title, List<String> items) {
+  pw.Widget _section(
+    AppLocalizations strings,
+    String key,
+    List<String> items,
+  ) {
     if (items.isEmpty) {
       return pw.SizedBox.shrink();
     }
@@ -100,8 +168,11 @@ class ReportService {
         crossAxisAlignment: pw.CrossAxisAlignment.start,
         children: [
           pw.Text(
-            title,
-            style: pw.TextStyle(fontSize: 16, fontWeight: pw.FontWeight.bold),
+            strings.text(key),
+            style: pw.TextStyle(
+              fontSize: 16,
+              fontWeight: pw.FontWeight.bold,
+            ),
           ),
           pw.SizedBox(height: 6),
           for (final item in items)

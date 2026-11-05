@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import '../models/disease_info.dart';
@@ -25,7 +26,7 @@ class DiseaseInfoService {
     await _ensureLoaded();
 
     final id = _idFromLabel(label);
-    final disease = _diseasesById![id] ?? _diseasesById![_fallbackId(label)];
+    final disease = _diseasesById![id];
 
     if (disease == null) {
       return DiseaseInfo.fallback(label, language: language);
@@ -77,15 +78,12 @@ class DiseaseInfoService {
   }
 
   Future<void> _ensureLoaded() async {
-    if (_diseasesById != null && _treatmentsById != null) {
+    if (_diseasesById != null) {
       return;
     }
 
     final diseaseData = jsonDecode(
       await rootBundle.loadString(diseaseAssetPath),
-    );
-    final treatmentData = jsonDecode(
-      await rootBundle.loadString(treatmentAssetPath),
     );
 
     _diseasesById = {
@@ -93,13 +91,31 @@ class DiseaseInfoService {
         if (item['id'] is String) item['id'] as String: item,
     };
 
-    _treatmentsById = {
-      for (final item in treatmentData.whereType<Map<String, dynamic>>())
-        if (item['disease_id'] is String)
-          item['disease_id'] as String: item
-        else if (item['id'] is String)
-          item['id'] as String: item,
-    };
+    // Treatment data is optional: if the asset is missing or malformed the
+    // app still shows disease info with generic recommendations rather than
+    // crashing. A healthy seedling needs no treatment sections anyway.
+    _treatmentsById = await _loadTreatments();
+  }
+
+  Future<Map<String, Map<String, dynamic>>> _loadTreatments() async {
+    try {
+      final treatmentData = jsonDecode(
+        await rootBundle.loadString(treatmentAssetPath),
+      );
+      return {
+        for (final item in treatmentData.whereType<Map<String, dynamic>>())
+          if (item['disease_id'] is String)
+            item['disease_id'] as String: item
+          else if (item['id'] is String)
+            item['id'] as String: item,
+      };
+    } catch (error) {
+      assert(() {
+        debugPrint('Treatment data unavailable: $error');
+        return true;
+      }());
+      return const {};
+    }
   }
 
   String _idFromLabel(String label) {
@@ -114,9 +130,10 @@ class DiseaseInfoService {
     return _labelAliases[normalized] ?? normalized;
   }
 
-  String _fallbackId(String label) {
-    return _idFromLabel(label);
-  }
+  /// Exposes label normalization so data tests can prove every model label
+  /// resolves to a disease entry.
+  @visibleForTesting
+  String resolveLabelIdForTesting(String label) => _idFromLabel(label);
 
   static const Map<String, String> _labelAliases = {
     'apple_apple_scab': 'apple_scab',

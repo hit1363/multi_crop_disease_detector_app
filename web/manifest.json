@@ -1,11 +1,11 @@
 {
-    "name": "multi_crop_disease_detector",
-    "short_name": "multi_crop_disease_detector",
+    "name": "Crop Disease Detector",
+    "short_name": "Crop Detector",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#034D3C",
     "theme_color": "#034D3C",
-    "description": "A new Flutter project.",
+    "description": "Detect crop diseases from plant photos with on-device AI.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

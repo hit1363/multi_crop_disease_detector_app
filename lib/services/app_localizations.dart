@@ -12,6 +12,14 @@ class AppLocalizations {
     return AppLocalizations(context.watch<LanguageService>().language);
   }
 
+  /// Non-listening accessor for use outside of `build` (event handlers,
+  /// async callbacks, snackbars). Using [of] in those spots triggers
+  /// provider's "Tried to listen to a value exposed with provider, from
+  /// outside of the widget tree" assertion in debug builds.
+  static AppLocalizations read(BuildContext context) {
+    return AppLocalizations(context.read<LanguageService>().language);
+  }
+
   TextDirection get textDirection {
     return language == AppLanguage.urdu ? TextDirection.rtl : TextDirection.ltr;
   }
@@ -29,8 +37,23 @@ class AppLocalizations {
   }
 
   String severity(String value) {
-    return text('severity_$value');
+    const knownSeverities = {
+      'severe',
+      'moderate',
+      'mild',
+      'none',
+      'unknown',
+    };
+    final normalized = value.trim().toLowerCase();
+
+    return text(
+      'severity_${knownSeverities.contains(normalized) ? normalized : 'unknown'}',
+    );
   }
+
+  /// Exposed for tests that assert every language carries the same keys.
+  @visibleForTesting
+  static const Map<String, Map<String, String>> translations = _translations;
 
   static const Map<String, Map<String, String>> _translations = {
     'en': {
@@ -97,12 +120,14 @@ class AppLocalizations {
       'preparing_report': 'Preparing report',
       'export_failed': 'Could not export report: {error}',
       'severity_label': 'Severity: {severity}',
+      'severity_label_value': 'Severity',
       'top_predictions': 'Top predictions',
       'description': 'Description',
       'symptoms': 'Symptoms',
       'cultural_control': 'Cultural Control',
       'chemical_control': 'Chemical Control',
       'biological_control': 'Biological Control',
+      'prevention_tips': 'Prevention Tips',
       'favorable_conditions': 'Favorable Conditions',
       'spread': 'Spread',
       'recommendations': 'Recommendations',
@@ -209,12 +234,14 @@ class AppLocalizations {
       'preparing_report': 'প্রতিবেদন প্রস্তুত হচ্ছে',
       'export_failed': 'প্রতিবেদন রপ্তানি করা যায়নি: {error}',
       'severity_label': 'তীব্রতা: {severity}',
+      'severity_label_value': 'তীব্রতা',
       'top_predictions': 'শীর্ষ পূর্বাভাস',
       'description': 'বিবরণ',
       'symptoms': 'উপসর্গ',
       'cultural_control': 'কৃষি ব্যবস্থাপনা',
       'chemical_control': 'রাসায়নিক নিয়ন্ত্রণ',
       'biological_control': 'জৈব নিয়ন্ত্রণ',
+      'prevention_tips': 'প্রতিরোধমূলক পরামর্শ',
       'favorable_conditions': 'অনুকূল পরিবেশ',
       'spread': 'বিস্তার',
       'recommendations': 'পরামর্শ',
@@ -322,12 +349,14 @@ class AppLocalizations {
       'preparing_report': 'رپورٹ تیار ہو رہی ہے',
       'export_failed': 'رپورٹ برآمد نہیں ہو سکی: {error}',
       'severity_label': 'شدت: {severity}',
+      'severity_label_value': 'شدت',
       'top_predictions': 'بہترین پیش گوئیاں',
       'description': 'تفصیل',
       'symptoms': 'علامات',
       'cultural_control': 'زرعی انتظام',
       'chemical_control': 'کیمیائی کنٹرول',
       'biological_control': 'حیاتیاتی کنٹرول',
+      'prevention_tips': 'احتیاطی سفارشات',
       'favorable_conditions': 'موافق حالات',
       'spread': 'پھیلاؤ',
       'recommendations': 'سفارشات',

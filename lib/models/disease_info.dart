@@ -136,6 +136,7 @@ class DiseaseInfo {
   List<String> get recommendations {
     final recommendations = [
       ...culturalControl,
+      ...chemicalControl,
       ...biologicalControl,
       ...preventionTips,
     ];

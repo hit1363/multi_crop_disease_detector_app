@@ -1,0 +1,299 @@
+[
+  {
+    "id": "healthy",
+    "cultural_control_en": [
+      "Keep monitoring leaves weekly for early spots, discoloration, or pests.",
+      "Maintain balanced fertilization and correct irrigation for steady growth.",
+      "Keep the field free of weeds that shelter insects and pathogens."
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে পাতায় দাগ, রঙ পরিবর্তন বা পোকামাকড়ের জন্য নজর রাখুন।",
+      "সুষম সার প্রয়োগ ও সঠিক সেচে গাছের স্বাভাবিক বৃদ্ধি বজায় রাখুন।",
+      "পোকামাকড় ও রোগজীবাণুর আশ্রয়দাতা আগাছা মাঠ থেকে পরিষ্কার রাখুন।"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے پتوں پر دھبوں، رنگ کی تبدیلی یا کیڑوں کی نگرانی کریں۔",
+      "متوازن کھاد اور درست آبپاشی سے پودے کی مستحکم نشوونما برقرار رکھیں۔",
+      "میدان کو ان جڑی بوٹیوں سے پاک رکھیں جو کیڑوں اور جراثیم کی پناہ گاہ ہیں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Continue scouting so symptoms are caught in the first days.",
+      "Rotate crops next season to prevent pathogen buildup in the soil.",
+      "Use certified seed and clean tools to avoid introducing disease."
+    ],
+    "prevention_tips_bn": [
+      "নিয়মিত মাঠ পরিদর্শন চালিয়ে যান যাতে প্রথম দিনেই উপসর্গ ধরা পড়ে।",
+      "মাটিতে রোগজীবাণু জমা ঠেকাতে পরের মৌসুমে ফসল আবর্তন করুন।",
+      "রোগ প্রবেশ ঠেকাতে প্রত্যয়িত বীজ ও পরিষ্কার যন্ত্রপাতি ব্যবহার করুন।"
+    ],
+    "prevention_tips_ur": [
+      "میدانی معائنہ جاری رکھیں تاکہ علامات پہلے ہی دن پکڑی جا سکیں۔",
+      "مٹی میں جراثیم جمع ہونے سے بچنے کے لیے اگلے سیزن میں فصل کی تبدیلی کریں۔",
+      "بیماری کے داخلے سے بچنے کے لیے مصدقہ بیج اور صاف اوزار استعمال کریں۔"
+    ]
+  },
+  {
+    "id": "apple_black_rot",
+    "cultural_control_en": [
+      "Prune out dead wood, cankers, and mummified fruit during dormancy.",
+      "Remove and destroy mummified fruit and fallen leaves around the tree.",
+      "Improve air circulation by thinning the canopy each winter."
+    ],
+    "cultural_control_bn": [
+      "সুপ্ত অবস্থায় মৃত কাঠ, ক্যানকার ও শুকনো হয়ে টিকে থাকা ফল ছাঁটাই করে সরান।",
+      "গাছের নিচে পড়ে থাকা শুকনো ফল ও পাতা সরিয়ে ধ্বংস করুন।",
+      "প্রতি শীতে ডাল পাতলা করে পাতার মুকুটে বাতাস চলাচল উন্নত করুন।"
+    ],
+    "cultural_control_ur": [
+      "سکون کے زمانے میں مردہ لکڑی، زخموں اور سوکھے پھلوں کی کٹائی کریں۔",
+      "درخت کے گرد گرے سوکھے پھل اور پتے ہٹا کر تلف کریں۔",
+      "ہر سردی میں درخت کو ہلکا کر کے ہوا کی گردش بہتر بنائیں۔"
+    ],
+    "chemical_control_en": [
+      "Apply a protectant fungicide (e.g. captan or myclobutanil) from bud break in wet weather.",
+      "Repeat fungicide sprays on the label interval while bloom and young fruit remain wet.",
+      "Follow the product label and local extension advice; observe the pre-harvest interval."
+    ],
+    "chemical_control_bn": [
+      "প্রোটেকট্যান্ট ছত্রাকনাশক (যেমন ক্যাপটান বা মাইক্লোবিউটানিল) কুঁড়ি ফোটার পর থেকে প্রয়োগ করুন।",
+      "ফুল ও ছোট ফলের সময় ভেজা আবহাওয়ায় লেবেলের ব্যবধানে ছত্রাকনাশক স্প্রে পুনরাবৃত্তি করুন।",
+      "পণ্যের লেবেল ও স্থানীয় সম্প্রসারণ পরামর্শ মেনে চলুন এবং ফসল তোলার আগের সময় বজায় রাখুন।"
+    ],
+    "chemical_control_ur": [
+      "محفوظ فنگسائڈ (مثلاً کیپٹان یا مائیکلوبیوٹانِل) کلیاں کھلنے سے مرطوب موسم میں لگائیں۔",
+      "پھول اور چھوٹے پھل کے وقت گیلی حالت میں لیبل کے وقفے سے اسپرے دہرائیں۔",
+      "پروڈکٹ لیبل اور مقامی توسیعی مشورے کی پاسداری کریں اور فصل سے پہلے کا وقفہ ملحوظ رکھیں۔"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis before rainy periods to slow lesion development.",
+      "Use a copper-based biofungicide on pruning wounds in dry weather."
+    ],
+    "biological_control_bn": [
+      "বর্ষাকালীন সময়ের আগে ব্যাসিলাস সাবটিলিস স্প্রে করুন যাতে ক্ষত ধীরে ছড়ায়।",
+      "শুষ্ক আবহাওয়ায় ছাঁটাইয়ের ক্ষতে তামাভিত্তিক জৈব ছত্রাকনাশক ব্যবহার করুন।"
+    ],
+    "biological_control_ur": [
+      "بارش سے پہلے بیکیلس سَبٹِلس اسپرے کریں تاکہ زخم آہستہ بڑھیں۔",
+      "خشک موسم میں کٹائی کے زخموں پر تانبے پر مبنی حیاتیاتی فنگسائڈ لگائیں۔"
+    ],
+    "prevention_tips_en": [
+      "Sanitize the orchard every winter by removing all mummified fruit.",
+      "Choose scab-resistant apple varieties for new plantings.",
+      "Keep trees vigorous with balanced nutrition to resist infection."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি শীতে সব শুকনো ফল সরিয়ে বাগান জীবাণুমুক্ত করুন।",
+      "নতুন রোপণের জন্য স্ক্যাব-প্রতিরোধী আপেলের জাত বেছে নিন।",
+      "সংক্রমণ প্রতিরোধে সুষম পুষ্টিতে গাছ সতেজ রাখুন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر سردی میں تمام سوکھے پھل ہٹا کر باغ کو صاف رکھیں۔",
+      "نئی کاشت کے لیے اسکيب کے خلاف مزاحم سیب کی اقسام منتخب کریں۔",
+      "متوازن غذائیت سے درختوں کو مضبوط رکھیں تاکہ وہ بیماری کا مقابلہ کریں۔"
+    ]
+  },
+  {
+    "id": "apple_cedar_apple_rust",
+    "cultural_control_en": [
+      "Remove nearby red cedar or juniper where the rust overwinters.",
+      "Prune infected branches and destroy galls during dormancy.",
+      "Improve light and airflow through the canopy to dry leaves faster."
+    ],
+    "cultural_control_bn": [
+      "আশেপাশের লাল সিডার বা জুনিপার সরান, যেখানে এই মরিচা শীতকালে টিকে থাকে।",
+      "সুপ্ত অবস্থায় আক্রান্ত ডাল ছাঁটাই করে গল ধ্বংস করুন।",
+      "পাতা দ্রুত শুকাতে মুকুটে আলো ও বাতাস চলাচল বাড়ান।"
+    ],
+    "cultural_control_ur": [
+      "قریبی سرخ دیودار یا جونیپر ہٹائیں جہاں یہ زنگ سردیوں میں رہتا ہے۔",
+      "سکون کے زمانے میں متاثرہ شاخیں کاٹ کر گالز تلف کریں۔",
+      "پتے جلد خشک ہوں اس کے لیے درخت میں روشنی اور ہوا کی گردش بڑھائیں۔"
+    ],
+    "chemical_control_en": [
+      "Apply a protectant fungicide (e.g. myclobutanil) at bud break and repeat on the label interval.",
+      "Continue sprays while cedar-apple rust galls release spores in spring.",
+      "Follow the label and local extension advice, respecting the pre-harvest interval."
+    ],
+    "chemical_control_bn": [
+      "কুঁড়ি ফোটার সময় প্রোটেকট্যান্ট ছত্রাকনাশক (যেমন মাইক্লোবিউটানিল) দিন ও লেবেলের ব্যবধানে পুনরাবৃত্তি করুন।",
+      "বসন্তে গল স্পোর ছাড়ার সময় স্প্রে চালিয়ে যান।",
+      "লেবেল ও স্থানীয় সম্প্রসারণ পরামর্শ মেনে চলুন এবং ফসল তোলার আগের সময় বজায় রাখুন।"
+    ],
+    "chemical_control_ur": [
+      "کلیاں کھلنے پر محفوظ فنگسائڈ (مثلاً مائیکلوبیوٹانِل) لگائیں اور لیبل کے وقفے سے دہرائیں۔",
+      "بہار میں گالز کے اسپور چھوڑنے تک اسپرے جاری رکھیں۔",
+      "لیبل اور مقامی توسیعی مشورے کی پاسداری کریں اور فصل سے پہلے کا وقفہ ملحوظ رکھیں۔"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis from early spring to reduce leaf infection.",
+      "Use copper-based biofungicide at dormant stage where permitted."
+    ],
+    "biological_control_bn": [
+      "বসন্তের শুরু থেকে ব্যাসিলাস সাবটিলিস স্প্রে করে পাতায় সংক্রমণ কমিয়ে আনুন।",
+      "যেখানে অনুমোদিত সেখানে সুপ্ত অবস্থায় তামাভিত্তিক জৈব ছত্রাকনাশক ব্যবহার করুন।"
+    ],
+    "biological_control_ur": [
+      "بہار کے آغاز سے بیکیلس سَبٹِلس اسپرے کریں تاکہ پتوں کا انفیکشن کم ہو۔",
+      "جہاں اجازت ہو وہاں سکون کے زمانے میں تانبے پر مبنی حیاتیاتی فنگسائڈ استعمال کریں۔"
+    ],
+    "prevention_tips_en": [
+      "Avoid planting apples close to red cedar windbreaks.",
+      "Select rust-resistant apple cultivars for new orchards.",
+      "Rake and destroy fallen leaves to cut the overwintering source."
+    ],
+    "prevention_tips_bn": [
+      "লাল সিডার বায়ুপ্রতিরোধকের কাছে আপেল রোপণ এড়িয়ে চলুন।",
+      "নতুন বাগানের জন্য মরিচা-প্রতিরোধী আপেলের জাত নির্বাচন করুন।",
+      "শীতকালীন উৎস কমানোর জন্য পড়ে থাকা পাতা একত্র করে ধ্বংস করুন।"
+    ],
+    "prevention_tips_ur": [
+      "سرخ دیودار کی ہوا روک کے قریب سیب لگانے سے گریز کریں۔",
+      "نئے باغات کے لیے زنگ کے خلاف مزاحم سیب کی اقسام منتخب کریں۔",
+      "گرے ہوئے پتے اکٹھے کر کے تلف کریں تاکہ سردیوں کا ذخیرہ کم ہو۔"
+    ]
+  },
+  {
+    "id": "apple_healthy",
+    "cultural_control_en": [
+      "Inspect the orchard weekly for spots, cankers, or insect damage.",
+      "Keep the drip line clear of fallen fruit and leaf litter.",
+      "Fertilize and irrigate according to soil test results."
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার বাগান পরিদর্শন করে দাগ, ক্ষত বা পোকামাকড়ের ক্ষতি দেখুন।",
+      "গাছের গোড়ায় ঝরে পড়া ফল ও পাতার আবর্জনা পরিষ্কার রাখুন।",
+      "মাটির পরীক্ষার ফলাফল অনুযায়ী সার ও সেচ দিন।"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے باغ کا معائنہ کریں تاکہ دھبے، زخم یا کیڑوں کا نقصان معلوم ہو۔",
+      "درخت کے قریب گرے پھل اور پتوں کا کوڑا صاف رکھیں۔",
+      "مٹی کے ٹیسٹ کے مطابق کھاد اور آبپاشی کریں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Continue monitoring through the wet season when fruit rots start.",
+      "Prune out dead wood each winter to prevent canker entry.",
+      "Record any symptom out of character to investigate with extension staff."
+    ],
+    "prevention_tips_bn": [
+      "ভেজা মৌসুমেও নজর রাখুন, কারণ তখনই ফল পচা শুরু হয়।",
+      "প্রতি শীতে মৃত কাঠ ছাঁটাই করে ক্যানকারের প্রবেশ ঠেকান।",
+      "অস্বাভাবিক উপসর্গ দেখলে সম্প্রসারণ কর্মীর সাথে পরামর্শ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "گیلے موسم میں بھی نگرانی جاری رکھیں جب پھلوں کی سڑن شروع ہوتی ہے۔",
+      "ہر سردی میں مردہ لکڑی کاٹ کر زخم کے داخلے کو روکیں۔",
+      "کسی غیر معمولی علامت پر توسیعی عملے سے مشورہ کریں۔"
+    ]
+  },
+  {
+    "id": "cherry_powdery_mildew",
+    "cultural_control_en": [
+      "Plant where morning sun dries leaves quickly.",
+      "Prune to open the canopy and improve airflow.",
+      "Avoid excessive nitrogen, which favours soft powdery growth."
+    ],
+    "cultural_control_bn": [
+      "এমন জায়গায় রোপণ করুন যেখানে সকালের রোদ পাতা দ্রুত শুকায়।",
+      "মুকুট খুলে বাতাস চলাচল بهبود করতে ছাঁটাই করুন।",
+      "অত্যাধিক নাইট্রোজেন এড়িয়ে চলুন, যা নরম পাউডারি বৃদ্ধি বাড়ায়।"
+    ],
+    "cultural_control_ur": [
+      "ایسی جگہ لگائیں جہاں صبح کی دھوپ پتے جلد خشک کرے۔",
+      "درخت کو کھول کر ہوا کی گردش بہتر بنانے کے لیے کٹائی کریں۔",
+      "ضرورت سے زیادہ نائٹروجن سے بچیں جو نرم پاؤڈری نشوونما کو بڑھاتی ہے۔"
+    ],
+    "chemical_control_en": [
+      "Apply a sulfur or potassium bicarbonate spray at the first whitish patches.",
+      "Repeat on the label interval while weather stays warm and dry.",
+      "Follow the label and local extension advice; avoid spraying above the labelled temperature."
+    ],
+    "chemical_control_bn": [
+      "প্রথম সাদাটে দাগ দেখা গেলেই সালফার বা পটাশিয়াম বাইকার্বনেট স্প্রে করুন।",
+      "উষ্ণ ও শুষ্ক আবহাওয়ায় লেবেলের ব্যবধানে স্প্রে পুনরাবৃত্তি করুন।",
+      "লেবেল ও স্থানীয় সম্প্রসারণ পরামর্শ মানুন; লেবেলের তাপমাত্রার বেশি গরমে স্প্রে করবেন না।"
+    ],
+    "chemical_control_ur": [
+      "پہلے سفید دھبوں پر گندھک یا پوٹاشیم بائی کاربونیٹ کا اسپرے کریں۔",
+      "گرم اور خشک موسم میں لیبل کے وقفے سے اسپرے دہرائیں۔",
+      "لیبل اور مقامی توسیعی مشورے کی پاسداری کریں؛ لیبل کے درجہ حرارت سے زیادہ گرمی میں اسپرے نہ کریں۔"
+    ],
+    "biological_control_en": [
+      "Spray neem oil or Bacillus subtilis weekly as a suppressant.",
+      "Introduce predatory insects to keep aphid pressure low."
+    ],
+    "biological_control_bn": [
+      "সাপ্তাহিক নিম তেল বা ব্যাসিলাস সাবটিলিস স্প্রে করুন দমনকারী হিসেবে।",
+      "জাবপোকা কমানোর জন্য শিকারী পোকামাকড় ছাড়ুন।"
+    ],
+    "biological_control_ur": [
+      "ہر ہفتے نیم کا تیل یا بیکیلس سَبٹِلس اسپرے کریں بطور دباؤ۔",
+      "افیڈ کا دباؤ کم رکھنے کے لیے شکار کیڑے چھوڑیں۔"
+    ],
+    "prevention_tips_en": [
+      "Choose mildew-resistant cherry rootstocks and cultivars.",
+      "Remove infected shoots during dormancy.",
+      "Keep good spacing so the row dries by mid-morning."
+    ],
+    "prevention_tips_bn": [
+      "মিলডিউ-প্রতিরোধী চেরি রুটস্টক ও জাত বেছে নিন।",
+      "সুপ্ত অবস্থায় সংক্রমিত ডাল সরিয়ে ফেলুন।",
+      "ভালো দূরত্ব রাখুন যাতে সারি সকাল মধ্যেই শুকিয়ে যায়।"
+    ],
+    "prevention_tips_ur": [
+      "میلڈیو کے خلاف مزاحم چیری کی اقسام اور روٹ اسٹاک منتخب کریں۔",
+      "سکون کے زمانے میں متاثرہ ٹہنیاں ہٹائیں۔",
+      "اچھی دوری رکھیں تاکہ قطار صبح تک خشک ہو جائے۔"
+    ]
+  },
+  {
+    "id": "cherry_healthy",
+    "cultural_control_en": [
+      "Scout weekly for white patches, curling leaves, and gumming.",
+      "Prune lightly each year to keep airflow good.",
+      "Water at the base and avoid wetting the foliage."
+    ],
+    "cultural_control_bn": [
+      "সাদা দাগ, পাতা কুঁকড়ে যাওয়া ও আঠা নিঃসরণের জন্য সাপ্তাহিক নজর রাখুন।",
+      "বাতাস চলাচল ভালো রাখতে প্রতি বছর হালকা ছাঁটাই করুন।",
+      "গোড়ায় পানি দিন, পাতায় পানি পড়া এড়িয়ে চলুন।"
+    ],
+    "cultural_control_ur": [
+      "سفید دھبے، پتوں کی مروڑ اور گوند کے لیے ہر ہفتے معائنہ کریں۔",
+      "ہوا کی گردش بہتر رکھنے کے لیے ہر سال ہلکی کٹائی کریں۔",
+      "جڑ پر پانی دیں اور پتوں کو گیلے ہونے سے بچائیں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Monitor through warm dry spells when mildew appears.",
+      "Avoid overhead irrigation to keep the canopy dry.",
+      "Remove pruned wood from the orchard, not beside the trees."
+    ],
+    "prevention_tips_bn": [
+      "উষ্ণ ও শুষ্ক সময়ে নজর রাখুন, যখন মিলডিউ দেখা দেয়।",
+      "মুকুট শুকনো রাখতে ছাদ থেকে সেচ এড়িয়ে চলুন।",
+      "ছাঁটাই করা কাঠ গাছের পাশে নয়, বাগান থেকে সরিয়ে ফেলুন।"
+    ],
+    "prevention_tips_ur": [
+      "گرم خشک موسم میں نگرانی کریں جب میلڈیو ظاہر ہوتی ہے۔",
+      "چھت سے آبپاشی سے بچیں تاکہ درخت خشک رہے۔",
+      "کٹی ہوئی لکڑی درختوں کے قریب نہیں بلکہ باغ سے دور پھینکیں۔"
+    ]
+  }
+]

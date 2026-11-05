@@ -49,7 +49,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            '${AppLocalizations.of(context).text('history_failed')}: $error',
+            '${AppLocalizations.read(context).text('history_failed')}: $error',
           ),
         ),
       );
@@ -61,7 +61,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(AppLocalizations.of(context).text('scan_deleted')),
+        content: Text(AppLocalizations.read(context).text('scan_deleted')),
       ),
     );
     setState(_loadScans);

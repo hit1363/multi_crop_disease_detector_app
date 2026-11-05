@@ -1,0 +1,362 @@
+[
+  {
+    "id": "tomato_early_blight",
+    "cultural_control_en": [
+      "Remove and destroy infected lower leaves as soon as dark target-like spots appear.",
+      "Rotate tomatoes with unrelated crops for at least 2-3 years.",
+      "Stake plants and space them widely for good airflow.",
+      "Mulch and water at soil level to keep foliage dry."
+    ],
+    "cultural_control_bn": [
+      "গাঢ় দাগ দেখা মাত্রই নিচের আক্রান্ত পাতা তুলে ধ্বংস করুন।",
+      "কমপক্ষে ২-৩ বছর টমেটোর বদলে অন্য ফসল চাষ করে ফসল পর্যায় মানুন।",
+      "চারা খুঁটিতে বাঁধুন এবং ভালো বাতাস চলাচলের জন্য পর্যাপ্ত দূরত্বে রোপণ করুন।",
+      "মালচিং করুন এবং পাতা ভেজা রাখতে না পারার জন্য গোড়ায় পানি দিন।"
+    ],
+    "cultural_control_ur": [
+      "گہرے دھبے نظر آنے پر فوراً نیچے کے متاثرہ پتے توڑ کر تباہ کر دیں۔",
+      "کم از کم ۲-۳ سال ٹماٹر کی جگہ دوسری فصلیں اگا کر فصل کی گردش کریں۔",
+      "پودوں کو سہارا دیں اور ہوا کی اچھی گردش کے لیے مناسب فاصلے پر لگائیں۔",
+      "ملچنگ کریں اور پتے گیلا رکھنے سے بچنے کے لیے مٹی کی سطح پر پانی دیں۔"
+    ],
+    "chemical_control_en": [
+      "Spray protectant fungicides such as chlorothalonil or mancozeb at the first symptoms.",
+      "Copper-based fungicides also help when applied early.",
+      "Always follow the product label and local agricultural extension advice."
+    ],
+    "chemical_control_bn": [
+      "প্রথম লক্ষণ দেখা মাত্র ক্লোরোথালোনিল বা ম্যানকোজেব জাতীয় ছত্রাকনাশক স্প্রে করুন।",
+      "প্রাথমিক পর্যায়ে প্রয়োগ করলে তামা-ভিত্তিক ছত্রাকনাশকও উপকারী।",
+      "সবসময় পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তাদের পরামর্শ অনুসরণ করুন।"
+    ],
+    "chemical_control_ur": [
+      "پہلی علامات پر کلوروٹھالونل یا مینکوزب جیسے فنگی سائیڈ کا چھڑکاؤ کریں۔",
+      "شروع میں لگائیں تو تانبے پر مبنی فنگی سائیڈ بھی مفید ہیں۔",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Apply Bacillus subtilis or Trichoderma-based biofungicides.",
+      "Spray neem oil as a supplementary protective treatment."
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস বা ট্রাইকোডার্মা-ভিত্তিক জৈব ছত্রাকনাশক প্রয়োগ করুন।",
+      "অতিরিক্ত সুরক্ষা হিসেবে নিম তেল স্প্রে করুন।"
+    ],
+    "biological_control_ur": [
+      "باسیلس سبٹیلیس یا ٹرائیکوڈرما پر مبنی بائیو فنگی سائیڈ لگائیں۔",
+      "اضافی تحفظ کے لیے نیم کا تیل چھڑکیں۔"
+    ],
+    "prevention_tips_en": [
+      "Plant certified disease-free seed and resistant varieties.",
+      "Clear all tomato debris at season's end to cut carryover spores.",
+      "Avoid overhead irrigation; water early in the day at the base."
+    ],
+    "prevention_tips_bn": [
+      "রোগমুক্ত প্রত্যয়িত বীজ ও প্রতিরোধী জাত বপন করুন।",
+      "মৌসুম শেষে টমেটোর সব আবর্জনা সরিয়ে ফেলুন যাতে স্পোর না থাকে।",
+      "পাতায় পানি দেবেন না; দিনের শুরুতে গোড়ায় পানি দিন।"
+    ],
+    "prevention_tips_ur": [
+      "تصدیق شدہ صاف بیج اور بیماری برداشت کرنے والی اقسام لگائیں۔",
+      "موسم ختم ہونے پر ٹماٹر کا تمام ملبہ ہٹا دیں تاکہ بیضے باقی نہ رہیں۔",
+      "پتوں پر پانی نہ دیں؛ دن کے شروع میں بنیاد پر پانی دیں۔"
+    ]
+  },
+  {
+    "id": "potato_late_blight",
+    "cultural_control_en": [
+      "Plant certified disease-free seed tubers only.",
+      "Destroy infected plants and volunteer potatoes immediately.",
+      "Hill soil well and space rows for fast drying; avoid overhead watering."
+    ],
+    "cultural_control_bn": [
+      "শুধুমাত্র রোগমুক্ত প্রত্যয়িত বীজ আলু রোপণ করুন।",
+      "আক্রান্ত গাছ ও অবাঞ্ছিত আলু গাছ সঙ্গে সঙ্গে ধ্বংস করুন।",
+      "গাছের গোড়ায় মাটি ভালোভাবে তুলে দিন এবং সারির মধ্যে দূরত্ব রাখুন; পাতায় পানি দেবেন না।"
+    ],
+    "cultural_control_ur": [
+      "صرف تصدیق شدہ بیماری سے پاک بیج کے کنڈے لگائیں۔",
+      "متاثرہ پودوں اور بچھڑے ہوئے آلو کے پودوں کو فوراً تباہ کر دیں۔",
+      "پودوں کی بنیاد پر مٹی چڑھائیں اور قطاروں میں فاصلہ رکھیں؛ پتوں پر پانی نہ دیں۔"
+    ],
+    "chemical_control_en": [
+      "Use protectant fungicides such as mancozeb or chlorothalonil before wet weather.",
+      "Systemic products, for example cymoxanil or metalaxyl-based, may be needed in high pressure.",
+      "Follow the product label and consult local agricultural extension officers."
+    ],
+    "chemical_control_bn": [
+      "আর্দ্র আবহাওয়ার আগে ম্যানকোজেব বা ক্লোরোথালোনিল জাতীয় প্রতিরোধমূলক ছত্রাকনাশক ব্যবহার করুন।",
+      "সংক্রমণ বাড়লে সিস্টেমিক ছত্রাকনাশক, যেমন সাইমোক্সানিল, প্রয়োজন হতে পারে।",
+      "পণ্যের লেবেল অনুসরণ করুন এবং স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তাদের পরামর্শ নিন।"
+    ],
+    "chemical_control_ur": [
+      "گیلے موسم سے پہلے مینکوزب یا کلوروٹھالونل جیسے حفاظتی فنگی سائیڈ استعمال کریں۔",
+      "شدید حملے میں سسٹیمیٹک فنگی سائیڈ، مثلاً سائی موکسانل، درکار ہو سکتے ہیں۔",
+      "مصنوعات کے لیبل پر عمل کریں اور مقامی زرعی ایکسٹینشن افسران سے رجوع کریں۔"
+    ],
+    "biological_control_en": [
+      "Copper-based products give partial protection in organic programs.",
+      "Some Bacillus-based biofungicides can supplement, not replace, protective sprays."
+    ],
+    "biological_control_bn": [
+      "জৈব চাষে তামা-ভিত্তিক পণ্য আংশিক সুরক্ষা দেয়।",
+      "ব্যাসিলাস-ভিত্তিক জৈব ছত্রাকনাশক প্রতিরোধমূলক স্প্রের পরিপূরক হতে পারে, বিকল্প নয়।"
+    ],
+    "biological_control_ur": [
+      "نامیاتی کاشت میں تانبے پر مبنی مصنوعات جزوی تحفظ دیتی ہیں۔",
+      "باسیلس پر مبنی بائیو فنگی سائیڈ حفاظتی اسپرے کے مکمل ہو سکتے ہیں، متبادل نہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Start each season with certified seed and clean, well-drained fields.",
+      "Remove cull piles and volunteer plants before planting.",
+      "Harvest in dry weather and store only cool, dry, healthy tubers."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি মৌসুমে প্রত্যয়িত বীজ ও পরিষ্কার, সুনিষ্কাশন জমি দিয়ে শুরু করুন।",
+      "রোপণের আগে ফেলে রাখা আলুর স্তূপ ও আবর্জনার গাছ সরান।",
+      "শুষ্ক আবহাওয়ায় ফসল তুলুন এবং শীতল, শুষ্ক ও সুস্থ আলুই সংরক্ষণ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر موسم کا آغاز تصدیق شدہ بیج اور صاف، اچھی نکاسی والے کھیت سے کریں۔",
+      "بونے سے پہلے ضائع آلو کے ڈھیر اور خود رو پودے ہٹا دیں۔",
+      "خشک موسم میں فصل اکٹھی کریں اور صرف ٹھنڈے، خشک، صحت مند کنڈے ذخیرہ کریں۔"
+    ]
+  },
+  {
+    "id": "corn_northern_leaf_blight",
+    "cultural_control_en": [
+      "Plant resistant hybrids where available.",
+      "Rotate corn with unrelated crops and bury or plow down infected residue."
+    ],
+    "cultural_control_bn": [
+      "সম্ভব হলে রোগ প্রতিরোধী হাইব্রিড জাত বপন করুন।",
+      "ভুট্টার সাথে অসম্পর্কিত ফসলের পর্যায় চালান এবং আক্রান্ত আবর্জনা মাটিচাপা দিন।"
+    ],
+    "cultural_control_ur": [
+      "ممکن ہو تو بیماری برداشت کرنے والے ہائبرڈ اقسام لگائیں۔",
+      "مکئی کے ساتھ غیر متعلق فصلوں کی گردش کریں اور متاثرہ ملبے کو مٹی میں دبا دیں۔"
+    ],
+    "chemical_control_en": [
+      "Scout lower leaves; fungicides such as azoxystrobin or propiconazole protect the ear leaf.",
+      "Time sprays between tasseling and early silking when lesions are spreading.",
+      "Follow the product label and local extension recommendations."
+    ],
+    "chemical_control_bn": [
+      "নিচের পাতা পর্যবেক্ষণ করুন; অ্যাজোক্সিস্ট্রোবিন বা প্রোপিকোনাজল জাতীয় ছত্রাকনাশক গুরুত্বপূর্ণ পাতা রক্ষা করে।",
+      "দাগ ছড়াতে থাকলে শীর্ষমঞ্জরি থেকে সিল্ক বের হওয়ার সময়ের মধ্যে স্প্রে করুন।",
+      "পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণের পরামর্শ অনুসরণ করুন।"
+    ],
+    "chemical_control_ur": [
+      "نیچے کے پتوں کا معائنہ کریں؛ ایزوآکسی سٹروبین یا پروپیکونازول جیسے فنگی سائیڈ اہم پتوں کی حفاظت کرتے ہیں۔",
+      "دھبے پھیل رہے ہوں تو بال ٹیسیل اور ریشے نکلنے کے درمیان اسپرے کریں۔",
+      "مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Bacillus subtilis biofungicides can reduce leaf infection when applied early.",
+      "Trichoderma soil amendments help decompose infected residue."
+    ],
+    "biological_control_bn": [
+      "প্রাথমিক পর্যায়ে প্রয়োগ করলে ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক পাতার সংক্রমণ কমায়।",
+      "মাটিতে ট্রাইকোডার্মা মেশালে আক্রান্ত আবর্জনা দ্রুত পচে যায়।"
+    ],
+    "biological_control_ur": [
+      "شروع میں لگائیں تو باسیلس سبٹیلیس بائیو فنگی سائیڈ پتوں کے انفیکشن کم کرتے ہیں۔",
+      "مٹی میں ٹرائیکوڈرما ملا دینے سے متاثرہ ملبہ جلد گل جاتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Plow under or compost corn residue after harvest.",
+      "Keep 2-3 years between corn crops in the same field.",
+      "Choose resistant hybrids every season."
+    ],
+    "prevention_tips_bn": [
+      "ফসল তোলার পর ভুট্টার আবর্জনা মাটিতে মিশিয়ে দিন বা কম্পোস্ট করুন।",
+      "একই জমিতে ভুট্টা চাষের মধ্যে ২-৩ বছর বিরতি রাখুন।",
+      "প্রতি মৌসুমে রোগ প্রতিরোধী হাইব্রিড বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "کٹائی کے بعد مکئی کا ملبہ مٹی میں ملا دیں یا کمپوسٹ بنائیں۔",
+      "ایک ہی کھیت میں مکئی کی فصلوں کے درمیان ۲-۳ سال کا وقفہ رکھیں۔",
+      "ہر موسم بیماری برداشت کرنے والے ہائبرڈ کا انتخاب کریں۔"
+    ]
+  },
+  {
+    "id": "apple_scab",
+    "cultural_control_en": [
+      "Rake and destroy or compost fallen leaves in autumn.",
+      "Prune the canopy to improve airflow and faster drying.",
+      "Plant scab-resistant varieties when establishing new orchards."
+    ],
+    "cultural_control_bn": [
+      "শরৎকালে ঝরে পড়া পাতা ঝাড়ু দিয়ে তুলে ধ্বংস করুন বা কম্পোস্ট করুন।",
+      "বাতাস চলাচল ও দ্রুত শুকানোর জন্য গাছের ছাউনি ছাঁটাই করুন।",
+      "নতুন বাগান স্থাপনের সময় রোগ প্রতিরোধী জাত বেছে নিন।"
+    ],
+    "cultural_control_ur": [
+      "خزاں میں گرتے ہوئے پتے جھاڑ کر اکٹھے کریں اور تباہ کریں یا کمپوسٹ بنائیں۔",
+      "ہوا کی گردش اور جلد خشک ہونے کے لیے درخت کا تاج کاٹ کر کھلا کریں۔",
+      "نئے باغ لگاتے وقت بیماری برداشت کرنے والی اقسام کا انتخاب کریں۔"
+    ],
+    "chemical_control_en": [
+      "Apply protectant fungicides such as captan, sulfur, or myclobutanil from green tip through bloom.",
+      "Copper or lime-sulfur sprays at bud break can reduce early infection.",
+      "Follow the label and your local extension spray schedule."
+    ],
+    "chemical_control_bn": [
+      "কুঁড়ি ফোটার শুরু থেকে ফুল ফোটা পর্যন্ত ক্যাপ্টান, সালফার বা মাইক্লোবুটানিল জাতীয় ছত্রাকনাশক প্রয়োগ করুন।",
+      "কুঁড়ি ফোটার সময় তামা বা চুন-সালফার স্প্রে প্রাথমিক সংক্রমণ কমায়।",
+      "লেবেল অনুসরণ করুন এবং স্থানীয় কৃষি বিভাগের স্প্রে-তালিকা মেনে চলুন।"
+    ],
+    "chemical_control_ur": [
+      "کلی کھلنے سے پھول آنے تک کیپٹن، گندھک یا مائکلو بیوٹانل جیسے فنگی سائیڈ لگائیں۔",
+      "کلی کھلنے کے وقت تانبا یا چونے والی گندھک کا اسپرے ابتدائی انفیکشن کم کرتا ہے۔",
+      "لیبل پر عمل کریں اور مقامی زرعی ایکسٹینشن کے اسپرے شیڈول کی پیروی کریں۔"
+    ],
+    "biological_control_en": [
+      "Sulfur and copper compounds are accepted options in organic orchards.",
+      "Bacillus subtilis and Trichoderma products may supplement leaf-litter treatment."
+    ],
+    "biological_control_bn": [
+      "জৈব বাগানে সালফার ও তামার যৌগ গ্রহণযোগ্য বিকল্প।",
+      "ব্যাসিলাস সাবটিলিস ও ট্রাইকোডার্মা পণ্য ঝরা পাতার ব্যবস্থাপনায় সহায়ক হতে পারে।"
+    ],
+    "biological_control_ur": [
+      "نامیاتی باغات میں گندھک اور تانبے کے مرکبات قابل قبول آپشن ہیں۔",
+      "باسیلس سبٹیلیس اور ٹرائیکوڈرما کی مصنوعات گرے پتوں کے انتظام میں معاون ہو سکتی ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Shred or remove leaf litter each fall to cut the spring spore load.",
+      "Keep trees open and vigorous with yearly pruning and balanced fertilizer.",
+      "Choose resistant cultivars for new plantings."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি শরৎে ঝরা পাতা গুঁড়া করে মিশিয়ে দিন বা সরিয়ে ফেলুন যাতে বসন্তে স্পোর কমে।",
+      "বছরে ছাঁটাই ও সুষম সার দিয়ে গাছ খোলামেলা ও সবল রাখুন।",
+      "নতুন রোপণের জন্য রোগ প্রতিরোধী জাত বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر خزاں گرے پتے کاٹ کر ملا دیں یا ہٹا دیں تاکہ بہار میں بیضے کم ہوں۔",
+      "سالانہ چھالائی اور متوازن کھاد سے درخت کھلے اور توانا رکھیں۔",
+      "نئی پودائی کے لیے محفوظ اقسام منتخب کریں۔"
+    ]
+  },
+  {
+    "id": "grape_black_rot",
+    "cultural_control_en": [
+      "Prune out mummified berries and infected canes during dormancy.",
+      "Remove or bury all diseased fruit and leaf litter from the vineyard.",
+      "Train vines and manage weeds so clusters dry quickly."
+    ],
+    "cultural_control_bn": [
+      "গাছ ঘুমন্ত অবস্থায় শুকিয়ে কালো হয়ে যাওয়া বেরি ও রোগাক্রান্ত ডাল ছাঁটাই করুন।",
+      "আঙুর ক্ষেত থেকে সব রোগাক্রান্ত ফল ও ঝরা পাতা সরিয়ে ফেলুন বা মাটিচাপা দিন।",
+      "ভাইন গুছিয়ে বাঁধুন এবং আগাছা নিয়ন্ত্রণ করুন যাতে মুকুল দ্রুত শুকায়।"
+    ],
+    "cultural_control_ur": [
+      "سردیوں میں سیاہ، مرجھائی ہوئی بیریاں اور متاثرہ شاخیں کاٹ کر ہٹا دیں۔",
+      "انگور کے باغ سے تمام بیمار پھل اور گرے پتے ہٹا دیں یا مٹی میں دبا دیں۔",
+      "بیلوں کو جوڑ باندھیں اور جڑی بوٹیاں قابو میں رکھیں تاکہ خوشے جلد خشک ہوں۔"
+    ],
+    "chemical_control_en": [
+      "Spray fungicides such as myclobutanil, mancozeb, or captan from pre-bloom to 4 weeks after bloom.",
+      "Early-season coverage is critical because spores splash from old mummies in rain.",
+      "Follow the product label and local extension guidance."
+    ],
+    "chemical_control_bn": [
+      "ফুল আসার আগে থেকে ফুল ফোটার ৪ সপ্তাহ পর্যন্ত মাইক্লোবুটানিল, ম্যানকোজেব বা ক্যাপ্টান জাতীয় ছত্রাকনাশক স্প্রে করুন।",
+      "পুরনো শুকনো বেরি থেকে বৃষ্টির ছিটে স্পোর ছড়ায়, তাই মৌসুমের শুরুর স্প্রে অত্যন্ত জরুরি।",
+      "পণ্যের লেবেল ও স্থানীয় কৃষি পরামর্শ অনুসরণ করুন।"
+    ],
+    "chemical_control_ur": [
+      "پھول آنے سے پہلے سے پھول کے چار ہفتے بعد تک مائکلو بیوٹانل، مینکوزب یا کیپٹن جیسے فنگی سائیڈ اسپرے کریں۔",
+      "پرانی خشک بیریوں سے بارش کے چھینٹوں سے بیضے پھیلتے ہیں، اس لیے موسم کے شروع کا اسپرے ضروری ہے۔",
+      "مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی رہنمائی پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Bacillus subtilis biofungicides can support an integrated program.",
+      "Copper sprays such as Bordeaux mixture give partial organic protection."
+    ],
+    "biological_control_bn": [
+      "সমন্বিত ব্যবস্থাপনায় ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক সহায়ক হতে পারে।",
+      "তামার স্প্রে, যেমন বোর্দো মিশ্রণ, জৈব পদ্ধতিতে আংশিক সুরক্ষা দেয়।"
+    ],
+    "biological_control_ur": [
+      "باسیلس سبٹیلیس بائیو فنگی سائیڈ مشترکہ انتظام میں مددگار ہو سکتے ہیں۔",
+      "تانبے کا اسپرے، جیسے بورڈو مکسچر، نامیاتی طریقے میں جزوی تحفظ دیتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Clean up every mummy and infected cane before bud break each spring.",
+      "Maintain an open canopy with summer shoot positioning.",
+      "Consider resistant varieties when replanting."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি বসন্তে কুঁড়ি ফোটার আগে সব শুকনো কালো বেরি ও রোগাক্রান্ত ডাল পরিষ্কার করুন।",
+      "গ্রীষ্মে অঙ্কুর গুছিয়ে সাজিয়ে ছাউনি খোলামেলা রাখুন।",
+      "পুনরায় রোপণ করলে রোগ প্রতিরোধী জাত বিবেচনা করুন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر بہار کلی کھلنے سے پہلے تمام خشک سیاہ بیریاں اور متاثرہ شاخیں صاف کریں۔",
+      "گرمیوں میں ٹہنیوں کی مناسب ترتیب سے پودا کھلا رکھیں۔",
+      "دوبارہ لگانے کے وقت محفوظ اقسام پر غور کریں۔"
+    ]
+  },
+  {
+    "id": "corn_cercospora_leaf_spot",
+    "cultural_control_en": [
+      "Plant gray leaf spot-resistant hybrids.",
+      "Rotate to soybeans or other non-grass crops where residue is heavily infected.",
+      "Till under corn residue where erosion is not a concern."
+    ],
+    "cultural_control_bn": [
+      "ধূসর পাতা-দাগ প্রতিরোধী হাইব্রিড জাত বপন করুন।",
+      "আবর্জনায় সংক্রমণ বেশি থাকলে সয়াবিন বা অন্য অঘাসজাতীয় ফসলে পর্যায় ঘুরান।",
+      "যেখানে মাটি সরে যাওয়ার ঝুঁকি নেই, সেখানে ভুট্টার আবর্জনা মাটিতে মিশিয়ে দিন।"
+    ],
+    "cultural_control_ur": [
+      "گرے لیف اسپاٹ برداشت کرنے والے ہائبرڈ اقسام لگائیں۔",
+      "جہاں ملبے میں انفیکشن زیادہ ہو وہاں سویا بین یا دیگر غیر گراس فصلوں کی گردش اپنائیں۔",
+      "جہاں مٹی کے بہاؤ کا خطرہ نہ ہو، وہاں مکئی کا ملبہ مٹی میں ملا دیں۔"
+    ],
+    "chemical_control_en": [
+      "Scout from tasseling onward; use fungicides such as azoxystrobin or propiconazole if lesions reach the ear leaf.",
+      "One well-timed spray between silking and early grain fill often suffices.",
+      "Follow the label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "শীর্ষমঞ্জরি আসার পর পর্যবেক্ষণ করুন; দাগ উপরের গুরুত্বপূর্ণ পাতায় পৌঁছালে অ্যাজোক্সিস্ট্রোবিন বা প্রোপিকোনাজল স্প্রে করুন।",
+      "সিল্ক বের হওয়া থেকে দানা গঠনের শুরুর মধ্যে একবার সময়মতো স্প্রেই প্রায়ই যথেষ্ট।",
+      "লেবেল অনুসরণ করুন এবং স্থানীয় কৃষি সম্প্রসারণের পরামর্শ নিন।"
+    ],
+    "chemical_control_ur": [
+      "بال ٹیسیل کے بعد معائنہ کریں؛ اگر دھبے اوپر کے اہم پتوں تک پہنچیں تو ایزوآکسی سٹروبین یا پروپیکونازول جیسے فنگی سائیڈ لگائیں۔",
+      "ریشے نکلنے سے دانے بننے کے شروع تک ایک وقت پر کیا گیا اسپرے اکثر کافی ہوتا ہے۔",
+      "لیبل پر عمل کریں اور مقامی زرعی ایکسٹینشن کا مشورہ لیں۔"
+    ],
+    "biological_control_en": [
+      "Bacillus subtilis-based biofungicides may slow lesion development.",
+      "Trichoderma amendments speed decay of infected residue between seasons."
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস-ভিত্তিক জৈব ছত্রাকনাশক দাগ বিস্তার ধীর করতে পারে।",
+      "মৌসুমের মাঝে ট্রাইকোডার্মা মেশালে সংক্রমিত আবর্জনা দ্রুত পচে।"
+    ],
+    "biological_control_ur": [
+      "باسیلس سبٹیلیس پر مبنی بائیو فنگی سائیڈ دھبوں کا پھیلاؤ سست کر سکتے ہیں۔",
+      "موسموں کے درمیان ٹرائیکوڈرما ملا دینے سے متاثرہ ملبہ جلد سڑتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Favor resistant hybrids and wider row spacing for airflow.",
+      "Manage residue and rotate crops every season.",
+      "Avoid continuous corn in fields with a gray leaf spot history."
+    ],
+    "prevention_tips_bn": [
+      "রোগ প্রতিরোধী হাইব্রিড এবং বাতাস চলাচলের জন্য সারিতে বেশি দূরত্ব রাখুন।",
+      "প্রতি মৌসুমে আবর্জনা ব্যবস্থাপনা ও ফসল পর্যায় মানুন।",
+      "ধূসর পাতা-দাগের ইতিহাস থাকা জমিতে টানা ভুট্টা চাষ এড়িয়ে চলুন।"
+    ],
+    "prevention_tips_ur": [
+      "محفوظ ہائبرڈ اقسام اور ہوا کی گردش کے لیے قطاروں میں زیادہ فاصلہ رکھیں۔",
+      "ہر موسم میں ملبے کا انتظام اور فصل کی گردش کریں۔",
+      "گرے لیف اسپاٹ کی تاریخ والے کھیتوں میں مسلسل مکئی لگانے سے گریز کریں۔"
+    ]
+  }
+]

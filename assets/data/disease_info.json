@@ -303,18 +303,12 @@
     "symptoms_ur": [
       "بیماری کی کوئی واضح علامات نظر نہیں آتیں"
     ],
-    "favorable_conditions_en": [
-      "N/A"
-    ],
-    "favorable_conditions_bn": [
-      "প্রযোজ্য নয়"
-    ],
-    "favorable_conditions_ur": [
-      "لاگو نہیں"
-    ],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "apple_black_rot",
@@ -443,12 +437,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "cherry_powdery_mildew",
@@ -521,12 +515,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "corn_cercospora_leaf_spot",
@@ -655,12 +649,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "grape_esca",
@@ -789,34 +783,34 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "invalid",
-    "crop_en": "N/A",
-    "crop_bn": "N/A",
-    "crop_ur": "N/A",
+    "crop_en": "General",
+    "crop_bn": "সাধারণ",
+    "crop_ur": "عمومی",
     "name_en": "Invalid Image",
     "name_bn": "অবৈধ ছবি",
     "name_ur": "غیر درست تصویر",
-    "severity": "N/A",
+    "severity": "unknown",
     "description_en": "The provided image could not be recognized as a plant or disease. Please upload a clear image of a plant leaf or fruit.",
     "description_bn": "প্রদত্ত ছবিটি একটি উদ্ভিদ বা রোগ হিসেবে চিহ্নিত করা যায়নি। অনুগ্রহ করে উদ্ভিদের পাতা বা ফলের একটি পরিষ্কার ছবি আপলোড করুন।",
     "description_ur": "دی گئی تصویر کو پودے یا بیماری کے طور پر پہچانا نہیں جا سکا۔ براہ کرم پودے کے پتے یا پھل کی صاف تصویر اپ لوڈ کریں۔",
-    "symptoms_en": ["N/A"],
-    "symptoms_bn": ["N/A"],
-    "symptoms_ur": ["N/A"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["N/A"],
-    "favorable_conditions_ur": ["N/A"],
-    "spread_en": "N/A",
-    "spread_bn": "N/A",
-    "spread_ur": "N/A"
+    "symptoms_en": [],
+    "symptoms_bn": [],
+    "symptoms_ur": [],
+    "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "orange_citrus_greening",
@@ -945,12 +939,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "pepper_bacterial_spot",
@@ -1023,12 +1017,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "potato_early_blight",
@@ -1098,12 +1092,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "raspberry_healthy",
@@ -1120,12 +1114,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "rice_brown_spot",
@@ -1198,12 +1192,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "rice_hispa",
@@ -1332,12 +1326,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "squash_powdery_mildew",
@@ -1466,12 +1460,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "tomato_bacterial_spot",
@@ -1936,12 +1930,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "wheat_brown_rust",
@@ -2014,12 +2008,12 @@
     "symptoms_en": ["No visible disease symptoms detected"],
     "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
     "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+        "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "p>",
+    "spread_ur": "p>"
   },
   {
     "id": "wheat_yellow_rust",

@@ -61,14 +61,16 @@ class _ResultScreenState extends State<ResultScreen> {
     });
 
     try {
+      final language = context.read<LanguageService>().language;
       final diseaseInfo = await DiseaseInfoService().findByPredictionLabel(
         prediction.label,
-        language: context.read<LanguageService>().language,
+        language: language,
       );
       await ReportService().shareScanReport(
         imageBytes: widget.imageBytes,
         prediction: prediction,
         diseaseInfo: diseaseInfo,
+        language: language,
       );
     } catch (error) {
       if (!mounted) {
@@ -77,7 +79,7 @@ class _ResultScreenState extends State<ResultScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            AppLocalizations.of(
+            AppLocalizations.read(
               context,
             ).text('export_failed', values: {'error': '$error'}),
           ),
@@ -200,6 +202,10 @@ class _ResultScreenState extends State<ResultScreen> {
                       children: diseaseInfo.biologicalControl,
                     ),
                     _InfoSection(
+                      title: strings.text('prevention_tips'),
+                      children: diseaseInfo.preventionTips,
+                    ),
+                    _InfoSection(
                       title: strings.text('favorable_conditions'),
                       children: diseaseInfo.favorableConditions,
                     ),
@@ -208,10 +214,6 @@ class _ResultScreenState extends State<ResultScreen> {
                         title: strings.text('spread'),
                         children: [diseaseInfo.spread],
                       ),
-                    _InfoSection(
-                      title: strings.text('recommendations'),
-                      children: diseaseInfo.recommendations,
-                    ),
                   ],
                 );
               },

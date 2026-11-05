@@ -1,0 +1,296 @@
+[
+  {
+    "id": "orange_citrus_greening",
+    "cultural_control_en": [
+      "Remove and destroy HLB-infected trees promptly; infection is permanent and sick trees spread the bacterium.",
+      "Buy certified disease-free nursery plants and control citrus psyllids across the whole orchard.",
+      "Inspect trees every 2-4 weeks for blotchy leaf mottle and remove volunteer citrus hosts nearby."
+    ],
+    "cultural_control_bn": [
+      "এইচএলবি-আক্রান্ত গাছ দ্রুত তুলে ধ্বংস করুন; সংক্রমণ স্থায়ী এবং অসুস্থ গাছ রোগের জীবাণু ছড়ায়।",
+      "সার্টিফায়েড রোগমুক্ত নার্সারির চারা কিনুন এবং পুরো বাগানে সাইট্রাস সাইলিড পোকা নিয়ন্ত্রণ করুন।",
+      "প্রতি ২-৪ সপ্তাহে পাতার অসম হলুদ দাগ পরীক্ষা করুন এবং কাছাকাছি বন্য সাইট্রাস গাছ সরিয়ে ফেলুন।"
+    ],
+    "cultural_control_ur": [
+      "ایچ ایل بی سے متاثرہ درخت فوراً اکھاڑ کر تباہ کریں؛ یہ انفیکشن مستقل ہے اور مریض درخت بیماری پھیلاتے ہیں۔",
+      "سرٹیفائیڈ بیماری سے پاک نرسری کے پودے خریدیں اور پورے باغ میں سائٹرس سائیلاڈ کیڑوں پر قابو رکھیں۔",
+      "ہر ۲-۴ ہفتے میں پتوں پر بے ترتیب زرد دھبے جانچیں اور قریبی جنگلی سائٹرس کے درخت ہٹا دیں۔"
+    ],
+    "chemical_control_en": [
+      "No chemical cures HLB; suppress the psyllid vector with label-approved insecticides.",
+      "Rotate insecticide groups and always follow the product label and local agricultural extension advice."
+    ],
+    "chemical_control_bn": [
+      "এইচএলবির কোনো রাসায়নিক প্রতিকার নেই; লেবেল-অনুমোদিত কীটনাশক দিয়ে সাইলিড পোকা দমন করুন।",
+      "কীটনাশকের গ্রুপ ঘুরিয়ে ঘুরিয়ে ব্যবহার করুন এবং সবসময় প্রোডাক্ট লেবেল ও স্থানীয় কৃষি সম্প্রসারণের পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "ایچ ایل بی کا کوئی کیمیاوی علاج نہیں؛ لیبل سے منظور شدہ کیڑے مار دوا سے سائیلاڈ پر قابو رکھیں۔",
+      "کیڑے مار ادویات کے گروپ بدل بدل کر استعمال کریں اور ہمیشہ پروڈکٹ لیبل اور مقامی زرعی مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Spray neem oil on young flushes to reduce psyllid adults and nymphs.",
+      "Conserve ladybirds, lacewings and other natural enemies; avoid broad-spectrum sprays."
+    ],
+    "biological_control_bn": [
+      "নতুন কচি পাতায় সাইলিডের পূর্ণবয়স্ক ও কীড়া কমাতে নিম তেল স্প্রে করুন।",
+      "লেডিবার্ড, লেসউইংসহ প্রাকৃতিক শত্রু পোকা সংরক্ষণ করুন; বিস্তৃত প্রভাবের কীটনাশক এড়িয়ে চলুন।"
+    ],
+    "biological_control_ur": [
+      "نئے پتوں پر سائیلاڈ کے مکمل کیڑے اور بچے کم کرنے کے لیے نیم کا تیل اسپرے کریں۔",
+      "لیڈی برڈ اور لیس ونگ جیسے فائدہ مند کیڑوں کی حفاظت کریں؛ وسیع اثر والی سپرے سے پرہیز کریں۔"
+    ],
+    "prevention_tips_en": [
+      "Plant only certified, disease-free saplings from accredited nurseries.",
+      "Keep a regular psyllid monitoring and control programme every season.",
+      "Remove infected trees immediately to protect the rest of the orchard."
+    ],
+    "prevention_tips_bn": [
+      "অনুমোদিত নার্সারি থেকে শুধুমাত্র সার্টিফায়েড রোগমুক্ত চারা রোপণ করুন।",
+      "প্রতি মৌসুমে নিয়মিত সাইলিড পর্যবেক্ষণ ও দমন কার্যক্রম চালু রাখুন।",
+      "বাগানের বাকি গাছ রক্ষায় আক্রান্ত গাছ সঙ্গে সঙ্গে অপসারণ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "صرف منظور شدہ نرسریوں سے سرٹیفائیڈ اور بیماری سے پاک پودے لگائیں۔",
+      "ہر موسم میں سائیلاڈ کی باقاعدہ نگرانی اور قابو کا پروگرام جاری رکھیں۔",
+      "باغ کے باقی درختوں کی حفاظت کے لیے متاثرہ درخت فوراً ہٹا دیں۔"
+    ]
+  },
+  {
+    "id": "peach_bacterial_spot",
+    "cultural_control_en": [
+      "Choose resistant cultivars when replanting, as susceptibility varies widely between varieties.",
+      "Prune out infected twigs and cankers in dry weather and burn or discard them away from the orchard.",
+      "Avoid excess nitrogen and overhead irrigation; both encourage lush, disease-prone growth.",
+      "Space and prune trees for good airflow so foliage dries quickly after rain."
+    ],
+    "cultural_control_bn": [
+      "প্রতিরোধী জাত বেছে নিন; জাতভেদে এই রোগের প্রতি সংবেদনশীলতায় ব্যাপক তারতম্য থাকে।",
+      "শুষ্ক আবহাওয়ায় আক্রান্ত ডালপালা ও ক্ষত ছেঁটে বাগানের বাইরে পুড়িয়ে ফেলুন।",
+      "অতিরিক্ত ইউরিয়া ও উপর থেকে পানি দেওয়া এড়িয়ে চলুন; এতে কচি বৃদ্ধি ও রোগ দুটোই বাড়ে।",
+      "ভালো বাতাস চলাচলের জন্য গাছের দূরত্ব রাখুন ও ছাঁটাই করুন যাতে বৃষ্টির পর পাতা দ্রুত শুকায়।"
+    ],
+    "cultural_control_ur": [
+      "دوبارہ پودے لگاتے وقت مزاحم اقسام منتخب کریں؛ اقسام میں حساسیت میں بڑا فرق ہوتا ہے۔",
+      "خشک موسم میں متاثرہ شاخیں اور زخم کاٹ کر باغ سے دور جلا دیں۔",
+      "زائد نائٹروجن اور پتوں پر پانی دینے سے گریز کریں؛ دونوں نازک بڑھوتری اور بیماری بڑھاتے ہیں۔",
+      "اچھی ہوا کے بہاؤ کے لیے درختوں میں فاصلہ رکھیں اور کٹائی کریں تاکہ بارش کے بعد پتے جلد خشک ہوں۔"
+    ],
+    "chemical_control_en": [
+      "Apply copper-based bactericides (e.g. copper hydroxide) at leaf fall and bud break.",
+      "Where registered, oxytetracycline sprays can reduce spread; always follow the product label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "পাতা ঝরার সময় ও কুঁড়ি ফোটার সময় কপার ভিত্তিক জীবাণুনাশক (যেমন কপার হাইড্রোক্সাইড) প্রয়োগ করুন।",
+      "নিবন্ধিত থাকলে অক্সিটেট্রাসাইক্লিন স্প্রে রোগ ছড়ানো কমায়; সবসময় প্রোডাক্ট লেবেল ও স্থানীয় কৃষি পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "پتے جھڑنے اور کلی پھوٹنے کے وقت کاپر مبنی جراثیم کش (مثلاً کاپر ہائیڈرو آکسائیڈ) اسپرے کریں۔",
+      "اجازت ہو تو آکسی ٹیٹراسائکلین کا اسپرے پھیلاؤ کم کرتا ہے؛ ہمیشہ پروڈکٹ لیبل اور مقامی زرعی مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis-based products during the season to reduce bacterial leaf infection.",
+      "Maintain orchard biodiversity and soil health to support natural disease suppression."
+    ],
+    "biological_control_bn": [
+      "মৌসুমে ব্যাসিলাস সাবটিলিস জাতীয় প্রস্তুতি স্প্রে করলে পাতার ব্যাকটেরিয়াজনিত সংক্রমণ কমে।",
+      "বাগানের জীববৈচিত্র্য ও মাটির স্বাস্থ্য বজায় রাখুন; এতে রোগ দমনের প্রাকৃতিক ক্ষমতা বাড়ে।"
+    ],
+    "biological_control_ur": [
+      "موسم کے دوران بیسیلس سب ٹیلیس (Bacillus subtilis) پر مبنی سپرے سے پتوں کا بیکٹیریل انفیکشن کم ہوتا ہے۔",
+      "باغ کی حیاتیاتی تنوع اور مٹی کی صحت برقرار رکھیں؛ اس سے بیماری روکنے کی قدرتی صلاحیت بہتر ہوتی ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Remove mummified fruit and infected wood in winter to cut next season's inoculum.",
+      "Irrigate at the base and only when leaves can dry quickly.",
+      "Select proven resistant varieties for any new orchard block."
+    ],
+    "prevention_tips_bn": [
+      "শীতকালে শুকনো মমি-জাতীয় ফল ও আক্রান্ত কাঠ অপসারণ করুন; এতে পরের মৌসুমের রোগের উৎস কমবে।",
+      "গাছের গোড়ায় পানি দিন এবং এমন সময়ে দিন যখন পাতা দ্রুত শুকাতে পারে।",
+      "নতুন বাগানে পরীক্ষিত প্রতিরোধী জাত বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "سردیوں میں مومی خشک میوے اور متاثرہ لکڑی ہٹا دیں تاکہ اگلے موسم کا انفیکشن ذریعہ کم ہو۔",
+      "درخت کی بنیاد پر پانی دیں اور اس وقت دیں جب پتے جلد خشک ہو سکیں۔",
+      "نئے باغ کے لیے آزمائے ہوئے مزاحم اقسام منتخب کریں۔"
+    ]
+  },
+  {
+    "id": "peach_healthy",
+    "cultural_control_en": [
+      "Keep pruning, fruit thinning and irrigation schedules on track to reduce tree stress.",
+      "Inspect leaves and fruit weekly for early disease symptoms.",
+      "Maintain balanced fertilization; excess nitrogen invites bacterial spot."
+    ],
+    "cultural_control_bn": [
+      "গাছের চাপ কমাতে ছাঁটাই, ফল পাতলা করা ও সেচের সময়সূচি ঠিক রাখুন।",
+      "সপ্তাহে একবার পাতা ও ফলে রোগের প্রাথমিক লক্ষণ পরীক্ষা করুন।",
+      "সুষম সার ব্যবস্থাপনা করুন; অতিরিক্ত ইউরিয়া ব্যাকটেরিয়াজনিত দাগ রোগের ঝুঁকি বাড়ায়।"
+    ],
+    "cultural_control_ur": [
+      "درخت پر دباؤ کم رکھنے کے لیے کٹائی، پھل پتلا کرنا اور آبپاشی کا شیڈول درست رکھیں۔",
+      "ہفتہ وار پتوں اور پھلوں میں بیماری کی ابتدائی علامات کا معائنہ کریں۔",
+      "متوازن کھاد استعمال کریں؛ زائد نائٹروجن بیکٹیریل اسپاٹ کا خطرہ بڑھا دیتی ہے۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Collect and destroy fallen leaves and mummified fruit after harvest.",
+      "Sanitize pruning tools between trees.",
+      "Plan a winter dormancy spray programme with your local agricultural extension office."
+    ],
+    "prevention_tips_bn": [
+      "ফসল তোলার পর ঝরে পড়া পাতা ও শুকনো মমি-জাতীয় ফল সংগ্রহ করে ধ্বংস করুন।",
+      "প্রতিটি গাছ ছাঁটার পর কাঁচি ও যন্ত্র জীবাণুমুক্ত করুন।",
+      "শীতের প্রতিরোধমূলক স্প্রে পরিকল্পনা স্থানীয় কৃষি সম্প্রসারণ অফিসের পরামর্শে করুন।"
+    ],
+    "prevention_tips_ur": [
+      "فصل کے بعد گری ہوئی پتیاں اور مومی خشک میوے اکٹھے کر کے تباہ کریں۔",
+      "ہر درخت کی کٹائی کے بعد کاٹنے والے اوزار جراثیم سے پاک کریں۔",
+      "سردیوں کے حفاظتی اسپرے کا منصوبہ مقامی زرعی دفتر کے مشورے سے بنائیں۔"
+    ]
+  },
+  {
+    "id": "pepper_bacterial_spot",
+    "cultural_control_en": [
+      "Use certified disease-free seed and resistant varieties.",
+      "Rotate peppers with non-solanaceous crops for at least 2-3 years.",
+      "Remove infected plants and debris; avoid working in the field when foliage is wet.",
+      "Use drip irrigation and wider spacing to keep leaves dry."
+    ],
+    "cultural_control_bn": [
+      "সার্টিফায়েড রোগমুক্ত বীজ ও প্রতিরোধী জাত ব্যবহার করুন।",
+      "কমপক্ষে ২-৩ বছরের জন্য টমেটো-আলু-বেগুন জাতীয় ফসল এড়িয়ে ফসল আবর্তন করুন।",
+      "আক্রান্ত গাছ ও আবর্জনা তুলে ফেলুন; পাতা ভেজা অবস্থায় জমিতে কাজ করবেন না।",
+      "পাতা শুকনো রাখতে ড্রিপ সেচ ব্যবহার করুন এবং চারার মধ্যে বেশি দূরত্ব রাখুন।"
+    ],
+    "cultural_control_ur": [
+      "سرٹیفائیڈ بیماری سے پاک بیج اور مزاحم اقسام استعمال کریں۔",
+      "کم از کم ۲-۳ سال کے لیے ٹماٹر-آلو-بینگن والی فصلوں سے روٹیشن کریں۔",
+      "متاثرہ پودے اور ملبہ ہٹا دیں؛ پتے بھیگے ہوں تو کھیت میں کام نہ کریں۔",
+      "پتوں کو خشک رکھنے کے لیے ڈرپ آبپاشی استعمال کریں اور پودوں میں زیادہ فاصلہ رکھیں۔"
+    ],
+    "chemical_control_en": [
+      "Apply copper-based bactericides (e.g. copper hydroxide) at first symptoms and repeat per label directions.",
+      "Copper mixed with mancozeb often works better; always follow the product label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "রোগের প্রাথমিক লক্ষণ দেখা দিলে কপার ভিত্তিক জীবাণুনাশক (যেমন কপার হাইড্রোক্সাইড) প্রয়োগ করুন এবং লেবেল অনুযায়ী দোহরান।",
+      "কপারের সাথে ম্যানকোজেব মেশানো স্প্রে প্রায়ই বেশি কার্যকর; সবসময় প্রোডাক্ট লেবেল ও স্থানীয় কৃষি পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "بیماری کی ابتدائی علامات پر کاپر مبنی جراثیم کش (مثلاً کاپر ہائیڈرو آکسائیڈ) اسپرے کریں اور لیبل کے مطابق دہرائیں۔",
+      "کاپر کے ساتھ مینکوزب کا ملاپ زیادہ مؤثر ہوتا ہے؛ ہمیشہ پروڈکٹ لیبل اور مقامی زرعی مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Bacillus subtilis sprays can suppress bacterial spot on foliage.",
+      "Neem-based products and Trichoderma soil applications support plant vigor."
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস স্প্রে পাতার ব্যাকটেরিয়াজনিত দাগ রোগ কমাতে সহায়ক।",
+      "নিম নির্যাস ও ট্রাইকোডার্মা মাটিতে প্রয়োগ করলে গাছের সবলতা বাড়ে।"
+    ],
+    "biological_control_ur": [
+      "بیسیلس سب ٹیلیس (Bacillus subtilis) کا اسپرے پتوں کے بیکٹیریل اسپاٹ کو کم کرتا ہے۔",
+      "نیم کی مصنوعات اور ٹرائیکوڈرما کا مٹی میں استعمال پودوں کی قوت بڑھاتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Solarize nursery beds and use clean trays and tools each season.",
+      "Dispose of crop debris far from the field after the final harvest.",
+      "Record disease hotspots and plant resistant varieties there next season."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি মৌসুমে বীজতলার মাটি রোদে শুকিয়ে (সোলারাইজেশন) জীবাণুমুক্ত করুন এবং পরিষ্কার ট্রে ও যন্ত্রপাতি ব্যবহার করুন।",
+      "শেষ ফসল তোলার পর জমির আবর্জনা দূরে সরিয়ে নিষ্পত্তি করুন।",
+      "রোগ বেশি হওয়া জায়গার তথ্য রাখুন; পরের মৌসুমে সেখানে প্রতিরোধী জাত লাগান।"
+    ],
+    "prevention_tips_ur": [
+      "ہر موسم میں نرسری کی مٹی کو سورج سے جراثیم سے پاک کریں اور صاف ٹرے اور اوزار استعمال کریں۔",
+      "آخری فصل کے بعد کھیت کا ملبہ دور جا کر ضائع کریں۔",
+      "بیماری کی زیادہ ہونے والی جگہوں کا ریکارڈ رکھیں؛ اگلے موسم وہاں مزاحم اقسام لگائیں۔"
+    ]
+  },
+  {
+    "id": "pepper_healthy",
+    "cultural_control_en": [
+      "Scout plants weekly for leaf lesions, especially after wet weather.",
+      "Water at the base in the morning so foliage dries quickly.",
+      "Keep weeds down to improve airflow around the canopy."
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার, বিশেষ করে ভেজা আবহাওয়ার পর, পাতায় দাগ আছে কি না দেখুন।",
+      "সকালে গোড়ায় পানি দিন যাতে পাতা দ্রুত শুকিয়ে যায়।",
+      "আগাছা পরিষ্কার রাখুন যাতে গাছের চারপাশে বাতাস চলাচল ভালো থাকে।"
+    ],
+    "cultural_control_ur": [
+      "ہفتہ وار پودوں کی نگرانی کریں، خاص طور پر گیلی موسم کے بعد پتوں کے دھبے دیکھیں۔",
+      "صبح بنیاد پر پانی دیں تاکہ پتے جلد خشک ہو جائیں۔",
+      "جڑی بوٹیاں صاف رکھیں تاکہ پودوں کے ارد گرد ہوا کا بہاؤ اچھا رہے۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Rotate with non-solanaceous crops next season and start from certified seed.",
+      "Clean stakes, trays and tools before storing them.",
+      "Choose resistant varieties when buying seed for the next planting."
+    ],
+    "prevention_tips_bn": [
+      "পরের মৌসুমে টমেটো-আলু-বেগুন জাতীয় ফসল এড়িয়ে ফসল আবর্তন করুন এবং সার্টিফায়েড বীজ দিয়ে শুরু করুন।",
+      "সংরক্ষণের আগে খুঁটি, ট্রে ও যন্ত্রপাতি পরিষ্কার করুন।",
+      "পরের রোপণের জন্য বীজ কেনার সময় প্রতিরোধী জাত বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں ٹماٹر-آلو-بینگن والی فصلوں سے روٹیشن کریں اور سرٹیفائیڈ بیج سے آغاز کریں۔",
+      "ذخیرہ کرنے سے پہلے کھمبے، ٹرے اور اوزار صاف کریں۔",
+      "اگلی بیجائی کے لیے بیج خریدتے وقت مزاحم اقسام منتخب کریں۔"
+    ]
+  },
+  {
+    "id": "potato_healthy",
+    "cultural_control_en": [
+      "Check fields weekly for leaf spots, wilting or unusual yellowing.",
+      "Use certified seed tubers and keep irrigation even to avoid plant stress.",
+      "Keep ridging (hilling) and weed control current to improve airflow around plants."
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার জমিতে পাতায় দাগ, শুকিয়ে যাওয়া বা অস্বাভাবিক হলুদভাব পরীক্ষা করুন।",
+      "সার্টিফায়েড বীজ আলু ব্যবহার করুন এবং সেচ নিয়মিত রাখুন যাতে গাছে চাপ না পড়ে।",
+      "আলুর গোড়ায় মাটি তুলে দিন (হিলিং) এবং আগাছা নিয়ন্ত্রণ রাখুন যাতে গাছের চারপাশে বাতাস চলে।"
+    ],
+    "cultural_control_ur": [
+      "ہفتہ وار کھیت میں پتوں کے دھبے، مرجھائی یا غیر معمولی زردی کا معائنہ کریں۔",
+      "سرٹیفائیڈ بیج آلو استعمال کریں اور آبپاشی برابر رکھیں تاکہ پودوں پر دباؤ نہ پڑے۔",
+      "آلو کی بنیاد پر مٹی چڑھائیں (ہلنگ) اور جڑی بوٹیاں قابو میں رکھیں تاکہ ہوا کا بہاؤ اچھا رہے۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Rotate away from tomato, pepper and eggplant crops for 2-3 seasons.",
+      "Store tubers in a cool, dry, ventilated place; discard diseased tubers before storage.",
+      "Destroy volunteer potatoes and crop residues before the next planting."
+    ],
+    "prevention_tips_bn": [
+      "পরের ২-৩ মৌসুম টমেটো, মরিচ ও বেগুন জাতীয় ফসল এড়িয়ে ফসল আবর্তন করুন।",
+      "আলু ঠান্ডা, শুকনো ও হাওয়া চলাচলের জায়গায় সংরক্ষণ করুন; রোগাক্রান্ত আলু বাদ দিন।",
+      "পরের রোপণের আগে বন্য/অবশিষ্ট আলুগাছ ও ফসলের ধ্বংসাবশেষ ধ্বংস করুন।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے ۲-۳ موسموں کے لیے ٹماٹر، مرچ اور بینگن والی فصلوں سے روٹیشن کریں۔",
+      "آلو کو ٹھنڈی، خشک اور ہوا دار جگہ پر ذخیرہ کریں؛ بیمار آلو الگ کر دیں۔",
+      "اگلی بیجائی سے پہلے خود رو آلو کے پودے اور فصلی ملبہ تباہ کریں۔"
+    ]
+  }
+]

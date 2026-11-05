@@ -18,6 +18,12 @@
 	<string>multi_crop_disease_detector</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera access is needed to photograph plant leaves for disease detection.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photo library access is needed to pick plant images for disease detection.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access is requested by the camera plugin for video capture; this app does not record audio.</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>

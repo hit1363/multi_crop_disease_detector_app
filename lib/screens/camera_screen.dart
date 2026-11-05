@@ -107,7 +107,7 @@ class _CameraScreenState extends State<CameraScreen>
       setState(() {
         _cameraController = null;
         _isInitializingCamera = false;
-        _cameraError = AppLocalizations.of(
+        _cameraError = AppLocalizations.read(
           context,
         ).text('camera_unavailable', values: {'error': '$error'});
       });
@@ -145,7 +145,7 @@ class _CameraScreenState extends State<CameraScreen>
         return;
       }
       _showError(
-        AppLocalizations.of(
+        AppLocalizations.read(
           context,
         ).text('capture_failed', values: {'error': '$error'}),
       );
@@ -183,7 +183,7 @@ class _CameraScreenState extends State<CameraScreen>
         return;
       }
       _showError(
-        AppLocalizations.of(
+        AppLocalizations.read(
           context,
         ).text('analysis_failed', values: {'error': '$error'}),
       );
@@ -253,7 +253,7 @@ class _CameraScreenState extends State<CameraScreen>
         return;
       }
       _showError(
-        AppLocalizations.of(
+        AppLocalizations.read(
           context,
         ).text('analysis_failed', values: {'error': '$error'}),
       );

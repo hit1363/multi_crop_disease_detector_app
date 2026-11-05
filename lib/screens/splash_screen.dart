@@ -13,10 +13,12 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  Timer? _navigationTimer;
+
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(milliseconds: 900), () {
+    _navigationTimer = Timer(const Duration(milliseconds: 900), () {
       if (!mounted) {
         return;
       }
@@ -25,6 +27,12 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
       ).pushReplacement(MaterialPageRoute(builder: (_) => const HomeScreen()));
     });
+  }
+
+  @override
+  void dispose() {
+    _navigationTimer?.cancel();
+    super.dispose();
   }
 
   @override
