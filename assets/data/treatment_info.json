@@ -1,2080 +1,2381 @@
 [
   {
     "id": "tomato_early_blight",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Early Blight",
-    "name_bn": "আর্লি ব্লাইট",
-    "name_ur": "ارلی بلائٹ",
-    "scientific_name": "Alternaria solani",
-    "severity": "moderate",
-    "description_en": "Early blight is a common fungal disease affecting tomatoes. It appears as dark brown spots with concentric rings on older leaves, eventually causing leaf yellowing and drop.",
-    "description_bn": "আর্লি ব্লাইট টমেটোর একটি সাধারণ ছত্রাকজনিত রোগ। এটি পুরনো পাতায় বৃত্তাকার রিংসহ গাঢ় বাদামি দাগ হিসেবে দেখা যায় এবং শেষে পাতা হলুদ হয়ে ঝরে পড়ে।",
-    "description_ur": "ارلی بلائٹ ٹماٹر میں ایک عام فنگسی بیماری ہے۔ یہ پرانے پتوں پر ہم مرکز دائروں والے گہرے بھورے دھبوں کی صورت میں ظاہر ہوتی ہے اور آخرکار پتوں کے زرد ہو کر گرنے کا سبب بنتی ہے۔",
-    "symptoms_en": [
-      "Dark brown spots with concentric rings (target-like)",
-      "Yellowing of older leaves",
-      "Leaf drop starting from bottom of plant",
-      "Stem lesions near soil line",
-      "Fruit rot near calyx"
+    "cultural_control_en": [
+      "Remove and destroy infected lower leaves as soon as dark target-like spots appear.",
+      "Rotate tomatoes with unrelated crops for at least 2-3 years.",
+      "Stake plants and space them widely for good airflow.",
+      "Mulch and water at soil level to keep foliage dry."
     ],
-    "symptoms_bn": [
-      "বৃত্তাকার রিংসহ গাঢ় বাদামি দাগ (টার্গেটের মতো)",
-      "পুরনো পাতায় হলদে ভাব",
-      "গাছের নিচের দিক থেকে পাতা ঝরা",
-      "মাটির কাছাকাছি কাণ্ডে ক্ষত/দাগ",
-      "ফলের ক্যালিক্স অংশের কাছে পচন"
+    "cultural_control_bn": [
+      "গাঢ় দাগ দেখা মাত্রই নিচের আক্রান্ত পাতা তুলে ধ্বংস করুন।",
+      "কমপক্ষে ২-৩ বছর টমেটোর বদলে অন্য ফসল চাষ করে ফসল পর্যায় মানুন।",
+      "চারা খুঁটিতে বাঁধুন এবং ভালো বাতাস চলাচলের জন্য পর্যাপ্ত দূরত্বে রোপণ করুন।",
+      "মালচিং করুন এবং পাতা ভেজা রাখতে না পারার জন্য গোড়ায় পানি দিন।"
     ],
-    "symptoms_ur": [
-      "ہم مرکز دائروں والے گہرے بھورے دھبے (ہدف نما)",
-      "پرانے پتوں کا پیلا ہونا",
-      "پودے کے نچلے حصے سے پتوں کا گرنا",
-      "مٹی کے قریب تنے پر زخم",
-      "پھل کے کَیلیکس کے قریب سڑن"
+    "cultural_control_ur": [
+      "گہرے دھبے نظر آنے پر فوراً نیچے کے متاثرہ پتے توڑ کر تباہ کر دیں۔",
+      "کم از کم ۲-۳ سال ٹماٹر کی جگہ دوسری فصلیں اگا کر فصل کی گردش کریں۔",
+      "پودوں کو سہارا دیں اور ہوا کی اچھی گردش کے لیے مناسب فاصلے پر لگائیں۔",
+      "ملچنگ کریں اور پتے گیلا رکھنے سے بچنے کے لیے مٹی کی سطح پر پانی دیں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm temperatures (24-29°C)",
-      "High humidity",
-      "Long periods of leaf wetness",
-      "Poor air circulation",
-      "Nitrogen deficiency"
+    "chemical_control_en": [
+      "Spray protectant fungicides such as chlorothalonil or mancozeb at the first symptoms.",
+      "Copper-based fungicides also help when applied early.",
+      "Always follow the product label and local agricultural extension advice."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ তাপমাত্রা (24-29°C)",
-      "উচ্চ আর্দ্রতা",
-      "পাতা দীর্ঘক্ষণ ভেজা থাকা",
-      "বাতাস চলাচল কম",
-      "নাইট্রোজেনের ঘাটতি"
+    "chemical_control_bn": [
+      "প্রথম লক্ষণ দেখা মাত্র ক্লোরোথালোনিল বা ম্যানকোজেব জাতীয় ছত্রাকনাশক স্প্রে করুন।",
+      "প্রাথমিক পর্যায়ে প্রয়োগ করলে তামা-ভিত্তিক ছত্রাকনাশকও উপকারী।",
+      "সবসময় পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তাদের পরামর্শ অনুসরণ করুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم درجہ حرارت (24-29°C)",
-      "زیادہ نمی",
-      "پتوں کا طویل وقت تک نم رہنا",
-      "ہوا کی ناکافی گردش",
-      "نائٹروجن کی کمی"
+    "chemical_control_ur": [
+      "پہلی علامات پر کلوروٹھالونل یا مینکوزب جیسے فنگی سائیڈ کا چھڑکاؤ کریں۔",
+      "شروع میں لگائیں تو تانبے پر مبنی فنگی سائیڈ بھی مفید ہیں۔",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں۔"
     ],
-    "spread_en": "Spreads by wind-blown spores, water splash, and contaminated tools",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, পানির ছিটা এবং দূষিত যন্ত্রপাতির মাধ্যমে ছড়ায়",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، پانی کے چھینٹے اور آلودہ اوزار سے پھیلتی ہے"
+    "biological_control_en": [
+      "Apply Bacillus subtilis or Trichoderma-based biofungicides.",
+      "Spray neem oil as a supplementary protective treatment."
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস বা ট্রাইকোডার্মা-ভিত্তিক জৈব ছত্রাকনাশক প্রয়োগ করুন।",
+      "অতিরিক্ত সুরক্ষা হিসেবে নিম তেল স্প্রে করুন।"
+    ],
+    "biological_control_ur": [
+      "باسیلس سبٹیلیس یا ٹرائیکوڈرما پر مبنی بائیو فنگی سائیڈ لگائیں۔",
+      "اضافی تحفظ کے لیے نیم کا تیل چھڑکیں۔"
+    ],
+    "prevention_tips_en": [
+      "Plant certified disease-free seed and resistant varieties.",
+      "Clear all tomato debris at season's end to cut carryover spores.",
+      "Avoid overhead irrigation; water early in the day at the base."
+    ],
+    "prevention_tips_bn": [
+      "রোগমুক্ত প্রত্যয়িত বীজ ও প্রতিরোধী জাত বপন করুন।",
+      "মৌসুম শেষে টমেটোর সব আবর্জনা সরিয়ে ফেলুন যাতে স্পোর না থাকে।",
+      "পাতায় পানি দেবেন না; দিনের শুরুতে গোড়ায় পানি দিন।"
+    ],
+    "prevention_tips_ur": [
+      "تصدیق شدہ صاف بیج اور بیماری برداشت کرنے والی اقسام لگائیں۔",
+      "موسم ختم ہونے پر ٹماٹر کا تمام ملبہ ہٹا دیں تاکہ بیضے باقی نہ رہیں۔",
+      "پتوں پر پانی نہ دیں؛ دن کے شروع میں بنیاد پر پانی دیں۔"
+    ]
   },
   {
     "id": "potato_late_blight",
-    "crop_en": "Potato",
-    "crop_bn": "আলু",
-    "crop_ur": "آلو",
-    "name_en": "Late Blight",
-    "name_bn": "লেট ব্লাইট",
-    "name_ur": "لیٹ بلائٹ",
-    "scientific_name": "Phytophthora infestans",
-    "severity": "severe",
-    "description_en": "Late blight is a devastating disease that can destroy entire potato crops within days. It's the same disease that caused the Irish Potato Famine.",
-    "description_bn": "লেট ব্লাইট একটি বিধ্বংসী রোগ যা কয়েক দিনের মধ্যে সম্পূর্ণ আলুর ক্ষেত নষ্ট করতে পারে। এটি আইরিশ পটেটো ফ্যামিন সৃষ্টিকারী একই রোগ।",
-    "description_ur": "لیٹ بلائٹ ایک تباہ کن بیماری ہے جو چند دنوں میں آلو کی پوری فصل کو برباد کر سکتی ہے۔ یہی بیماری آئرش پوٹیٹو قحط کا سبب بنی تھی۔",
-    "symptoms_en": [
-      "Water-soaked spots on leaves",
-      "White fungal growth on leaf undersides",
-      "Rapid browning and death of foliage",
-      "Dark brown lesions on stems",
-      "Brown rot of tubers"
+    "cultural_control_en": [
+      "Plant certified disease-free seed tubers only.",
+      "Destroy infected plants and volunteer potatoes immediately.",
+      "Hill soil well and space rows for fast drying; avoid overhead watering."
     ],
-    "symptoms_bn": [
-      "পাতায় পানিভেজা দাগ",
-      "পাতার নিচে সাদা ছত্রাকের বৃদ্ধি",
-      "পাতা দ্রুত বাদামী হয়ে শুকিয়ে যাওয়া",
-      "কাণ্ডে গাঢ় বাদামি ক্ষত",
-      "কন্দে বাদামি পচন"
+    "cultural_control_bn": [
+      "শুধুমাত্র রোগমুক্ত প্রত্যয়িত বীজ আলু রোপণ করুন।",
+      "আক্রান্ত গাছ ও অবাঞ্ছিত আলু গাছ সঙ্গে সঙ্গে ধ্বংস করুন।",
+      "গাছের গোড়ায় মাটি ভালোভাবে তুলে দিন এবং সারির মধ্যে দূরত্ব রাখুন; পাতায় পানি দেবেন না।"
     ],
-    "symptoms_ur": [
-      "پتوں پر پانی سے بھیگے دھبے",
-      "پتوں کی نچلی سطح پر سفید پھپھوندی",
-      "پتوں کا تیزی سے بھورا ہونا اور مرجھا جانا",
-      "تنے پر گہرے بھورے زخم",
-      "گٹھوں میں بھورا سڑاؤ"
+    "cultural_control_ur": [
+      "صرف تصدیق شدہ بیماری سے پاک بیج کے کنڈے لگائیں۔",
+      "متاثرہ پودوں اور بچھڑے ہوئے آلو کے پودوں کو فوراً تباہ کر دیں۔",
+      "پودوں کی بنیاد پر مٹی چڑھائیں اور قطاروں میں فاصلہ رکھیں؛ پتوں پر پانی نہ دیں۔"
     ],
-    "favorable_conditions_en": [
-      "Cool temperatures (15-20°C)",
-      "High humidity (>90%)",
-      "Frequent rain or heavy dew",
-      "Cloudy weather"
+    "chemical_control_en": [
+      "Use protectant fungicides such as mancozeb or chlorothalonil before wet weather.",
+      "Systemic products, for example cymoxanil or metalaxyl-based, may be needed in high pressure.",
+      "Follow the product label and consult local agricultural extension officers."
     ],
-    "favorable_conditions_bn": [
-      "শীতল তাপমাত্রা (15-20°C)",
-      "উচ্চ আর্দ্রতা (>90%)",
-      "বারবার বৃষ্টি বা ঘন শিশির",
-      "মেঘলা আবহাওয়া"
+    "chemical_control_bn": [
+      "আর্দ্র আবহাওয়ার আগে ম্যানকোজেব বা ক্লোরোথালোনিল জাতীয় প্রতিরোধমূলক ছত্রাকনাশক ব্যবহার করুন।",
+      "সংক্রমণ বাড়লে সিস্টেমিক ছত্রাকনাশক, যেমন সাইমোক্সানিল, প্রয়োজন হতে পারে।",
+      "পণ্যের লেবেল অনুসরণ করুন এবং স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তাদের পরামর্শ নিন।"
     ],
-    "favorable_conditions_ur": [
-      "ٹھنڈا درجہ حرارت (15-20°C)",
-      "زیادہ نمی (>90%)",
-      "بار بار بارش یا زیادہ شبنم",
-      "ابر آلود موسم"
+    "chemical_control_ur": [
+      "گیلے موسم سے پہلے مینکوزب یا کلوروٹھالونل جیسے حفاظتی فنگی سائیڈ استعمال کریں۔",
+      "شدید حملے میں سسٹیمیٹک فنگی سائیڈ، مثلاً سائی موکسانل، درکار ہو سکتے ہیں۔",
+      "مصنوعات کے لیبل پر عمل کریں اور مقامی زرعی ایکسٹینشن افسران سے رجوع کریں۔"
     ],
-    "spread_en": "Spreads rapidly by airborne spores, especially in wet weather",
-    "spread_bn": "ভেজা আবহাওয়ায় বাতাসে ভেসে যাওয়া স্পোরের মাধ্যমে দ্রুত ছড়ায়",
-    "spread_ur": "نم موسم میں ہوا کے ذریعے تیزی سے پھیلنے والے اسپورز سے پھیلتی ہے"
+    "biological_control_en": [
+      "Copper-based products give partial protection in organic programs.",
+      "Some Bacillus-based biofungicides can supplement, not replace, protective sprays."
+    ],
+    "biological_control_bn": [
+      "জৈব চাষে তামা-ভিত্তিক পণ্য আংশিক সুরক্ষা দেয়।",
+      "ব্যাসিলাস-ভিত্তিক জৈব ছত্রাকনাশক প্রতিরোধমূলক স্প্রের পরিপূরক হতে পারে, বিকল্প নয়।"
+    ],
+    "biological_control_ur": [
+      "نامیاتی کاشت میں تانبے پر مبنی مصنوعات جزوی تحفظ دیتی ہیں۔",
+      "باسیلس پر مبنی بائیو فنگی سائیڈ حفاظتی اسپرے کے مکمل ہو سکتے ہیں، متبادل نہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Start each season with certified seed and clean, well-drained fields.",
+      "Remove cull piles and volunteer plants before planting.",
+      "Harvest in dry weather and store only cool, dry, healthy tubers."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি মৌসুমে প্রত্যয়িত বীজ ও পরিষ্কার, সুনিষ্কাশন জমি দিয়ে শুরু করুন।",
+      "রোপণের আগে ফেলে রাখা আলুর স্তূপ ও আবর্জনার গাছ সরান।",
+      "শুষ্ক আবহাওয়ায় ফসল তুলুন এবং শীতল, শুষ্ক ও সুস্থ আলুই সংরক্ষণ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر موسم کا آغاز تصدیق شدہ بیج اور صاف، اچھی نکاسی والے کھیت سے کریں۔",
+      "بونے سے پہلے ضائع آلو کے ڈھیر اور خود رو پودے ہٹا دیں۔",
+      "خشک موسم میں فصل اکٹھی کریں اور صرف ٹھنڈے، خشک، صحت مند کنڈے ذخیرہ کریں۔"
+    ]
   },
   {
     "id": "corn_northern_leaf_blight",
-    "crop_en": "Corn",
-    "crop_bn": "ভুট্টা",
-    "crop_ur": "مکئی",
-    "name_en": "Northern Leaf Blight",
-    "name_bn": "নর্দার্ন লিফ ব্লাইট",
-    "name_ur": "ناردن لیف بلائٹ",
-    "scientific_name": "Exserohilum turcicum",
-    "severity": "moderate",
-    "description_en": "Northern leaf blight is a fungal disease causing long, cigar-shaped lesions on corn leaves, reducing photosynthetic area and yield.",
-    "description_bn": "নর্দার্ন লিফ ব্লাইট ভুট্টার একটি ছত্রাকজনিত রোগ যা পাতায় লম্বা সিগারের মতো দাগ তৈরি করে, ফলে আলোকসংস্লেষণ কমে যায় এবং ফলন কমে।",
-    "description_ur": "ناردن لیف بلائٹ مکئی کی ایک فنگسی بیماری ہے جو پتوں پر لمبی سگار نما دھبے بناتی ہے، جس سے ضیائی تالیف کم اور پیداوار گھٹ جاتی ہے۔",
-    "symptoms_en": [
-      "Long, elliptical gray-green lesions",
-      "Lesions become tan and papery",
-      "Start on lower leaves, progress upward",
-      "Can cover entire leaf blade",
-      "Reduced yield due to premature leaf death"
+    "cultural_control_en": [
+      "Plant resistant hybrids where available.",
+      "Rotate corn with unrelated crops and bury or plow down infected residue."
     ],
-    "symptoms_bn": [
-      "লম্বা উপবৃত্তাকার ধূসর-সবুজ দাগ",
-      "দাগগুলো খয়েরি ও কাগজের মতো হয়ে যায়",
-      "নিচের পাতা থেকে শুরু হয়ে ওপরে ছড়ায়",
-      "পুরো পাতার অংশ ঢেকে ফেলতে পারে",
-      "পাতা আগেই মরে যাওয়ায় ফলন কমে"
+    "cultural_control_bn": [
+      "সম্ভব হলে রোগ প্রতিরোধী হাইব্রিড জাত বপন করুন।",
+      "ভুট্টার সাথে অসম্পর্কিত ফসলের পর্যায় চালান এবং আক্রান্ত আবর্জনা মাটিচাপা দিন।"
     ],
-    "symptoms_ur": [
-      "لمبے بیضوی سرمئی سبز دھبے",
-      "دھبے خاکی اور کاغذی ہو جاتے ہیں",
-      "نچلے پتوں سے شروع ہو کر اوپر پھیلتے ہیں",
-      "پورے پتے کو ڈھانپ سکتے ہیں",
-      "پتے قبل از وقت مرنے سے پیداوار کم ہو جاتی ہے"
+    "cultural_control_ur": [
+      "ممکن ہو تو بیماری برداشت کرنے والے ہائبرڈ اقسام لگائیں۔",
+      "مکئی کے ساتھ غیر متعلق فصلوں کی گردش کریں اور متاثرہ ملبے کو مٹی میں دبا دیں۔"
     ],
-    "favorable_conditions_en": [
-      "Moderate temperatures (18-27°C)",
-      "High humidity",
-      "Extended dew periods",
-      "Susceptible corn varieties"
+    "chemical_control_en": [
+      "Scout lower leaves; fungicides such as azoxystrobin or propiconazole protect the ear leaf.",
+      "Time sprays between tasseling and early silking when lesions are spreading.",
+      "Follow the product label and local extension recommendations."
     ],
-    "favorable_conditions_bn": [
-      "মধ্যম তাপমাত্রা (18-27°C)",
-      "উচ্চ আর্দ্রতা",
-      "দীর্ঘ সময় শিশির থাকা",
-      "সংবেদনশীল ভুট্টার জাত"
+    "chemical_control_bn": [
+      "নিচের পাতা পর্যবেক্ষণ করুন; অ্যাজোক্সিস্ট্রোবিন বা প্রোপিকোনাজল জাতীয় ছত্রাকনাশক গুরুত্বপূর্ণ পাতা রক্ষা করে।",
+      "দাগ ছড়াতে থাকলে শীর্ষমঞ্জরি থেকে সিল্ক বের হওয়ার সময়ের মধ্যে স্প্রে করুন।",
+      "পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণের পরামর্শ অনুসরণ করুন।"
     ],
-    "favorable_conditions_ur": [
-      "معتدل درجہ حرارت (18-27°C)",
-      "زیادہ نمی",
-      "طویل عرصے تک شبنم رہنا",
-      "حساس مکئی کی اقسام"
+    "chemical_control_ur": [
+      "نیچے کے پتوں کا معائنہ کریں؛ ایزوآکسی سٹروبین یا پروپیکونازول جیسے فنگی سائیڈ اہم پتوں کی حفاظت کرتے ہیں۔",
+      "دھبے پھیل رہے ہوں تو بال ٹیسیل اور ریشے نکلنے کے درمیان اسپرے کریں۔",
+      "مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں۔"
     ],
-    "spread_en": "Wind-blown spores from infected crop debris",
-    "spread_bn": "আক্রান্ত ফসলের অবশিষ্টাংশ থেকে বাতাসে ভেসে যাওয়া স্পোরের মাধ্যমে ছড়ায়",
-    "spread_ur": "متاثرہ فصل کے ملبے سے ہوا کے ذریعے اڑنے والے اسپورز سے پھیلتی ہے"
+    "biological_control_en": [
+      "Bacillus subtilis biofungicides can reduce leaf infection when applied early.",
+      "Trichoderma soil amendments help decompose infected residue."
+    ],
+    "biological_control_bn": [
+      "প্রাথমিক পর্যায়ে প্রয়োগ করলে ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক পাতার সংক্রমণ কমায়।",
+      "মাটিতে ট্রাইকোডার্মা মেশালে আক্রান্ত আবর্জনা দ্রুত পচে যায়।"
+    ],
+    "biological_control_ur": [
+      "شروع میں لگائیں تو باسیلس سبٹیلیس بائیو فنگی سائیڈ پتوں کے انفیکشن کم کرتے ہیں۔",
+      "مٹی میں ٹرائیکوڈرما ملا دینے سے متاثرہ ملبہ جلد گل جاتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Plow under or compost corn residue after harvest.",
+      "Keep 2-3 years between corn crops in the same field.",
+      "Choose resistant hybrids every season."
+    ],
+    "prevention_tips_bn": [
+      "ফসল তোলার পর ভুট্টার আবর্জনা মাটিতে মিশিয়ে দিন বা কম্পোস্ট করুন।",
+      "একই জমিতে ভুট্টা চাষের মধ্যে ২-৩ বছর বিরতি রাখুন।",
+      "প্রতি মৌসুমে রোগ প্রতিরোধী হাইব্রিড বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "کٹائی کے بعد مکئی کا ملبہ مٹی میں ملا دیں یا کمپوسٹ بنائیں۔",
+      "ایک ہی کھیت میں مکئی کی فصلوں کے درمیان ۲-۳ سال کا وقفہ رکھیں۔",
+      "ہر موسم بیماری برداشت کرنے والے ہائبرڈ کا انتخاب کریں۔"
+    ]
   },
   {
     "id": "apple_scab",
-    "crop_en": "Apple",
-    "crop_bn": "আপেল",
-    "crop_ur": "سیب",
-    "name_en": "Apple Scab",
-    "name_bn": "অ্যাপল স্ক্যাব",
-    "name_ur": "ایپل اسکیب",
-    "scientific_name": "Venturia inaequalis",
-    "severity": "moderate",
-    "description_en": "Apple scab is the most serious disease of apple trees, causing dark, scabby lesions on leaves and fruit.",
-    "description_bn": "অ্যাপল স্ক্যাব আপেল গাছের সবচেয়ে গুরুতর রোগ, যা পাতায় ও ফলের ওপর গাঢ় খসখসে ক্ষত সৃষ্টি করে।",
-    "description_ur": "ایپل اسکیب سیب کے درختوں کی ایک سنگین بیماری ہے جو پتوں اور پھل پر گہرے خارش دار دھبے بناتی ہے۔",
-    "symptoms_en": [
-      "Olive-green to brown spots on leaves",
-      "Velvety texture on lesions",
-      "Scabby lesions on fruit",
-      "Premature leaf drop",
-      "Deformed fruit"
+    "cultural_control_en": [
+      "Rake and destroy or compost fallen leaves in autumn.",
+      "Prune the canopy to improve airflow and faster drying.",
+      "Plant scab-resistant varieties when establishing new orchards."
     ],
-    "symptoms_bn": [
-      "পাতায় জলপাই সবুজ থেকে বাদামি দাগ",
-      "ক্ষতে মসৃণ-মখমলি ভাব",
-      "ফলে খসখসে ক্ষত",
-      "পাতা আগেই ঝরে পড়া",
-      "ফল বিকৃত হওয়া"
+    "cultural_control_bn": [
+      "শরৎকালে ঝরে পড়া পাতা ঝাড়ু দিয়ে তুলে ধ্বংস করুন বা কম্পোস্ট করুন।",
+      "বাতাস চলাচল ও দ্রুত শুকানোর জন্য গাছের ছাউনি ছাঁটাই করুন।",
+      "নতুন বাগান স্থাপনের সময় রোগ প্রতিরোধী জাত বেছে নিন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر زیتونی سبز سے بھورے دھبے",
-      "زخموں پر مخملی ساخت",
-      "پھل پر خارش دار دھبے",
-      "پتوں کا وقت سے پہلے گرنا",
-      "پھل کا بگڑ جانا"
+    "cultural_control_ur": [
+      "خزاں میں گرتے ہوئے پتے جھاڑ کر اکٹھے کریں اور تباہ کریں یا کمپوسٹ بنائیں۔",
+      "ہوا کی گردش اور جلد خشک ہونے کے لیے درخت کا تاج کاٹ کر کھلا کریں۔",
+      "نئے باغ لگاتے وقت بیماری برداشت کرنے والی اقسام کا انتخاب کریں۔"
     ],
-    "favorable_conditions_en": [
-      "Cool, wet spring weather",
-      "Temperatures 15-24°C",
-      "Frequent rain during bloom",
-      "Poor air circulation"
+    "chemical_control_en": [
+      "Apply protectant fungicides such as captan, sulfur, or myclobutanil from green tip through bloom.",
+      "Copper or lime-sulfur sprays at bud break can reduce early infection.",
+      "Follow the label and your local extension spray schedule."
     ],
-    "favorable_conditions_bn": [
-      "শীতল ও ভেজা বসন্তকাল",
-      "তাপমাত্রা 15-24°C",
-      "ফুল ফোটা সময় বারবার বৃষ্টি",
-      "বাতাস চলাচল কম"
+    "chemical_control_bn": [
+      "কুঁড়ি ফোটার শুরু থেকে ফুল ফোটা পর্যন্ত ক্যাপ্টান, সালফার বা মাইক্লোবুটানিল জাতীয় ছত্রাকনাশক প্রয়োগ করুন।",
+      "কুঁড়ি ফোটার সময় তামা বা চুন-সালফার স্প্রে প্রাথমিক সংক্রমণ কমায়।",
+      "লেবেল অনুসরণ করুন এবং স্থানীয় কৃষি বিভাগের স্প্রে-তালিকা মেনে চলুন।"
     ],
-    "favorable_conditions_ur": [
-      "ٹھنڈی اور گیلی بہار",
-      "درجہ حرارت 15-24°C",
-      "پھول آنے کے دوران بار بار بارش",
-      "ہوا کی کم گردش"
+    "chemical_control_ur": [
+      "کلی کھلنے سے پھول آنے تک کیپٹن، گندھک یا مائکلو بیوٹانل جیسے فنگی سائیڈ لگائیں۔",
+      "کلی کھلنے کے وقت تانبا یا چونے والی گندھک کا اسپرے ابتدائی انفیکشن کم کرتا ہے۔",
+      "لیبل پر عمل کریں اور مقامی زرعی ایکسٹینشن کے اسپرے شیڈول کی پیروی کریں۔"
     ],
-    "spread_en": "Spores released from fallen leaves, spread by rain splash",
-    "spread_bn": "ঝরে পড়া পাতার স্পোর বৃষ্টির ছিটায় ছড়ায়",
-    "spread_ur": "گرے ہوئے پتوں سے خارج ہونے والے اسپورز بارش کے چھینٹوں سے پھیلتے ہیں"
+    "biological_control_en": [
+      "Sulfur and copper compounds are accepted options in organic orchards.",
+      "Bacillus subtilis and Trichoderma products may supplement leaf-litter treatment."
+    ],
+    "biological_control_bn": [
+      "জৈব বাগানে সালফার ও তামার যৌগ গ্রহণযোগ্য বিকল্প।",
+      "ব্যাসিলাস সাবটিলিস ও ট্রাইকোডার্মা পণ্য ঝরা পাতার ব্যবস্থাপনায় সহায়ক হতে পারে।"
+    ],
+    "biological_control_ur": [
+      "نامیاتی باغات میں گندھک اور تانبے کے مرکبات قابل قبول آپشن ہیں۔",
+      "باسیلس سبٹیلیس اور ٹرائیکوڈرما کی مصنوعات گرے پتوں کے انتظام میں معاون ہو سکتی ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Shred or remove leaf litter each fall to cut the spring spore load.",
+      "Keep trees open and vigorous with yearly pruning and balanced fertilizer.",
+      "Choose resistant cultivars for new plantings."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি শরৎে ঝরা পাতা গুঁড়া করে মিশিয়ে দিন বা সরিয়ে ফেলুন যাতে বসন্তে স্পোর কমে।",
+      "বছরে ছাঁটাই ও সুষম সার দিয়ে গাছ খোলামেলা ও সবল রাখুন।",
+      "নতুন রোপণের জন্য রোগ প্রতিরোধী জাত বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر خزاں گرے پتے کاٹ کر ملا دیں یا ہٹا دیں تاکہ بہار میں بیضے کم ہوں۔",
+      "سالانہ چھالائی اور متوازن کھاد سے درخت کھلے اور توانا رکھیں۔",
+      "نئی پودائی کے لیے محفوظ اقسام منتخب کریں۔"
+    ]
   },
   {
     "id": "grape_black_rot",
-    "crop_en": "Grape",
-    "crop_bn": "আঙ্গুর",
-    "crop_ur": "انگور",
-    "name_en": "Black Rot",
-    "name_bn": "ব্ল্যাক রট",
-    "name_ur": "بلیک راٹ",
-    "scientific_name": "Guignardia bidwellii",
-    "severity": "severe",
-    "description_en": "Black rot is a serious fungal disease of grapes causing complete fruit loss if not controlled.",
-    "description_bn": "ব্ল্যাক রট আঙ্গুরের একটি গুরুতর ছত্রাকজনিত রোগ যা নিয়ন্ত্রণ না করলে সম্পূর্ণ ফলন নষ্ট করতে পারে।",
-    "description_ur": "بلیک راٹ انگور کی ایک سنگین فنگسی بیماری ہے جو قابو نہ پانے پر پوری فصل کو نقصان پہنچا سکتی ہے۔",
-    "symptoms_en": [
-      "Circular tan spots with dark border on leaves",
-      "Dark lesions on shoots and tendrils",
-      "Brown spots on young berries",
-      "Berries shrivel and turn into mummies",
-      "Complete cluster infection possible"
+    "cultural_control_en": [
+      "Prune out mummified berries and infected canes during dormancy.",
+      "Remove or bury all diseased fruit and leaf litter from the vineyard.",
+      "Train vines and manage weeds so clusters dry quickly."
     ],
-    "symptoms_bn": [
-      "পাতায় গাঢ় কিনারাযুক্ত গোল খয়েরি দাগ",
-      "কচি ডাল ও টেন্ড্রিলে গাঢ় ক্ষত",
-      "কচি বেরিতে বাদামি দাগ",
-      "বেরি কুঁচকে মমির মতো হয়ে যায়",
-      "সম্পূর্ণ থোকা সংক্রমিত হতে পারে"
+    "cultural_control_bn": [
+      "গাছ ঘুমন্ত অবস্থায় শুকিয়ে কালো হয়ে যাওয়া বেরি ও রোগাক্রান্ত ডাল ছাঁটাই করুন।",
+      "আঙুর ক্ষেত থেকে সব রোগাক্রান্ত ফল ও ঝরা পাতা সরিয়ে ফেলুন বা মাটিচাপা দিন।",
+      "ভাইন গুছিয়ে বাঁধুন এবং আগাছা নিয়ন্ত্রণ করুন যাতে মুকুল দ্রুত শুকায়।"
     ],
-    "symptoms_ur": [
-      "پتوں پر گہرے کناروں والے گول خاکی دھبے",
-      "نئی شاخوں اور ٹینڈرلز پر گہرے زخم",
-      "نوجوان بیریوں پر بھورے دھبے",
-      "بیریاں سکڑ کر ممی جیسی بن جاتی ہیں",
-      "پورا گچھا متاثر ہو سکتا ہے"
+    "cultural_control_ur": [
+      "سردیوں میں سیاہ، مرجھائی ہوئی بیریاں اور متاثرہ شاخیں کاٹ کر ہٹا دیں۔",
+      "انگور کے باغ سے تمام بیمار پھل اور گرے پتے ہٹا دیں یا مٹی میں دبا دیں۔",
+      "بیلوں کو جوڑ باندھیں اور جڑی بوٹیاں قابو میں رکھیں تاکہ خوشے جلد خشک ہوں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm temperatures (25-30°C)",
-      "High humidity",
-      "Frequent rainfall",
-      "Poor sanitation"
+    "chemical_control_en": [
+      "Spray fungicides such as myclobutanil, mancozeb, or captan from pre-bloom to 4 weeks after bloom.",
+      "Early-season coverage is critical because spores splash from old mummies in rain.",
+      "Follow the product label and local extension guidance."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ তাপমাত্রা (25-30°C)",
-      "উচ্চ আর্দ্রতা",
-      "বারবার বৃষ্টি",
-      "পরিচ্ছন্নতার অভাব"
+    "chemical_control_bn": [
+      "ফুল আসার আগে থেকে ফুল ফোটার ৪ সপ্তাহ পর্যন্ত মাইক্লোবুটানিল, ম্যানকোজেব বা ক্যাপ্টান জাতীয় ছত্রাকনাশক স্প্রে করুন।",
+      "পুরনো শুকনো বেরি থেকে বৃষ্টির ছিটে স্পোর ছড়ায়, তাই মৌসুমের শুরুর স্প্রে অত্যন্ত জরুরি।",
+      "পণ্যের লেবেল ও স্থানীয় কৃষি পরামর্শ অনুসরণ করুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم درجہ حرارت (25-30°C)",
-      "زیادہ نمی",
-      "بار بار بارش",
-      "ناقص صفائی"
+    "chemical_control_ur": [
+      "پھول آنے سے پہلے سے پھول کے چار ہفتے بعد تک مائکلو بیوٹانل، مینکوزب یا کیپٹن جیسے فنگی سائیڈ اسپرے کریں۔",
+      "پرانی خشک بیریوں سے بارش کے چھینٹوں سے بیضے پھیلتے ہیں، اس لیے موسم کے شروع کا اسپرے ضروری ہے۔",
+      "مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی رہنمائی پر عمل کریں۔"
     ],
-    "spread_en": "Rain splash from mummified berries and infected plant debris",
-    "spread_bn": "মমি হওয়া বেরি ও আক্রান্ত উদ্ভিদের অবশিষ্টাংশ থেকে বৃষ্টির ছিটায় ছড়ায়",
-    "spread_ur": "ممی بنی بیریوں اور متاثرہ پودوں کے ملبے سے بارش کے چھینٹوں کے ذریعے پھیلتی ہے"
-  },
-  {
-    "id": "healthy",
-    "crop_en": "General",
-    "crop_bn": "সাধারণ",
-    "crop_ur": "عمومی",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Plant appears healthy with no obvious disease symptoms.",
-    "description_bn": "গাছে সুস্থতার লক্ষণ রয়েছে, স্পষ্ট রোগের উপসর্গ নেই।",
-    "description_ur": "پودا صحت مند نظر آتا ہے، بیماری کی واضح علامات نہیں ہیں۔",
-    "symptoms_en": [
-      "No visible disease symptoms detected"
+    "biological_control_en": [
+      "Bacillus subtilis biofungicides can support an integrated program.",
+      "Copper sprays such as Bordeaux mixture give partial organic protection."
     ],
-    "symptoms_bn": [
-      "দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"
+    "biological_control_bn": [
+      "সমন্বিত ব্যবস্থাপনায় ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক সহায়ক হতে পারে।",
+      "তামার স্প্রে, যেমন বোর্দো মিশ্রণ, জৈব পদ্ধতিতে আংশিক সুরক্ষা দেয়।"
     ],
-    "symptoms_ur": [
-      "بیماری کی کوئی واضح علامات نظر نہیں آتیں"
+    "biological_control_ur": [
+      "باسیلس سبٹیلیس بائیو فنگی سائیڈ مشترکہ انتظام میں مددگار ہو سکتے ہیں۔",
+      "تانبے کا اسپرے، جیسے بورڈو مکسچر، نامیاتی طریقے میں جزوی تحفظ دیتا ہے۔"
     ],
-    "favorable_conditions_en": [
-      "N/A"
+    "prevention_tips_en": [
+      "Clean up every mummy and infected cane before bud break each spring.",
+      "Maintain an open canopy with summer shoot positioning.",
+      "Consider resistant varieties when replanting."
     ],
-    "favorable_conditions_bn": [
-      "প্রযোজ্য নয়"
+    "prevention_tips_bn": [
+      "প্রতি বসন্তে কুঁড়ি ফোটার আগে সব শুকনো কালো বেরি ও রোগাক্রান্ত ডাল পরিষ্কার করুন।",
+      "গ্রীষ্মে অঙ্কুর গুছিয়ে সাজিয়ে ছাউনি খোলামেলা রাখুন।",
+      "পুনরায় রোপণ করলে রোগ প্রতিরোধী জাত বিবেচনা করুন।"
     ],
-    "favorable_conditions_ur": [
-      "لاگو نہیں"
-    ],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
-  },
-  {
-    "id": "apple_black_rot",
-    "crop_en": "Apple",
-    "crop_bn": "আপেল",
-    "crop_ur": "سیب",
-    "name_en": "Black Rot",
-    "name_bn": "ব্ল্যাক রট",
-    "name_ur": "بلیک راٹ",
-    "scientific_name": "Botryosphaeria obtusa",
-    "severity": "moderate",
-    "description_en": "Black rot affects apples causing dark, sunken spots on fruit and leaves. The fruit eventually rots and shrivels.",
-    "description_bn": "ব্ল্যাক রট আপেলের ফল ও পাতায় গাঢ়, বসে যাওয়া দাগ সৃষ্টি করে। শেষ পর্যন্ত ফল পচে ও শুকিয়ে যায়।",
-    "description_ur": "بلیک راٹ سیب کے پھل اور پتوں پر گہرے دھنسے ہوئے دھبے بناتا ہے۔ آخرکار پھل سڑ کر سکڑ جاتا ہے۔",
-    "symptoms_en": [
-      "Dark, circular lesions on leaves",
-      "Sunken, brown spots on fruit",
-      "Fruit mummification",
-      "Canker on branches",
-      "Premature fruit drop"
-    ],
-    "symptoms_bn": [
-      "পাতায় গাঢ়, বৃত্তাকার ক্ষত",
-      "ফলে বসে যাওয়া বাদামি দাগ",
-      "ফল মমিরূপে শুকিয়ে যাওয়া",
-      "ডালে ক্যানকার",
-      "ফল অকালে ঝরে পড়া"
-    ],
-    "symptoms_ur": [
-      "پتوں پر گہرے گول زخم",
-      "پھل پر دھنسے ہوئے بھورے دھبے",
-      "پھل کا ممی بن جانا",
-      "شاخوں پر کینکر",
-      "پھل کا وقت سے پہلے گرنا"
-    ],
-    "favorable_conditions_en": [
-      "Warm, humid weather",
-      "Rain during fruit development",
-      "Pruning wounds",
-      "Overcrowded trees"
-    ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র আবহাওয়া",
-      "ফল বিকাশের সময় বৃষ্টি",
-      "ছাঁটাইয়ের ক্ষত",
-      "গাছের ভিড় বেশি"
-    ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب موسم",
-      "پھل کی نشوونما کے دوران بارش",
-      "کٹائی کے زخم",
-      "درختوں کا ہجوم"
-    ],
-    "spread_en": "Rain splash from infected fruit and cankers",
-    "spread_bn": "আক্রান্ত ফল ও ক্যানকার থেকে বৃষ্টির ছিটায় ছড়ায়",
-    "spread_ur": "متاثرہ پھل اور کینکر سے بارش کے چھینٹوں سے پھیلتی ہے"
-  },
-  {
-    "id": "apple_cedar_apple_rust",
-    "crop_en": "Apple",
-    "crop_bn": "আপেল",
-    "crop_ur": "سیب",
-    "name_en": "Cedar Apple Rust",
-    "name_bn": "সিডার অ্যাপল রাস্ট",
-    "name_ur": "سیڈر ایپل زنگ",
-    "scientific_name": "Gymnosporangium juniperi-virginianae",
-    "severity": "moderate",
-    "description_en": "Cedar apple rust is a fungal disease that requires both apple and cedar trees. It causes bright orange spots on apple leaves.",
-    "description_bn": "সিডার অ্যাপল রাস্ট একটি ছত্রাকজনিত রোগ যার জন্য আপেল ও সিডার উভয় গাছ প্রয়োজন। এটি আপেল পাতায় উজ্জ্বল কমলা দাগ সৃষ্টি করে।",
-    "description_ur": "سیڈر ایپل زنگ ایک فنگسی بیماری ہے جس کے لیے سیب اور سیڈر دونوں درخت ضروری ہیں۔ یہ سیب کے پتوں پر چمکدار نارنجی دھبے بناتی ہے۔",
-    "symptoms_en": [
-      "Bright orange or yellow spots on leaves",
-      "Tiny black dots within spots",
-      "Yellowing and leaf drop",
-      "Reduced fruit size and quality",
-      "Galls on cedar trees (alternate host)"
-    ],
-    "symptoms_bn": [
-      "পাতায় উজ্জ্বল কমলা বা হলুদ দাগ",
-      "দাগের মধ্যে ছোট কালো বিন্দু",
-      "পাতা হলুদ হয়ে ঝরে যাওয়া",
-      "ফলের আকার ও মান হ্রাস",
-      "সিডার গাছে গল (পরিবর্তী পোষক)"
-    ],
-    "symptoms_ur": [
-      "پتوں پر چمکدار نارنجی یا پیلے دھبے",
-      "دھبوں کے اندر چھوٹے سیاہ نقطے",
-      "پتوں کا زرد ہو کر گرنا",
-      "پھل کے سائز اور معیار میں کمی",
-      "سیڈر درختوں پر گال (متبادل میزبان)"
-    ],
-    "favorable_conditions_en": [
-      "Cool, wet spring",
-      "Windy conditions",
-      "Proximity to cedar trees",
-      "Rain during leaf emergence"
-    ],
-    "favorable_conditions_bn": [
-      "শীতল, ভেজা বসন্ত",
-      "বাতাসযুক্ত পরিস্থিতি",
-      "সিডার গাছের নৈকট্য",
-      "পাতা ওঠার সময় বৃষ্টি"
-    ],
-    "favorable_conditions_ur": [
-      "ٹھنڈی، گیلی بہار",
-      "تیز ہوائیں",
-      "سیڈر درختوں سے قربت",
-      "پتوں کے نکلنے کے دوران بارش"
-    ],
-    "spread_en": "Wind-blown spores from cedar trees",
-    "spread_bn": "সিডার গাছ থেকে বাতাসে ভেসে যাওয়া স্পোরের মাধ্যমে ছড়ায়",
-    "spread_ur": "سیڈر درختوں سے ہوا کے ذریعے اڑنے والے اسپورز سے پھیلتی ہے"
-  },
-  {
-    "id": "apple_healthy",
-    "crop_en": "Apple",
-    "crop_bn": "আপেল",
-    "crop_ur": "سیب",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Apple plant is healthy with no visible disease symptoms.",
-    "description_bn": "আপেল গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "سیب کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
-  },
-  {
-    "id": "cherry_powdery_mildew",
-    "crop_en": "Cherry",
-    "crop_bn": "চেরি",
-    "crop_ur": "چیری",
-    "name_en": "Powdery Mildew",
-    "name_bn": "পাউডারি মিলডিউ",
-    "name_ur": "پاڈری ملڈیو",
-    "scientific_name": "Podosphaera clandestina",
-    "severity": "moderate",
-    "description_en": "Powdery mildew is a fungal disease that covers leaves, shoots, and fruit with a white powdery coating, reducing photosynthesis.",
-    "description_bn": "পাউডারি মিলডিউ একটি ছত্রাকজনিত রোগ যা পাতা, কাণ্ড ও ফলকে সাদা গুঁড়ো স্তরে ঢেকে ফেলে, ফলে আলোকসংস্লেষণ কমে।",
-    "description_ur": "پاڈری ملڈیو ایک فنگسی بیماری ہے جو پتوں، شاخوں اور پھلوں کو سفید پاوڈر کی تہہ سے ڈھانپ لیتی ہے، جس سے ضیائی تالیف کم ہوتی ہے۔",
-    "symptoms_en": [
-      "White powdery spots on leaves and shoots",
-      "Curling and distortion of leaves",
-      "Stunted growth",
-      "Reduced fruit quality",
-      "Early defoliation"
-    ],
-    "symptoms_bn": [
-      "পাতা ও কাণ্ডে সাদা গুঁড়ো দাগ",
-      "পাতা কুঁচকে ও বিকৃত হওয়া",
-      "বৃদ্ধি বাধাগ্রস্ত",
-      "ফলের মান হ্রাস",
-      "পাতা অকালে ঝরে যাওয়া"
-    ],
-    "symptoms_ur": [
-      "پتوں اور شاخوں پر سفید پاوڈر دھبے",
-      "پتوں کا مڑنا اور بگڑنا",
-      "رکٹ ہوئی نشوونما",
-      "پھل کے معیار میں کمی",
-      "پتوں کا جلد گرنا"
-    ],
-    "favorable_conditions_en": [
-      "Warm days, cool nights",
-      "High humidity",
-      "Dense foliage",
-      "Poor air circulation"
-    ],
-    "favorable_conditions_bn": [
-      "গরম দিন, শীতল রাত",
-      "উচ্চ আর্দ্রতা",
-      "ঘন পাতা",
-      "বাতাস চলাচল কম"
-    ],
-    "favorable_conditions_ur": [
-      "گرم دن، ٹھنڈی راتیں",
-      "زیادہ نمی",
-      "گھنے پتے",
-      "ہوا کی ناکافی گردش"
-    ],
-    "spread_en": "Wind-borne spores, direct contact",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, সরাসরি সংস্পর্শ",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، براہ راست رابطہ"
-  },
-  {
-    "id": "cherry_healthy",
-    "crop_en": "Cherry",
-    "crop_bn": "চেরি",
-    "crop_ur": "چیری",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Cherry plant is healthy with no visible disease symptoms.",
-    "description_bn": "চেরি গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "چیری کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "prevention_tips_ur": [
+      "ہر بہار کلی کھلنے سے پہلے تمام خشک سیاہ بیریاں اور متاثرہ شاخیں صاف کریں۔",
+      "گرمیوں میں ٹہنیوں کی مناسب ترتیب سے پودا کھلا رکھیں۔",
+      "دوبارہ لگانے کے وقت محفوظ اقسام پر غور کریں۔"
+    ]
   },
   {
     "id": "corn_cercospora_leaf_spot",
-    "crop_en": "Corn",
-    "crop_bn": "ভুট্টা",
-    "crop_ur": "مکئی",
-    "name_en": "Cercospora Leaf Spot (Gray Leaf Spot)",
-    "name_bn": "সারকোস্পোরা লিফ স্পট (গ্রে লিফ স্পট)",
-    "name_ur": "سرکوسپورا لیف سپاٹ (گرے لیف سپاٹ)",
-    "scientific_name": "Cercospora zeae-maydis",
-    "severity": "moderate",
-    "description_en": "Gray leaf spot causes rectangular, grayish lesions on corn leaves, reducing yield.",
-    "description_bn": "গ্রে লিফ স্পট ভুট্টার পাতায় আয়তাকার, ধূসর দাগ সৃষ্টি করে, ফলন কমায়।",
-    "description_ur": "گرے لیف سپاٹ مکئی کے پتوں پر مستطیل، سرمئی دھبے بناتا ہے، پیداوار کم کرتا ہے۔",
-    "symptoms_en": [
-      "Rectangular, grayish lesions parallel to leaf veins",
-      "Lesions become tan with dark borders",
-      "Leaf death and blighting",
-      "Yield reduction",
-      "Ear rot in severe cases"
+    "cultural_control_en": [
+      "Plant gray leaf spot-resistant hybrids.",
+      "Rotate to soybeans or other non-grass crops where residue is heavily infected.",
+      "Till under corn residue where erosion is not a concern."
     ],
-    "symptoms_bn": [
-      "পাতার শিরা বরাবর আয়তাকার, ধূসর দাগ",
-      "দাগগুলো গাঢ় কিনারা সহ খয়েরি হয়",
-      "পাতা মরে ও শুকিয়ে যায়",
-      "ফলন হ্রাস",
-      "গুরুতর ক্ষেত্রে কানে পচন"
+    "cultural_control_bn": [
+      "ধূসর পাতা-দাগ প্রতিরোধী হাইব্রিড জাত বপন করুন।",
+      "আবর্জনায় সংক্রমণ বেশি থাকলে সয়াবিন বা অন্য অঘাসজাতীয় ফসলে পর্যায় ঘুরান।",
+      "যেখানে মাটি সরে যাওয়ার ঝুঁকি নেই, সেখানে ভুট্টার আবর্জনা মাটিতে মিশিয়ে দিন।"
     ],
-    "symptoms_ur": [
-      "پتوں کی رگوں کے متوازی مستطیل، سرمئی دھبے",
-      "دھبے گہرے کناروں کے ساتھ خاکی ہو جاتے ہیں",
-      "پتے مر جاتے ہیں اور جھلس جاتے ہیں",
-      "پیداوار میں کمی",
-      "شدید حالت میں کھلیاں سڑ جاتی ہیں"
+    "cultural_control_ur": [
+      "گرے لیف اسپاٹ برداشت کرنے والے ہائبرڈ اقسام لگائیں۔",
+      "جہاں ملبے میں انفیکشن زیادہ ہو وہاں سویا بین یا دیگر غیر گراس فصلوں کی گردش اپنائیں۔",
+      "جہاں مٹی کے بہاؤ کا خطرہ نہ ہو، وہاں مکئی کا ملبہ مٹی میں ملا دیں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm temperatures (20-28°C)",
-      "High humidity",
-      "Extended dew periods",
-      "No-till farming"
+    "chemical_control_en": [
+      "Scout from tasseling onward; use fungicides such as azoxystrobin or propiconazole if lesions reach the ear leaf.",
+      "One well-timed spray between silking and early grain fill often suffices.",
+      "Follow the label and local extension advice."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ তাপমাত্রা (20-28°C)",
-      "উচ্চ আর্দ্রতা",
-      "দীর্ঘ সময় শিশির থাকা",
-      "কৃষি বাহিত চাষ নয়"
+    "chemical_control_bn": [
+      "শীর্ষমঞ্জরি আসার পর পর্যবেক্ষণ করুন; দাগ উপরের গুরুত্বপূর্ণ পাতায় পৌঁছালে অ্যাজোক্সিস্ট্রোবিন বা প্রোপিকোনাজল স্প্রে করুন।",
+      "সিল্ক বের হওয়া থেকে দানা গঠনের শুরুর মধ্যে একবার সময়মতো স্প্রেই প্রায়ই যথেষ্ট।",
+      "লেবেল অনুসরণ করুন এবং স্থানীয় কৃষি সম্প্রসারণের পরামর্শ নিন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم درجہ حرارت (20-28°C)",
-      "زیادہ نمی",
-      "طویل شبنم کی مدت",
-      "بغیر ہل چلانے والی کاشت"
+    "chemical_control_ur": [
+      "بال ٹیسیل کے بعد معائنہ کریں؛ اگر دھبے اوپر کے اہم پتوں تک پہنچیں تو ایزوآکسی سٹروبین یا پروپیکونازول جیسے فنگی سائیڈ لگائیں۔",
+      "ریشے نکلنے سے دانے بننے کے شروع تک ایک وقت پر کیا گیا اسپرے اکثر کافی ہوتا ہے۔",
+      "لیبل پر عمل کریں اور مقامی زرعی ایکسٹینشن کا مشورہ لیں۔"
     ],
-    "spread_en": "Wind and rain splash from residue",
-    "spread_bn": "বাতাস ও বৃষ্টির ছিটা থেকে অবশিষ্টাংশ",
-    "spread_ur": "ہوا اور بارش کے چھینٹے ملبے سے"
+    "biological_control_en": [
+      "Bacillus subtilis-based biofungicides may slow lesion development.",
+      "Trichoderma amendments speed decay of infected residue between seasons."
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস-ভিত্তিক জৈব ছত্রাকনাশক দাগ বিস্তার ধীর করতে পারে।",
+      "মৌসুমের মাঝে ট্রাইকোডার্মা মেশালে সংক্রমিত আবর্জনা দ্রুত পচে।"
+    ],
+    "biological_control_ur": [
+      "باسیلس سبٹیلیس پر مبنی بائیو فنگی سائیڈ دھبوں کا پھیلاؤ سست کر سکتے ہیں۔",
+      "موسموں کے درمیان ٹرائیکوڈرما ملا دینے سے متاثرہ ملبہ جلد سڑتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Favor resistant hybrids and wider row spacing for airflow.",
+      "Manage residue and rotate crops every season.",
+      "Avoid continuous corn in fields with a gray leaf spot history."
+    ],
+    "prevention_tips_bn": [
+      "রোগ প্রতিরোধী হাইব্রিড এবং বাতাস চলাচলের জন্য সারিতে বেশি দূরত্ব রাখুন।",
+      "প্রতি মৌসুমে আবর্জনা ব্যবস্থাপনা ও ফসল পর্যায় মানুন।",
+      "ধূসর পাতা-দাগের ইতিহাস থাকা জমিতে টানা ভুট্টা চাষ এড়িয়ে চলুন।"
+    ],
+    "prevention_tips_ur": [
+      "محفوظ ہائبرڈ اقسام اور ہوا کی گردش کے لیے قطاروں میں زیادہ فاصلہ رکھیں۔",
+      "ہر موسم میں ملبے کا انتظام اور فصل کی گردش کریں۔",
+      "گرے لیف اسپاٹ کی تاریخ والے کھیتوں میں مسلسل مکئی لگانے سے گریز کریں۔"
+    ]
+  },
+  {
+    "id": "healthy",
+    "cultural_control_en": [
+      "Keep monitoring leaves weekly for early spots, discoloration, or pests.",
+      "Maintain balanced fertilization and correct irrigation for steady growth.",
+      "Keep the field free of weeds that shelter insects and pathogens."
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে পাতায় দাগ, রঙ পরিবর্তন বা পোকামাকড়ের জন্য নজর রাখুন।",
+      "সুষম সার প্রয়োগ ও সঠিক সেচে গাছের স্বাভাবিক বৃদ্ধি বজায় রাখুন।",
+      "পোকামাকড় ও রোগজীবাণুর আশ্রয়দাতা আগাছা মাঠ থেকে পরিষ্কার রাখুন।"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے پتوں پر دھبوں، رنگ کی تبدیلی یا کیڑوں کی نگرانی کریں۔",
+      "متوازن کھاد اور درست آبپاشی سے پودے کی مستحکم نشوونما برقرار رکھیں۔",
+      "میدان کو ان جڑی بوٹیوں سے پاک رکھیں جو کیڑوں اور جراثیم کی پناہ گاہ ہیں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Continue scouting so symptoms are caught in the first days.",
+      "Rotate crops next season to prevent pathogen buildup in the soil.",
+      "Use certified seed and clean tools to avoid introducing disease."
+    ],
+    "prevention_tips_bn": [
+      "নিয়মিত মাঠ পরিদর্শন চালিয়ে যান যাতে প্রথম দিনেই উপসর্গ ধরা পড়ে।",
+      "মাটিতে রোগজীবাণু জমা ঠেকাতে পরের মৌসুমে ফসল আবর্তন করুন।",
+      "রোগ প্রবেশ ঠেকাতে প্রত্যয়িত বীজ ও পরিষ্কার যন্ত্রপাতি ব্যবহার করুন।"
+    ],
+    "prevention_tips_ur": [
+      "میدانی معائنہ جاری رکھیں تاکہ علامات پہلے ہی دن پکڑی جا سکیں۔",
+      "مٹی میں جراثیم جمع ہونے سے بچنے کے لیے اگلے سیزن میں فصل کی تبدیلی کریں۔",
+      "بیماری کے داخلے سے بچنے کے لیے مصدقہ بیج اور صاف اوزار استعمال کریں۔"
+    ]
+  },
+  {
+    "id": "apple_black_rot",
+    "cultural_control_en": [
+      "Prune out dead wood, cankers, and mummified fruit during dormancy.",
+      "Remove and destroy mummified fruit and fallen leaves around the tree.",
+      "Improve air circulation by thinning the canopy each winter."
+    ],
+    "cultural_control_bn": [
+      "সুপ্ত অবস্থায় মৃত কাঠ, ক্যানকার ও শুকনো হয়ে টিকে থাকা ফল ছাঁটাই করে সরান।",
+      "গাছের নিচে পড়ে থাকা শুকনো ফল ও পাতা সরিয়ে ধ্বংস করুন।",
+      "প্রতি শীতে ডাল পাতলা করে পাতার মুকুটে বাতাস চলাচল উন্নত করুন।"
+    ],
+    "cultural_control_ur": [
+      "سکون کے زمانے میں مردہ لکڑی، زخموں اور سوکھے پھلوں کی کٹائی کریں۔",
+      "درخت کے گرد گرے سوکھے پھل اور پتے ہٹا کر تلف کریں۔",
+      "ہر سردی میں درخت کو ہلکا کر کے ہوا کی گردش بہتر بنائیں۔"
+    ],
+    "chemical_control_en": [
+      "Apply a protectant fungicide (e.g. captan or myclobutanil) from bud break in wet weather.",
+      "Repeat fungicide sprays on the label interval while bloom and young fruit remain wet.",
+      "Follow the product label and local extension advice; observe the pre-harvest interval."
+    ],
+    "chemical_control_bn": [
+      "প্রোটেকট্যান্ট ছত্রাকনাশক (যেমন ক্যাপটান বা মাইক্লোবিউটানিল) কুঁড়ি ফোটার পর থেকে প্রয়োগ করুন।",
+      "ফুল ও ছোট ফলের সময় ভেজা আবহাওয়ায় লেবেলের ব্যবধানে ছত্রাকনাশক স্প্রে পুনরাবৃত্তি করুন।",
+      "পণ্যের লেবেল ও স্থানীয় সম্প্রসারণ পরামর্শ মেনে চলুন এবং ফসল তোলার আগের সময় বজায় রাখুন।"
+    ],
+    "chemical_control_ur": [
+      "محفوظ فنگسائڈ (مثلاً کیپٹان یا مائیکلوبیوٹانِل) کلیاں کھلنے سے مرطوب موسم میں لگائیں۔",
+      "پھول اور چھوٹے پھل کے وقت گیلی حالت میں لیبل کے وقفے سے اسپرے دہرائیں۔",
+      "پروڈکٹ لیبل اور مقامی توسیعی مشورے کی پاسداری کریں اور فصل سے پہلے کا وقفہ ملحوظ رکھیں۔"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis before rainy periods to slow lesion development.",
+      "Use a copper-based biofungicide on pruning wounds in dry weather."
+    ],
+    "biological_control_bn": [
+      "বর্ষাকালীন সময়ের আগে ব্যাসিলাস সাবটিলিস স্প্রে করুন যাতে ক্ষত ধীরে ছড়ায়।",
+      "শুষ্ক আবহাওয়ায় ছাঁটাইয়ের ক্ষতে তামাভিত্তিক জৈব ছত্রাকনাশক ব্যবহার করুন।"
+    ],
+    "biological_control_ur": [
+      "بارش سے پہلے بیکیلس سَبٹِلس اسپرے کریں تاکہ زخم آہستہ بڑھیں۔",
+      "خشک موسم میں کٹائی کے زخموں پر تانبے پر مبنی حیاتیاتی فنگسائڈ لگائیں۔"
+    ],
+    "prevention_tips_en": [
+      "Sanitize the orchard every winter by removing all mummified fruit.",
+      "Choose scab-resistant apple varieties for new plantings.",
+      "Keep trees vigorous with balanced nutrition to resist infection."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি শীতে সব শুকনো ফল সরিয়ে বাগান জীবাণুমুক্ত করুন।",
+      "নতুন রোপণের জন্য স্ক্যাব-প্রতিরোধী আপেলের জাত বেছে নিন।",
+      "সংক্রমণ প্রতিরোধে সুষম পুষ্টিতে গাছ সতেজ রাখুন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر سردی میں تمام سوکھے پھل ہٹا کر باغ کو صاف رکھیں۔",
+      "نئی کاشت کے لیے اسکيب کے خلاف مزاحم سیب کی اقسام منتخب کریں۔",
+      "متوازن غذائیت سے درختوں کو مضبوط رکھیں تاکہ وہ بیماری کا مقابلہ کریں۔"
+    ]
+  },
+  {
+    "id": "apple_cedar_apple_rust",
+    "cultural_control_en": [
+      "Remove nearby red cedar or juniper where the rust overwinters.",
+      "Prune infected branches and destroy galls during dormancy.",
+      "Improve light and airflow through the canopy to dry leaves faster."
+    ],
+    "cultural_control_bn": [
+      "আশেপাশের লাল সিডার বা জুনিপার সরান, যেখানে এই মরিচা শীতকালে টিকে থাকে।",
+      "সুপ্ত অবস্থায় আক্রান্ত ডাল ছাঁটাই করে গল ধ্বংস করুন।",
+      "পাতা দ্রুত শুকাতে মুকুটে আলো ও বাতাস চলাচল বাড়ান।"
+    ],
+    "cultural_control_ur": [
+      "قریبی سرخ دیودار یا جونیپر ہٹائیں جہاں یہ زنگ سردیوں میں رہتا ہے۔",
+      "سکون کے زمانے میں متاثرہ شاخیں کاٹ کر گالز تلف کریں۔",
+      "پتے جلد خشک ہوں اس کے لیے درخت میں روشنی اور ہوا کی گردش بڑھائیں۔"
+    ],
+    "chemical_control_en": [
+      "Apply a protectant fungicide (e.g. myclobutanil) at bud break and repeat on the label interval.",
+      "Continue sprays while cedar-apple rust galls release spores in spring.",
+      "Follow the label and local extension advice, respecting the pre-harvest interval."
+    ],
+    "chemical_control_bn": [
+      "কুঁড়ি ফোটার সময় প্রোটেকট্যান্ট ছত্রাকনাশক (যেমন মাইক্লোবিউটানিল) দিন ও লেবেলের ব্যবধানে পুনরাবৃত্তি করুন।",
+      "বসন্তে গল স্পোর ছাড়ার সময় স্প্রে চালিয়ে যান।",
+      "লেবেল ও স্থানীয় সম্প্রসারণ পরামর্শ মেনে চলুন এবং ফসল তোলার আগের সময় বজায় রাখুন।"
+    ],
+    "chemical_control_ur": [
+      "کلیاں کھلنے پر محفوظ فنگسائڈ (مثلاً مائیکلوبیوٹانِل) لگائیں اور لیبل کے وقفے سے دہرائیں۔",
+      "بہار میں گالز کے اسپور چھوڑنے تک اسپرے جاری رکھیں۔",
+      "لیبل اور مقامی توسیعی مشورے کی پاسداری کریں اور فصل سے پہلے کا وقفہ ملحوظ رکھیں۔"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis from early spring to reduce leaf infection.",
+      "Use copper-based biofungicide at dormant stage where permitted."
+    ],
+    "biological_control_bn": [
+      "বসন্তের শুরু থেকে ব্যাসিলাস সাবটিলিস স্প্রে করে পাতায় সংক্রমণ কমিয়ে আনুন।",
+      "যেখানে অনুমোদিত সেখানে সুপ্ত অবস্থায় তামাভিত্তিক জৈব ছত্রাকনাশক ব্যবহার করুন।"
+    ],
+    "biological_control_ur": [
+      "بہار کے آغاز سے بیکیلس سَبٹِلس اسپرے کریں تاکہ پتوں کا انفیکشن کم ہو۔",
+      "جہاں اجازت ہو وہاں سکون کے زمانے میں تانبے پر مبنی حیاتیاتی فنگسائڈ استعمال کریں۔"
+    ],
+    "prevention_tips_en": [
+      "Avoid planting apples close to red cedar windbreaks.",
+      "Select rust-resistant apple cultivars for new orchards.",
+      "Rake and destroy fallen leaves to cut the overwintering source."
+    ],
+    "prevention_tips_bn": [
+      "লাল সিডার বায়ুপ্রতিরোধকের কাছে আপেল রোপণ এড়িয়ে চলুন।",
+      "নতুন বাগানের জন্য মরিচা-প্রতিরোধী আপেলের জাত নির্বাচন করুন।",
+      "শীতকালীন উৎস কমানোর জন্য পড়ে থাকা পাতা একত্র করে ধ্বংস করুন।"
+    ],
+    "prevention_tips_ur": [
+      "سرخ دیودار کی ہوا روک کے قریب سیب لگانے سے گریز کریں۔",
+      "نئے باغات کے لیے زنگ کے خلاف مزاحم سیب کی اقسام منتخب کریں۔",
+      "گرے ہوئے پتے اکٹھے کر کے تلف کریں تاکہ سردیوں کا ذخیرہ کم ہو۔"
+    ]
+  },
+  {
+    "id": "apple_healthy",
+    "cultural_control_en": [
+      "Inspect the orchard weekly for spots, cankers, or insect damage.",
+      "Keep the drip line clear of fallen fruit and leaf litter.",
+      "Fertilize and irrigate according to soil test results."
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার বাগান পরিদর্শন করে দাগ, ক্ষত বা পোকামাকড়ের ক্ষতি দেখুন।",
+      "গাছের গোড়ায় ঝরে পড়া ফল ও পাতার আবর্জনা পরিষ্কার রাখুন।",
+      "মাটির পরীক্ষার ফলাফল অনুযায়ী সার ও সেচ দিন।"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے باغ کا معائنہ کریں تاکہ دھبے، زخم یا کیڑوں کا نقصان معلوم ہو۔",
+      "درخت کے قریب گرے پھل اور پتوں کا کوڑا صاف رکھیں۔",
+      "مٹی کے ٹیسٹ کے مطابق کھاد اور آبپاشی کریں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Continue monitoring through the wet season when fruit rots start.",
+      "Prune out dead wood each winter to prevent canker entry.",
+      "Record any symptom out of character to investigate with extension staff."
+    ],
+    "prevention_tips_bn": [
+      "ভেজা মৌসুমেও নজর রাখুন, কারণ তখনই ফল পচা শুরু হয়।",
+      "প্রতি শীতে মৃত কাঠ ছাঁটাই করে ক্যানকারের প্রবেশ ঠেকান।",
+      "অস্বাভাবিক উপসর্গ দেখলে সম্প্রসারণ কর্মীর সাথে পরামর্শ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "گیلے موسم میں بھی نگرانی جاری رکھیں جب پھلوں کی سڑن شروع ہوتی ہے۔",
+      "ہر سردی میں مردہ لکڑی کاٹ کر زخم کے داخلے کو روکیں۔",
+      "کسی غیر معمولی علامت پر توسیعی عملے سے مشورہ کریں۔"
+    ]
+  },
+  {
+    "id": "cherry_powdery_mildew",
+    "cultural_control_en": [
+      "Plant where morning sun dries leaves quickly.",
+      "Prune to open the canopy and improve airflow.",
+      "Avoid excessive nitrogen, which favours soft powdery growth."
+    ],
+    "cultural_control_bn": [
+      "এমন জায়গায় রোপণ করুন যেখানে সকালের রোদ পাতা দ্রুত শুকায়।",
+      "মুকুট খুলে বাতাস চলাচল بهبود করতে ছাঁটাই করুন।",
+      "অত্যাধিক নাইট্রোজেন এড়িয়ে চলুন, যা নরম পাউডারি বৃদ্ধি বাড়ায়।"
+    ],
+    "cultural_control_ur": [
+      "ایسی جگہ لگائیں جہاں صبح کی دھوپ پتے جلد خشک کرے۔",
+      "درخت کو کھول کر ہوا کی گردش بہتر بنانے کے لیے کٹائی کریں۔",
+      "ضرورت سے زیادہ نائٹروجن سے بچیں جو نرم پاؤڈری نشوونما کو بڑھاتی ہے۔"
+    ],
+    "chemical_control_en": [
+      "Apply a sulfur or potassium bicarbonate spray at the first whitish patches.",
+      "Repeat on the label interval while weather stays warm and dry.",
+      "Follow the label and local extension advice; avoid spraying above the labelled temperature."
+    ],
+    "chemical_control_bn": [
+      "প্রথম সাদাটে দাগ দেখা গেলেই সালফার বা পটাশিয়াম বাইকার্বনেট স্প্রে করুন।",
+      "উষ্ণ ও শুষ্ক আবহাওয়ায় লেবেলের ব্যবধানে স্প্রে পুনরাবৃত্তি করুন।",
+      "লেবেল ও স্থানীয় সম্প্রসারণ পরামর্শ মানুন; লেবেলের তাপমাত্রার বেশি গরমে স্প্রে করবেন না।"
+    ],
+    "chemical_control_ur": [
+      "پہلے سفید دھبوں پر گندھک یا پوٹاشیم بائی کاربونیٹ کا اسپرے کریں۔",
+      "گرم اور خشک موسم میں لیبل کے وقفے سے اسپرے دہرائیں۔",
+      "لیبل اور مقامی توسیعی مشورے کی پاسداری کریں؛ لیبل کے درجہ حرارت سے زیادہ گرمی میں اسپرے نہ کریں۔"
+    ],
+    "biological_control_en": [
+      "Spray neem oil or Bacillus subtilis weekly as a suppressant.",
+      "Introduce predatory insects to keep aphid pressure low."
+    ],
+    "biological_control_bn": [
+      "সাপ্তাহিক নিম তেল বা ব্যাসিলাস সাবটিলিস স্প্রে করুন দমনকারী হিসেবে।",
+      "জাবপোকা কমানোর জন্য শিকারী পোকামাকড় ছাড়ুন।"
+    ],
+    "biological_control_ur": [
+      "ہر ہفتے نیم کا تیل یا بیکیلس سَبٹِلس اسپرے کریں بطور دباؤ۔",
+      "افیڈ کا دباؤ کم رکھنے کے لیے شکار کیڑے چھوڑیں۔"
+    ],
+    "prevention_tips_en": [
+      "Choose mildew-resistant cherry rootstocks and cultivars.",
+      "Remove infected shoots during dormancy.",
+      "Keep good spacing so the row dries by mid-morning."
+    ],
+    "prevention_tips_bn": [
+      "মিলডিউ-প্রতিরোধী চেরি রুটস্টক ও জাত বেছে নিন।",
+      "সুপ্ত অবস্থায় সংক্রমিত ডাল সরিয়ে ফেলুন।",
+      "ভালো দূরত্ব রাখুন যাতে সারি সকাল মধ্যেই শুকিয়ে যায়।"
+    ],
+    "prevention_tips_ur": [
+      "میلڈیو کے خلاف مزاحم چیری کی اقسام اور روٹ اسٹاک منتخب کریں۔",
+      "سکون کے زمانے میں متاثرہ ٹہنیاں ہٹائیں۔",
+      "اچھی دوری رکھیں تاکہ قطار صبح تک خشک ہو جائے۔"
+    ]
+  },
+  {
+    "id": "cherry_healthy",
+    "cultural_control_en": [
+      "Scout weekly for white patches, curling leaves, and gumming.",
+      "Prune lightly each year to keep airflow good.",
+      "Water at the base and avoid wetting the foliage."
+    ],
+    "cultural_control_bn": [
+      "সাদা দাগ, পাতা কুঁকড়ে যাওয়া ও আঠা নিঃসরণের জন্য সাপ্তাহিক নজর রাখুন।",
+      "বাতাস চলাচল ভালো রাখতে প্রতি বছর হালকা ছাঁটাই করুন।",
+      "গোড়ায় পানি দিন, পাতায় পানি পড়া এড়িয়ে চলুন।"
+    ],
+    "cultural_control_ur": [
+      "سفید دھبے، پتوں کی مروڑ اور گوند کے لیے ہر ہفتے معائنہ کریں۔",
+      "ہوا کی گردش بہتر رکھنے کے لیے ہر سال ہلکی کٹائی کریں۔",
+      "جڑ پر پانی دیں اور پتوں کو گیلے ہونے سے بچائیں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Monitor through warm dry spells when mildew appears.",
+      "Avoid overhead irrigation to keep the canopy dry.",
+      "Remove pruned wood from the orchard, not beside the trees."
+    ],
+    "prevention_tips_bn": [
+      "উষ্ণ ও শুষ্ক সময়ে নজর রাখুন, যখন মিলডিউ দেখা দেয়।",
+      "মুকুট শুকনো রাখতে ছাদ থেকে সেচ এড়িয়ে চলুন।",
+      "ছাঁটাই করা কাঠ গাছের পাশে নয়, বাগান থেকে সরিয়ে ফেলুন।"
+    ],
+    "prevention_tips_ur": [
+      "گرم خشک موسم میں نگرانی کریں جب میلڈیو ظاہر ہوتی ہے۔",
+      "چھت سے آبپاشی سے بچیں تاکہ درخت خشک رہے۔",
+      "کٹی ہوئی لکڑی درختوں کے قریب نہیں بلکہ باغ سے دور پھینکیں۔"
+    ]
   },
   {
     "id": "corn_common_rust",
-    "crop_en": "Corn",
-    "crop_bn": "ভুট্টা",
-    "crop_ur": "مکئی",
-    "name_en": "Common Rust",
-    "name_bn": "কমন রাস্ট",
-    "name_ur": "کامن زنگ",
-    "scientific_name": "Puccinia sorghi",
-    "severity": "moderate",
-    "description_en": "Common rust appears as reddish-brown pustules on corn leaves, reducing photosynthesis and yield.",
-    "description_bn": "কমন রাস্ট ভুট্টার পাতায় লালচে-বাদামি দানা সৃষ্টি করে, আলোকসংস্লেষণ ও ফলন কমায়।",
-    "description_ur": "کامن زنگ مکئی کے پتوں پر سرخی مائل بھورے چھالے بناتا ہے، ضیائی تالیف اور پیداوار کم کرتا ہے۔",
-    "symptoms_en": [
-      "Reddish-brown pustules on leaves",
-      "Pustules break open releasing powdery spores",
-      "Leaves turn yellow and dry",
-      "Stunted plant growth",
-      "Premature leaf death"
+    "cultural_control_en": [
+      "Plant rust-resistant corn hybrids recommended for your region.",
+      "Destroy or plow under infected crop residue after harvest.",
+      "Avoid planting late to reduce exposure to windborne spores."
     ],
-    "symptoms_bn": [
-      "পাতায় লালচে-বাদামি দানা",
-      "দানা ফেটে গুঁড়ো স্পোর নির্গত করে",
-      "পাতা হলুদ ও শুকিয়ে যায়",
-      "গাছের বৃদ্ধি বাধাগ্রস্ত",
-      "পাতা আগেই মরে যায়"
+    "cultural_control_bn": [
+      "আপনার এলাকার জন্য সুপারিশকৃত মরিচা-প্রতিরোধী ভুট্টার হাইব্রিড রোপণ করুন।",
+      "ফসল কাটার পর সংক্রমিত ফসলের অবশিষ্টাংশ ধ্বংস করুন বা মাটিতে মিশিয়ে দিন।",
+      "বাতাসে ভেসে আসা স্পোরের সংক্রমণ কমাতে দেরিতে রোপণ এড়িয়ে চলুন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر سرخی مائل بھورے چھالے",
-      "چھالے پھٹ کر پاوڈر اسپورز چھوڑتے ہیں",
-      "پتے پیلے اور سوکھ جاتے ہیں",
-      "پودے کی نشوونما رک جاتی ہے",
-      "پتے قبل از وقت مر جاتے ہیں"
+    "cultural_control_ur": [
+      "اپنے علاقے کے لیے تجویز کردہ زنگ کے خلاف مزاحم مکئی کی قسمیں کاشت کریں۔",
+      "فصل کی کٹائی کے بعد متاثرہ باقیات کو تلف کریں یا مٹی میں ملا دیں۔",
+      "ہوا سے اڑنے والے اسپورز سے بچاؤ کے لیے دیر سے کاشت سے گریز کریں۔"
     ],
-    "favorable_conditions_en": [
-      "Cool temperatures (15-20°C)",
-      "High humidity",
-      "Late planting",
-      "Susceptible hybrids"
+    "chemical_control_en": [
+      "Apply a foliar fungicide (e.g. azoxystrobin or propiconazole) if pustules appear before tasseling.",
+      "Follow product label directions and local extension threshold guidelines."
     ],
-    "favorable_conditions_bn": [
-      "শীতল তাপমাত্রা (15-20°C)",
-      "উচ্চ আর্দ্রতা",
-      "দেরিতে রোপণ",
-      "সংবেদনশীল সংকর জাত"
+    "chemical_control_bn": [
+      "মোচা আসার আগে ফোসকা দেখা দিলে পাতায় স্প্রে করার ছত্রাকনাশক (যেমন অ্যাজোক্সিস্ট্রবিন বা প্রোপিকোনাজোল) প্রয়োগ করুন।",
+      "পণ্যের লেবেল নির্দেশাবলী এবং স্থানীয় সম্প্রসারণ পরামর্শ অনুসরণ করুন।"
     ],
-    "favorable_conditions_ur": [
-      "ٹھنڈا درجہ حرارت (15-20°C)",
-      "زیادہ نمی",
-      "دیر سے پودے لگانا",
-      "حساس ہائبرڈ"
+    "chemical_control_ur": [
+      "سٹہ نکلنے سے پہلے دھبے ظاہر ہوں تو پتوں پر فنگسائڈ (مثلاً ایزوکسیسٹروبن یا پروپیکونازول) کا اسپرے کریں۔",
+      "پروڈکٹ لیبل کی ہدایات اور مقامی توسیعی رہنما اصولوں کی پاسداری کریں۔"
     ],
-    "spread_en": "Airborne spores, wind",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, বাতাস",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، ہوا"
+    "biological_control_en": [
+      "Apply Bacillus subtilis biofungicide early in disease development.",
+      "Promote natural beneficial microflora through organic soil amendments."
+    ],
+    "biological_control_bn": [
+      "রোগের প্রাথমিক পর্যায়ে ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক প্রয়োগ করুন।",
+      "জৈব মাটি সংশোধনের মাধ্যমে প্রাকৃতিক উপকারী অণুজীব বৃদ্ধি করুন।"
+    ],
+    "biological_control_ur": [
+      "بیماری کے ابتدائی مرحلے میں بیکیلس سَبٹِلس حیاتیاتی فنگسائڈ لگائیں۔",
+      "نامیاتی مٹی کی ترمیمی ترکیبوں سے فائدہ مند مائکرو فلورا کو فروغ دیں۔"
+    ],
+    "prevention_tips_en": [
+      "Rotate corn with non-host crops such as soybeans or legumes.",
+      "Monitor fields early in the season, especially during cool, humid weather."
+    ],
+    "prevention_tips_bn": [
+      "সোয়াবিন বা ডাল জাতীয় অনাহুত ফসলের সাথে ভুট্টা আবর্তন করুন।",
+      "বিশেষ করে ঠান্ডা ও আর্দ্র আবহাওয়ায় মরসুমের শুরুতেই মাঠ পর্যবেক্ষণ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "مکئی کو غیر ہوسٹ فصلوں جیسے سویا بین یا پھلی دار فصلوں کے ساتھ بدل کر کاشت کریں۔",
+      "سرد اور مرطوب موسم میں سیزن کے شروع میں ہی کھیتوں کی نگرانی کریں۔"
+    ]
   },
   {
     "id": "corn_healthy",
-    "crop_en": "Corn",
-    "crop_bn": "ভুট্টা",
-    "crop_ur": "مکئی",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Corn plant is healthy with no visible disease symptoms.",
-    "description_bn": "ভুট্টা গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "مکئی کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "Maintain adequate plant spacing and row alignment for good sunlight penetration.",
+      "Apply nitrogen and other nutrients based on soil testing."
+    ],
+    "cultural_control_bn": [
+      "সূর্যের আলো প্রবেশের জন্য পর্যাপ্ত চারা থেকে চারা এবং সারির দূরত্ব বজায় রাখুন।",
+      "মাটি পরীক্ষার ওপর ভিত্তি করে নাইট্রোজেন এবং অন্যান্য পুষ্টি প্রয়োগ করুন।"
+    ],
+    "cultural_control_ur": [
+      "دھوپ کی اچھی رسائی کے لیے پودوں کے درمیان مناسب فاصلہ برقرار رکھیں۔",
+      "مٹی کے ٹیسٹ کی بنیاد پر نائٹروجن اور دیگر غذائی اجزاء فراہم کریں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Regularly scout fields for early signs of leaf blights or rusts.",
+      "Ensure proper field drainage to prevent waterlogging."
+    ],
+    "prevention_tips_bn": [
+      "পাতার ব্লাইট বা মরিচা রোগের প্রাথমিক লক্ষণের জন্য নিয়মিত মাঠ পরিদর্শন করুন।",
+      "জলজট রোধ করতে সঠিক মাঠের নিষ্কাশন ব্যবস্থা নিশ্চিত করুন।"
+    ],
+    "prevention_tips_ur": [
+      "پتوں کے بلائٹ یا زنگ کی ابتدائی علامات کے لیے باقاعدگی سے کھیت کی نگرانی کریں۔",
+      "پانی کے کھڑاؤ کو روکنے کے لیے کھیت کی مناسب نکاسی کو یقینی بنائیں۔"
+    ]
   },
   {
     "id": "grape_esca",
-    "crop_en": "Grape",
-    "crop_bn": "আঙ্গুর",
-    "crop_ur": "انگور",
-    "name_en": "Esca (Black Measles)",
-    "name_bn": "এসকা (ব্ল্যাক মিজলস)",
-    "name_ur": "ایسکا (بلیک میزلز)",
-    "scientific_name": "Multiple fungi (e.g., Phaeomoniella chlamydospora)",
-    "severity": "severe",
-    "description_en": "Esca is a complex trunk disease causing leaf discoloration, fruit spotting, and eventual vine death.",
-    "description_bn": "এসকা একটি জটিল কাণ্ড রোগ যা পাতা বিবর্ণ, ফলে দাগ এবং শেষে আঙ্গুর গাছের মৃত্যু ঘটায়।",
-    "description_ur": "ایسکا ایک پیچیدہ تنے کی بیماری ہے جو پتوں کی رنگت خراب، پھلوں پر دھبے اور آخرکار بیل کی موت کا سبب بنتی ہے۔",
-    "symptoms_en": [
-      "Leaves with greenish-yellow mottling",
-      "Leaf edge browning (burned look)",
-      "Small dark spots on berries (black measles)",
-      "Shoot dieback",
-      "Sudden decline of whole vine"
+    "cultural_control_en": [
+      "Prune vines during dry weather to minimize wound infection.",
+      "Remove and burn infected canes, trunks, and dead wood from the vineyard.",
+      "Apply pruning wound sealants to protect fresh cuts."
     ],
-    "symptoms_bn": [
-      "পাতায় সবুজাভ-হলুদ রঙের মিশ্রণ",
-      "পাতার প্রান্ত বাদামী (পোড়া দেখায়)",
-      "বেরিতে ছোট গাঢ় দাগ (ব্ল্যাক মিজলস)",
-      "ডাল শুকিয়ে মারা যাওয়া",
-      "সম্পূর্ণ আঙ্গুর গাছের হঠাৎ অবনতি"
+    "cultural_control_bn": [
+      "ক্ষতে সংক্রমণ কমাতে শুষ্ক আবহাওয়ায় আঙুর লতা ছাঁটাই করুন।",
+      "জোয়াল থেকে সংক্রমিত কাণ্ড, ট্রাঙ্ক এবং মৃত কাঠ সরিয়ে পুড়িয়ে ফেলুন।",
+      "সদ্য কাটা অংশ রক্ষা করতে ক্ষতে প্রুনিং সিল্যান্ট প্রয়োগ করুন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر سبز زرد دھبے",
-      "پتوں کے کنارے بھورے (جلے ہوئے نظر)",
-      "بیریوں پر چھوٹے گہرے دھبے (بلیک میزلز)",
-      "شاخیں سوکھنا",
-      "پوری بیل کی اچانک خرابی"
+    "cultural_control_ur": [
+      "زخم کی بیماری سے بچاؤ کے لیے خشک موسم میں تاڑوں کی کٹائی کریں۔",
+      "متاثرہ شاخوں اور مردہ لکڑی کو تاکستان سے ہٹا کر جلا دیں۔",
+      "تازہ کٹائی پر زخم بھرنے والا مادہ لگائیں۔"
     ],
-    "favorable_conditions_en": [
-      "Older vines (>10 years)",
-      "Pruning wounds",
-      "Poor soil drainage",
-      "Stress factors"
+    "chemical_control_en": [
+      "Apply wound protectant fungicides (e.g. thiophanate-methyl) immediately after pruning.",
+      "Note that no curative chemical treatment exists for established trunk infections; follow label guidelines."
     ],
-    "favorable_conditions_bn": [
-      "পুরনো গাছ (>১০ বছর)",
-      "ছাঁটাইয়ের ক্ষত",
-      "মাটির নিকাশী খারাপ",
-      "স্ট্রেসের কারণ"
+    "chemical_control_bn": [
+      "ছাঁটাইয়ের সাথে সাথেই ক্ষতে প্রতিরক্ষামূলক ছত্রাকনাশক (যেমন থিওফেনেট-মিথাইল) প্রয়োগ করুন।",
+      "মনে রাখবেন কান্ডের সংক্রমণের জন্য কোনো নিরাময়কারী রাসায়নিক চিকিৎসা নেই; লেবেলের নির্দেশিকা অনুসরণ করুন।"
     ],
-    "favorable_conditions_ur": [
-      "پرانی بیلیں (10 سال سے زیادہ)",
-      "کٹائی کے زخم",
-      "مٹی کی ناقص نکاسی",
-      "تناؤ کے عوامل"
+    "chemical_control_ur": [
+      "کٹائی کے فوراً بعد زخموں پر حفاظتی فنگسائڈ (مثلاً تھیوفینیٹ-میتھائل) لگائیں۔",
+      "یاد رکھیں کہ تنے کے انفیکشن کے لیے کوئی کیمیائی علاج موجود نہیں ہے؛ لیبل پر عمل کریں۔"
     ],
-    "spread_en": "Spores enter through pruning wounds; soilborne",
-    "spread_bn": "ছাঁটাইয়ের ক্ষত দিয়ে স্পোর প্রবেশ করে; মাটির মাধ্যমে",
-    "spread_ur": "کٹائی کے زخموں سے اسپورز داخل ہوتے ہیں؛ مٹی کے ذریعے"
+    "biological_control_en": [
+      "Apply Trichoderma-based biofungicides to pruning wounds to prevent fungal entry.",
+      "Promote vine vigor with balanced bio-fertilizers."
+    ],
+    "biological_control_bn": [
+      "ছত্রাকের প্রবেশ ঠেকাতে প্রুনিংয়ের ক্ষতে ট্রাইকোডার্মা ভিত্তিক জৈব ছত্রাকনাশক প্রয়োগ করুন।",
+      "সুষম জৈব সার দিয়ে লতার শক্তি বৃদ্ধি করুন।"
+    ],
+    "biological_control_ur": [
+      "فنگس کے داخلے کو روکنے کے لیے کٹائی کے زخموں پر ٹرائیکوڈرما فنگسائڈ لگائیں۔",
+      "متوازن حیاتیاتی کھادوں کے ساتھ تاک کی طاقت کو فروغ دیں۔"
+    ],
+    "prevention_tips_en": [
+      "Avoid large pruning cuts on older wood whenever possible.",
+      "Inspect vineyards annually for tiger-stripe leaf patterns and apoplexy symptoms."
+    ],
+    "prevention_tips_bn": [
+      "যতটা সম্ভব পুরানো কাঠে বড় ছাঁটাই কাট এড়িয়ে চলুন।",
+      "বাঘের ডোরাকাটা পাতার ধরন এবং হঠাৎ শুকিয়ে যাওয়ার উপসর্গের জন্য বার্ষিক জোয়াল পরীক্ষা করুন।"
+    ],
+    "prevention_tips_ur": [
+      "پرانی لکڑی پر بڑے کٹ لگانے سے گریز کریں۔",
+      "پتوں پر ٹائیگر کی پٹیوں جیسے پیٹرن اور دم گھٹنے کی علامات کے لیے سالانہ جائزہ لیں۔"
+    ]
   },
   {
     "id": "grape_leaf_blight",
-    "crop_en": "Grape",
-    "crop_bn": "আঙ্গুর",
-    "crop_ur": "انگور",
-    "name_en": "Leaf Blight (Isariopsis Leaf Spot)",
-    "name_bn": "লিফ ব্লাইট (ইসারিওপসিস লিফ স্পট)",
-    "name_ur": "لیف بلائٹ (ایساریوپسس لیف سپاٹ)",
-    "scientific_name": "Isariopsis clavispora",
-    "severity": "moderate",
-    "description_en": "Leaf blight causes angular dark spots on grape leaves, leading to defoliation and reduced vigor.",
-    "description_bn": "লিফ ব্লাইট আঙ্গুরের পাতায় কৌণিক গাঢ় দাগ সৃষ্টি করে, যার ফলে পাতা ঝরায় ও দুর্বলতা সৃষ্টি করে।",
-    "description_ur": "لیف بلائٹ انگور کے پتوں پر زاویہ دار گہرے دھبے بناتا ہے، جس سے پتے گرتے ہیں اور طاقت کم ہوتی ہے۔",
-    "symptoms_en": [
-      "Angular, dark brown spots on leaves",
-      "Spots may merge to cover large areas",
-      "Leaf yellowing and drop",
-      "Reduced shoot growth",
-      "Premature defoliation"
+    "cultural_control_en": [
+      "Destroy fallen leaves and mummified berries after harvest to reduce inoculum.",
+      "Trellis and prune canopy to improve air circulation and sunlight exposure.",
+      "Avoid overhead sprinkler irrigation."
     ],
-    "symptoms_bn": [
-      "পাতায় কৌণিক, গাঢ় বাদামি দাগ",
-      "দাগ একত্রিত হয়ে বড় অংশ ঢাকতে পারে",
-      "পাতা হলুদ ও ঝরে যাওয়া",
-      "ডালের বৃদ্ধি কমে যাওয়া",
-      "পাতা অকালে ঝরে যাওয়া"
+    "cultural_control_bn": [
+      "জীবাণু কমাতে ফসল কাটার পরে পড়ে থাকা পাতা এবং শুকনো ফল ধ্বংস করুন।",
+      "বাতাস চলাচল এবং সূর্যালোকের জন্য ট্রেলিস এবং মুকুট ছাঁটাই করুন।",
+      "মাথার ওপরের ছিটা সেচ এড়িয়ে চলুন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر زاویہ دار، گہرے بھورے دھبے",
-      "دھبے مل کر بڑے حصے کو ڈھانپ سکتے ہیں",
-      "پتے پیلے ہو کر گر جاتے ہیں",
-      "شاخوں کی نشوونما کم",
-      "قبل از وقت پتے گرنا"
+    "cultural_control_ur": [
+      "بیماری پھیلانے والے اسپورز کو کم کرنے کے لیے فصل کے بعد گرے پتے اور سوکھے پھل تلف کریں۔",
+      "ہوا اور دھوپ کی رسائی بہتر بنانے کے لیے شاخ تراشی کریں۔",
+      "اوپر سے فوارہ آبپاشی سے گریز کریں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm, humid weather",
-      "Rainy seasons",
-      "Dense canopy",
-      "Poor ventilation"
+    "chemical_control_en": [
+      "Apply protectant fungicides (e.g. mancozeb or copper hydroxide) at early leaf development.",
+      "Follow product label instructions for spray timing and pre-harvest intervals."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র আবহাওয়া",
-      "বৃষ্টি মৌসুম",
-      "ঘন ছাউনি",
-      "বাতাস চলাচল কম"
+    "chemical_control_bn": [
+      "পাতার প্রাথমিক বিকাশের সময় প্রতিরক্ষামূলক ছত্রাকনাশক (যেমন ম্যানকোজেব বা কপার হাইড্রোক্সাইড) প্রয়োগ করুন।",
+      "স্প্রে করার সময় এবং ফসল কাটার আগের সময়ের জন্য পণ্যের লেবেল নির্দেশাবলী অনুসরণ করুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب موسم",
-      "بارش کے موسم",
-      "گھنی چھتری",
-      "ناقص ہواداری"
+    "chemical_control_ur": [
+      "پتوں کی شروعات میں ہی حفاظتی فنگسائڈ (مثلاً مینکوزیپ یا کاپر ہائیڈرو آکسائیڈ) لگائیں۔",
+      "اسپرے کے وقت اور فصل سے پہلے کے وقفے کے لیے پروڈکٹ لیبل کی ہدایات پر عمل کریں۔"
     ],
-    "spread_en": "Rain splash, wind",
-    "spread_bn": "বৃষ্টির ছিটা, বাতাস",
-    "spread_ur": "بارش کے چھینٹے، ہوا"
+    "biological_control_en": [
+      "Use copper-based biofungicides or Bacillus subtilis formulations.",
+      "Apply neem oil sprays to suppress fungal spore germination."
+    ],
+    "biological_control_bn": [
+      "কপার-ভিত্তিক জৈব ছত্রাকনাশক বা ব্যাসিলাস সাবটিলিস ফর্মুলেশন ব্যবহার করুন।",
+      "ছত্রাকের স্পোর অঙ্কুরোদগম দমন করতে নিম তেল স্প্রে প্রয়োগ করুন।"
+    ],
+    "biological_control_ur": [
+      "تانبے پر مبنی حیاتیاتی فنگسائড یا بیکیلس سَبٹِلس فارمولیشنز استعمال کریں۔",
+      "فنگل اسپورز کے اگاؤ کو دبانے کے لیے نیم کے تیل کا اسپرے کریں۔"
+    ],
+    "prevention_tips_en": [
+      "Maintain strict orchard sanitation throughout the growing season.",
+      "Select resistant or tolerant grapevine cultivars for new plantings."
+    ],
+    "prevention_tips_bn": [
+      "ক্রমবর্ধমান মরসুম জুড়ে কঠোর জোয়াল পরিচ্ছন্নতা বজায় রাখুন।",
+      "নতুন রোপণের জন্য প্রতিরোধী বা সহনশীল আঙুর জাত নির্বাচন করুন।"
+    ],
+    "prevention_tips_ur": [
+      "نشوونما کے تمام سیزن میں باغ کی صفائی کو برقرار رکھیں۔",
+      "نئی کاشت کے لیے بیماری کا مقابلہ کرنے والی انگور کی اقسام منتخب کریں۔"
+    ]
   },
   {
     "id": "grape_healthy",
-    "crop_en": "Grape",
-    "crop_bn": "আঙ্গুর",
-    "crop_ur": "انگور",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Grape plant is healthy with no visible disease symptoms.",
-    "description_bn": "আঙ্গুর গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "انگور کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
-  },
-  {
-    "id": "invalid",
-    "crop_en": "N/A",
-    "crop_bn": "N/A",
-    "crop_ur": "N/A",
-    "name_en": "Invalid Image",
-    "name_bn": "অবৈধ ছবি",
-    "name_ur": "غیر درست تصویر",
-    "severity": "N/A",
-    "description_en": "The provided image could not be recognized as a plant or disease. Please upload a clear image of a plant leaf or fruit.",
-    "description_bn": "প্রদত্ত ছবিটি একটি উদ্ভিদ বা রোগ হিসেবে চিহ্নিত করা যায়নি। অনুগ্রহ করে উদ্ভিদের পাতা বা ফলের একটি পরিষ্কার ছবি আপলোড করুন।",
-    "description_ur": "دی گئی تصویر کو پودے یا بیماری کے طور پر پہچانا نہیں جا سکا۔ براہ کرم پودے کے پتے یا پھل کی صاف تصویر اپ لوڈ کریں۔",
-    "symptoms_en": ["N/A"],
-    "symptoms_bn": ["N/A"],
-    "symptoms_ur": ["N/A"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["N/A"],
-    "favorable_conditions_ur": ["N/A"],
-    "spread_en": "N/A",
-    "spread_bn": "N/A",
-    "spread_ur": "N/A"
-  },
-  {
-    "id": "orange_citrus_greening",
-    "crop_en": "Orange",
-    "crop_bn": "কমলা",
-    "crop_ur": "نارنگی",
-    "name_en": "Huanglongbing (Citrus Greening)",
-    "name_bn": "হুয়াংলংবিং (সাইট্রাস গ্রিনিং)",
-    "name_ur": "ہوانگ لانگ بنگ (سائٹرس گریننگ)",
-    "scientific_name": "Candidatus Liberibacter spp.",
-    "severity": "severe",
-    "description_en": "Huanglongbing is a deadly bacterial disease causing yellow shoots, misshapen fruit, and tree death within years.",
-    "description_bn": "হুয়াংলংবিং একটি মারাত্মক ব্যাকটেরিয়াজনিত রোগ যা হলুদ ডাল, বিকৃত ফল এবং কয়েক বছরের মধ্যে গাছের মৃত্যু ঘটায়।",
-    "description_ur": "ہوانگ لانگ بنگ ایک مہلک بیکٹیریل بیماری ہے جو پیلے ٹہنوں، بگڑے ہوئے پھل اور چند سالوں میں درخت کی موت کا سبب بنتی ہے۔",
-    "symptoms_en": [
-      "Yellowing of leaf veins and shoots",
-      "Blotchy mottling on leaves",
-      "Small, misshapen fruit",
-      "Fruit tastes bitter and sour",
-      "Premature fruit drop"
+    "cultural_control_en": [
+      "Maintain a well-managed canopy to maximize light interception and airflow.",
+      "Prune dormant vines cleanly and remove dead canes."
     ],
-    "symptoms_bn": [
-      "পাতার শিরা ও ডাল হলুদ হয়ে যাওয়া",
-      "পাতায় দাগযুক্ত মিশ্রণ",
-      "ছোট, বিকৃত ফল",
-      "ফল তেতো ও টক লাগে",
-      "ফল অকালে ঝরে পড়া"
+    "cultural_control_bn": [
+      "আলো এবং বাতাস সর্বাধিক করতে ভালোভাবে পরিচালিত ক্যানোপি বজায় রাখুন।",
+      "সুপ্ত লতা পরিষ্কারভাবে ছাঁটাই করুন এবং মৃত কাণ্ড সরিয়ে ফেলুন।"
     ],
-    "symptoms_ur": [
-      "پتوں کی رگوں اور شاخوں کا پیلا ہونا",
-      "پتوں پر دھبوں والی رنگت",
-      "چھوٹے، بگڑے ہوئے پھل",
-      "پھل کا کڑوا اور کھٹا ہونا",
-      "پھل کا قبل از وقت گرنا"
+    "cultural_control_ur": [
+      "روشنی اور ہوا کو بہتر بنانے کے لیے کینوپی کا مناسب انتظام رکھیں۔",
+      "سست حالت میں انگور کی بیلوں کی صفائی سے کٹائی کریں اور مردہ شاخیں ہٹا دیں۔"
     ],
-    "favorable_conditions_en": [
-      "Presence of psyllid vectors (e.g., Diaphorina citri)",
-      "Warm climates",
-      "Poor management",
-      "Infected nursery stock"
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Scout vineyard leaves and fruit clusters regularly for early disease symptoms.",
+      "Ensure proper vine nutrition and drip irrigation management."
     ],
-    "favorable_conditions_bn": [
-      "সাইলিড ভেক্টরের উপস্থিতি (যেমন: ডায়াফোরিনা সিটি)",
-      "উষ্ণ জলবায়ু",
-      "অব্যবস্থাপনা",
-      "সংক্রমিত নার্সারি স্টক"
+    "prevention_tips_bn": [
+      "রোগের প্রাথমিক লক্ষণের জন্য নিয়মিত আঙুরের পাতা এবং ফলের গুচ্ছ পরীক্ষা করুন।",
+      "সঠিক লতার পুষ্টি এবং ড্রিপ সেচ ব্যবস্থাপনা নিশ্চিত করুন।"
     ],
-    "favorable_conditions_ur": [
-      "سائیلڈ ناقل کی موجودگی (مثلاً ڈیافورینا سٹری)",
-      "گرم موسم",
-      "ناقص انتظام",
-      "متاثرہ نرسری اسٹاک"
-    ],
-    "spread_en": "Spread by psyllid insects; grafting with infected material",
-    "spread_bn": "সাইলিড পোকা দ্বারা ছড়ায়; সংক্রমিত উপাদান দিয়ে গ্রাফটিং",
-    "spread_ur": "سائیلڈ کیڑوں سے پھیلتی ہے؛ متاثرہ مواد سے گرافٹنگ"
-  },
-  {
-    "id": "peach_bacterial_spot",
-    "crop_en": "Peach",
-    "crop_bn": "পীচ",
-    "crop_ur": "آڑو",
-    "name_en": "Bacterial Spot",
-    "name_bn": "ব্যাকটেরিয়াল স্পট",
-    "name_ur": "بیکٹیریل سپاٹ",
-    "scientific_name": "Xanthomonas campestris pv. pruni",
-    "severity": "moderate",
-    "description_en": "Bacterial spot causes angular leaf spots and fruit lesions, reducing yield and fruit quality.",
-    "description_bn": "ব্যাকটেরিয়াল স্পট কৌণিক পাতা দাগ ও ফল ক্ষত সৃষ্টি করে, ফলন ও ফলের মান কমায়।",
-    "description_ur": "بیکٹیریل سپاٹ زاویہ دار پتوں کے دھبے اور پھل کے زخم بناتا ہے، پیداوار اور پھل کے معیار کو کم کرتا ہے۔",
-    "symptoms_en": [
-      "Angular, water-soaked spots on leaves",
-      "Spots become dark and fall out (shot-hole)",
-      "Dark, sunken lesions on fruit",
-      "Leaf yellowing and early drop",
-      "Reduced fruit size"
-    ],
-    "symptoms_bn": [
-      "পাতায় কৌণিক, পানিভেজা দাগ",
-      "দাগ গাঢ় হয়ে গর্ত করে (শট-হোল)",
-      "ফলে গাঢ়, বসে যাওয়া ক্ষত",
-      "পাতা হলুদ ও অকালে ঝরে যাওয়া",
-      "ফলের আকার কমে যাওয়া"
-    ],
-    "symptoms_ur": [
-      "پتوں پر زاویہ دار، پانی سے بھیگے دھبے",
-      "دھبے گہرے ہو کر گر جاتے ہیں (شاٹ ہول)",
-      "پھل پر گہرے دھنسے ہوئے زخم",
-      "پتے پیلے ہو کر جلد گرنا",
-      "پھل کا سائز کم"
-    ],
-    "favorable_conditions_en": [
-      "Warm, wet weather",
-      "Windy conditions during rain",
-      "Overhead irrigation",
-      "Susceptible varieties"
-    ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, ভেজা আবহাওয়া",
-      "বৃষ্টির সময় বাতাস",
-      "ওভারহেড সেচ",
-      "সংবেদনশীল জাত"
-    ],
-    "favorable_conditions_ur": [
-      "گرم، گیلے موسم",
-      "بارش کے دوران تیز ہوائیں",
-      "اوپری آبپاشی",
-      "حساس اقسام"
-    ],
-    "spread_en": "Rain splash, wind, contaminated tools",
-    "spread_bn": "বৃষ্টির ছিটা, বাতাস, দূষিত যন্ত্রপাতি",
-    "spread_ur": "بارش کے چھینٹے، ہوا، آلودہ اوزار"
-  },
-  {
-    "id": "peach_healthy",
-    "crop_en": "Peach",
-    "crop_bn": "পীচ",
-    "crop_ur": "آڑو",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Peach plant is healthy with no visible disease symptoms.",
-    "description_bn": "পীচ গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "آڑو کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
-  },
-  {
-    "id": "pepper_bacterial_spot",
-    "crop_en": "Pepper (Bell)",
-    "crop_bn": "বেল মরিচ",
-    "crop_ur": "شملہ مرچ",
-    "name_en": "Bacterial Spot",
-    "name_bn": "ব্যাকটেরিয়াল স্পট",
-    "name_ur": "بیکٹیریل سپاٹ",
-    "scientific_name": "Xanthomonas campestris pv. vesicatoria",
-    "severity": "moderate",
-    "description_en": "Bacterial spot causes dark, water-soaked leaf spots and fruit lesions, leading to defoliation and reduced yield.",
-    "description_bn": "ব্যাকটেরিয়াল স্পট গাঢ়, পানিভেজা পাতা দাগ ও ফল ক্ষত সৃষ্টি করে, ফলে পাতা ঝরায় ও ফলন কমায়।",
-    "description_ur": "بیکٹیریل سپاٹ پتوں پر گہرے، پانی سے بھیگے دھبے اور پھل پر زخم بناتا ہے، جس سے پتے گرتے ہیں اور پیداوار کم ہوتی ہے۔",
-    "symptoms_en": [
-      "Dark, irregular spots on leaves",
-      "Spots may merge and cause leaf blight",
-      "Leaf yellowing and drop",
-      "Dark, sunken spots on fruit",
-      "Fruit rot and reduced marketability"
-    ],
-    "symptoms_bn": [
-      "পাতায় গাঢ়, অনিয়মিত দাগ",
-      "দাগ মিশে লিফ ব্লাইট হতে পারে",
-      "পাতা হলুদ ও ঝরে যাওয়া",
-      "ফলে গাঢ়, বসে যাওয়া দাগ",
-      "ফল পচন ও বাজারযোগ্যতা হ্রাস"
-    ],
-    "symptoms_ur": [
-      "پتوں پر گہرے، بے ترتیب دھبے",
-      "دھبے مل کر لیف بلائٹ کا سبب بن سکتے ہیں",
-      "پتے پیلے ہو کر گر جاتے ہیں",
-      "پھل پر گہرے دھنسے ہوئے دھبے",
-      "پھل سڑنا اور مارکیٹ میں کمی"
-    ],
-    "favorable_conditions_en": [
-      "Warm, humid conditions",
-      "Overhead irrigation",
-      "Rainy weather",
-      "Crop debris"
-    ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র অবস্থা",
-      "ওভারহেড সেচ",
-      "বৃষ্টি আবহাওয়া",
-      "ফসলের অবশিষ্টাংশ"
-    ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب حالات",
-      "اوپری آبپاشی",
-      "بارش کا موسم",
-      "فصل کا ملبہ"
-    ],
-    "spread_en": "Rain splash, wind, contaminated seeds",
-    "spread_bn": "বৃষ্টির ছিটা, বাতাস, দূষিত বীজ",
-    "spread_ur": "بارش کے چھینٹے، ہوا، آلودہ بیج"
-  },
-  {
-    "id": "pepper_healthy",
-    "crop_en": "Pepper (Bell)",
-    "crop_bn": "বেল মরিচ",
-    "crop_ur": "شملہ مرچ",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Pepper plant is healthy with no visible disease symptoms.",
-    "description_bn": "বেল মরিচ গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "شملہ مرچ کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "prevention_tips_ur": [
+      "ابتدائی علامات کے لیے باقاعدگی سے انگور کے پتوں اور گچھوں کی نگرانی کریں۔",
+      "مناسب غذائیت اور قطرہ قطرہ آبپاشی کے نظام کو یقینی بنائیں۔"
+    ]
   },
   {
     "id": "potato_early_blight",
-    "crop_en": "Potato",
-    "crop_bn": "আলু",
-    "crop_ur": "آلو",
-    "name_en": "Early Blight",
-    "name_bn": "আর্লি ব্লাইট",
-    "name_ur": "ارلی بلائٹ",
-    "scientific_name": "Alternaria solani",
-    "severity": "moderate",
-    "description_en": "Early blight causes dark brown spots with concentric rings on potato leaves, leading to defoliation and reduced yield.",
-    "description_bn": "আর্লি ব্লাইট আলুর পাতায় বৃত্তাকার রিংসহ গাঢ় বাদামি দাগ সৃষ্টি করে, যা পাতা ঝরায় ও ফলন কমায়।",
-    "description_ur": "ارلی بلائٹ آلو کے پتوں پر ہم مرکز دائروں والے گہرے بھورے دھبے بناتا ہے، جس سے پتے گرتے ہیں اور پیداوار کم ہوتی ہے۔",
-    "symptoms_en": [
-      "Dark brown spots with concentric rings",
-      "Leaf yellowing and drop",
-      "Stem lesions",
-      "Tuber rot (dark, sunken spots)",
-      "Reduced yield"
+    "cultural_control_en": [
+      "Rotate potatoes with non-solanaceous crops (e.g. corn or legumes) for at least 2 years.",
+      "Destroy crop residues and volunteer potato plants after harvest.",
+      "Avoid overhead irrigation late in the afternoon to minimize leaf wetness."
     ],
-    "symptoms_bn": [
-      "বৃত্তাকার রিংসহ গাঢ় বাদামি দাগ",
-      "পাতা হলুদ ও ঝরে যাওয়া",
-      "কাণ্ডে ক্ষত",
-      "কন্দে পচন (গাঢ়, বসে যাওয়া দাগ)",
-      "ফলন কমে যাওয়া"
+    "cultural_control_bn": [
+      "কমপক্ষে ২ বছরের জন্য আলুকে নন-সোলানেসিয়াস ফসল (যেমন ভুট্টা বা ডাল) দিয়ে আবর্তন করুন।",
+      "ফসল কাটার পর ফসলের অবশিষ্টাংশ এবং অপ্রয়োজনীয় আলু গাছ ধ্বংস করুন।",
+      "পাতায় আর্দ্রতা কমাতে শেষ বিকেলে মাথার ওপরের সেচ এড়িয়ে চলুন।"
     ],
-    "symptoms_ur": [
-      "ہم مرکز دائروں والے گہرے بھورے دھبے",
-      "پتے زرد ہو کر گر جاتے ہیں",
-      "تنے پر زخم",
-      "گٹھوں میں سڑن (گہرے دھنسے دھبے)",
-      "پیداوار میں کمی"
+    "cultural_control_ur": [
+      "آلو کو کم از کم 2 سال کے لیے غیر سولانیسیس فصلوں (مثلاً مکئی یا پھلیاں) کے ساتھ بدل کر کاشت کریں۔",
+      "کٹائی کے بعد فصل کی باقیات اور خود رو آلو کے پودوں کو تلف کریں۔",
+      "پتوں کی نمی کو کم کرنے کے لیے دیر سے شام کی آبپاشی سے گریز کریں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm, humid conditions",
-      "Stress from poor nutrition",
-      "Alternating wet/dry periods"
+    "chemical_control_en": [
+      "Apply protective fungicides (e.g. chlorothalonil or mancozeb) when early lesions appear on lower leaves.",
+      "Follow product label directions for application timing and fungicide rotation to prevent resistance."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র অবস্থা",
-      "দরিদ্র পুষ্টি থেকে চাপ",
-      "ভেজা/শুষ্ক সময়ের পরিবর্তন"
+    "chemical_control_bn": [
+      "নিচের পাতায় প্রাথমিক ক্ষত দেখা দিলে প্রতিরক্ষামূলক ছত্রাকনাশক (যেমন ক্লোরোথ্যা লোনিল বা ম্যানকোজেব) প্রয়োগ করুন।",
+      "প্রতিরোধ রোধ করতে প্রয়োগের সময় এবং ছত্রাকনাশক আবর্তনের জন্য লেবেল নির্দেশাবলী অনুসরণ করুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب حالات",
-      "غذائیت کی کمی سے تناؤ",
-      "نم / خشک ادوار کا ردوبدل"
+    "chemical_control_ur": [
+      "نچلے پتوں پر ابتدائی زخم ظاہر ہونے پر حفاظتی فنگسائڈ (مثلاً کلورتھالونل یا مینکوزیپ) لگائیں۔",
+      "مزاحمت کو روکنے کے لیے اسپرے کے وقت اور فنگسائڈ کے تبادلے کے لیے لیبل کی ہدایات پر عمل کریں۔"
     ],
-    "spread_en": "Wind-blown spores, water splash",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, পানির ছিটা",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، پانی کے چھینٹے"
+    "biological_control_en": [
+      "Apply Bacillus subtilis biofungicide to suppress fungal development.",
+      "Use copper-based formulations approved for organic production."
+    ],
+    "biological_control_bn": [
+      "ছত্রাকের বিকাশ দমন করতে ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক প্রয়োগ করুন।",
+      "জৈব উৎপাদনের জন্য অনুমোদিত কপার-ভিত্তিক ফর্মুলেশন ব্যবহার করুন।"
+    ],
+    "biological_control_ur": [
+      "فنگل کی نشوونما کو دبانے کے لیے بیکیلس سَبٹِلس فنگسائڈ لگائیں۔",
+      "نامیاتی پیداوار کے لیے منظور شدہ تانبے والی پروڈکٹس استعمال کریں۔"
+    ],
+    "prevention_tips_en": [
+      "Use certified disease-free seed tubers.",
+      "Ensure adequate nitrogen and potassium fertilization to prevent premature senescence."
+    ],
+    "prevention_tips_bn": [
+      "প্রত্যয়িত রোগমুক্ত বীজ আলু ব্যবহার করুন।",
+      "অকাল বার্ধক্য রোধ করতে পর্যাপ্ত নাইট্রোজেন এবং পটাশিয়াম সার নিশ্চিত করুন।"
+    ],
+    "prevention_tips_ur": [
+      "مصدقہ اور بیماری سے پاک بیج آلو استعمال کریں۔",
+      "وقت سے پہلے پودے کی کمزوری کو روکنے کے لیے نائٹروجن اور پوٹاشیم کی مناسب مقدار یقینی بنائیں۔"
+    ]
+  },
+  {
+    "id": "orange_citrus_greening",
+    "cultural_control_en": [
+      "Remove and destroy HLB-infected trees promptly; infection is permanent and sick trees spread the bacterium.",
+      "Buy certified disease-free nursery plants and control citrus psyllids across the whole orchard.",
+      "Inspect trees every 2-4 weeks for blotchy leaf mottle and remove volunteer citrus hosts nearby."
+    ],
+    "cultural_control_bn": [
+      "এইচএলবি-আক্রান্ত গাছ দ্রুত তুলে ধ্বংস করুন; সংক্রমণ স্থায়ী এবং অসুস্থ গাছ রোগের জীবাণু ছড়ায়।",
+      "সার্টিফায়েড রোগমুক্ত নার্সারির চারা কিনুন এবং পুরো বাগানে সাইট্রাস সাইলিড পোকা নিয়ন্ত্রণ করুন।",
+      "প্রতি ২-৪ সপ্তাহে পাতার অসম হলুদ দাগ পরীক্ষা করুন এবং কাছাকাছি বন্য সাইট্রাস গাছ সরিয়ে ফেলুন।"
+    ],
+    "cultural_control_ur": [
+      "ایچ ایل بی سے متاثرہ درخت فوراً اکھاڑ کر تباہ کریں؛ یہ انفیکشن مستقل ہے اور مریض درخت بیماری پھیلاتے ہیں۔",
+      "سرٹیفائیڈ بیماری سے پاک نرسری کے پودے خریدیں اور پورے باغ میں سائٹرس سائیلاڈ کیڑوں پر قابو رکھیں۔",
+      "ہر ۲-۴ ہفتے میں پتوں پر بے ترتیب زرد دھبے جانچیں اور قریبی جنگلی سائٹرس کے درخت ہٹا دیں۔"
+    ],
+    "chemical_control_en": [
+      "No chemical cures HLB; suppress the psyllid vector with label-approved insecticides.",
+      "Rotate insecticide groups and always follow the product label and local agricultural extension advice."
+    ],
+    "chemical_control_bn": [
+      "এইচএলবির কোনো রাসায়নিক প্রতিকার নেই; লেবেল-অনুমোদিত কীটনাশক দিয়ে সাইলিড পোকা দমন করুন।",
+      "কীটনাশকের গ্রুপ ঘুরিয়ে ঘুরিয়ে ব্যবহার করুন এবং সবসময় প্রোডাক্ট লেবেল ও স্থানীয় কৃষি সম্প্রসারণের পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "ایچ ایل بی کا کوئی کیمیاوی علاج نہیں؛ لیبل سے منظور شدہ کیڑے مار دوا سے سائیلاڈ پر قابو رکھیں۔",
+      "کیڑے مار ادویات کے گروپ بدل بدل کر استعمال کریں اور ہمیشہ پروڈکٹ لیبل اور مقامی زرعی مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Spray neem oil on young flushes to reduce psyllid adults and nymphs.",
+      "Conserve ladybirds, lacewings and other natural enemies; avoid broad-spectrum sprays."
+    ],
+    "biological_control_bn": [
+      "নতুন কচি পাতায় সাইলিডের পূর্ণবয়স্ক ও কীড়া কমাতে নিম তেল স্প্রে করুন।",
+      "লেডিবার্ড, লেসউইংসহ প্রাকৃতিক শত্রু পোকা সংরক্ষণ করুন; বিস্তৃত প্রভাবের কীটনাশক এড়িয়ে চলুন।"
+    ],
+    "biological_control_ur": [
+      "نئے پتوں پر سائیلاڈ کے مکمل کیڑے اور بچے کم کرنے کے لیے نیم کا تیل اسپرے کریں۔",
+      "لیڈی برڈ اور لیس ونگ جیسے فائدہ مند کیڑوں کی حفاظت کریں؛ وسیع اثر والی سپرے سے پرہیز کریں۔"
+    ],
+    "prevention_tips_en": [
+      "Plant only certified, disease-free saplings from accredited nurseries.",
+      "Keep a regular psyllid monitoring and control programme every season.",
+      "Remove infected trees immediately to protect the rest of the orchard."
+    ],
+    "prevention_tips_bn": [
+      "অনুমোদিত নার্সারি থেকে শুধুমাত্র সার্টিফায়েড রোগমুক্ত চারা রোপণ করুন।",
+      "প্রতি মৌসুমে নিয়মিত সাইলিড পর্যবেক্ষণ ও দমন কার্যক্রম চালু রাখুন।",
+      "বাগানের বাকি গাছ রক্ষায় আক্রান্ত গাছ সঙ্গে সঙ্গে অপসারণ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "صرف منظور شدہ نرسریوں سے سرٹیفائیڈ اور بیماری سے پاک پودے لگائیں۔",
+      "ہر موسم میں سائیلاڈ کی باقاعدہ نگرانی اور قابو کا پروگرام جاری رکھیں۔",
+      "باغ کے باقی درختوں کی حفاظت کے لیے متاثرہ درخت فوراً ہٹا دیں۔"
+    ]
+  },
+  {
+    "id": "peach_bacterial_spot",
+    "cultural_control_en": [
+      "Choose resistant cultivars when replanting, as susceptibility varies widely between varieties.",
+      "Prune out infected twigs and cankers in dry weather and burn or discard them away from the orchard.",
+      "Avoid excess nitrogen and overhead irrigation; both encourage lush, disease-prone growth.",
+      "Space and prune trees for good airflow so foliage dries quickly after rain."
+    ],
+    "cultural_control_bn": [
+      "প্রতিরোধী জাত বেছে নিন; জাতভেদে এই রোগের প্রতি সংবেদনশীলতায় ব্যাপক তারতম্য থাকে।",
+      "শুষ্ক আবহাওয়ায় আক্রান্ত ডালপালা ও ক্ষত ছেঁটে বাগানের বাইরে পুড়িয়ে ফেলুন।",
+      "অতিরিক্ত ইউরিয়া ও উপর থেকে পানি দেওয়া এড়িয়ে চলুন; এতে কচি বৃদ্ধি ও রোগ দুটোই বাড়ে।",
+      "ভালো বাতাস চলাচলের জন্য গাছের দূরত্ব রাখুন ও ছাঁটাই করুন যাতে বৃষ্টির পর পাতা দ্রুত শুকায়।"
+    ],
+    "cultural_control_ur": [
+      "دوبارہ پودے لگاتے وقت مزاحم اقسام منتخب کریں؛ اقسام میں حساسیت میں بڑا فرق ہوتا ہے۔",
+      "خشک موسم میں متاثرہ شاخیں اور زخم کاٹ کر باغ سے دور جلا دیں۔",
+      "زائد نائٹروجن اور پتوں پر پانی دینے سے گریز کریں؛ دونوں نازک بڑھوتری اور بیماری بڑھاتے ہیں۔",
+      "اچھی ہوا کے بہاؤ کے لیے درختوں میں فاصلہ رکھیں اور کٹائی کریں تاکہ بارش کے بعد پتے جلد خشک ہوں۔"
+    ],
+    "chemical_control_en": [
+      "Apply copper-based bactericides (e.g. copper hydroxide) at leaf fall and bud break.",
+      "Where registered, oxytetracycline sprays can reduce spread; always follow the product label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "পাতা ঝরার সময় ও কুঁড়ি ফোটার সময় কপার ভিত্তিক জীবাণুনাশক (যেমন কপার হাইড্রোক্সাইড) প্রয়োগ করুন।",
+      "নিবন্ধিত থাকলে অক্সিটেট্রাসাইক্লিন স্প্রে রোগ ছড়ানো কমায়; সবসময় প্রোডাক্ট লেবেল ও স্থানীয় কৃষি পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "پتے جھڑنے اور کلی پھوٹنے کے وقت کاپر مبنی جراثیم کش (مثلاً کاپر ہائیڈرو آکسائیڈ) اسپرے کریں۔",
+      "اجازت ہو تو آکسی ٹیٹراسائکلین کا اسپرے پھیلاؤ کم کرتا ہے؛ ہمیشہ پروڈکٹ لیبل اور مقامی زرعی مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis-based products during the season to reduce bacterial leaf infection.",
+      "Maintain orchard biodiversity and soil health to support natural disease suppression."
+    ],
+    "biological_control_bn": [
+      "মৌসুমে ব্যাসিলাস সাবটিলিস জাতীয় প্রস্তুতি স্প্রে করলে পাতার ব্যাকটেরিয়াজনিত সংক্রমণ কমে।",
+      "বাগানের জীববৈচিত্র্য ও মাটির স্বাস্থ্য বজায় রাখুন; এতে রোগ দমনের প্রাকৃতিক ক্ষমতা বাড়ে।"
+    ],
+    "biological_control_ur": [
+      "موسم کے دوران بیسیلس سب ٹیلیس (Bacillus subtilis) پر مبنی سپرے سے پتوں کا بیکٹیریل انفیکشن کم ہوتا ہے۔",
+      "باغ کی حیاتیاتی تنوع اور مٹی کی صحت برقرار رکھیں؛ اس سے بیماری روکنے کی قدرتی صلاحیت بہتر ہوتی ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Remove mummified fruit and infected wood in winter to cut next season's inoculum.",
+      "Irrigate at the base and only when leaves can dry quickly.",
+      "Select proven resistant varieties for any new orchard block."
+    ],
+    "prevention_tips_bn": [
+      "শীতকালে শুকনো মমি-জাতীয় ফল ও আক্রান্ত কাঠ অপসারণ করুন; এতে পরের মৌসুমের রোগের উৎস কমবে।",
+      "গাছের গোড়ায় পানি দিন এবং এমন সময়ে দিন যখন পাতা দ্রুত শুকাতে পারে।",
+      "নতুন বাগানে পরীক্ষিত প্রতিরোধী জাত বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "سردیوں میں مومی خشک میوے اور متاثرہ لکڑی ہٹا دیں تاکہ اگلے موسم کا انفیکشن ذریعہ کم ہو۔",
+      "درخت کی بنیاد پر پانی دیں اور اس وقت دیں جب پتے جلد خشک ہو سکیں۔",
+      "نئے باغ کے لیے آزمائے ہوئے مزاحم اقسام منتخب کریں۔"
+    ]
+  },
+  {
+    "id": "peach_healthy",
+    "cultural_control_en": [
+      "Keep pruning, fruit thinning and irrigation schedules on track to reduce tree stress.",
+      "Inspect leaves and fruit weekly for early disease symptoms.",
+      "Maintain balanced fertilization; excess nitrogen invites bacterial spot."
+    ],
+    "cultural_control_bn": [
+      "গাছের চাপ কমাতে ছাঁটাই, ফল পাতলা করা ও সেচের সময়সূচি ঠিক রাখুন।",
+      "সপ্তাহে একবার পাতা ও ফলে রোগের প্রাথমিক লক্ষণ পরীক্ষা করুন।",
+      "সুষম সার ব্যবস্থাপনা করুন; অতিরিক্ত ইউরিয়া ব্যাকটেরিয়াজনিত দাগ রোগের ঝুঁকি বাড়ায়।"
+    ],
+    "cultural_control_ur": [
+      "درخت پر دباؤ کم رکھنے کے لیے کٹائی، پھل پتلا کرنا اور آبپاشی کا شیڈول درست رکھیں۔",
+      "ہفتہ وار پتوں اور پھلوں میں بیماری کی ابتدائی علامات کا معائنہ کریں۔",
+      "متوازن کھاد استعمال کریں؛ زائد نائٹروجن بیکٹیریل اسپاٹ کا خطرہ بڑھا دیتی ہے۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Collect and destroy fallen leaves and mummified fruit after harvest.",
+      "Sanitize pruning tools between trees.",
+      "Plan a winter dormancy spray programme with your local agricultural extension office."
+    ],
+    "prevention_tips_bn": [
+      "ফসল তোলার পর ঝরে পড়া পাতা ও শুকনো মমি-জাতীয় ফল সংগ্রহ করে ধ্বংস করুন।",
+      "প্রতিটি গাছ ছাঁটার পর কাঁচি ও যন্ত্র জীবাণুমুক্ত করুন।",
+      "শীতের প্রতিরোধমূলক স্প্রে পরিকল্পনা স্থানীয় কৃষি সম্প্রসারণ অফিসের পরামর্শে করুন।"
+    ],
+    "prevention_tips_ur": [
+      "فصل کے بعد گری ہوئی پتیاں اور مومی خشک میوے اکٹھے کر کے تباہ کریں۔",
+      "ہر درخت کی کٹائی کے بعد کاٹنے والے اوزار جراثیم سے پاک کریں۔",
+      "سردیوں کے حفاظتی اسپرے کا منصوبہ مقامی زرعی دفتر کے مشورے سے بنائیں۔"
+    ]
+  },
+  {
+    "id": "pepper_bacterial_spot",
+    "cultural_control_en": [
+      "Use certified disease-free seed and resistant varieties.",
+      "Rotate peppers with non-solanaceous crops for at least 2-3 years.",
+      "Remove infected plants and debris; avoid working in the field when foliage is wet.",
+      "Use drip irrigation and wider spacing to keep leaves dry."
+    ],
+    "cultural_control_bn": [
+      "সার্টিফায়েড রোগমুক্ত বীজ ও প্রতিরোধী জাত ব্যবহার করুন।",
+      "কমপক্ষে ২-৩ বছরের জন্য টমেটো-আলু-বেগুন জাতীয় ফসল এড়িয়ে ফসল আবর্তন করুন।",
+      "আক্রান্ত গাছ ও আবর্জনা তুলে ফেলুন; পাতা ভেজা অবস্থায় জমিতে কাজ করবেন না।",
+      "পাতা শুকনো রাখতে ড্রিপ সেচ ব্যবহার করুন এবং চারার মধ্যে বেশি দূরত্ব রাখুন।"
+    ],
+    "cultural_control_ur": [
+      "سرٹیفائیڈ بیماری سے پاک بیج اور مزاحم اقسام استعمال کریں۔",
+      "کم از کم ۲-۳ سال کے لیے ٹماٹر-آلو-بینگن والی فصلوں سے روٹیشن کریں۔",
+      "متاثرہ پودے اور ملبہ ہٹا دیں؛ پتے بھیگے ہوں تو کھیت میں کام نہ کریں۔",
+      "پتوں کو خشک رکھنے کے لیے ڈرپ آبپاشی استعمال کریں اور پودوں میں زیادہ فاصلہ رکھیں۔"
+    ],
+    "chemical_control_en": [
+      "Apply copper-based bactericides (e.g. copper hydroxide) at first symptoms and repeat per label directions.",
+      "Copper mixed with mancozeb often works better; always follow the product label and local extension advice."
+    ],
+    "chemical_control_bn": [
+      "রোগের প্রাথমিক লক্ষণ দেখা দিলে কপার ভিত্তিক জীবাণুনাশক (যেমন কপার হাইড্রোক্সাইড) প্রয়োগ করুন এবং লেবেল অনুযায়ী দোহরান।",
+      "কপারের সাথে ম্যানকোজেব মেশানো স্প্রে প্রায়ই বেশি কার্যকর; সবসময় প্রোডাক্ট লেবেল ও স্থানীয় কৃষি পরামর্শ মানুন।"
+    ],
+    "chemical_control_ur": [
+      "بیماری کی ابتدائی علامات پر کاپر مبنی جراثیم کش (مثلاً کاپر ہائیڈرو آکسائیڈ) اسپرے کریں اور لیبل کے مطابق دہرائیں۔",
+      "کاپر کے ساتھ مینکوزب کا ملاپ زیادہ مؤثر ہوتا ہے؛ ہمیشہ پروڈکٹ لیبل اور مقامی زرعی مشورے پر عمل کریں۔"
+    ],
+    "biological_control_en": [
+      "Bacillus subtilis sprays can suppress bacterial spot on foliage.",
+      "Neem-based products and Trichoderma soil applications support plant vigor."
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস স্প্রে পাতার ব্যাকটেরিয়াজনিত দাগ রোগ কমাতে সহায়ক।",
+      "নিম নির্যাস ও ট্রাইকোডার্মা মাটিতে প্রয়োগ করলে গাছের সবলতা বাড়ে।"
+    ],
+    "biological_control_ur": [
+      "بیسیلس سب ٹیلیس (Bacillus subtilis) کا اسپرے پتوں کے بیکٹیریل اسپاٹ کو کم کرتا ہے۔",
+      "نیم کی مصنوعات اور ٹرائیکوڈرما کا مٹی میں استعمال پودوں کی قوت بڑھاتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Solarize nursery beds and use clean trays and tools each season.",
+      "Dispose of crop debris far from the field after the final harvest.",
+      "Record disease hotspots and plant resistant varieties there next season."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি মৌসুমে বীজতলার মাটি রোদে শুকিয়ে (সোলারাইজেশন) জীবাণুমুক্ত করুন এবং পরিষ্কার ট্রে ও যন্ত্রপাতি ব্যবহার করুন।",
+      "শেষ ফসল তোলার পর জমির আবর্জনা দূরে সরিয়ে নিষ্পত্তি করুন।",
+      "রোগ বেশি হওয়া জায়গার তথ্য রাখুন; পরের মৌসুমে সেখানে প্রতিরোধী জাত লাগান।"
+    ],
+    "prevention_tips_ur": [
+      "ہر موسم میں نرسری کی مٹی کو سورج سے جراثیم سے پاک کریں اور صاف ٹرے اور اوزار استعمال کریں۔",
+      "آخری فصل کے بعد کھیت کا ملبہ دور جا کر ضائع کریں۔",
+      "بیماری کی زیادہ ہونے والی جگہوں کا ریکارڈ رکھیں؛ اگلے موسم وہاں مزاحم اقسام لگائیں۔"
+    ]
+  },
+  {
+    "id": "pepper_healthy",
+    "cultural_control_en": [
+      "Scout plants weekly for leaf lesions, especially after wet weather.",
+      "Water at the base in the morning so foliage dries quickly.",
+      "Keep weeds down to improve airflow around the canopy."
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার, বিশেষ করে ভেজা আবহাওয়ার পর, পাতায় দাগ আছে কি না দেখুন।",
+      "সকালে গোড়ায় পানি দিন যাতে পাতা দ্রুত শুকিয়ে যায়।",
+      "আগাছা পরিষ্কার রাখুন যাতে গাছের চারপাশে বাতাস চলাচল ভালো থাকে।"
+    ],
+    "cultural_control_ur": [
+      "ہفتہ وار پودوں کی نگرانی کریں، خاص طور پر گیلی موسم کے بعد پتوں کے دھبے دیکھیں۔",
+      "صبح بنیاد پر پانی دیں تاکہ پتے جلد خشک ہو جائیں۔",
+      "جڑی بوٹیاں صاف رکھیں تاکہ پودوں کے ارد گرد ہوا کا بہاؤ اچھا رہے۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Rotate with non-solanaceous crops next season and start from certified seed.",
+      "Clean stakes, trays and tools before storing them.",
+      "Choose resistant varieties when buying seed for the next planting."
+    ],
+    "prevention_tips_bn": [
+      "পরের মৌসুমে টমেটো-আলু-বেগুন জাতীয় ফসল এড়িয়ে ফসল আবর্তন করুন এবং সার্টিফায়েড বীজ দিয়ে শুরু করুন।",
+      "সংরক্ষণের আগে খুঁটি, ট্রে ও যন্ত্রপাতি পরিষ্কার করুন।",
+      "পরের রোপণের জন্য বীজ কেনার সময় প্রতিরোধী জাত বেছে নিন।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں ٹماٹر-آلو-بینگن والی فصلوں سے روٹیشن کریں اور سرٹیفائیڈ بیج سے آغاز کریں۔",
+      "ذخیرہ کرنے سے پہلے کھمبے، ٹرے اور اوزار صاف کریں۔",
+      "اگلی بیجائی کے لیے بیج خریدتے وقت مزاحم اقسام منتخب کریں۔"
+    ]
   },
   {
     "id": "potato_healthy",
-    "crop_en": "Potato",
-    "crop_bn": "আলু",
-    "crop_ur": "آلو",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Potato plant is healthy with no visible disease symptoms.",
-    "description_bn": "আলু গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "آلو کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "Check fields weekly for leaf spots, wilting or unusual yellowing.",
+      "Use certified seed tubers and keep irrigation even to avoid plant stress.",
+      "Keep ridging (hilling) and weed control current to improve airflow around plants."
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার জমিতে পাতায় দাগ, শুকিয়ে যাওয়া বা অস্বাভাবিক হলুদভাব পরীক্ষা করুন।",
+      "সার্টিফায়েড বীজ আলু ব্যবহার করুন এবং সেচ নিয়মিত রাখুন যাতে গাছে চাপ না পড়ে।",
+      "আলুর গোড়ায় মাটি তুলে দিন (হিলিং) এবং আগাছা নিয়ন্ত্রণ রাখুন যাতে গাছের চারপাশে বাতাস চলে।"
+    ],
+    "cultural_control_ur": [
+      "ہفتہ وار کھیت میں پتوں کے دھبے، مرجھائی یا غیر معمولی زردی کا معائنہ کریں۔",
+      "سرٹیفائیڈ بیج آلو استعمال کریں اور آبپاشی برابر رکھیں تاکہ پودوں پر دباؤ نہ پڑے۔",
+      "آلو کی بنیاد پر مٹی چڑھائیں (ہلنگ) اور جڑی بوٹیاں قابو میں رکھیں تاکہ ہوا کا بہاؤ اچھا رہے۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Rotate away from tomato, pepper and eggplant crops for 2-3 seasons.",
+      "Store tubers in a cool, dry, ventilated place; discard diseased tubers before storage.",
+      "Destroy volunteer potatoes and crop residues before the next planting."
+    ],
+    "prevention_tips_bn": [
+      "পরের ২-৩ মৌসুম টমেটো, মরিচ ও বেগুন জাতীয় ফসল এড়িয়ে ফসল আবর্তন করুন।",
+      "আলু ঠান্ডা, শুকনো ও হাওয়া চলাচলের জায়গায় সংরক্ষণ করুন; রোগাক্রান্ত আলু বাদ দিন।",
+      "পরের রোপণের আগে বন্য/অবশিষ্ট আলুগাছ ও ফসলের ধ্বংসাবশেষ ধ্বংস করুন।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے ۲-۳ موسموں کے لیے ٹماٹر، مرچ اور بینگن والی فصلوں سے روٹیشن کریں۔",
+      "آلو کو ٹھنڈی، خشک اور ہوا دار جگہ پر ذخیرہ کریں؛ بیمار آلو الگ کر دیں۔",
+      "اگلی بیجائی سے پہلے خود رو آلو کے پودے اور فصلی ملبہ تباہ کریں۔"
+    ]
   },
   {
     "id": "raspberry_healthy",
-    "crop_en": "Raspberry",
-    "crop_bn": "রাস্পবেরি",
-    "crop_ur": "رسبری",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Raspberry plant is healthy with no visible disease symptoms.",
-    "description_bn": "রাস্পবেরি গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "رسبری کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "Prune canes regularly to keep an open canopy with good airflow",
+      "Remove wild bramble plants nearby that harbor pests and diseases",
+      "Keep rows weed-free and mulch to reduce disease splashing"
+    ],
+    "cultural_control_bn": [
+      "নিয়মিত ডালপালা ছেঁটে ভালো বাতাস চলাচলের জন্য খোলা ক্যানোপি রাখুন",
+      "যেখানে কীট ও রোগ লুকিয়ে থাকে সেই আশপাশের বুনো রাস্পবেরি-জাতীয় ঝোপ সরিয়ে ফেলুন",
+      "সারিগুলো আগাছামুক্ত রাখুন এবং রোগ ছড়ানো কমাতে মালচ ব্যবহার করুন"
+    ],
+    "cultural_control_ur": [
+      "اچھی ہواداری کے لیے باقاعدگی سے شاخیں کاٹ کر کھلی چھتری برقرار رکھیں",
+      "کیڑوں اور بیماریوں کو چھپائے رکھنے والی قریبی جنگلی رسبیری نما جھاڑیاں ہٹا دیں",
+      "قطاروں کو جڑی بوٹیوں سے پاک رکھیں اور بیماری کے پھیلاؤ کم کرنے کے لیے ملچ کریں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Scout plants weekly for spots, wilting, or insect pests",
+      "Water at the base to keep foliage dry",
+      "Test soil yearly and fertilize according to results"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি সপ্তাহে গাছে দাগ, নেতিয়ে পড়া বা কীটপতঙ্গ আছে কিনা পর্যবেক্ষণ করুন",
+      "পাতা শুকনো রাখতে গাছের গোড়ায় পানি দিন",
+      "প্রতি বছর মাটি পরীক্ষা করে ফলাফল অনুযায়ী সার প্রয়োগ করুন"
+    ],
+    "prevention_tips_ur": [
+      "ہر ہفتے پودوں میں داغ، مرجھاؤ یا کیڑوں کی نگرانی کریں",
+      "پتوں کو خشک رکھنے کے لیے پودے کی بنیاد پر پانی دیں",
+      "ہر سال مٹی کا تجزیہ کروائیں اور نتائج کے مطابق کھاد دیں"
+    ]
   },
   {
     "id": "rice_brown_spot",
-    "crop_en": "Rice",
-    "crop_bn": "ধান",
-    "crop_ur": "چاول",
-    "name_en": "Brown Spot",
-    "name_bn": "ব্রাউন স্পট",
-    "name_ur": "براون سپاٹ",
-    "scientific_name": "Bipolaris oryzae",
-    "severity": "moderate",
-    "description_en": "Brown spot causes oval, brownish spots on rice leaves and grains, reducing yield and grain quality.",
-    "description_bn": "ব্রাউন স্পট ধানের পাতা ও শীষে ডিম্বাকার, বাদামি দাগ সৃষ্টি করে, ফলন ও শস্যের মান কমায়।",
-    "description_ur": "براون سپاٹ چاول کے پتوں اور دانوں پر بیضوی، بھورے دھبے بناتا ہے، پیداوار اور اناج کے معیار کو کم کرتا ہے۔",
-    "symptoms_en": [
-      "Oval, brownish spots on leaves",
-      "Spots have yellow halos",
-      "Lesions on grain husks",
-      "Reduced grain filling",
-      "Premature leaf death"
+    "cultural_control_en": [
+      "Remove and burn infected crop debris after harvest",
+      "Grow resistant varieties and use certified seed",
+      "Balance fertilizer to prevent potassium deficiency",
+      "Keep fields well-drained and avoid water stress"
     ],
-    "symptoms_bn": [
-      "পাতায় ডিম্বাকার, বাদামি দাগ",
-      "দাগের চারপাশে হলুদ রিং",
-      "শীষের খোসায় ক্ষত",
-      "শস্য ভরাট কম",
-      "পাতা অকালে মরে যাওয়া"
+    "cultural_control_bn": [
+      "ফসল কাটার পর রোগাক্রান্ত আবর্জনা সরিয়ে পুড়িয়ে ফেলুন",
+      "রোগ প্রতিরোধী জাত চাষ করুন এবং প্রত্যয়িত বীজ ব্যবহার করুন",
+      "পটাশিয়ামের ঘাটতি রোধে সুষম সার প্রয়োগ করুন",
+      "মাঠের নিষ্কাশন ঠিক রাখুন এবং পানির অভাবজনিত চাপ এড়িয়ে চলুন"
     ],
-    "symptoms_ur": [
-      "پتوں پر بیضوی، بھورے دھبے",
-      "دھبوں کے ارد گرد پیلے حلقے",
-      "اناج کے چھلکوں پر زخم",
-      "اناج کا کم بھرنا",
-      "قبل از وقت پتے مرنا"
+    "cultural_control_ur": [
+      "کٹائی کے بعد متاثرہ فصلی ملبہ ہٹا کر جلا دیں",
+      "بیماری برداشت کرنے والی اقسام اگائیں اور تصدیق شدہ بیج استعمال کریں",
+      "پوٹاشیم کی کمی روکنے کے لیے متوازن کھاد دیں",
+      "کھیت کی نکاسی برقرار رکھیں اور پانی کے تناؤ سے بچیں"
     ],
-    "favorable_conditions_en": [
-      "Warm, humid conditions",
-      "Nutrient deficiency (especially nitrogen)",
-      "Poor drainage",
-      "High soil acidity"
+    "chemical_control_en": [
+      "At early symptoms spray a fungicide with actives such as propiconazole or mancozeb",
+      "Always follow the product label and local agricultural extension advice"
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র অবস্থা",
-      "পুষ্টির ঘাটতি (বিশেষত নাইট্রোজেন)",
-      "নিকাশী খারাপ",
-      "মাটিতে বেশি অম্লতা"
+    "chemical_control_bn": [
+      "প্রাথমিক লক্ষণ দেখা দিলে প্রোপিকোনাজল বা ম্যানকোজেব জাতীয় সক্রিয় উপাদানযুক্ত ছত্রাকনাশক স্প্রে করুন",
+      "সর্বদা পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুসরণ করুন"
     ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب حالات",
-      "غذائیت کی کمی (خاص طور پر نائٹروجن)",
-      "ناقص نکاسی",
-      "مٹی کی تیزابیت زیادہ"
+    "chemical_control_ur": [
+      "ابتدائی علامات پر پروپیکونازول یا مینکوزیب جیسے فعال اجزاء والا فنگسائڈ اسپرے کریں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
     ],
-    "spread_en": "Airborne spores, contaminated seed",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, দূষিত বীজ",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، آلودہ بیج"
+    "biological_control_en": [
+      "Spray Bacillus subtilis or Trichoderma-based biofungicides",
+      "Apply neem-based sprays at early infection"
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস বা ট্রাইকোডার্মা-ভিত্তিক জৈব ছত্রাকনাশক স্প্রে করুন",
+      "প্রাথমিক সংক্রমণে নিম-ভিত্তিক স্প্রে প্রয়োগ করুন"
+    ],
+    "biological_control_ur": [
+      "بیسیلس سبٹیلیس یا ٹرائیکوڈرما پر مبنی حیاتیاتی فنگسائڈ اسپرے کریں",
+      "ابتدائی انفیکشن پر نیم پر مبنی اسپرے کریں"
+    ],
+    "prevention_tips_en": [
+      "Treat seed before the next planting",
+      "Rotate crops to break the disease cycle",
+      "Maintain balanced NPK and silicon nutrition"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী রোপণের আগে বীজ শোধন করুন",
+      "রোগের জীবনচক্র ভাঙতে ফসল পর্যায়াবৃত্তি করুন",
+      "সুষম এনপিকে ও সিলিকন পুষ্টি বজায় রাখুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلی کاشت سے پہلے بیج کا علاج کریں",
+      "بیماری کے چکر توڑنے کے لیے فصل کی تبدیلی کریں",
+      "متوازن این پی کے اور سلیکون غذائیت برقرار رکھیں"
+    ]
   },
   {
     "id": "rice_healthy",
-    "crop_en": "Rice",
-    "crop_bn": "ধান",
-    "crop_ur": "چاول",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Rice plant is healthy with no visible disease symptoms.",
-    "description_bn": "ধান গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "چاول کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "Scout fields weekly for leaf spots, blight, or pests",
+      "Keep bunds clean and remove volunteer rice plants",
+      "Maintain steady water and balanced fertilization"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে পাতায় দাগ, ঝলসানো বা কীটপতঙ্গের জন্য মাঠ পর্যবেক্ষণ করুন",
+      "মাঠের আইল পরিষ্কার রাখুন এবং স্বেচ্ছাবীজী ধানগাছ সরিয়ে ফেলুন",
+      "নিয়মিত সেচ ও সুষম সার ব্যবস্থাপনা বজায় রাখুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے پتوں کے داغ، جھلساؤ یا کیڑوں کے لیے کھیت کا معائنہ کریں",
+      "کھیت کی بنڈ صاف رکھیں اور خود رو دھان کے پودے ہٹا دیں",
+      "مسلسل پانی اور متوازن کھاد کا انتظام برقرار رکھیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Plant resistant varieties with certified seed next season",
+      "Rotate crops and incorporate dried stubble into the soil",
+      "Dry paddy well and store it properly to prevent mold"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী মৌসুমে প্রত্যয়িত বীজ দিয়ে রোগ প্রতিরোধী জাত রোপণ করুন",
+      "ফসল পর্যায়াবৃত্তি করুন এবং শুকনো খড় মাটিতে মিশিয়ে দিন",
+      "ছাঁচ প্রতিরোধে ধান ভালোভাবে শুকিয়ে সংরক্ষণ করুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں تصدیق شدہ بیج سے بیماری برداشت کرنے والی اقسام لگائیں",
+      "فصل کی تبدیلی کریں اور خشک پوجھل کو مٹی میں ملا دیں",
+      "سڑن سے بچنے کے لیے دھان اچھی طرح خشک کر کے محفوظ کریں"
+    ]
   },
   {
     "id": "rice_hispa",
-    "crop_en": "Rice",
-    "crop_bn": "ধান",
-    "crop_ur": "چاول",
-    "name_en": "Rice Hispa",
-    "name_bn": "রাইস হিসপা",
-    "name_ur": "رائس ہسپا",
-    "scientific_name": "Dicladispa armigera",
-    "severity": "moderate",
-    "description_en": "Rice hispa is a pest that causes white streaks on leaves, reducing photosynthetic area and yield.",
-    "description_bn": "রাইস হিসপা একটি পোকা যা পাতায় সাদা রেখা সৃষ্টি করে, আলোকসংস্লেষণ ও ফলন কমায়।",
-    "description_ur": "رائس ہسپا ایک کیڑا ہے جو پتوں پر سفید لکیریں بناتا ہے، ضیائی تالیف اور پیداوار کم کرتا ہے۔",
-    "symptoms_en": [
-      "White, longitudinal streaks on leaves",
-      "Streaks may coalesce to form large patches",
-      "Leaf drying and curling",
-      "Reduced grain yield",
-      "Plant stunting"
+    "cultural_control_en": [
+      "Clip and destroy leaf tips carrying hispa eggs and mining damage",
+      "Avoid excess nitrogen that favors beetle buildup",
+      "Remove grassy weeds and alternate hosts around the field"
     ],
-    "symptoms_bn": [
-      "পাতায় সাদা, লম্বালম্বি রেখা",
-      "রেখা মিলে বড় অংশ তৈরি করতে পারে",
-      "পাতা শুকিয়ে ও কুঁচকে যায়",
-      "শস্য ফলন হ্রাস",
-      "গাছের বৃদ্ধি বাধাগ্রস্ত"
+    "cultural_control_bn": [
+      "হিসপা পোকার ডিম ও সুড়ঙ্গযুক্ত পাতার ডগা কেটে ধ্বংস করুন",
+      "পোকার বিস্তার বাড়ায় এমন অতিরিক্ত নাইট্রোজেন সার এড়িয়ে চলুন",
+      "মাঠের চারপাশের ঘাসজাতীয় আগাছা ও বিকল্প পোষক উদ্ভিদ সরান"
     ],
-    "symptoms_ur": [
-      "پتوں پر سفید، طولانی لکیریں",
-      "لکیریں مل کر بڑے پیچ بن سکتی ہیں",
-      "پتے سوکھتے اور مڑتے ہیں",
-      "اناج کی پیداوار میں کمی",
-      "پودے کا بونا رہنا"
+    "cultural_control_ur": [
+      "ہسپا کے انڈے اور سرنگوں والی پتیوں کی نوکیں کاٹ کر تباہ کریں",
+      "کیڑوں کی افزائش بڑھانے والی زائد نائٹروجن کھاد سے پرہیز کریں",
+      "کھیت کے ارد گرد گھاس جیسی جڑی بوٹیاں اور متبادل میزبان پودے ہٹائیں"
     ],
-    "favorable_conditions_en": [
-      "Warm, humid climate",
-      "Dense planting",
-      "High nitrogen fertilizer",
-      "Weedy fields"
+    "chemical_control_en": [
+      "When leaf damage crosses the economic threshold, apply a labeled insecticide such as spinosad or malathion",
+      "Always follow the product label and local agricultural extension advice"
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র জলবায়ু",
-      "ঘন রোপণ",
-      "উচ্চ নাইট্রোজেন সার",
-      "আগাছাযুক্ত ক্ষেত"
+    "chemical_control_bn": [
+      "পাতার ক্ষতি অর্থনৈতিক ক্ষতির সীমা ছাড়ালে স্পিনোস্যাড বা ম্যালাথিয়ন জাতীয় নির্ধারিত কীটনাশক প্রয়োগ করুন",
+      "সর্বদা পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুসরণ করুন"
     ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب آب و ہوا",
-      "گھنی کاشت",
-      "زیادہ نائٹروجن کھاد",
-      "گھاس کے کھیت"
+    "chemical_control_ur": [
+      "جب پتوں کا نقصان معاشی حد سے بڑھ جائے تو اسپائنوسڈ یا میلاتھیان جیسی منظور شدہ کیڑے مار دوا لگائیں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
     ],
-    "spread_en": "Adult beetles fly from field to field",
-    "spread_bn": "পূর্ণাঙ্গ পোকা এক ক্ষেত থেকে অন্য ক্ষেতে উড়ে যায়",
-    "spread_ur": "بالغ برنگے ایک کھیت سے دوسرے کھیت میں اڑتے ہیں"
+    "biological_control_en": [
+      "Conserve natural enemies such as spiders, ladybird beetles, and egg parasitoids",
+      "Avoid broad-spectrum insecticides that kill beneficial insects"
+    ],
+    "biological_control_bn": [
+      "মাকড়সা, মুখি পোকা ও ডিম-পরজীবী কীটের মতো প্রাকৃতিক শত্রু সংরক্ষণ করুন",
+      "উপকারী পোকা মারে এমন বিস্তৃত পরিসরের কীটনাশক এড়িয়ে চলুন"
+    ],
+    "biological_control_ur": [
+      "مکڑیوں، لیڈی بیٹلز اور انڈے پیراسائٹائیڈز جیسے قدرتی دشمنوں کی حفاظت کریں",
+      "فائدہ مند کیڑوں کو مارنے والے وسیع اثر والے کیڑے مار ادویات سے بچیں"
+    ],
+    "prevention_tips_en": [
+      "Plow and flood fields after harvest to expose pupae",
+      "Monitor seedlings closely and use light traps early in the season",
+      "Remove volunteer rice and grassy hosts before the next planting"
+    ],
+    "prevention_tips_bn": [
+      "ফসল কাটার পর মাঠ চাষ ও প্লাবন করে মূককীট ধ্বংস করুন",
+      "মৌসুমের শুরুতে চারা ঘনিষ্ঠভাবে পর্যবেক্ষণ করুন এবং আলোক ফাঁদ ব্যবহার করুন",
+      "পরবর্তী রোপণের আগে স্বেচ্ছাবীজী ধান ও ঘাসজাতীয় পোষক সরিয়ে ফেলুন"
+    ],
+    "prevention_tips_ur": [
+      "کٹائی کے بعد کھیت جوت کر پانی بھر دیں تاکہ پیوپا بے نقاب ہوں",
+      "موسم کے شروع میں پودوں کی باریک بینی سے نگرانی کریں اور روشنی کے جال لگائیں",
+      "اگلی کاشت سے پہلے خود رو دھان اور گھاس جیسے میزبان ہٹائیں"
+    ]
   },
   {
     "id": "rice_leaf_blast",
-    "crop_en": "Rice",
-    "crop_bn": "ধান",
-    "crop_ur": "چاول",
-    "name_en": "Leaf Blast",
-    "name_bn": "লিফ ব্লাস্ট",
-    "name_ur": "لیف بلاسٹ",
-    "scientific_name": "Magnaporthe oryzae",
-    "severity": "severe",
-    "description_en": "Leaf blast is a devastating fungal disease causing diamond-shaped lesions on rice leaves, leading to severe yield loss.",
-    "description_bn": "লিফ ব্লাস্ট একটি বিধ্বংসী ছত্রাকজনিত রোগ যা ধানের পাতায় হীরাকৃতি ক্ষত সৃষ্টি করে, মারাত্মক ফলন ক্ষতি ঘটায়।",
-    "description_ur": "لیف بلاسٹ ایک تباہ کن فنگسی بیماری ہے جو چاول کے پتوں پر ہیرے نما زخم بناتی ہے، جس سے پیداوار میں شدید کمی آتی ہے۔",
-    "symptoms_en": [
-      "Diamond-shaped, grayish-white lesions with brown edges",
-      "Lesions may coalesce to cover entire leaf",
-      "Leaf death",
-      "Infection of panicle nodes",
-      "Empty or discolored grains"
+    "cultural_control_en": [
+      "Grow resistant varieties and use certified seed",
+      "Avoid excessive nitrogen and split fertilizer doses",
+      "Keep fields steadily flooded to avoid drought stress",
+      "Remove infected debris and volunteer rice plants"
     ],
-    "symptoms_bn": [
-      "হীরাকৃতি, ধূসর-সাদা দাগ যার কিনারা বাদামি",
-      "দাগ মিলে পুরো পাতা ঢাকতে পারে",
-      "পাতা মরে যাওয়া",
-      "শীষের গিঁটে সংক্রমণ",
-      "ফাঁপা বা বিবর্ণ শস্য"
+    "cultural_control_bn": [
+      "রোগ প্রতিরোধী জাত চাষ করুন এবং প্রত্যয়িত বীজ ব্যবহার করুন",
+      "অতিরিক্ত নাইট্রোজেন এড়িয়ে সারের ডোজ ভাগ করে দিন",
+      "খরার চাপ এড়াতে মাঠে নিয়মিত পানি ধরে রাখুন",
+      "রোগাক্রান্ত আবর্জনা ও স্বেচ্ছাবীজী ধানগাছ সরিয়ে ফেলুন"
     ],
-    "symptoms_ur": [
-      "ہیرے نما، سرمئی سفید دھبے بھورے کناروں کے ساتھ",
-      "دھبے مل کر پورے پتے کو ڈھانپ سکتے ہیں",
-      "پتے مر جاتے ہیں",
-      "پینیکل نوڈس کا انفیکشن",
-      "خالی یا بے رنگ دانے"
+    "cultural_control_ur": [
+      "بیماری برداشت کرنے والی اقسام اگائیں اور تصدیق شدہ بیج استعمال کریں",
+      "زائد نائٹروجن سے پرہیز کریں اور کھاد کی خوراک تقسیم کر کے دیں",
+      "خشک سالی کے تناؤ سے بچنے کے لیے کھیت میں مسلسل پانی رکھیں",
+      "بیمار ملبہ اور خود رو دھان کے پودے ہٹا دیں"
     ],
-    "favorable_conditions_en": [
-      "Cool, wet weather",
-      "High humidity",
-      "Excessive nitrogen",
-      "Susceptible varieties"
+    "chemical_control_en": [
+      "At first lesions spray a fungicide with actives such as tricyclazole or azoxystrobin",
+      "Always follow the product label and local agricultural extension advice"
     ],
-    "favorable_conditions_bn": [
-      "শীতল, ভেজা আবহাওয়া",
-      "উচ্চ আর্দ্রতা",
-      "অতিরিক্ত নাইট্রোজেন",
-      "সংবেদনশীল জাত"
+    "chemical_control_bn": [
+      "প্রথম দাগ দেখা দিলে ট্রাইসাইক্লাজল বা অ্যাজোক্সিস্ট্রোবিন জাতীয় সক্রিয় উপাদানযুক্ত ছত্রাকনাশক স্প্রে করুন",
+      "সর্বদা পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুসরণ করুন"
     ],
-    "favorable_conditions_ur": [
-      "ٹھنڈا، گیلے موسم",
-      "زیادہ نمی",
-      "ضرورت سے زیادہ نائٹروجن",
-      "حساس اقسام"
+    "chemical_control_ur": [
+      "پہلے دھبے نمودار ہوتے ہی ٹرائی سائیکلانزول یا ایزوکسی سٹروبین جیسے فعال اجزاء والا فنگسائڈ اسپرے کریں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
     ],
-    "spread_en": "Airborne spores, infected seeds",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, সংক্রমিত বীজ",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، متاثرہ بیج"
+    "biological_control_en": [
+      "Apply Bacillus subtilis or Trichoderma-based biofungicides",
+      "Use neem-based sprays to supplement disease suppression"
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস বা ট্রাইকোডার্মা-ভিত্তিক জৈব ছত্রাকনাশক প্রয়োগ করুন",
+      "রোগ দমনে সহায়ক হিসেবে নিম-ভিত্তিক স্প্রে ব্যবহার করুন"
+    ],
+    "biological_control_ur": [
+      "بیسیلس سبٹیلیس یا ٹرائیکوڈرما پر مبنی حیاتیاتی فنگسائڈ استعمال کریں",
+      "بیماری دبانے میں معاون کے طور پر نیم پر مبنی اسپرے استعمال کریں"
+    ],
+    "prevention_tips_en": [
+      "Treat seed before sowing next season",
+      "Adjust planting dates to avoid cool, dewy nights",
+      "Balance nutrients and manage water consistently"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী মৌসুমে বপনের আগে বীজ শোধন করুন",
+      "ঠান্ডা ও শিশিরভেজা রাত এড়াতে রোপণের সময় সামঞ্জস্য করুন",
+      "পুষ্টি সুষম রাখুন এবং পানি ব্যবস্থাপনা নিয়মিত করুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں بوائی سے پہلے بیج کا علاج کریں",
+      "ٹھنڈی اور شبنم آلود راتوں سے بچنے کے لیے کاشت کا وقت موزوں کریں",
+      "غذائیت متوازن رکھیں اور پانی کا مستقل انتظام کریں"
+    ]
   },
   {
     "id": "soybean_healthy",
-    "crop_en": "Soybean",
-    "crop_bn": "সয়াবিন",
-    "crop_ur": "سویابین",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Soybean plant is healthy with no visible disease symptoms.",
-    "description_bn": "সয়াবিন গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "سویابین کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "Scout weekly for rust, leaf spots, or defoliating pests",
+      "Rotate with non-legume crops and keep field borders clean",
+      "Irrigate at the base to keep foliage dry"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে রাস্ট, পাতায় দাগ বা পাতা খাওয়া কীটের জন্য পর্যবেক্ষণ করুন",
+      "নন-লিগিউম ফসলের সাথে পর্যায়াবৃত্তি করুন এবং মাঠের সীমানা পরিষ্কার রাখুন",
+      "পাতা শুকনো রাখতে গোড়ায় সেচ দিন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے رسٹ، پتوں کے دھبوں یا پت کھانے والے کیڑوں کی نگرانی کریں",
+      "غیر لگوم فصلوں کے ساتھ فصل کی تبدیلی کریں اور کھیت کے کنارے صاف رکھیں",
+      "پتوں کو خشک رکھنے کے لیے بنیاد پر آبپاشی کریں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Inoculate seed with Bradyrhizobium before the next planting",
+      "Rotate with cereals to break pest and disease cycles",
+      "Save clean seed and test germination before sowing"
+    ],
+    "prevention_tips_bn": [
+      "পরবর্তী রোপণের আগে ব্রেডিরাইজোবিয়াম দিয়ে বীজ শোধন করুন",
+      "কীট ও রোগের চক্র ভাঙতে খাদ্যশস্যের সাথে পর্যায়াবৃত্তি করুন",
+      "পরিষ্কার বীজ সংরক্ষণ করুন এবং বপনের আগে অঙ্কুরণ পরীক্ষা করুন"
+    ],
+    "prevention_tips_ur": [
+      "اگلی کاشت سے پہلے برائیڈی رائزوبیم سے بیج کا علاج کریں",
+      "کیڑوں اور بیماریوں کے چکر توڑنے کے لیے اناج کے ساتھ فصل کی تبدیلی کریں",
+      "صاف بیج محفوظ کریں اور بوائی سے پہلے انکرن کی جانچ کریں"
+    ]
   },
   {
     "id": "squash_powdery_mildew",
-    "crop_en": "Squash",
-    "crop_bn": "স্কোয়াশ",
-    "crop_ur": "اسکواش",
-    "name_en": "Powdery Mildew",
-    "name_bn": "পাউডারি মিলডিউ",
-    "name_ur": "پاڈری ملڈیو",
-    "scientific_name": "Podosphaera xanthii",
-    "severity": "moderate",
-    "description_en": "Powdery mildew appears as white powdery patches on squash leaves, reducing photosynthesis and yield.",
-    "description_bn": "পাউডারি মিলডিউ স্কোয়াশের পাতায় সাদা গুঁড়ো দাগ হিসেবে দেখা যায়, আলোকসংস্লেষণ ও ফলন কমায়।",
-    "description_ur": "پاڈری ملڈیو اسکواش کے پتوں پر سفید پاوڈر پیچ کے طور پر ظاہر ہوتی ہے، ضیائی تالیف اور پیداوار کم کرتی ہے۔",
-    "symptoms_en": [
-      "White powdery spots on leaves and stems",
-      "Leaves become yellow and dry",
-      "Stunted growth",
-      "Reduced fruit size and quality",
-      "Premature leaf drop"
+    "cultural_control_en": [
+      "Remove and destroy infected leaves; do not compost them.",
+      "Space plants widely and water at the base so foliage stays dry.",
+      "Choose resistant varieties and rotate squash to a new bed each season."
     ],
-    "symptoms_bn": [
-      "পাতা ও কাণ্ডে সাদা গুঁড়ো দাগ",
-      "পাতা হলুদ ও শুকিয়ে যায়",
-      "বৃদ্ধি বাধাগ্রস্ত",
-      "ফলের আকার ও মান হ্রাস",
-      "পাতা অকালে ঝরে যাওয়া"
+    "cultural_control_bn": [
+      "আক্রান্ত পাতা তুলে ধ্বংস করুন; কম্পোস্টে ফেলবেন না।",
+      "গাছের মাঝে যথেষ্ট ফাঁক রাখুন এবং গোড়ায় পানি দিন যাতে পাতা ভেজা না থাকে।",
+      "প্রতি মৌসুমে ফসলের পর্যায় বদলান এবং রোগ প্রতিরোধী জাত বেছে নিন।"
     ],
-    "symptoms_ur": [
-      "پتوں اور تنوں پر سفید پاوڈر دھبے",
-      "پتے پیلے اور سوکھ جاتے ہیں",
-      "رکٹ ہوئی نشوونما",
-      "پھل کے سائز اور معیار میں کمی",
-      "قبل از وقت پتے گرنا"
+    "cultural_control_ur": [
+      "متاثرہ پتوں کو ہٹا کر تباہ کریں؛ کھاد کے ڈھیر میں نہ ڈالیں۔",
+      "پودوں کے درمیان مناسب فاصلہ رکھیں اور پانی تنے کے قریب دیں تاکہ پتے خشک رہیں۔",
+      "ہر موسم میں فصل کی باری بدلیں اور بیماری سے محفوظ اقسام کا انتخاب کریں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm days, cool nights",
-      "High humidity",
-      "Dense foliage",
-      "Poor air circulation"
+    "chemical_control_en": [
+      "Spray sulfur or potassium bicarbonate at the first white patches.",
+      "For severe attacks, a labeled myclobutanil or tebuconazole fungicide may be used.",
+      "Always follow the product label and local agricultural extension advice."
     ],
-    "favorable_conditions_bn": [
-      "গরম দিন, শীতল রাত",
-      "উচ্চ আর্দ্রতা",
-      "ঘন পাতা",
-      "বাতাস চলাচল কম"
+    "chemical_control_bn": [
+      "সাদা দাগ দেখা মাত্র সালফার বা পটাশিয়াম বাইকার্বোনেট স্প্রে করুন।",
+      "মারাত্মক আক্রমণে মাইক্লোবুটানিল বা টেবুকোনাজল জাতীয় ছত্রাকনাশক লাগতে পারে।",
+      "সবসময় পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ অফিসের পরামর্শ মেনে চলুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم دن، ٹھنڈی راتیں",
-      "زیادہ نمی",
-      "گھنے پتے",
-      "ہوا کی ناکافی گردش"
+    "chemical_control_ur": [
+      "سفید دھبے نمودار ہوتے ہی سلفر یا پوٹاشیم بائیکاربونیٹ کا اسپرے کریں۔",
+      "شدید حملے میں لیبل شدہ مائیکلو بیوٹانل یا ٹیبوکونازول فنجی سائیڈ لگ سکتا ہے۔",
+      "ہمیشہ مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی رہنمائی پر عمل کریں۔"
     ],
-    "spread_en": "Windborne spores, direct contact",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, সরাসরি সংস্পর্শ",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، براہ راست رابطہ"
+    "biological_control_en": [
+      "Spray neem oil weekly to suppress mildew colonies.",
+      "Use Bacillus subtilis-based biofungicides as a protectant.",
+      "Potassium bicarbonate with a wetting agent is a low-impact option."
+    ],
+    "biological_control_bn": [
+      "পাউডারি মিলডিউ দমনে প্রতি সপ্তাহে নিম তেল স্প্রে করুন।",
+      "বেসিলাস সাবটিলিস ভিত্তিক জৈব ছত্রাকনাশক প্রতিরোধক হিসেবে ব্যবহার করুন।",
+      "ভেজানো উপাদানসহ পটাশিয়াম বাইকার্বোনেট কম ক্ষতিকর বিকল্প হিসেবে কাজ করে।"
+    ],
+    "biological_control_ur": [
+      "پاؤڈری ملڈیو دبانے کے لیے ہفتہ وار نیم کے تیل کا اسپرے کریں۔",
+      "باسیلس سبٹیلیس پر مبنی جیو فنجی سائیڈ بطور حفاظتی چھڑکاؤ استعمال کریں۔",
+      "پوٹاشیم بائیکاربونیٹ (گیلے کرنے والے ایجنٹ کے ساتھ) کم خطرے کا محفوظ آپشن ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Rotate crops and clear all plant debris at season's end.",
+      "Next season plant resistant cultivars and use drip irrigation.",
+      "Scout weekly so new infections are caught early."
+    ],
+    "prevention_tips_bn": [
+      "ফসলের পর্যায় মেনে চাষ করুন এবং মৌসুম শেষে সব গাছের অবশিষ্টাংশ পরিষ্কার করুন।",
+      "পরের মৌসুমে রোগ প্রতিরোধী জাত ও ড্রিপ সেচ ব্যবহার করুন।",
+      "সপ্তাহে পর্যবেক্ষণ করুন যাতে নতুন সংক্রমণ শুরুতেই ধরা পড়ে।"
+    ],
+    "prevention_tips_ur": [
+      "فصل کی باری کی پیروی کریں اور موسم ختم ہونے پر فصل کا سارا ملبہ صاف کریں۔",
+      "اگلے موسم میں بیماری برداشت کرنے والی اقسام اور ڈرپ آبپاشی استعمال کریں۔",
+      "ہفتہ وار نگرانی کریں تاکہ نئے انفیکشن بروقت پکڑے جائیں۔"
+    ]
   },
   {
     "id": "strawberry_leaf_scorch",
-    "crop_en": "Strawberry",
-    "crop_bn": "স্ট্রবেরি",
-    "crop_ur": "اسٹرابیری",
-    "name_en": "Leaf Scorch",
-    "name_bn": "লিফ স্কর্চ",
-    "name_ur": "لیف اسکورچ",
-    "scientific_name": "Diplocarpon earlianum",
-    "severity": "moderate",
-    "description_en": "Leaf scorch causes dark purple or brown spots on strawberry leaves, leading to leaf death and reduced yield.",
-    "description_bn": "লিফ স্কর্চ স্ট্রবেরির পাতায় গাঢ় বেগুনি বা বাদামি দাগ সৃষ্টি করে, পাতা মরে যায় ও ফলন কমে।",
-    "description_ur": "لیف اسکورچ اسٹرابیری کے پتوں پر گہرے جامنی یا بھورے دھبے بناتا ہے، جس سے پتے مر جاتے ہیں اور پیداوار کم ہوتی ہے۔",
-    "symptoms_en": [
-      "Dark purple to brown spots on leaves",
-      "Spots may merge to cover large areas",
-      "Leaf edges turn brown and dry",
-      "Reduced plant vigor",
-      "Lower yield"
+    "cultural_control_en": [
+      "Remove and destroy the most affected leaves; renovate beds after harvest.",
+      "Avoid overhead irrigation; water in the morning so leaves dry quickly.",
+      "Plant certified disease-free runners with wide spacing for airflow."
     ],
-    "symptoms_bn": [
-      "পাতায় গাঢ় বেগুনি থেকে বাদামি দাগ",
-      "দাগ মিলে বড় অংশ ঢাকতে পারে",
-      "পাতার প্রান্ত বাদামী ও শুকিয়ে যায়",
-      "গাছের শক্তি কমে যাওয়া",
-      "ফলন কমে যাওয়া"
+    "cultural_control_bn": [
+      "সবচেয়ে বেশি আক্রান্ত পাতা তুলে ধ্বংস করুন; ফসল তোলার পর বেড সংস্কার করুন।",
+      "পাতায় পানি দেবেন না; সকালে পানি দিন যাতে পাতা দ্রুত শুকায়।",
+      "প্রত্যয়িত রোগমুক্ত চারা লাগান এবং বাতাস চলাচলের জন্য ফাঁক রাখুন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر گہرے جامنی سے بھورے دھبے",
-      "دھبے مل کر بڑے حصے کو ڈھانپ سکتے ہیں",
-      "پتوں کے کنارے بھورے اور خشک ہو جاتے ہیں",
-      "پودے کی طاقت کم",
-      "پیداوار میں کمی"
+    "cultural_control_ur": [
+      "سب سے زیادہ متاثرہ پتے ہٹا کر تباہ کریں؛ فصل کے بعد بیڈ کی تجدید کریں۔",
+      "پتوں پر پانی نہ دیں؛ صبح پانی دیں تاکہ پتے جلد خشک ہو جائیں۔",
+      "تصدیق شدہ بیماری سے پاک قلمی پودے لگائیں اور ہوا کے لیے فاصلہ رکھیں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm, wet weather",
-      "Overhead irrigation",
-      "Dense planting",
-      "Poor air circulation"
+    "chemical_control_en": [
+      "Use a labeled copper or chlorothalonil fungicide when scorch spreads fast.",
+      "Spray only during active growth and observe the pre-harvest interval.",
+      "Always follow the product label and local agricultural extension advice."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, ভেজা আবহাওয়া",
-      "ওভারহেড সেচ",
-      "ঘন রোপণ",
-      "বাতাস চলাচল কম"
+    "chemical_control_bn": [
+      "রোগ দ্রুত ছড়ালে তামা-ভিত্তিক বা ক্লোরোথ্যালোনিল ছত্রাকনাশক ব্যবহার করুন।",
+      "শুধু সক্রিয় বৃদ্ধির সময় স্প্রে করুন এবং ফসল তোলার আগের অপেক্ষাকাল মানুন।",
+      "সবসময় পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ অফিসের পরামর্শ মেনে চলুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم، گیلے موسم",
-      "اوپری آبپاشی",
-      "گھنی کاشت",
-      "ہوا کی ناکافی گردش"
+    "chemical_control_ur": [
+      "بیماری تیزی سے پھیلے تو لیبل شدہ تانبے یا کلوروتھالونل فنجی سائیڈ استعمال کریں۔",
+      "صرف فعال نشوونما کے دوران چھڑکاؤ کریں اور کٹائی سے پہلے کا وقفہ ملائیں۔",
+      "ہمیشہ مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی رہنمائی پر عمل کریں۔"
     ],
-    "spread_en": "Rain splash, wind, contaminated tools",
-    "spread_bn": "বৃষ্টির ছিটা, বাতাস, দূষিত যন্ত্রপাতি",
-    "spread_ur": "بارش کے چھینٹے، ہوا، آلودہ اوزار"
+    "biological_control_en": [
+      "Trichoderma-enriched compost strengthens roots and suppresses leaf pathogens.",
+      "Bacillus subtilis biofungicide sprays can slow scorch development.",
+      "Protect beneficial microbes by avoiding excessive chemical drenches."
+    ],
+    "biological_control_bn": [
+      "ট্রাইকোডার্মা মেশানো কম্পোস্ট শিকড় মজবুত করে ও পাতার রোগজীবাণু দমন করে।",
+      "বেসিলাস সাবটিলিস জৈব ছত্রাকনাশক স্প্রে পাতার রোগ বাড়া ধীর করে।",
+      "অতিরিক্ত রাসায়নিক ড্রেঞ্চিং এড়িয়ে উপকারী অণুজীব রক্ষা করুন।"
+    ],
+    "biological_control_ur": [
+      "ٹرائیکوڈرما سے بھرپور کمپوسٹ جڑیں مضبوط کرتا ہے اور پتوں کے روگجنک دباتا ہے۔",
+      "باسیلس سبٹیلیس جیو فنجی سائیڈ اسپرے اسکورچ کی بڑھوتری سست کر دیتا ہے۔",
+      "حد سے زیادہ کیمیائی سپرے سے پرہیز کر کے مفید خوردبینی جاندار برقرار رکھیں۔"
+    ],
+    "prevention_tips_en": [
+      "Move strawberry beds to a fresh site every 2-3 years.",
+      "Mulch to stop soil splashing onto leaves and remove old foliage.",
+      "Buy certified runners and keep beds weeded and well drained."
+    ],
+    "prevention_tips_bn": [
+      "প্রতি ২-৩ বছরে স্ট্রবেরি বেড নতুন জায়গায় সরান।",
+      "মালচ দিন যাতে মাটি পাতায় না ছিটকে পড়ে; পুরনো পাতা তুলে ফেলুন।",
+      "প্রত্যয়িত রোগমুক্ত চারা কিনুন এবং আগাছা ও নিকাশের যত্ন নিন।"
+    ],
+    "prevention_tips_ur": [
+      "ہر ۲-۳ سال بعد سٹرابیری کے بیڈ نئی جگہ منتقل کریں۔",
+      "ملچ لگائیں تاکہ مٹی پتوں پر نہ چھڑکے اور پرانے پتے ہٹاتے رہیں۔",
+      "تصدیق شدہ قلمی پودے خریدیں اور جڑی بوٹیوں سے پاک رکھ کر اچھی نکاسی یقینی بنائیں۔"
+    ]
   },
   {
     "id": "strawberry_healthy",
-    "crop_en": "Strawberry",
-    "crop_bn": "স্ট্রবেরি",
-    "crop_ur": "اسٹرابیری",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Strawberry plant is healthy with no visible disease symptoms.",
-    "description_bn": "স্ট্রবেরি গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "اسٹرابیری کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "No treatment needed — the plant shows healthy growth.",
+      "Keep monitoring leaves and crowns weekly for early symptoms.",
+      "Maintain good spacing, drip irrigation, and removal of senescing leaves."
+    ],
+    "cultural_control_bn": [
+      "চিকিৎসার প্রয়োজন নেই — গাছে সুস্থ বৃদ্ধি দেখা যাচ্ছে।",
+      "পাতা ও কাণ্ডের গোড়া সপ্তাহে পরীক্ষা করুন যাতে শুরুর লক্ষণ ধরা পড়ে।",
+      "পর্যাপ্ত ফাঁক, ড্রিপ সেচ ও পুরনো পাতা অপসারণ চালিয়ে যান।"
+    ],
+    "cultural_control_ur": [
+      "علاج کی ضرورت نہیں — پودا صحت مند نشوونما دکھا رہا ہے۔",
+      "پتوں اور تاج کی ہفتہ وار نگرانی جاری رکھیں تاکہ ابتدائی علامات نظر آئیں۔",
+      "مناسب فاصلہ، ڈرپ آبپاشی اور پرانے پتوں کی صفائی جاری رکھیں۔"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Never plant runners taken from infected beds — this is key to prevention.",
+      "Mulch, rotate beds, and avoid excessive nitrogen fertilizer.",
+      "Sanitize tools and boots between beds so spores are not carried over."
+    ],
+    "prevention_tips_bn": [
+      "আক্রান্ত বেড থেকে চারা নিয়ে রোপণ করবেন না — এটিই প্রতিরোধের মূল।",
+      "মালচ, ফসলের পর্যায় মানুন এবং অতিরিক্ত নাইট্রোজেন সার এড়িয়ে চলুন।",
+      "বেড বদলের সময় হাতিয়ার ও জুতা জীবাণুমুক্ত করুন যাতে বীজাণু না বহন হয়।"
+    ],
+    "prevention_tips_ur": [
+      "متاثرہ بیڈ سے لیے گئے قلمی پودے نہ لگائیں — یہی بچاؤ کی بنیاد ہے۔",
+      "ملچنگ اور فصل کی باری کریں اور ضرورت سے زیادہ نائٹروجن کھاد سے پرہیز کریں۔",
+      "بیڈ بدلتے وقت اوزار اور جوتے جراثیم سے پاک کریں تاکہ اسپور منتقل نہ ہوں۔"
+    ]
   },
   {
     "id": "tomato_bacterial_spot",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Bacterial Spot",
-    "name_bn": "ব্যাকটেরিয়াল স্পট",
-    "name_ur": "بیکٹیریل سپاٹ",
-    "scientific_name": "Xanthomonas campestris pv. vesicatoria",
-    "severity": "moderate",
-    "description_en": "Bacterial spot causes small, dark, water-soaked spots on leaves and fruit, leading to defoliation and fruit rot.",
-    "description_bn": "ব্যাকটেরিয়াল স্পট পাতা ও ফলে ছোট, গাঢ়, পানিভেজা দাগ সৃষ্টি করে, পাতা ঝরায় ও ফল পচায়।",
-    "description_ur": "بیکٹیریل سپاٹ پتوں اور پھلوں پر چھوٹے، گہرے، پانی سے بھیگے دھبے بناتا ہے، جس سے پتے گرتے ہیں اور پھل سڑتے ہیں۔",
-    "symptoms_en": [
-      "Small, dark, water-soaked spots on leaves",
-      "Spots may have yellow halos",
-      "Leaf drop starting from bottom",
-      "Dark, raised spots on fruit",
-      "Fruit rot and reduced quality"
+    "cultural_control_en": [
+      "Use only certified disease-free seed and transplants.",
+      "Remove and destroy infected plants; avoid working in the field when foliage is wet.",
+      "Rotate tomatoes with non-solanaceous crops for 2-3 years."
     ],
-    "symptoms_bn": [
-      "পাতায় ছোট, গাঢ়, পানিভেজা দাগ",
-      "দাগের চারপাশে হলুদ রিং",
-      "নিচের পাতা থেকে ঝরা শুরু",
-      "ফলে গাঢ়, উঁচু দাগ",
-      "ফল পচন ও মান হ্রাস"
+    "cultural_control_bn": [
+      "শুধুমাত্র প্রত্যয়িত রোগমুক্ত বীজ ও চারা ব্যবহার করুন।",
+      "আক্রান্ত গাছ তুলে ধ্বংস করুন; পাতা ভেজা অবস্থায় মাঠে কাজ করবেন না।",
+      "২-৩ বছর টমেটোর বদলে অ-সোলানেসিয়াস ফসলের পর্যায় রাখুন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر چھوٹے، گہرے، پانی سے بھیگے دھبے",
-      "دھبوں کے ارد گرد پیلے حلقے",
-      "نچلے پتوں سے گرنا شروع",
-      "پھل پر گہرے، ابھرے ہوئے دھبے",
-      "پھل سڑنا اور معیار میں کمی"
+    "cultural_control_ur": [
+      "صرف تصدیق شدہ بیماری سے پاک بیج اور پنیری استعمال کریں۔",
+      "متاثرہ پودے ہٹا کر تباہ کریں؛ پتے گیلے ہونے پر کھیت میں کام نہ کریں۔",
+      "۲-۳ سال تک ٹماٹر کے بعد غیر سولانیسی فصل کی باری رکھیں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm, humid conditions",
-      "Overhead irrigation",
-      "Rainy weather",
-      "Crop debris"
+    "chemical_control_en": [
+      "Copper-based bactericides, often mixed with mancozeb, help limit spread.",
+      "Sprays protect but do not cure; start at the first symptoms.",
+      "Always follow the product label and local agricultural extension advice."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র অবস্থা",
-      "ওভারহেড সেচ",
-      "বৃষ্টি আবহাওয়া",
-      "ফসলের অবশিষ্টাংশ"
+    "chemical_control_bn": [
+      "তামা-ভিত্তিক জীবাণুনাশক (প্রায়ই ম্যানকোজেবের সঙ্গে) রোগ ছড়ানো কমায়।",
+      "স্প্রে সুরক্ষা দেয় কিন্তু নিরাময় করে না; প্রথম লক্ষণেই শুরু করুন।",
+      "সবসময় পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ অফিসের পরামর্শ মেনে চলুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب حالات",
-      "اوپری آبپاشی",
-      "بارش کا موسم",
-      "فصل کا ملبہ"
+    "chemical_control_ur": [
+      "تانبے پر مبنی جراثیم کش ادویات (اکثر مینکوزب کے ساتھ) بیماری کا پھیلاؤ کم کرتی ہیں۔",
+      "اسپرے حفاظت دیتا ہے مگر علاج نہیں؛ پہلی علامت پر شروع کریں۔",
+      "ہمیشہ مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی رہنمائی پر عمل کریں۔"
     ],
-    "spread_en": "Rain splash, wind, contaminated seeds",
-    "spread_bn": "বৃষ্টির ছিটা, বাতাস, দূষিত বীজ",
-    "spread_ur": "بارش کے چھینٹے، ہوا، آلودہ بیج"
+    "biological_control_en": [
+      "Bacillus subtilis biofungicides can reduce bacterial populations.",
+      "Copper-resistant strains occur, so combine biological and cultural measures.",
+      "Beneficial-microbe soil applications strengthen plant defense."
+    ],
+    "biological_control_bn": [
+      "বেসিলাস সাবটিলিস জৈব ছত্রাকনাশক ব্যাকটেরিয়ার সংখ্যা কমাতে সাহায্য করে।",
+      "তামা প্রতিরোধী ব্যাকটেরিয়া দেখা দিতে পারে, তাই জৈব ও চাষ-সংক্রান্ত ব্যবস্থা একসাথে নিন।",
+      "উপকারী অণুজীবের মাটি প্রয়োগ গাছের প্রতিরোধ ক্ষমতা বাড়ায়।"
+    ],
+    "biological_control_ur": [
+      "باسیلس سبٹیلیس جیو فنجی سائیڈ بیکٹیریا کی تعداد کم کرنے میں مدد دیتا ہے۔",
+      "تانبے کے خلاف مزاحمت عام ہے، اس لیے حیاتیاتی اور زرعی تدابیر مل کر کریں۔",
+      "مفید خوردبینی جانداروں کا مٹی میں اطلاق پودے کی قوت مدافعت بڑھاتا ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Sanitize stakes, trays, and tools between seasons with a disinfectant.",
+      "Mulch and use drip irrigation to prevent soil splashing.",
+      "Plant resistant varieties and never save seed from diseased fruit."
+    ],
+    "prevention_tips_bn": [
+      "মৌসুমের মাঝে খুঁটি, ট্রে ও হাতিয়ার জীবাণুনাশক দিয়ে পরিষ্কার করুন।",
+      "মালচ ও ড্রিপ সেচ ব্যবহার করুন যাতে মাটি ছিটকে না পড়ে।",
+      "রোগ প্রতিরোধী জাত লাগান এবং অসুস্থ ফলের বীজ কখনো সংরক্ষণ করবেন না।"
+    ],
+    "prevention_tips_ur": [
+      "موسموں کے درمیان کھونٹے، ٹرے اور اوزار جراثیم کش سے صاف کریں۔",
+      "ملچنگ اور ڈرپ آبپاشی کریں تاکہ مٹی کے چھینٹے نہ لگیں۔",
+      "بیماری برداشت کرنے والی اقسام لگائیں اور بیمار پھل کا بیج کبھی نہ رکھیں۔"
+    ]
   },
   {
     "id": "tomato_late_blight",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Late Blight",
-    "name_bn": "লেট ব্লাইট",
-    "name_ur": "لیٹ بلائٹ",
-    "scientific_name": "Phytophthora infestans",
-    "severity": "severe",
-    "description_en": "Late blight is a devastating disease of tomatoes, causing dark lesions on leaves and fruit, often destroying the entire crop.",
-    "description_bn": "লেট ব্লাইট টমেটোর একটি বিধ্বংসী রোগ, যা পাতা ও ফলে গাঢ় ক্ষত সৃষ্টি করে, প্রায়ই সম্পূর্ণ ফসল নষ্ট করে।",
-    "description_ur": "لیٹ بلائٹ ٹماٹر کی ایک تباہ کن بیماری ہے، جو پتوں اور پھلوں پر گہرے زخم بناتی ہے، اکثر پوری فصل کو برباد کر دیتی ہے۔",
-    "symptoms_en": [
-      "Water-soaked, dark green spots on leaves",
-      "White fungal growth on leaf undersides",
-      "Dark brown lesions on stems",
-      "Large, dark, greasy spots on fruit",
-      "Rapid wilting and death of plant"
+    "cultural_control_en": [
+      "Remove and destroy infected plants immediately, including cull piles.",
+      "Stake plants and widen spacing to cut leaf wetness and improve airflow.",
+      "Eliminate volunteer potato and tomato plants that harbor the pathogen."
     ],
-    "symptoms_bn": [
-      "পাতায় পানিভেজা, গাঢ় সবুজ দাগ",
-      "পাতার নিচে সাদা ছত্রাকের বৃদ্ধি",
-      "কাণ্ডে গাঢ় বাদামি ক্ষত",
-      "ফলে বড়, গাঢ়, তৈলাক্ত দাগ",
-      "গাছ দ্রুত শুকিয়ে ও মরে যাওয়া"
+    "cultural_control_bn": [
+      "আক্রান্ত গাছ সঙ্গে সঙ্গে তুলে ধ্বংস করুন, অপচয়ের স্তূপও সরান।",
+      "খুঁটি দিয়ে গাছ বাঁধুন এবং ফাঁক বাড়ান যাতে পাতা কম ভেজা থাকে ও বাতাস চলে।",
+      "আগাছার মতো জন্মানো পুরনো আলু ও টমেটো গাছ সরান যা রোগের উৎস হতে পারে।"
     ],
-    "symptoms_ur": [
-      "پتوں پر پانی سے بھیگے، گہرے سبز دھبے",
-      "پتوں کی نچلی سطح پر سفید پھپھوندی",
-      "تنے پر گہرے بھورے زخم",
-      "پھل پر بڑے، گہرے، چکنے دھبے",
-      "پودے کا تیزی سے مرجھا کر مر جانا"
+    "cultural_control_ur": [
+      "متاثرہ پودے فوراً ہٹا کر تباہ کریں، کٹائی کے ملبے کے ڈھیر بھی۔",
+      "پودوں کو تھام دیں اور فاصلہ بڑھائیں تاکہ پتے کم گیلے اور ہوا بہتر ہو۔",
+      "خود رو آلو اور ٹماٹر کے پودے ہٹائیں جو بیماری کا ذریعہ بنتے ہیں۔"
     ],
-    "favorable_conditions_en": [
-      "Cool, wet weather (15-20°C)",
-      "High humidity (>90%)",
-      "Frequent rain or heavy dew",
-      "Cloudy days"
+    "chemical_control_en": [
+      "Start protectant sprays (mancozeb, chlorothalonil) when weather is cool and humid.",
+      "In high-risk periods a labeled systemic fungicide may be needed — rotate actives.",
+      "Always follow the product label and local agricultural extension advice."
     ],
-    "favorable_conditions_bn": [
-      "শীতল, ভেজা আবহাওয়া (15-20°C)",
-      "উচ্চ আর্দ্রতা (>90%)",
-      "বারবার বৃষ্টি বা ঘন শিশির",
-      "মেঘলা দিন"
+    "chemical_control_bn": [
+      "ঠান্ডা ও আর্দ্র আবহাওয়ায় প্রতিরোধক স্প্রে (ম্যানকোজেব, ক্লোরোথ্যালোনিল) শুরু করুন।",
+      "ঝুঁকি বেশি হলে লেবেল অনুযায়ী সিস্টেমিক ছত্রাকনাশক লাগতে পারে — কার্যকর উপাদান বদলান।",
+      "সবসময় পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ অফিসের পরামর্শ মেনে চলুন।"
     ],
-    "favorable_conditions_ur": [
-      "ٹھنڈا، گیلے موسم (15-20°C)",
-      "زیادہ نمی (>90%)",
-      "بار بار بارش یا زیادہ شبنم",
-      "ابر آلود دن"
+    "chemical_control_ur": [
+      "ٹھنڈی اور مرطوب موسم میں حفاظتی اسپرے (مینکوزب، کلوروتھالونل) شروع کریں۔",
+      "زیادہ خطرے کے دوران لیبل شدہ سسٹمیٹک فنجی سائیڈ درکار ہو سکتا ہے — فعال اجزاء بدلتے رہیں۔",
+      "ہمیشہ مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی رہنمائی پر عمل کریں۔"
     ],
-    "spread_en": "Airborne spores, water splash",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, পানির ছিটা",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، پانی کے چھینٹے"
+    "biological_control_en": [
+      "Bacillus subtilis biofungicides add protection when applied before infection.",
+      "Combine with strict sanitation — biocontrols alone cannot stop late blight.",
+      "Neem-based products offer limited supportive activity."
+    ],
+    "biological_control_bn": [
+      "সংক্রমণের আগে প্রয়োগ করলে বেসিলাস সাবটিলিস জৈব ছত্রাকনাশক সুরক্ষা দেয়।",
+      "কঠোর স্বাস্থ্যবিধির সঙ্গে মেলান — শুধু জৈব পদ্ধতিতে লেট ব্লাইট আটকানো যায় না।",
+      "নিম ভিত্তিক পণ্য সীমিত সহায়ক কার্যকারিতা দেয়।"
+    ],
+    "biological_control_ur": [
+      "انفیکشن سے پہلے لگایا جائے تو باسیلس سبٹیلیس جیو فنجی سائیڈ تحفظ دیتا ہے۔",
+      "سخت صفائی کے ساتھ ملائیں — صرف حیاتیاتی طریقے لیٹ بلائٹ روک نہیں سکتے۔",
+      "نیم پر مبنی مصنوعات محدود معاون اثر رکھتی ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Next season plant resistant varieties and certified seed.",
+      "Destroy all tomato and potato debris; keep no cull piles near fields.",
+      "Rotate crops and monitor daily in cool, wet weather."
+    ],
+    "prevention_tips_bn": [
+      "পরের মৌসুমে রোগ প্রতিরোধী জাত ও প্রত্যয়িত বীজ ব্যবহার করুন।",
+      "টমেটো ও আলুর সব অবশিষ্টাংশ নষ্ট করুন; মাঠের পাশে ফেলে রাখবেন না।",
+      "ফসলের পর্যায় মানুন এবং ঠান্ডা ভেজা আবহাওয়ায় প্রতিদিন পর্যবেক্ষণ করুন।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں بیماری برداشت کرنے والی اقسام اور تصدیق شدہ بیج استعمال کریں۔",
+      "ٹماٹر اور آلو کا تمام ملبہ تباہ کریں؛ کھیت کے پاس ڈھیر نہ رکھیں۔",
+      "فصل کی باری کریں اور ٹھنڈی گیلی موسم میں روزانہ نگرانی کریں۔"
+    ]
   },
   {
     "id": "tomato_leaf_mold",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Leaf Mold",
-    "name_bn": "লিফ মোল্ড",
-    "name_ur": "لیف مولڈ",
-    "scientific_name": "Passalora fulva",
-    "severity": "moderate",
-    "description_en": "Leaf mold causes pale green or yellow spots on tomato leaves, with velvety mold growth on the undersides.",
-    "description_bn": "লিফ মোল্ড টমেটোর পাতায় ফ্যাকাশে সবুজ বা হলুদ দাগ সৃষ্টি করে, পাতার নিচে মখমলি ছত্রাক বৃদ্ধি পায়।",
-    "description_ur": "لیف مولڈ ٹماٹر کے پتوں پر ہلکے سبز یا پیلے دھبے بناتا ہے، نیچے کی سطح پر مخملی پھپھوندی اگتی ہے۔",
-    "symptoms_en": [
-      "Pale green to yellow spots on upper leaves",
-      "Velvety olive-green mold on leaf undersides",
-      "Leaf curling and distortion",
-      "Premature leaf drop",
-      "Reduced yield"
+    "cultural_control_en": [
+      "Improve greenhouse ventilation and keep humidity below 85%.",
+      "Remove older infected leaves and prune for an open, airy canopy.",
+      "Space plants widely and use drip irrigation instead of overhead watering."
     ],
-    "symptoms_bn": [
-      "উপরের পাতায় ফ্যাকাশে সবুজ থেকে হলুদ দাগ",
-      "পাতার নিচে মখমলি জলপাই সবুজ ছত্রাক",
-      "পাতা কুঁচকে ও বিকৃত হওয়া",
-      "পাতা অকালে ঝরে যাওয়া",
-      "ফলন হ্রাস"
+    "cultural_control_bn": [
+      "গ্রিনহাউসে বাতাস চলাচল বাড়ান এবং আর্দ্রতা ৮৫%-এর নিচে রাখুন।",
+      "নিচের আক্রান্ত পাতা তুলুন এবং ছাঁটাই করে খোলা, বাতাসযুক্ত কানাই রাখুন।",
+      "পর্যাপ্ত ফাঁক রাখুন এবং উপর থেকে পানি দেওয়ার বদলে ড্রিপ সেচ ব্যবহার করুন।"
     ],
-    "symptoms_ur": [
-      "اوپری پتوں پر ہلکے سبز سے پیلے دھبے",
-      "پتوں کے نیچے مخملی زیتونی سبز پھپھوندی",
-      "پتے مڑنا اور بگڑنا",
-      "پتوں کا قبل از وقت گرنا",
-      "پیداوار میں کمی"
+    "cultural_control_ur": [
+      "گرین ہاؤس کی ہواداری بڑھائیں اور نمی ۸۵ فیصد سے کم رکھیں۔",
+      "نیچے کے متاثرہ پتے ہٹائیں اور کھلی ہوادار چھتری کے لیے کٹائی کریں۔",
+      "پودوں میں مناسب فاصلہ رکھیں اور اوپر سے پانی دینے کے بجائے ڈرپ آبپاشی کریں۔"
     ],
-    "favorable_conditions_en": [
-      "High humidity (>85%)",
-      "Moderate temperatures (20-25°C)",
-      "Poor air circulation",
-      "Dense planting"
+    "chemical_control_en": [
+      "Chlorothalonil or copper fungicides are labeled options for leaf mold.",
+      "Aim sprays at the underside of leaves where spores germinate.",
+      "Always follow the product label and local agricultural extension advice."
     ],
-    "favorable_conditions_bn": [
-      "উচ্চ আর্দ্রতা (>85%)",
-      "মধ্যম তাপমাত্রা (20-25°C)",
-      "বাতাস চলাচল কম",
-      "ঘন রোপণ"
+    "chemical_control_bn": [
+      "লিফ মোল্ডের জন্য ক্লোরোথ্যালোনিল বা তামা-ভিত্তিক ছত্রাকনাশক নির্ধারিত বিকল্প।",
+      "স্প্রে পাতার নিচের দিকে দিন, যেখানে বীজাণু অঙ্কুরিত হয়।",
+      "সবসময় পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ অফিসের পরামর্শ মেনে চলুন।"
     ],
-    "favorable_conditions_ur": [
-      "زیادہ نمی (>85%)",
-      "معتدل درجہ حرارت (20-25°C)",
-      "ہوا کی ناکافی گردش",
-      "گھنی کاشت"
+    "chemical_control_ur": [
+      "لیف مولڈ کے لیے کلوروتھالونل یا تانبے پر مبنی فنجی سائیڈ اجازت شدہ آپشنز ہیں۔",
+      "اسپرے پتوں کی نیچی سطح پر کریں جہاں اسپور اگتے ہیں۔",
+      "ہمیشہ مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی رہنمائی پر عمل کریں۔"
     ],
-    "spread_en": "Airborne spores, direct contact",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, সরাসরি সংস্পর্শ",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، براہ راست رابطہ"
+    "biological_control_en": [
+      "Trichoderma products colonize debris and reduce spore survival.",
+      "Bacillus subtilis sprays provide protectant activity in greenhouses.",
+      "Beneficial soil microbes help suppress the pathogen between crops."
+    ],
+    "biological_control_bn": [
+      "ট্রাইকোডার্মা পণ্য অবশিষ্টাংশে বসতি করে বীজাণুর টিকে থাকা কমায়।",
+      "গ্রিনহাউসে বেসিলাস সাবটিলিস স্প্রে প্রতিরোধক কার্যকারিতা দেয়।",
+      "মাটির উপকারী অণুজীব ফসলের মাঝে রোগজীবাণুকে দমন করে।"
+    ],
+    "biological_control_ur": [
+      "ٹرائیکوڈرما مصنوعات ملبے میں بسیرا کر کے اسپور کی بقا کم کرتی ہیں۔",
+      "گرین ہاؤس میں باسیلس سبٹیلیس اسپرے حفاظتی کارکردگی دیتا ہے۔",
+      "مٹی کے مفید خوردبینی جاندار فصلوں کے درمیان روگجنک کو دباتے ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Next season choose leaf-mold-resistant tomato cultivars.",
+      "Disinfect greenhouses and remove or plow in all crop debris.",
+      "Rotate crops, ventilate well, and keep humidity low."
+    ],
+    "prevention_tips_bn": [
+      "পরের মৌসুমে লিফ মোল্ড প্রতিরোধী টমেটোর জাত বেছে নিন।",
+      "গ্রিনহাউস জীবাণুমুক্ত করুন এবং সব ফসলের অবশিষ্টাংশ সরান বা মাটিতে মিশিয়ে দিন।",
+      "ফসলের পর্যায় মানুন, ভালো বাতাস চলাচল রাখুন এবং আর্দ্রতা কম রাখুন।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں لیف مولڈ برداشت کرنے والی ٹماٹر کی اقسام منتخب کریں۔",
+      "گرین ہاؤس جراثیم سے پاک کریں اور فصل کا سارا ملبہ ہٹائیں یا مٹی میں ملا دیں۔",
+      "فصل کی باری کریں، ہواداری برقرار رکھیں اور نمی کم رکھیں۔"
+    ]
   },
   {
     "id": "tomato_septoria_leaf_spot",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Septoria Leaf Spot",
-    "name_bn": "সেপ্টোরিয়া লিফ স্পট",
-    "name_ur": "سپٹوریا لیف سپاٹ",
-    "scientific_name": "Septoria lycopersici",
-    "severity": "moderate",
-    "description_en": "Septoria leaf spot causes small, circular spots with dark margins on leaves, leading to defoliation and yield loss.",
-    "description_bn": "সেপ্টোরিয়া লিফ স্পট পাতায় ছোট, বৃত্তাকার, গাঢ় কিনারাযুক্ত দাগ সৃষ্টি করে, পাতা ঝরায় ও ফলন কমায়।",
-    "description_ur": "سپٹوریا لیف سپاٹ پتوں پر چھوٹے، گول، گہرے کناروں والے دھبے بناتا ہے، جس سے پتے گرتے ہیں اور پیداوار کم ہوتی ہے۔",
-    "symptoms_en": [
-      "Small, circular spots with dark margins",
-      "Gray centers with tiny black fruiting bodies",
-      "Leaf yellowing and drop",
-      "Defoliation starting from bottom",
-      "Reduced fruit size and yield"
+    "cultural_control_en": [
+      "Remove and destroy infected leaves; do not compost them.",
+      "Rotate away from tomatoes for at least 2 years and control solanaceous weeds.",
+      "Space and stake plants for airflow; clean tools and stakes with disinfectant."
     ],
-    "symptoms_bn": [
-      "ছোট, বৃত্তাকার দাগ যার কিনারা গাঢ়",
-      "ধূসর কেন্দ্রে ছোট কালো ফলের দেহ",
-      "পাতা হলুদ ও ঝরে যাওয়া",
-      "নিচের দিক থেকে পাতা ঝরা",
-      "ফলের আকার ও ফলন হ্রাস"
+    "cultural_control_bn": [
+      "আক্রান্ত পাতা সরিয়ে ধ্বংস করুন; কম্পোস্টে দেবেন না।",
+      "কমপক্ষে ২ বছর টমেটো ছাড়া অন্য ফসল চাষ করুন ও সোলানেসি আগাছা পরিষ্কার রাখুন।",
+      "বাতাসের জন্য দূরত্ব ও খুঁটি দিন; যন্ত্রপাতি ও খুঁটি জীবাণুমুক্ত করুন।"
     ],
-    "symptoms_ur": [
-      "چھوٹے، گول دھبے گہرے کناروں کے ساتھ",
-      "سرمئی مرکز میں چھوٹے سیاہ پھل دار اجسام",
-      "پتے پیلے ہو کر گر جاتے ہیں",
-      "نیچے سے پتوں کا گرنا",
-      "پھل کا سائز اور پیداوار کم"
+    "cultural_control_ur": [
+      "متاثرہ پتے ہٹا کر تلف کریں؛ انہیں کمپوسٹ میں نہ ڈالیں۔",
+      "کم از کم 2 سال ٹماٹر کے بجائے دوسری فصل اگائیں اور سولانسی جڑی بوٹیاں صاف رکھیں۔",
+      "ہوا کے لیے فاصلہ اور سہارا دیں؛ اوزار اور سہارے جراثیم سے پاک کریں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm, humid weather",
-      "Frequent rain",
-      "Overhead irrigation",
-      "Poor air circulation"
+    "chemical_control_en": [
+      "Apply protectant fungicides such as chlorothalonil or mancozeb when symptoms first appear.",
+      "Alternate active ingredients to slow resistance; follow the product label and local extension advice."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র আবহাওয়া",
-      "বারবার বৃষ্টি",
-      "ওভারহেড সেচ",
-      "বাতাস চলাচল কম"
+    "chemical_control_bn": [
+      "লক্ষণ দেখা দেওয়ার শুরুতে ক্লোরোথালোনিল বা ম্যানকোজেব জাতীয় প্রতিরক্ষামূলক ছত্রাকনাশক ব্যবহার করুন।",
+      "প্রতিরোধ ক্ষমতা কমাতে ভিন্ন উপাদান পালাক্রমে দিন; পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب موسم",
-      "بار بار بارش",
-      "اوپری آبپاشی",
-      "ہوا کی ناکافی گردش"
+    "chemical_control_ur": [
+      "علامات ظاہر ہونے پر کلوروتھالونل یا مینکوزیب جیسی حفاظتی فنگس کش استعمال کریں۔",
+      "مزاحمت کم کرنے کے لیے مختلف اجزاء باری باری دیں؛ مصنوعات کا لیبل اور مقامی زرعی مشورہ مانگیں۔"
     ],
-    "spread_en": "Rain splash, wind, contaminated seeds",
-    "spread_bn": "বৃষ্টির ছিটা, বাতাস, দূষিত বীজ",
-    "spread_ur": "بارش کے چھینٹے، ہوا، آلودہ بیج"
+    "biological_control_en": [
+      "Spray neem oil or Bacillus subtilis-based biocontrols to reduce leaf surface infection.",
+      "Apply insecticidal soap only for secondary pests, not for the fungus itself."
+    ],
+    "biological_control_bn": [
+      "পাতার সংক্রমণ কমাতে নিম তেল বা ব্যাসিলাস সাবটিলিস ভিত্তিক জৈব নিয়ন্ত্রণ স্প্রে করুন।",
+      "ইনসেক্টিসাইডাল সাবান কেবল গৌণ পোকার জন্য ব্যবহার করুন, ছত্রাকের জন্য নয়।"
+    ],
+    "biological_control_ur": [
+      "پتوں پر انفیکشن کم کرنے کے لیے نیم تیل یا Bacillus subtilis پر مبنی حیاتیاتی کنٹرول چھڑکیں۔",
+      "کیڑے مار صابن صرف ثانوی کیڑوں کے لیے استعمال کریں، خود فنگس کے لیے نہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Mulch the soil to stop rain splash and remove crop debris after harvest.",
+      "Use certified disease-free seed and resistant varieties next season."
+    ],
+    "prevention_tips_bn": [
+      "বৃষ্টির ছিটা আটকাতে মাটিতে মালচ দিন এবং ফসল তোলার পর গাছের অবশেষ সরিয়ে ফেলুন।",
+      "আগামী মৌসুমে রোগমুক্ত প্রত্যয়িত বীজ ও প্রতিরোধী জাত ব্যবহার করুন।"
+    ],
+    "prevention_tips_ur": [
+      "بارش کی چھڑکاؤ روکنے کے لیے مٹی پر ملچ ڈالیں اور کٹائی کے بعد پودوں کی باقیات ہٹائیں۔",
+      "اگلے موسم میں تصدیق شدہ بیماری سے پاک بیج اور مزاحم اقسام استعمال کریں۔"
+    ]
   },
   {
     "id": "tomato_spider_mites",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Spider Mites (Two-spotted Spider Mite)",
-    "name_bn": "স্পাইডার মাইট (টু-স্পটেড স্পাইডার মাইট)",
-    "name_ur": "سپائیڈر مائٹ (ٹو سپاٹڈ سپائیڈر مائٹ)",
-    "scientific_name": "Tetranychus urticae",
-    "severity": "moderate",
-    "description_en": "Spider mites are tiny arachnids that feed on tomato leaves, causing yellow stippling and webbing.",
-    "description_bn": "স্পাইডার মাইট ক্ষুদ্র আরাকনিড যা টমেটোর পাতায় খায়, ফলে হলুদ দাগ ও জাল তৈরি হয়।",
-    "description_ur": "سپائیڈر مائٹ چھوٹے آراکنیڈ ہیں جو ٹماٹر کے پتوں کو کھاتے ہیں، جس سے پیلے نقطے اور جالے بنتے ہیں۔",
-    "symptoms_en": [
-      "Fine stippling on leaves (tiny yellow dots)",
-      "Leaves become bronze or dry",
-      "Fine webbing on leaf undersides",
-      "Leaf drop",
-      "Reduced yield"
+    "cultural_control_en": [
+      "Remove heavily infested leaves and destroy badly affected plants away from the field.",
+      "Keep plants well watered and mulched; drought stress favours mite outbreaks.",
+      "Keep field margins weed-free and clean tools, stakes and clothing to limit spread."
     ],
-    "symptoms_bn": [
-      "পাতায় সূক্ষ্ম বিন্দু (ছোট হলুদ দাগ)",
-      "পাতা ব্রোঞ্জ বা শুষ্ক হয়ে যায়",
-      "পাতার নিচে সূক্ষ্ম জাল",
-      "পাতা ঝরে যাওয়া",
-      "ফলন হ্রাস"
+    "cultural_control_bn": [
+      "বেশি আক্রান্ত পাতা সরান এবং খেত থেকে দূরে ক্ষতিগ্রস্ত গাছ ধ্বংস করুন।",
+      "গাছে নিয়মিত পানি ও মালচ দিন; খরা চাপে মাইটের বিস্তার বাড়ে।",
+      "খেতের পাশ আগাছামুক্ত রাখুন এবং যন্ত্রপাতি, খুঁটি ও পোশাক পরিষ্কার রাখুন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر باریک نقطے (چھوٹے پیلے دھبے)",
-      "پتے کانسی یا خشک ہو جاتے ہیں",
-      "پتوں کے نیچے باریک جالے",
-      "پتے گر جاتے ہیں",
-      "پیداوار میں کمی"
+    "cultural_control_ur": [
+      "زیادہ متاثرہ پتے ہٹائیں اور بری طرح متاثرہ پودے کھیت سے دور تلف کریں۔",
+      "پودوں کو باقاعدہ پانی اور ملچ دیں؛ خشکی کی کمی سے مائٹ کا پھیلاؤ بڑھتا ہے۔",
+      "کھیت کے کنارے جڑی بوٹیوں سے پاک رکھیں اور اوزار، سہارے اور کپڑے صاف رکھیں۔"
     ],
-    "favorable_conditions_en": [
-      "Hot, dry weather",
-      "Low humidity",
-      "Dusty conditions",
-      "Overuse of pesticides (reducing natural enemies)"
+    "chemical_control_en": [
+      "Use a suitable acaricide or insecticidal soap, covering leaf undersides thoroughly.",
+      "Rotate acaricide groups and follow the product label and local extension advice."
     ],
-    "favorable_conditions_bn": [
-      "গরম, শুষ্ক আবহাওয়া",
-      "কম আর্দ্রতা",
-      "ধুলাবালি পরিস্থিতি",
-      "কীটনাশকের অতিরিক্ত ব্যবহার (প্রাকৃতিক শত্রু হ্রাস)"
+    "chemical_control_bn": [
+      "উপযুক্ত অ্যাকারিসাইড বা ইনসেক্টিসাইডাল সাবান ব্যবহার করুন, পাতার নিচের অংশ ভালোভাবে ঢাকুন।",
+      "অ্যাকারিসাইডের গ্রুপ পালাক্রমে দিন এবং পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم، خشک موسم",
-      "کم نمی",
-      "گرد آلود حالات",
-      "کیڑے مار ادویات کا زیادہ استعمال (قدرتی دشمنوں کی کمی)"
+    "chemical_control_ur": [
+      "مناسب ایٹراسائیڈ یا کیڑے مار صابن استعمال کریں اور پتوں کے نچلے حصے اچھی طرح ڈھکیں۔",
+      "ایٹراسائیڈ کے گروپ باری باری دیں اور مصنوعات کا لیبل اور مقامی زرعی مشورہ مانگیں۔"
     ],
-    "spread_en": "Wind, direct contact, infested plant material",
-    "spread_bn": "বাতাস, সরাসরি সংস্পর্শ, আক্রান্ত উদ্ভিদ উপাদান",
-    "spread_ur": "ہوا، براہ راست رابطہ، متاثرہ پودے کا مواد"
+    "biological_control_en": [
+      "Release predatory mites such as Phytoseiulus persimilis on affected plants.",
+      "Spray neem oil or insecticidal soap, which suppress mites with low residue."
+    ],
+    "biological_control_bn": [
+      "আক্রান্ত গাছে ফাইটোসিয়ুলাস পারসিমিলিস জাতীয় শিকারি মাইট ছাড়ুন।",
+      "নিম তেল বা ইনসেক্টিসাইডাল সাবান স্প্রে করুন, এগুলো কম অবশেষে মাইট দমন করে।"
+    ],
+    "biological_control_ur": [
+      "متاثرہ پودوں پر Phytoseiulus persimilis جیسے شکاری مائٹ چھوڑیں۔",
+      "نیم تیل یا کیڑے مار صابن چھڑکیں، یہ کم باقیات کے ساتھ مائٹ کو دباتے ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Monitor leaf undersides weekly, especially in hot dry weather.",
+      "Avoid excess nitrogen and keep field margins free of host weeds next season."
+    ],
+    "prevention_tips_bn": [
+      "বিশেষত গরম শুষ্ক আবহাওয়ায় সপ্তাহে একবার পাতার নিচের অংশ পরীক্ষা করুন।",
+      "অতিরিক্ত নাইট্রোজেন এড়িয়ে চলুন এবং আগামী মৌসুমে খেতের পাশ আগাছামুক্ত রাখুন।"
+    ],
+    "prevention_tips_ur": [
+      "خاص طور پر گرم خشک موسم میں ہر ہفتے پتوں کے نچلے حصے کا معائنہ کریں۔",
+      "ضرورت سے زیادہ نائٹروجن سے بچیں اور اگلے موسم میں کھیت کے کنارے جڑی بوٹیوں سے پاک رکھیں۔"
+    ]
   },
   {
     "id": "tomato_target_spot",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Target Spot",
-    "name_bn": "টার্গেট স্পট",
-    "name_ur": "ٹارگٹ سپاٹ",
-    "scientific_name": "Corynespora cassiicola",
-    "severity": "moderate",
-    "description_en": "Target spot causes circular spots with concentric rings on tomato leaves, resembling a target.",
-    "description_bn": "টার্গেট স্পট টমেটোর পাতায় বৃত্তাকার রিংসহ দাগ সৃষ্টি করে, যা টার্গেটের মতো দেখায়।",
-    "description_ur": "ٹارگٹ سپاٹ ٹماٹر کے پتوں پر ہم مرکز دائروں والے گول دھبے بناتا ہے، جو ایک ہدف کی طرح لگتا ہے۔",
-    "symptoms_en": [
-      "Circular spots with concentric rings",
-      "Spots start small and enlarge",
-      "Leaf yellowing and drop",
-      "Stem and fruit lesions",
-      "Reduced yield"
+    "cultural_control_en": [
+      "Remove and destroy infected leaves and fruit; avoid composting diseased debris.",
+      "Rotate with non-host crops for 2 years and remove volunteer tomato plants.",
+      "Improve airflow by spacing and staking; disinfect tools and supports."
     ],
-    "symptoms_bn": [
-      "বৃত্তাকার রিংসহ দাগ",
-      "দাগ ছোট থেকে বড় হয়",
-      "পাতা হলুদ ও ঝরে যাওয়া",
-      "কাণ্ড ও ফলে ক্ষত",
-      "ফলন হ্রাস"
+    "cultural_control_bn": [
+      "আক্রান্ত পাতা ও ফল সরিয়ে ধ্বংস করুন; রোগাক্রান্ত অবশেষ কম্পোস্টে দেবেন না।",
+      "২ বছর অ-আশ্রয়ী ফসলের সাথে ফসল আবর্তন করুন এবং স্বতঃস্ফূর্ত টমেটো গাছ তুলে ফেলুন।",
+      "দূরত্ব ও খুঁটি দিয়ে বাতাস চলাচল বাড়ান এবং যন্ত্রপাতি ও সাপোর্ট জীবাণুমুক্ত করুন।"
     ],
-    "symptoms_ur": [
-      "ہم مرکز دائروں والے گول دھبے",
-      "دھبے چھوٹے شروع ہو کر بڑے ہوتے ہیں",
-      "پتے پیلے ہو کر گر جاتے ہیں",
-      "تنے اور پھل پر زخم",
-      "پیداوار میں کمی"
+    "cultural_control_ur": [
+      "متاثرہ پتے اور پھل ہٹا کر تلف کریں؛ بیمار باقیات کو کمپوسٹ میں نہ ڈالیں۔",
+      "2 سال غیر میزبان فصلوں کے ساتھ فصل بدلیں اور خودرو ٹماٹر کے پودے اکھاڑ دیں۔",
+      "فاصلہ اور سہارا دے کر ہوا کی آمدورفت بہتر کریں اور اوزار جراثیم سے پاک رکھیں۔"
     ],
-    "favorable_conditions_en": [
-      "Warm, humid conditions",
-      "Frequent rain",
-      "Overhead irrigation",
-      "Crop debris"
+    "chemical_control_en": [
+      "Apply fungicides such as chlorothalonil, mancozeb or azoxystrobin at first symptoms.",
+      "Alternate modes of action to limit resistance; follow the label and local extension advice."
     ],
-    "favorable_conditions_bn": [
-      "উষ্ণ, আর্দ্র অবস্থা",
-      "বারবার বৃষ্টি",
-      "ওভারহেড সেচ",
-      "ফসলের অবশিষ্টাংশ"
+    "chemical_control_bn": [
+      "প্রথম লক্ষণে ক্লোরোথালোনিল, ম্যানকোজেব বা অ্যাজক্সিস্ট্রোবিন জাতীয় ছত্রাকনাশক দিন।",
+      "প্রতিরোধ কমাতে ভিন্ন কার্যপদ্ধতি পালাক্রমে দিন; লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
     ],
-    "favorable_conditions_ur": [
-      "گرم، مرطوب حالات",
-      "بار بار بارش",
-      "اوپری آبپاشی",
-      "فصل کا ملبہ"
+    "chemical_control_ur": [
+      "پہلی علامات پر کلوروتھالونل، مینکوزیب یا ازوکسسٹروبن جیسی فنگس کش دیں۔",
+      "مزاحمت کم کرنے کے لیے مختلف طریقہ ہائے کار باری باری دیں؛ لیبل اور مقامی زرعی مشورہ مانیں۔"
     ],
-    "spread_en": "Rain splash, wind, contaminated seeds",
-    "spread_bn": "বৃষ্টির ছিটা, বাতাস, দূষিত বীজ",
-    "spread_ur": "بارش کے چھینٹے، ہوا، آلودہ بیج"
+    "biological_control_en": [
+      "Use Bacillus subtilis-based biocontrols as part of a preventive spray program.",
+      "Neem oil can reduce spread; insecticidal soap targets only secondary insects."
+    ],
+    "biological_control_bn": [
+      "প্রতিরোধমূলক স্প্রে কর্মসূচির অংশ হিসেবে ব্যাসিলাস সাবটিলিস ভিত্তিক জৈব নিয়ন্ত্রণ ব্যবহার করুন।",
+      "নিম তেল বিস্তার কমাতে পারে; ইনসেক্টিসাইডাল সাবান কেবল গৌণ পোকার জন্য।"
+    ],
+    "biological_control_ur": [
+      "حفاظتی سپرے پروگرام کے حصے کے طور پر Bacillus subtilis پر مبنی حیاتیاتی کنٹرول استعمال کریں۔",
+      "نیم تیل پھیلاؤ کم کر سکتا ہے؛ کیڑے مار صابن صرف ثانوی کیڑوں کے لیے ہے۔"
+    ],
+    "prevention_tips_en": [
+      "Mulch and stake plants to reduce soil splash onto lower leaves.",
+      "Clear crop residue after harvest and use resistant varieties next season."
+    ],
+    "prevention_tips_bn": [
+      "নিচের পাতায় মাটির ছিটা কমাতে মালচ দিন ও গাছে খুঁটি দিন।",
+      "ফসল তোলার পর অবশেষ পরিষ্কার করুন এবং আগামী মৌসুমে প্রতিরোধী জাত ব্যবহার করুন।"
+    ],
+    "prevention_tips_ur": [
+      "نچلے پتوں پر مٹی کے چھڑکاؤ کو کم کرنے کے لیے ملچ اور سہارا دیں۔",
+      "کٹائی کے بعد باقیات صاف کریں اور اگلے موسم میں مزاحم اقسام استعمال کریں۔"
+    ]
   },
   {
     "id": "tomato_yellow_leaf_curl_virus",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Tomato Yellow Leaf Curl Virus",
-    "name_bn": "টমেটো ইয়েলো লিফ কার্ল ভাইরাস",
-    "name_ur": "ٹماٹر یلو لیف کرل وائرس",
-    "scientific_name": "Tomato yellow leaf curl virus (TYLCV)",
-    "severity": "severe",
-    "description_en": "TYLCV causes stunting, leaf curling, and yellowing, leading to complete crop failure.",
-    "description_bn": "টিওয়াইএলসিভি গাছের বৃদ্ধি বাধা, পাতা কুঁচকে যাওয়া ও হলুদ হয়ে যাওয়া সৃষ্টি করে, যা সম্পূর্ণ ফসল নষ্ট করতে পারে।",
-    "description_ur": "ٹی وائ ایل سی وی رکٹ ہونا، پتوں کا مڑنا اور زردی کا سبب بنتا ہے، جس سے فصل مکمل طور پر تباہ ہو سکتی ہے۔",
-    "symptoms_en": [
-      "Yellowing of leaf edges",
-      "Leaf curling upward and inward",
-      "Stunted growth",
-      "Reduced fruit set",
-      "Small, unmarketable fruit"
+    "cultural_control_en": [
+      "No cure exists for the virus: rogue out and destroy infected plants promptly.",
+      "Remove infected plants and weeds that host whiteflies, the virus vector.",
+      "Use virus-tested transplants and TYLCV-resistant varieties; disinfect tools and stakes."
     ],
-    "symptoms_bn": [
-      "পাতার প্রান্ত হলুদ হয়ে যাওয়া",
-      "পাতা উপরে ও ভেতরের দিকে কুঁচকে যাওয়া",
-      "বৃদ্ধি বাধাগ্রস্ত",
-      "ফল ধারণ কমে যাওয়া",
-      "ছোট, অমার্কেটযোগ্য ফল"
+    "cultural_control_bn": [
+      "এই ভাইরাসের কোনো প্রতিকার নেই: আক্রান্ত গাছ দ্রুত তুলে ধ্বংস করুন।",
+      "আক্রান্ত গাছ ও সাদা মাছি (ভাইরাসের বাহক) আশ্রয় দেওয়া আগাছা সরিয়ে ফেলুন।",
+      "ভাইরাসমুক্ত চারা ও TYLCV প্রতিরোধী জাত ব্যবহার করুন; যন্ত্রপাতি ও খুঁটি জীবাণুমুক্ত রাখুন।"
     ],
-    "symptoms_ur": [
-      "پتوں کے کناروں کا پیلا ہونا",
-      "پتوں کا اوپر اور اندر کی طرف مڑنا",
-      "رکٹ ہوئی نشوونما",
-      "پھل لگنے میں کمی",
-      "چھوٹے، غیر فروخت ہونے والے پھل"
+    "cultural_control_ur": [
+      "اس وائرس کا کوئی علاج نہیں: متاثرہ پودے فوراً اکھاڑ کر تلف کریں۔",
+      "متاثرہ پودے اور وہ جڑی بوٹیاں ہٹائیں جو سفید مکھی (وائرس کی ناقل) کی میزبانی کرتی ہیں۔",
+      "وائرس سے پاک پودے اور TYLCV مزاحم اقسام استعمال کریں؛ اوزار جراثیم سے پاک رکھیں۔"
     ],
-    "favorable_conditions_en": [
-      "Presence of whitefly vector (Bemisia tabaci)",
-      "Warm temperatures",
-      "Suitable for vector reproduction",
-      "Infected weed hosts"
+    "chemical_control_en": [
+      "No chemical cure exists for the virus; insecticides only suppress whitefly vectors.",
+      "If using vector control, rotate actives and follow the label and local extension advice."
     ],
-    "favorable_conditions_bn": [
-      "হোয়াইটফ্লাই ভেক্টরের উপস্থিতি (বেমিসিয়া তাবাকি)",
-      "উষ্ণ তাপমাত্রা",
-      "ভেক্টর প্রজননের জন্য অনুকূল",
-      "সংক্রমিত আগাছা পোষক"
+    "chemical_control_bn": [
+      "এই ভাইরাসের কোনো রাসায়নিক প্রতিকার নেই; কীটনাশক কেবল সাদা মাছি বাহক দমন করে।",
+      "বাহক দমন করলে উপাদান পালাক্রমে দিন এবং লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
     ],
-    "favorable_conditions_ur": [
-      "سفید مکھی ناقل کی موجودگی (بیمیشیا تباچی)",
-      "گرم درجہ حرارت",
-      "ناقل کی افزائش کے لیے موزوں",
-      "متاثرہ گھاس کے میزبان"
+    "chemical_control_ur": [
+      "اس وائرس کا کوئی کیمیائی علاج نہیں؛ کیڑے مار دوا صرف سفید مکھی ناقل کو دباتی ہے۔",
+      "ناقل کنٹرول میں اجزاء باری باری دیں اور لیبل اور مقامی زرعی مشورہ مانیں۔"
     ],
-    "spread_en": "Spread by whiteflies (Bemisia tabaci)",
-    "spread_bn": "হোয়াইটফ্লাই (বেমিসিয়া তাবাকি) দ্বারা ছড়ায়",
-    "spread_ur": "سفید مکھیوں (بیمیشیا تباچی) سے پھیلتی ہے"
+    "biological_control_en": [
+      "Encourage predators and parasitoids of whitefly, and use yellow sticky traps for monitoring.",
+      "Neem oil or insecticidal soap can reduce whitefly numbers on foliage."
+    ],
+    "biological_control_bn": [
+      "সাদা মাছির শিকারি ও পরজীবীর বিস্তার ঘটান, পর্যবেক্ষণে হলুদ আঠালো ফাঁদ ব্যবহার করুন।",
+      "নিম তেল বা ইনসেক্টিসাইডাল সাবান পাতায় সাদা মাছির সংখ্যা কমাতে পারে।"
+    ],
+    "biological_control_ur": [
+      "سفید مکھی کے شکاری اور پرجیویوں کی حوصلہ افزائی کریں، نگرانی کے لیے زرد چپکنے والے جال لگائیں۔",
+      "نیم تیل یا کیڑے مار صابن پتوں پر سفید مکھی کی تعداد کم کر سکتے ہیں۔"
+    ],
+    "prevention_tips_en": [
+      "Use insect-proof nursery netting and transplant only virus-free seedlings.",
+      "Control whiteflies early and avoid planting next to infected older crops."
+    ],
+    "prevention_tips_bn": [
+      "পোকারোধক নেট দিয়ে নার্সারি ঢাকুন এবং কেবল ভাইরাসমুক্ত চারা রোপণ করুন।",
+      "শুরুতেই সাদা মাছি দমন করুন এবং আক্রান্ত পুরোনো ফসলের পাশে রোপণ এড়িয়ে চলুন।"
+    ],
+    "prevention_tips_ur": [
+      "کیڑوں سے محفوظ جالی سے نرسری ڈھکیں اور صرف وائرس سے پاک پودے لگائیں۔",
+      "شروع ہی میں سفید مکھی کو قابو کریں اور متاثرہ پرانی فصلوں کے پاس پودے نہ لگائیں۔"
+    ]
   },
   {
     "id": "tomato_tomato_mosaic_virus",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Tomato Mosaic Virus",
-    "name_bn": "টমেটো মোজাইক ভাইরাস",
-    "name_ur": "ٹماٹر موزیک وائرس",
-    "scientific_name": "Tomato mosaic virus (ToMV)",
-    "severity": "moderate",
-    "description_en": "Tomato mosaic virus causes mottling, leaf distortion, and stunting in tomatoes.",
-    "description_bn": "টমেটো মোজাইক ভাইরাস টমেটোতে দাগ, পাতা বিকৃতি ও বৃদ্ধি বাধা সৃষ্টি করে।",
-    "description_ur": "ٹماٹر موزیک وائرس ٹماٹر میں دھبے، پتوں کی بگاڑ اور رکٹ ہونے کا سبب بنتا ہے۔",
-    "symptoms_en": [
-      "Mottled light and dark green patches on leaves",
-      "Leaf curling and distortion",
-      "Stunted plant growth",
-      "Reduced fruit yield",
-      "Fruit may have irregular ripening"
+    "cultural_control_en": [
+      "No cure exists for the virus: remove and destroy infected plants immediately.",
+      "Wash hands and disinfect tools; the virus spreads easily by touch and sap.",
+      "Avoid tobacco near plants; use resistant varieties, virus-free seed and weed control."
     ],
-    "symptoms_bn": [
-      "পাতায় হালকা ও গাঢ় সবুজ দাগের মিশ্রণ",
-      "পাতা কুঁচকে ও বিকৃত হওয়া",
-      "গাছের বৃদ্ধি বাধাগ্রস্ত",
-      "ফলন হ্রাস",
-      "ফল অসমভাবে পাকতে পারে"
+    "cultural_control_bn": [
+      "এই ভাইরাসের কোনো প্রতিকার নেই: আক্রান্ত গাছ দ্রুত সরিয়ে ধ্বংস করুন।",
+      "হাত ধুয়ে যন্ত্রপাতি জীবাণুমুক্ত করুন; স্পর্শ ও রসের মাধ্যমে ভাইরাস সহজে ছড়ায়।",
+      "গাছের কাছে তামাক এড়িয়ে চলুন; প্রতিরোধী জাত, ভাইরাসমুক্ত বীজ ও আগাছা নিয়ন্ত্রণ করুন।"
     ],
-    "symptoms_ur": [
-      "پتوں پر ہلکے اور گہرے سبز دھبوں کا مکس",
-      "پتوں کا مڑنا اور بگڑنا",
-      "پودے کی نشوونما رک جانا",
-      "پھل کی پیداوار میں کمی",
-      "پھل کا غیر منظم پکنا"
+    "cultural_control_ur": [
+      "اس وائرس کا کوئی علاج نہیں: متاثرہ پودے فوراً ہٹا کر تلف کریں۔",
+      "ہاتھ دھوئیں اور اوزار جراثیم سے پاک کریں؛ وائرس چھونے اور رس سے آسانی سے پھیلتا ہے۔",
+      "پودوں کے قریب تمباکو سے بچیں؛ مزاحم اقسام، وائرس سے پاک بیج اور جڑی بوٹی کنٹرول کریں۔"
     ],
-    "favorable_conditions_en": [
-      "Mechanical transmission (tools, hands)",
-      "Seedborne infection",
-      "Weed hosts",
-      "High population density"
+    "chemical_control_en": [
+      "No chemical cure exists for the virus; sprays cannot eliminate it from plants.",
+      "Insecticides only target vectors such as aphids; follow the label and local extension advice."
     ],
-    "favorable_conditions_bn": [
-      "যান্ত্রিক সংক্রমণ (যন্ত্রপাতি, হাত)",
-      "বীজ বাহিত সংক্রমণ",
-      "আগাছা পোষক",
-      "উচ্চ জনঘনত্ব"
+    "chemical_control_bn": [
+      "এই ভাইরাসের কোনো রাসায়নিক প্রতিকার নেই; স্প্রে গাছ থেকে ভাইরাস দূর করতে পারে না।",
+      "কীটনাশক কেবল জাব পোকা জাতীয় বাহক দমন করে; লেবেল ও স্থানীয় কৃষি সম্প্রসারণ পরামর্শ মানুন।"
     ],
-    "favorable_conditions_ur": [
-      "میکانیکی منتقلی (اوزار، ہاتھ)",
-      "بیج سے پیدا ہونے والا انفیکشن",
-      "گھاس کے میزبان",
-      "زیادہ آبادی کثافت"
+    "chemical_control_ur": [
+      "اس وائرس کا کوئی کیمیائی علاج نہیں؛ سپرے پودوں سے وائرس ختم نہیں کر سکتے۔",
+      "کیڑے مار دوا صرف جوں جیسے ناقلوں کو نشانہ بناتی ہے؛ لیبل اور مقامی زرعی مشورہ مانیں۔"
     ],
-    "spread_en": "Mechanical contact, seeds, infected plant debris",
-    "spread_bn": "যান্ত্রিক সংস্পর্শ, বীজ, সংক্রমিত উদ্ভিদের অবশিষ্টাংশ",
-    "spread_ur": "میکانیکی رابطہ، بیج، متاثرہ پودوں کا ملبہ"
+    "biological_control_en": [
+      "Neem oil or insecticidal soap can reduce aphid vectors but will not cure the virus.",
+      "Encourage beneficial insects and remove weeds that shelter vector aphids."
+    ],
+    "biological_control_bn": [
+      "নিম তেল বা ইনসেক্টিসাইডাল সাবান জাব পোকা বাহক কমাতে পারে, তবে ভাইরাস সারায় না।",
+      "উপকারী পোকা সংরক্ষণ করুন এবং বাহক জাব পোকার আশ্রয় আগাছা সরান।"
+    ],
+    "biological_control_ur": [
+      "نیم تیل یا کیڑے مار صابن جوں ناقل کم کر سکتے ہیں مگر وائرس کا علاج نہیں۔",
+      "مفید کیڑوں کی حوصلہ افزائی کریں اور ناقل جوں کو پناہ دینے والی جڑی بوٹیاں ہٹائیں۔"
+    ],
+    "prevention_tips_en": [
+      "Buy certified virus-free seed and resistant cultivars for the next season.",
+      "Clean and disinfect stakes, trays and tools; do not smoke while handling plants."
+    ],
+    "prevention_tips_bn": [
+      "আগামী মৌসুমে ভাইরাসমুক্ত প্রত্যয়িত বীজ ও প্রতিরোধী জাত কিনুন।",
+      "খুঁটি, ট্রে ও যন্ত্রপাতি পরিষ্কার করে জীবাণুমুক্ত করুন; গাছ নাড়াচাড়ার সময় ধূমপান করবেন না।"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم کے لیے وائرس سے پاک تصدیق شدہ بیج اور مزاحم اقسام خریدیں۔",
+      "سہارے، ٹرے اور اوزار صاف کر کے جراثیم سے پاک کریں؛ پودے چھوتے وقت سگریٹ نہ پئیں۔"
+    ]
   },
   {
     "id": "tomato_healthy",
-    "crop_en": "Tomato",
-    "crop_bn": "টমেটো",
-    "crop_ur": "ٹماٹر",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Tomato plant is healthy with no visible disease symptoms.",
-    "description_bn": "টমেটো গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "ٹماٹر کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "Scout plants weekly for early signs of disease",
+      "Ensure proper spacing for good air circulation",
+      "Apply balanced fertilizer and water at the base only",
+      "Remove any diseased-looking leaves immediately"
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার গাছ পরীক্ষা করে রোগের প্রাথমিক লক্ষণ খুঁজুন",
+      "ভালো বাতাস চলাচলের জন্য সঠিক দূরত্বে চারা রোপণ করুন",
+      "সুষম সার প্রয়োগ করুন এবং গোড়ায় পানি দিন",
+      "রোগাক্রান্ত দেখায় এমন পাতা সাথে সাথেই তুলে ধ্বংস করুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے پودوں کا معائنہ کریں تاکہ بیماری کی ابتدائی علامات مل سکیں",
+      "ہوا کی اچھی گردش کے لیے پودوں میں مناسب فاصلہ رکھیں",
+      "متوازن کھاد ڈالیں اور پانی صرف جڑوں کے پاس دیں",
+      "بیمار نظر آنے والے پتے فوراً ہٹا کر تباہ کر دیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Rotate tomatoes with unrelated crops each season",
+      "Use certified disease-free seed and resistant varieties",
+      "Treat seed before sowing if disease occurred previously",
+      "Keep the field free of old crop debris"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি মৌসুমে টমেটোর সাথে ভিন্ন ফসলে ফসল পরিবর্তন করুন",
+      "রোগমুক্ত প্রত্যয়িত বীজ ও রোগ প্রতিরোধী জাত ব্যবহার করুন",
+      "আগে রোগ হয়ে থাকলে বপনের আগে বীজ শোধন করুন",
+      "মাঠে পুরনো ফসলের অবশিষ্টাংশ জমতে দেবেন না"
+    ],
+    "prevention_tips_ur": [
+      "ہر موسم میں ٹماٹر کے ساتھ مختلف فصل کی روٹیشن کریں",
+      "تصدیق شدہ بیماری سے پاک بیج اور بیماری برداشت کرنے والی اقسام استعمال کریں",
+      "اگر پہلے بیماری ہو چکی ہو تو بوائی سے پہلے بیج کا علاج کریں",
+      "کھیت میں پرانی فصل کے ملبے کو جمع نہ ہونے دیں"
+    ]
   },
   {
     "id": "wheat_brown_rust",
-    "crop_en": "Wheat",
-    "crop_bn": "গম",
-    "crop_ur": "گندم",
-    "name_en": "Brown Rust",
-    "name_bn": "ব্রাউন রাস্ট",
-    "name_ur": "براؤن زنگ",
-    "scientific_name": "Puccinia triticina",
-    "severity": "moderate",
-    "description_en": "Brown rust causes small, brown pustules on wheat leaves, reducing photosynthesis and yield.",
-    "description_bn": "ব্রাউন রাস্ট গমের পাতায় ছোট, বাদামি দানা সৃষ্টি করে, আলোকসংস্লেষণ ও ফলন কমায়।",
-    "description_ur": "براؤن زنگ گندم کے پتوں پر چھوٹے، بھورے چھالے بناتا ہے، ضیائی تالیف اور پیداوار کم کرتا ہے۔",
-    "symptoms_en": [
-      "Small, brown pustules on leaves",
-      "Pustules break open releasing brown spores",
-      "Leaf yellowing around pustules",
-      "Reduced grain size and yield",
-      "Premature leaf death"
+    "cultural_control_en": [
+      "Remove and destroy infected stubble and volunteer wheat",
+      "Grow brown-rust-resistant wheat varieties",
+      "Avoid excess nitrogen; apply balanced fertilizer",
+      "Rotate crops and scout fields weekly in warm, humid spells"
     ],
-    "symptoms_bn": [
-      "পাতায় ছোট, বাদামি দানা",
-      "দানা ফেটে বাদামি স্পোর নির্গত করে",
-      "দানার চারপাশে পাতা হলুদ",
-      "শস্যের আকার ও ফলন হ্রাস",
-      "পাতা অকালে মরে যাওয়া"
+    "cultural_control_bn": [
+      "সংক্রামিত খড়কুটো ও আগাছা-সদৃশ গম তুলে ধ্বংস করুন",
+      "বাদামি মরিচা প্রতিরোধী গমের জাত চাষ করুন",
+      "অতিরিক্ত ইউরিয়া এড়িয়ে সুষম সার প্রয়োগ করুন",
+      "ফসল পরিবর্তন করুন এবং উষ্ণ-আর্দ্র আবহাওয়ায় সপ্তাহে জমি পরীক্ষা করুন"
     ],
-    "symptoms_ur": [
-      "پتوں پر چھوٹے، بھورے چھالے",
-      "چھالے پھٹ کر بھورے اسپورز چھوڑتے ہیں",
-      "چھالوں کے گرد پتے پیلے",
-      "اناج کا سائز اور پیداوار کم",
-      "پتے قبل از وقت مر جاتے ہیں"
+    "cultural_control_ur": [
+      "متاثرہ پوش اور خود رو گندم ہٹا کر تباہ کریں",
+      "براؤن رسٹ برداشت کرنے والی گندم کی اقسام اگائیں",
+      "زائد نائٹروجن سے پرہیز کریں؛ متوازن کھاد استعمال کریں",
+      "فصل کی روٹیشن کریں اور گرم مرطوب موسم میں ہر ہفتے کھیت کا معائنہ کریں"
     ],
-    "favorable_conditions_en": [
-      "Cool, moist weather (15-22°C)",
-      "High humidity",
-      "Rainfall during spring",
-      "Susceptible varieties"
+    "chemical_control_en": [
+      "Spray triazole fungicides such as tebuconazole or propiconazole at first rust signs",
+      "Strobilurin fungicides (e.g. azoxystrobin) provide good protectant cover",
+      "Always follow the product label and local agricultural extension advice"
     ],
-    "favorable_conditions_bn": [
-      "শীতল, আর্দ্র আবহাওয়া (15-22°C)",
-      "উচ্চ আর্দ্রতা",
-      "বসন্তে বৃষ্টি",
-      "সংবেদনশীল জাত"
+    "chemical_control_bn": [
+      "মরিচার প্রথম লক্ষণে টেবুকোনাজল বা প্রোপিকোনাজল জাতীয় ট্রায়াজল ছত্রাকনাশক স্প্রে করুন",
+      "অ্যাজোক্সিস্ট্রোবিন জাতীয় স্ট্রোবিলুরিন ছত্রাকনাশক ভালো প্রতিরোধক সুরক্ষা দেয়",
+      "সর্বদা পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তার পরামর্শ মেনে চলুন"
     ],
-    "favorable_conditions_ur": [
-      "ٹھنڈا، نم موسم (15-22°C)",
-      "زیادہ نمی",
-      "بہار میں بارش",
-      "حساس اقسام"
+    "chemical_control_ur": [
+      "رسٹ کی پہلی علامت پر ٹیبوکونازول یا پروپیکونازول جیسی ٹرائزول فنگی سائیڈ اسپرے کریں",
+      "اسٹروبیلورین فنگی سائیڈ (جیسے ایزوکسی سٹروبین) اچھی حفاظتی صورت فراہم کرتے ہیں",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
     ],
-    "spread_en": "Windborne spores",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز"
+    "biological_control_en": [
+      "Apply Bacillus subtilis-based biofungicide sprays",
+      "Use Trichoderma products to improve soil health",
+      "Neem oil spray can serve as a supplementary protectant"
+    ],
+    "biological_control_bn": [
+      "ব্যাসিলাস সাবটিলিস-ভিত্তিক জৈব ছত্রাকনাশক স্প্রে করুন",
+      "মাটির স্বাস্থ্য উন্নত করতে ট্রাইকোডার্মা ব্যবহার করুন",
+      "পরিপূরক সুরক্ষা হিসেবে নিমের তেল স্প্রে করা যেতে পারে"
+    ],
+    "biological_control_ur": [
+      "بیسیل سبٹیلیس پر مبنی بائیو فنگی سائیڈ اسپرے کریں",
+      "مٹی کی صحت بہتر بنانے کے لیے ٹرائی کوڈرما مصنوعات استعمال کریں",
+      "نیم کے تیل کا اسپرے اضافی تحفظ کے طور پر کام کر سکتا ہے"
+    ],
+    "prevention_tips_en": [
+      "Treat seed with an approved fungicide before sowing",
+      "Manage stubble; plough under or remove old crop residue",
+      "Sow resistant varieties at the recommended time, not too early",
+      "Plan regular rust scouting for next season"
+    ],
+    "prevention_tips_bn": [
+      "বপনের আগে অনুমোদিত ছত্রাকনাশক দিয়ে বীজ শোধন করুন",
+      "খড়কুটো ব্যবস্থাপনা করুন; পুরনো ফসলের অবশিষ্টাংশ মাটিতে মিশিয়ে দিন বা সরিয়ে ফেলুন",
+      "প্রস্তাবিত সময়ে রোগ প্রতিরোধী জাত বপন করুন, খুব তাড়াতাড়ি নয়",
+      "পরের মৌসুমে নিয়মিত মরিচা পর্যবেক্ষণের পরিকল্পনা করুন"
+    ],
+    "prevention_tips_ur": [
+      "بوائی سے پہلے منظور شدہ فنگی سائیڈ سے بیج کا علاج کریں",
+      "پوش کا انتظام کریں؛ پرانی فصل کے ملبے کو زمین میں ملا دیں یا ہٹا دیں",
+      "تجویز کردہ وقت پر بیماری برداشت کرنے والی اقسام بوئیں، بہت جلدی نہیں",
+      "اگلے موسم کے لیے باقاعدہ رسٹ نگرانی کا منصوبہ بنائیں"
+    ]
   },
   {
     "id": "wheat_healthy",
-    "crop_en": "Wheat",
-    "crop_bn": "গম",
-    "crop_ur": "گندم",
-    "name_en": "Healthy",
-    "name_bn": "সুস্থ",
-    "name_ur": "صحت مند",
-    "severity": "none",
-    "description_en": "Wheat plant is healthy with no visible disease symptoms.",
-    "description_bn": "গম গাছ সুস্থ আছে, কোনো দৃশ্যমান রোগের উপসর্গ নেই।",
-    "description_ur": "گندم کا پودا صحت مند ہے، بیماری کی کوئی واضح علامات نہیں۔",
-    "symptoms_en": ["No visible disease symptoms detected"],
-    "symptoms_bn": ["দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"],
-    "symptoms_ur": ["بیماری کی کوئی واضح علامات نظر نہیں آتیں"],
-    "favorable_conditions_en": ["N/A"],
-    "favorable_conditions_bn": ["প্রযোজ্য নয়"],
-    "favorable_conditions_ur": ["لاگو نہیں"],
-    "spread_en": "N/A",
-    "spread_bn": "প্রযোজ্য নয়",
-    "spread_ur": "لاگو نہیں"
+    "cultural_control_en": [
+      "Scout the crop weekly for rust or other symptoms",
+      "Keep field borders free of volunteer wheat",
+      "Apply balanced fertilizer; avoid excess nitrogen",
+      "Ensure good drainage and timely irrigation"
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার মরিচা বা অন্য রোগের লক্ষণের জন্য ফসল পরীক্ষা করুন",
+      "মাঠের কিনারায় আগাছা-সদৃশ গম জমতে দেবেন না",
+      "সুষম সার প্রয়োগ করুন; অতিরিক্ত ইউরিয়া এড়িয়ে চলুন",
+      "ভালো নিষ্কাশন ও সময়মতো সেচ নিশ্চিত করুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے رسٹ یا دیگر علامات کے لیے فصل کا معائنہ کریں",
+      "کھیت کی کناروں پر خود رو گندم جمع نہ ہونے دیں",
+      "متوازن کھاد ڈالیں؛ زائد نائٹروجن سے پرہیز کریں",
+      "اچھی نکاسی اور بروقت آبپاشی یقینی بنائیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Treat seed before sowing next season",
+      "Rotate wheat with pulses or oilseed crops",
+      "Choose rust-resistant varieties for next sowing",
+      "Clear and incorporate stubble promptly after harvest"
+    ],
+    "prevention_tips_bn": [
+      "পরের মৌসুমে বপনের আগে বীজ শোধন করুন",
+      "গমের সাথে ডাল বা তেলবীজ ফসলে ফসল পরিবর্তন করুন",
+      "পরের বপনের জন্য মরিচা প্রতিরোধী জাত বেছে নিন",
+      "ফসল তোলার পরপরই খড়কুটো পরিষ্কার করে মাটিতে মিশিয়ে দিন"
+    ],
+    "prevention_tips_ur": [
+      "اگلے موسم میں بوائی سے پہلے بیج کا علاج کریں",
+      "گندم کے بجائے دالیں یا تیل بیج والی فصلوں سے روٹیشن کریں",
+      "اگلی بوائی کے لیے رسٹ برداشت کرنے والی اقسام منتخب کریں",
+      "کٹائی کے فوراً بعد پوش صاف کر کے زمین میں شامل کر دیں"
+    ]
   },
   {
     "id": "wheat_yellow_rust",
-    "crop_en": "Wheat",
-    "crop_bn": "গম",
-    "crop_ur": "گندم",
-    "name_en": "Yellow Rust",
-    "name_bn": "ইয়েলো রাস্ট",
-    "name_ur": "یلو زنگ",
-    "scientific_name": "Puccinia striiformis",
-    "severity": "severe",
-    "description_en": "Yellow rust appears as bright yellow pustules on wheat leaves, causing severe yield losses.",
-    "description_bn": "ইয়েলো রাস্ট গমের পাতায় উজ্জ্বল হলুদ দানা হিসেবে দেখা যায়, যা মারাত্মক ফলন ক্ষতি ঘটায়।",
-    "description_ur": "یلو زنگ گندم کے پتوں پر چمکدار پیلے چھالے کے طور پر ظاہر ہوتا ہے، جس سے پیداوار میں شدید کمی آتی ہے۔",
-    "symptoms_en": [
-      "Bright yellow pustules arranged in stripes",
-      "Pustules break open releasing yellow spores",
-      "Leaves turn yellow and dry",
-      "Reduced grain filling",
-      "Stunted plant growth"
+    "cultural_control_en": [
+      "Remove infected leaves and destroy diseased stubble after harvest",
+      "Plant yellow-rust-resistant varieties",
+      "Avoid very early sowing and excess nitrogen",
+      "Scout weekly in cool, damp weather for yellow stripes on leaves"
     ],
-    "symptoms_bn": [
-      "উজ্জ্বল হলুদ দানা সারিবদ্ধভাবে সাজানো",
-      "দানা ফেটে হলুদ স্পোর নির্গত করে",
-      "পাতা হলুদ ও শুকিয়ে যায়",
-      "শস্য ভরাট কমে যাওয়া",
-      "গাছের বৃদ্ধি বাধাগ্রস্ত"
+    "cultural_control_bn": [
+      "সংক্রামিত পাতা তুলে ফেলুন এবং ফসল তোলার পর আক্রান্ত খড়কুটো ধ্বংস করুন",
+      "হলুদ মরিচা প্রতিরোধী জাত চাষ করুন",
+      "খুব তাড়াতাড়ি বপন ও অতিরিক্ত ইউরিয়া এড়িয়ে চলুন",
+      "ঠান্ডা-আর্দ্র আবহাওয়ায় পাতায় হলুদ ডোরা দেখতে সপ্তাহে জমি পরীক্ষা করুন"
     ],
-    "symptoms_ur": [
-      "چمکدار پیلے چھالے قطاروں میں ترتیب شدہ",
-      "چھالے پھٹ کر پیلے اسپورز چھوڑتے ہیں",
-      "پتے پیلے اور سوکھ جاتے ہیں",
-      "اناج بھرنے میں کمی",
-      "پودے کی نشوونما رک جانا"
+    "cultural_control_ur": [
+      "متاثرہ پتے ہٹا دیں اور کٹائی کے بعد بیمار پوش تباہ کر دیں",
+      "یلو رسٹ برداشت کرنے والی اقسام اگائیں",
+      "بہت جلدی بوائی اور زائد نائٹروجن سے پرہیز کریں",
+      "ٹھنڈی مرطوب موسم میں پتوں پر پیلے دھاری دار نشانات کے لیے ہر ہفتے کھیت چیک کریں"
     ],
-    "favorable_conditions_en": [
-      "Cool temperatures (10-15°C)",
-      "High humidity",
-      "Rainfall in spring",
-      "Windy conditions"
+    "chemical_control_en": [
+      "At the first yellow stripes, spray a triazole such as tebuconazole or propiconazole",
+      "Alternating or mixing fungicide groups improves control",
+      "Always follow the product label and local agricultural extension advice"
     ],
-    "favorable_conditions_bn": [
-      "শীতল তাপমাত্রা (10-15°C)",
-      "উচ্চ আর্দ্রতা",
-      "বসন্তে বৃষ্টি",
-      "বাতাসযুক্ত অবস্থা"
+    "chemical_control_bn": [
+      "হলুদ ডোরা দেখা মাত্রই টেবুকোনাজল বা প্রোপিকোনাজল জাতীয় ট্রায়াজল স্প্রে করুন",
+      "বিভিন্ন গোষ্ঠীর ছত্রাকনাশক পালাক্রমে ব্যবহারে ভালো ফল মেলে",
+      "সর্বদা পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তার পরামর্শ মেনে চলুন"
     ],
-    "favorable_conditions_ur": [
-      "ٹھنڈا درجہ حرارت (10-15°C)",
-      "زیادہ نمی",
-      "بہار میں بارش",
-      "تیز ہوائیں"
+    "chemical_control_ur": [
+      "پیلے دھاری دار نشانات نظر آتے ہی ٹیبوکونازول یا پروپیکونازول جیسی ٹرائزول فنگی سائیڈ اسپرے کریں",
+      "مختلف گروپوں کی فنگی سائیڈ باری باری استعمال کرنے سے بہتر نتیجہ ملتا ہے",
+      "ہمیشہ مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کے مشورے پر عمل کریں"
     ],
-    "spread_en": "Windborne spores, long-distance dispersal",
-    "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, দূর দূরান্তে বিস্তার",
-    "spread_ur": "ہوا سے اڑنے والے اسپورز، طویل فاصلے پر پھیلاؤ"
+    "biological_control_en": [
+      "Spray Bacillus subtilis biofungicide as a supplement",
+      "Use Trichoderma-enriched compost to strengthen plants",
+      "Neem oil sprays may add some protective effect"
+    ],
+    "biological_control_bn": [
+      "সম্পূরক হিসেবে ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক স্প্রে করুন",
+      "ট্রাইকোডার্মা-সমৃদ্ধ জৈব সার গাছের রোগ প্রতিরোধ ক্ষমতা বাড়ায়",
+      "নিমের তেল স্প্রে কিছুটা সুরক্ষা দিতে পারে"
+    ],
+    "biological_control_ur": [
+      "اضافی تحفظ کے طور پر بیسیل سبٹیلیس بائیو فنگی سائیڈ اسپرے کریں",
+      "ٹرائی کوڈرما سے تیار کمپوسٹ پودوں کی قوت مدافعت بڑھاتا ہے",
+      "نیم کے تیل کا اسپرے کچھ تحفظ فراہم کر سکتا ہے"
+    ],
+    "prevention_tips_en": [
+      "Treat seed with a systemic fungicide before sowing",
+      "Manage stubble and volunteer wheat between seasons",
+      "Sow resistant varieties; avoid overly early sowing",
+      "Schedule regular rust monitoring for next season"
+    ],
+    "prevention_tips_bn": [
+      "বপনের আগে সিস্টেমিক ছত্রাকনাশক দিয়ে বীজ শোধন করুন",
+      "মৌসুমের মাঝে খড়কুটো ও আগাছা-সদৃশ গম ব্যবস্থাপনা করুন",
+      "রোগ প্রতিরোধী জাত বপন করুন; অতিরিক্ত আগে বপন করবেন না",
+      "পরের মৌসুমের জন্য নিয়মিত মরিচা পর্যবেক্ষণের সময়সূচি রাখুন"
+    ],
+    "prevention_tips_ur": [
+      "بوائی سے پہلے سسٹیمک فنگی سائیڈ سے بیج کا علاج کریں",
+      "موسموں کے درمیان پوش اور خود رو گندم کا انتظام کریں",
+      "بیماری برداشت کرنے والی اقسام بوئیں؛ بہت پہلے بوائی نہ کریں",
+      "اگلے موسم کے لیے باقاعدہ رسٹ نگرانی کا شیڈول بنائیں"
+    ]
   }
 ]
