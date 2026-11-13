@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'dashboard_palette.dart';
+
 class AppTheme {
   const AppTheme._();
 
@@ -22,6 +24,11 @@ class AppTheme {
       brightness: brightness,
       colorScheme: colorScheme,
       scaffoldBackgroundColor: colorScheme.surface,
+      extensions: <ThemeExtension<dynamic>>[
+        brightness == Brightness.dark
+            ? DashboardPalette.dark
+            : DashboardPalette.light,
+      ],
       appBarTheme: AppBarTheme(
         centerTitle: true,
         elevation: 0,

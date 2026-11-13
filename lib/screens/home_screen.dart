@@ -1,15 +1,20 @@
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../services/app_localizations.dart';
 import '../services/language_service.dart';
 import '../services/theme_service.dart';
-import 'about_screen.dart';
+import '../utils/dashboard_palette.dart';
+import '../widgets/home_ornaments.dart';
 import 'browse_diseases_screen.dart';
 import 'camera_screen.dart';
 import 'history_screen.dart';
+import 'settings_screen.dart';
 import 'statistics_screen.dart';
 
+/// Root of the signed-in app: four tabs behind a frosted taskbar.
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -19,38 +24,75 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
+  bool _openingGallery = false;
 
-  void _selectTab(int index) => setState(() => _currentIndex = index);
+  void _selectTab(int index) {
+    if (index == _currentIndex) {
+      return;
+    }
+    setState(() => _currentIndex = index);
+  }
+
+  /// Pushes the scan flow as a full-screen route. [openGalleryOnStart] jumps
+  /// straight into the system picker, which is what the "Upload from Gallery"
+  /// pill does.
+  Future<void> _openScanner({bool openGalleryOnStart = false}) async {
+    if (_openingGallery) {
+      return;
+    }
+    setState(() => _openingGallery = true);
+    try {
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => CameraScreen(openGalleryOnStart: openGalleryOnStart),
+        ),
+      );
+    } finally {
+      if (mounted) {
+        setState(() => _openingGallery = false);
+      }
+    }
+  }
+
+  void _openLibrary() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(builder: (_) => const BrowseDiseasesScreen()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     final strings = AppLocalizations.of(context);
     final screens = <Widget>[
-      DashboardPage(
-        onStartScan: () => _selectTab(1),
-        onOpenHistory: () => _selectTab(2),
-        onOpenStatistics: () => _selectTab(3),
-        onOpenDiseases: () => _selectTab(4),
+      _DashboardPage(
+        onScanWithCamera: _openScanner,
+        onUploadFromGallery: () => _openScanner(openGalleryOnStart: true),
+        onOpenLibrary: _openLibrary,
       ),
-      const CameraScreen(),
       const HistoryScreen(),
       const StatisticsScreen(),
-      const BrowseDiseasesScreen(),
+      SettingsScreen(onOpenLibrary: _openLibrary),
     ];
 
-    return Scaffold(
-      body: screens[_currentIndex],
-      bottomNavigationBar: SafeArea(
-        minimum: const EdgeInsets.fromLTRB(16, 0, 16, 14),
-        child: _FloatingTaskbar(
+    return PopScope(
+      // Back should walk the user home before it leaves the app; without this
+      // Android closes the whole app from any tab.
+      canPop: _currentIndex == 0,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) {
+          _selectTab(0);
+        }
+      },
+      child: Scaffold(
+        body: screens[_currentIndex],
+        bottomNavigationBar: _GlassTaskbar(
           currentIndex: _currentIndex,
           onSelected: _selectTab,
           labels: [
             strings.text('home'),
-            strings.text('scan'),
             strings.text('history'),
-            strings.text('statistics'),
-            strings.text('diseases'),
+            strings.text('stats'),
+            strings.text('settings'),
           ],
         ),
       ),
@@ -58,423 +100,50 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class DashboardPage extends StatelessWidget {
-  const DashboardPage({
-    super.key,
-    required this.onStartScan,
-    required this.onOpenHistory,
-    required this.onOpenStatistics,
-    required this.onOpenDiseases,
+// ---------------------------------------------------------------------------
+// Dashboard
+// ---------------------------------------------------------------------------
+
+class _DashboardPage extends StatelessWidget {
+  const _DashboardPage({
+    required this.onScanWithCamera,
+    required this.onUploadFromGallery,
+    required this.onOpenLibrary,
   });
 
-  final VoidCallback onStartScan;
-  final VoidCallback onOpenHistory;
-  final VoidCallback onOpenStatistics;
-  final VoidCallback onOpenDiseases;
+  final VoidCallback onScanWithCamera;
+  final VoidCallback onUploadFromGallery;
+  final VoidCallback onOpenLibrary;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-
-    return ColoredBox(
-      color: isDark ? colorScheme.surface : const Color(0xFFF9FCF8),
+    final palette = context.dashboard;
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [palette.backdropTop, palette.backdropBottom],
+          stops: const [0.0, 0.55],
+        ),
+      ),
       child: SafeArea(
         bottom: false,
-        child: LayoutBuilder(
-          builder: (context, constraints) => SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(20, 14, 20, 22),
-            child: SizedBox(
-              width: constraints.maxWidth - 40,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const _DashboardHeader(),
-                  const SizedBox(height: 18),
-                  _HeroDetectionCard(onStartScan: onStartScan),
-                  const SizedBox(height: 20),
-                  _QuickActions(
-                    onStartScan: onStartScan,
-                    onOpenHistory: onOpenHistory,
-                    onOpenStatistics: onOpenStatistics,
-                    onOpenDiseases: onOpenDiseases,
-                  ),
-                  const SizedBox(height: 28),
-                  _SupportedCrops(onViewAll: onOpenDiseases),
-                  const SizedBox(height: 26),
-                  const _HelpfulTip(),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _DashboardHeader extends StatelessWidget {
-  const _DashboardHeader();
-
-  @override
-  Widget build(BuildContext context) {
-    final strings = AppLocalizations.of(context);
-    final colorScheme = Theme.of(context).colorScheme;
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final showAboutOverflow = constraints.maxWidth >= 400;
-        return Row(
-          children: [
-            Container(
-              width: 60,
-              height: 60,
-              decoration: BoxDecoration(
-                color: colorScheme.primaryContainer,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Icon(
-                Icons.energy_savings_leaf_rounded,
-                size: 36,
-                color: colorScheme.primary,
-              ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    strings.text('app_title'),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      fontWeight: FontWeight.w800,
-                      height: 1.06,
-                      letterSpacing: -0.7,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    strings.text('home_tagline'),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontSize: 12,
-                      color: colorScheme.onSurfaceVariant,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(width: 2),
-            const _ThemeButton(),
-            _LanguageMenu(includeAbout: !showAboutOverflow),
-            if (showAboutOverflow) const _HeaderOverflowMenu(),
-          ],
-        );
-      },
-    );
-  }
-}
-
-class _HeroDetectionCard extends StatelessWidget {
-  const _HeroDetectionCard({required this.onStartScan});
-
-  final VoidCallback onStartScan;
-
-  @override
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final strings = AppLocalizations.of(context);
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final foreground = isDark ? colorScheme.onSurface : const Color(0xFF062D27);
-
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final compact = constraints.maxWidth < 390;
-        final artworkSize = compact ? 210.0 : 250.0;
-        final titleRight = compact ? 96.0 : 126.0;
-        final descriptionRight = compact ? 132.0 : 150.0;
-
-        // A fixed height is required here: a Stack containing only Positioned
-        // children cannot determine its height inside a vertical scroll view.
-        return SizedBox(
-          height: compact ? 276 : 266,
-          child: DecoratedBox(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              gradient: LinearGradient(
-                colors: isDark
-                    ? [const Color(0xFF103C35), const Color(0xFF0A2722)]
-                    : [const Color(0xFFE7F7E8), const Color(0xFFF8FDF7)],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(30),
-              child: Stack(
-                children: [
-                  Positioned(
-                    top: compact ? -18 : -30,
-                    right: compact ? -38 : -30,
-                    child: _LeafArtwork(size: artworkSize),
-                  ),
-                  Positioned(
-                    left: 24,
-                    right: titleRight,
-                    top: 26,
-                    child: Text(
-                      strings.text('home_hero_title'),
-                      maxLines: compact ? 3 : 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.headlineMedium
-                          ?.copyWith(
-                            color: foreground,
-                            fontWeight: FontWeight.w900,
-                            height: 1.04,
-                            letterSpacing: -1.1,
-                          ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 24,
-                    right: descriptionRight,
-                    top: compact ? 132 : 116,
-                    bottom: compact ? 76 : 78,
-                    child: Text(
-                      strings.text('home_hero_description'),
-                      maxLines: compact ? 4 : 3,
-                      softWrap: true,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontSize: compact ? 12 : 13,
-                        color: foreground.withValues(alpha: 0.72),
-                        height: 1.25,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 24,
-                    bottom: 22,
-                    child: SizedBox(
-                      width: compact ? 196 : 224,
-                      child: FilledButton.icon(
-                        onPressed: onStartScan,
-                        style: FilledButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 14,
-                            vertical: 14,
-                          ),
-                          backgroundColor: const Color(0xFF087A4A),
-                          foregroundColor: Colors.white,
-                          shape: const StadiumBorder(),
-                        ),
-                        icon: const Icon(Icons.camera_alt_rounded),
-                        label: Text(
-                          strings.text('home_start_detection'),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        );
-      },
-    );
-  }
-}
-
-class _LeafArtwork extends StatelessWidget {
-  const _LeafArtwork({required this.size});
-
-  final double size;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: size,
-      width: size,
-      decoration: const BoxDecoration(
-        shape: BoxShape.circle,
-        gradient: RadialGradient(
-          colors: [Color(0xFFB6E185), Color(0xFF4E982B), Color(0xFF165322)],
-          stops: [0, .62, 1],
-        ),
-      ),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Transform.rotate(
-            angle: -0.45,
-            child: const Icon(
-              Icons.eco_rounded,
-              color: Color(0xFFEAF9C7),
-              size: 154,
-            ),
-          ),
-          const Icon(Icons.crop_free_rounded, size: 168, color: Colors.white),
-        ],
-      ),
-    );
-  }
-}
-
-class _QuickActions extends StatelessWidget {
-  const _QuickActions({
-    required this.onStartScan,
-    required this.onOpenHistory,
-    required this.onOpenStatistics,
-    required this.onOpenDiseases,
-  });
-
-  final VoidCallback onStartScan;
-  final VoidCallback onOpenHistory;
-  final VoidCallback onOpenStatistics;
-  final VoidCallback onOpenDiseases;
-
-  @override
-  Widget build(BuildContext context) {
-    final strings = AppLocalizations.of(context);
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        const spacing = 14.0;
-        final cardWidth = (constraints.maxWidth - spacing) / 2;
-        final compact = constraints.maxWidth < 390;
-        final actions = [
-          _ActionCard(
-            compact: compact,
-            title: strings.text('home_scan_leaf'),
-            subtitle: strings.text('home_scan_leaf_hint'),
-            icon: Icons.camera_alt_rounded,
-            color: const Color(0xFF138651),
-            surface: const Color(0xFFE8F8EF),
-            onTap: onStartScan,
-          ),
-          _ActionCard(
-            compact: compact,
-            title: strings.text('home_scan_history'),
-            subtitle: strings.text('home_scan_history_hint'),
-            icon: Icons.history_rounded,
-            color: const Color(0xFF128AC0),
-            surface: const Color(0xFFE8F6FF),
-            onTap: onOpenHistory,
-          ),
-          _ActionCard(
-            compact: compact,
-            title: strings.text('home_disease_information'),
-            subtitle: strings.text('home_disease_information_hint'),
-            icon: Icons.menu_book_rounded,
-            color: const Color(0xFF7250C8),
-            surface: const Color(0xFFF1EDFF),
-            onTap: onOpenDiseases,
-          ),
-          _ActionCard(
-            compact: compact,
-            title: strings.text('statistics'),
-            subtitle: strings.text('home_statistics_hint'),
-            icon: Icons.bar_chart_rounded,
-            color: const Color(0xFFE77D2E),
-            surface: const Color(0xFFFFF1E6),
-            onTap: onOpenStatistics,
-          ),
-        ];
-
-        return Wrap(
-          spacing: spacing,
-          runSpacing: spacing,
-          children: [
-            for (final action in actions)
-              SizedBox(
-                width: cardWidth,
-                height: compact ? 160 : 150,
-                child: action,
-              ),
-          ],
-        );
-      },
-    );
-  }
-}
-
-class _ActionCard extends StatelessWidget {
-  const _ActionCard({
-    required this.compact,
-    required this.title,
-    required this.subtitle,
-    required this.icon,
-    required this.color,
-    required this.surface,
-    required this.onTap,
-  });
-
-  final bool compact;
-  final String title;
-  final String subtitle;
-  final IconData icon;
-  final Color color;
-  final Color surface;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    return Material(
-      color: isDark ? color.withValues(alpha: .20) : surface,
-      borderRadius: BorderRadius.circular(24),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(24),
-        child: Padding(
-          padding: EdgeInsets.all(compact ? 12 : 16),
-          child: Row(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Container(
-                width: compact ? 44 : 54,
-                height: compact ? 44 : 54,
-                decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-                child: Icon(icon, color: Colors.white, size: compact ? 23 : 28),
+              const _BrandHeader(),
+              const SizedBox(height: 22),
+              _HeroSection(
+                onScanWithCamera: onScanWithCamera,
+                onUploadFromGallery: onUploadFromGallery,
               ),
-              SizedBox(width: compact ? 8 : 14),
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      title,
-                      maxLines: compact ? 2 : 1,
-                      overflow: TextOverflow.ellipsis,
-                      style:
-                          (compact
-                                  ? Theme.of(context).textTheme.titleSmall
-                                  : Theme.of(context).textTheme.titleMedium)
-                              ?.copyWith(fontWeight: FontWeight.w800),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      subtitle,
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        fontSize: compact ? 12 : 13,
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
-                        height: 1.25,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              if (!compact)
-                Icon(Icons.chevron_right_rounded, color: color, size: 30),
+              const SizedBox(height: 22),
+              _SupportedCropsCard(onOpenLibrary: onOpenLibrary),
+              const SizedBox(height: 18),
+              const _FooterSection(),
             ],
           ),
         ),
@@ -483,123 +152,604 @@ class _ActionCard extends StatelessWidget {
   }
 }
 
-class _SupportedCrops extends StatelessWidget {
-  const _SupportedCrops({required this.onViewAll});
-
-  final VoidCallback onViewAll;
+/// Logo, wordmark and tagline, with the theme and language controls.
+class _BrandHeader extends StatelessWidget {
+  const _BrandHeader();
 
   @override
   Widget build(BuildContext context) {
     final strings = AppLocalizations.of(context);
-    const crops = [
-      ('home_crop_tomato', Icons.local_florist_rounded, Color(0xFFE74B3B)),
-      ('home_crop_potato', Icons.agriculture_rounded, Color(0xFFC88A45)),
-      ('home_crop_corn', Icons.grass_rounded, Color(0xFFF2B819)),
-      ('home_crop_apple', Icons.apple_rounded, Color(0xFFE23C42)),
-      ('home_crop_grape', Icons.blur_circular_rounded, Color(0xFF7851A9)),
-      ('home_crop_rice', Icons.grain_rounded, Color(0xFF65A844)),
-      ('home_crop_wheat', Icons.grass_rounded, Color(0xFFD5A837)),
-    ];
-
-    return Column(
+    final palette = context.dashboard;
+    return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Expanded(
-              child: Text(
-                strings.text('home_supported_crops'),
-                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: -0.5,
+        const LeafBrandMark(size: 48),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                strings.text('brand_title_line_1'),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontSize: 19,
+                  height: 1.12,
+                  fontWeight: FontWeight.w800,
+                  color: palette.ink,
+                  letterSpacing: -0.3,
                 ),
               ),
-            ),
-            TextButton(
-              onPressed: onViewAll,
-              child: Text(strings.text('home_view_all')),
-            ),
-          ],
-        ),
-        const SizedBox(height: 8),
-        SizedBox(
-          height: 108,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            itemCount: crops.length,
-            separatorBuilder: (_, _) => const SizedBox(width: 15),
-            itemBuilder: (context, index) {
-              final crop = crops[index];
-              return SizedBox(
-                width: 70,
-                child: Column(
-                  children: [
-                    Container(
-                      height: 62,
-                      width: 62,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: crop.$3.withValues(alpha: .14),
-                      ),
-                      child: Icon(crop.$2, color: crop.$3, size: 34),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      strings.text(crop.$1),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.labelLarge,
-                    ),
-                  ],
+              Text(
+                strings.text('brand_title_line_2'),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontSize: 19,
+                  height: 1.12,
+                  fontWeight: FontWeight.w800,
+                  color: palette.primary,
+                  letterSpacing: -0.3,
                 ),
-              );
-            },
+              ),
+              const SizedBox(height: 3),
+              Text(
+                strings.text('home_tagline'),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontSize: 10.5,
+                  color: palette.inkSoft,
+                  letterSpacing: 0.1,
+                ),
+              ),
+            ],
           ),
         ),
+        const SizedBox(width: 6),
+        const _ThemeButton(),
+        const SizedBox(width: 4),
+        const _LanguagePill(),
       ],
     );
   }
 }
 
-class _HelpfulTip extends StatelessWidget {
-  const _HelpfulTip();
+/// Headline block, leaf artwork and the two action pills.
+class _HeroSection extends StatelessWidget {
+  const _HeroSection({
+    required this.onScanWithCamera,
+    required this.onUploadFromGallery,
+  });
+
+  final VoidCallback onScanWithCamera;
+  final VoidCallback onUploadFromGallery;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
     final strings = AppLocalizations.of(context);
-    return Container(
-      padding: const EdgeInsets.all(17),
-      decoration: BoxDecoration(
-        color: colorScheme.primaryContainer.withValues(alpha: .56),
-        borderRadius: BorderRadius.circular(22),
-      ),
-      child: Row(
-        children: [
-          Icon(
-            Icons.energy_savings_leaf_rounded,
-            color: colorScheme.primary,
-            size: 34,
-          ),
-          const SizedBox(width: 14),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+    final palette = context.dashboard;
+    final isRtl = Directionality.of(context) == TextDirection.rtl;
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final width = constraints.maxWidth;
+        final compact = width < 360;
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Headline on the left, leaf artwork bleeding off the right edge.
+            // The Column is the Stack's only non-positioned child, so the hero
+            // grows with its copy instead of clipping it at large text scales.
+            Stack(
+              clipBehavior: Clip.none,
               children: [
-                Text(
-                  strings.text('home_tip_title'),
-                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                    fontWeight: FontWeight.w800,
-                    color: colorScheme.primary,
+                Positioned(
+                  right: isRtl ? null : -8,
+                  left: isRtl ? -8 : null,
+                  top: 0,
+                  bottom: 0,
+                  width: width * 0.40,
+                  child: const _LeafArtwork(),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    right: isRtl ? 0 : width * 0.40,
+                    left: isRtl ? width * 0.40 : 0,
+                    top: 6,
+                    bottom: 6,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        strings.text('home_hero_title_lead'),
+                        style: TextStyle(
+                          fontSize: compact ? 26 : 29,
+                          height: 1.14,
+                          fontWeight: FontWeight.w800,
+                          color: palette.ink,
+                          letterSpacing: -0.9,
+                        ),
+                      ),
+                      // The trailing accent word sits on its own line so the
+                      // green reads as a headline flourish.
+                      Text(
+                        strings.text('home_hero_title_accent'),
+                        style: TextStyle(
+                          fontSize: compact ? 26 : 29,
+                          height: 1.14,
+                          fontWeight: FontWeight.w800,
+                          color: palette.primaryLight,
+                          letterSpacing: -0.9,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Swoosh(
+                        width: width * 0.26,
+                        color: palette.primaryLight,
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        strings.text('home_hero_description'),
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          height: 1.45,
+                          color: palette.inkSoft,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 3),
-                Text(
-                  strings.text('home_tip_description'),
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: colorScheme.onSurfaceVariant,
+              ],
+            ),
+            const SizedBox(height: 18),
+            _PillActionButton(
+              label: strings.text('home_scan_with_camera'),
+              icon: Icons.photo_camera_rounded,
+              primary: true,
+              onPressed: onScanWithCamera,
+            ),
+            const SizedBox(height: 12),
+            _PillActionButton(
+              label: strings.text('home_upload_from_gallery'),
+              icon: Icons.image_outlined,
+              primary: false,
+              onPressed: onUploadFromGallery,
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+/// The photographed leaf with its scan framing.
+class _LeafArtwork extends StatelessWidget {
+  const _LeafArtwork();
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.dashboard;
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(26),
+        boxShadow: [
+          BoxShadow(
+            color: palette.primary.withValues(alpha: 0.16),
+            blurRadius: 30,
+            offset: const Offset(0, 12),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(26),
+        child: Image.asset(
+          'assets/images/leaf_scan.png',
+          fit: BoxFit.cover,
+          alignment: Alignment.center,
+          filterQuality: FilterQuality.medium,
+          // The asset is decorative; the headline carries the meaning.
+          excludeFromSemantics: true,
+        ),
+      ),
+    );
+  }
+}
+
+/// One of the two full-width rounded action bars.
+class _PillActionButton extends StatelessWidget {
+  const _PillActionButton({
+    required this.label,
+    required this.icon,
+    required this.primary,
+    required this.onPressed,
+  });
+
+  final String label;
+  final IconData icon;
+  final bool primary;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.dashboard;
+    final isRtl = Directionality.of(context) == TextDirection.rtl;
+    final foreground = primary ? Colors.white : palette.ink;
+    final chevron = isRtl
+        ? Icons.chevron_left_rounded
+        : Icons.chevron_right_rounded;
+
+    return Semantics(
+      button: true,
+      label: label,
+      child: Container(
+        // The drop shadow is painted by the enclosing DecoratedBox rather than
+        // by the [Ink]: an ink decoration is composited on the Material's
+        // canvas, which cuts the blur at the pill edge and leaves a flat pale
+        // rectangle behind the button.
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(30),
+          boxShadow: primary
+              ? [
+                  BoxShadow(
+                    color: palette.primaryDeep.withValues(alpha: 0.28),
+                    blurRadius: 22,
+                    spreadRadius: 2,
+                    offset: const Offset(0, 10),
                   ),
+                ]
+              : null,
+        ),
+        child: Material(
+          color: Colors.transparent,
+          clipBehavior: Clip.none,
+          child: InkWell(
+            onTap: onPressed,
+            borderRadius: BorderRadius.circular(30),
+            child: Ink(
+              height: 56,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                gradient: primary ? palette.primaryGradient : null,
+                color: primary ? null : palette.card,
+                border: primary
+                    ? null
+                    : Border.all(color: palette.outlinePill, width: 1.4),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  children: [
+                    Icon(icon, size: 22, color: foreground),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Text(
+                        label,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w700,
+                          color: foreground,
+                          letterSpacing: -0.1,
+                        ),
+                      ),
+                    ),
+                    Icon(chevron, size: 22, color: foreground),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "Supported Crops" card: title, badge, five crop chips and a "More" tile.
+class _SupportedCropsCard extends StatelessWidget {
+  const _SupportedCropsCard({required this.onOpenLibrary});
+
+  final VoidCallback onOpenLibrary;
+
+  /// Crop keys in display order, with a representative icon and tint. The
+  /// circles are placeholders until hand-authored crop photography lands in
+  /// `assets/images/crop_name.png`, at which point [_CropCircle] picks it up.
+  static const _crops = <({String key, IconData icon, Color tint})>[
+    (key: 'home_crop_tomato', icon: Icons.local_florist_rounded, tint: Color(0xFFE4574C)),
+    (key: 'home_crop_potato', icon: Icons.grain_rounded, tint: Color(0xFFC79A5B)),
+    (key: 'home_crop_corn', icon: Icons.agriculture_rounded, tint: Color(0xFFE8B93C)),
+    (key: 'home_crop_apple', icon: Icons.apple_rounded, tint: Color(0xFFD94F4F)),
+    (key: 'home_crop_grape', icon: Icons.grass_rounded, tint: Color(0xFF7B5EA7)),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
+    final palette = context.dashboard;
+
+    return Container(
+      decoration: BoxDecoration(
+        color: palette.card,
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(color: palette.cardBorder),
+        boxShadow: [
+          BoxShadow(
+            color: palette.ink.withValues(alpha: 0.05),
+            blurRadius: 18,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.eco_rounded,
+                size: 18,
+                color: palette.primaryLight,
+              ),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  strings.text('home_supported_crops'),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: palette.ink,
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 4,
+                ),
+                decoration: BoxDecoration(
+                  color: palette.badge,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Text(
+                  strings.text('home_crops_badge', values: {'count': '10'}),
+                  style: TextStyle(
+                    fontSize: 10.5,
+                    fontWeight: FontWeight.w700,
+                    color: palette.badgeInk,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              for (final crop in _crops)
+                Expanded(
+                  child: _CropTile(
+                    label: strings.text(crop.key),
+                    icon: crop.icon,
+                    tint: crop.tint,
+                    assetName: crop.key.replaceFirst('home_crop_', ''),
+                    onTap: onOpenLibrary,
+                  ),
+                ),
+              Expanded(
+                child: _MoreTile(
+                  label: strings.text('home_more'),
+                  onTap: onOpenLibrary,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CropTile extends StatelessWidget {
+  const _CropTile({
+    required this.label,
+    required this.icon,
+    required this.tint,
+    required this.assetName,
+    required this.onTap,
+  });
+
+  final String label;
+  final IconData icon;
+  final Color tint;
+  final String assetName;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.dashboard;
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(12),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 1),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _CropCircle(
+              assetName: assetName,
+              icon: icon,
+              tint: tint,
+            ),
+            const SizedBox(height: 6),
+            Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 9.5,
+                color: palette.inkSoft,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Round crop thumbnail. Falls back to a tinted placeholder until real
+/// photography is dropped into `assets/images/crop_name.png`.
+class _CropCircle extends StatelessWidget {
+  const _CropCircle({
+    required this.assetName,
+    required this.icon,
+    required this.tint,
+  });
+
+  final String assetName;
+  final IconData icon;
+  final Color tint;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.dashboard;
+    final assetPath = 'assets/images/crop_$assetName.png';
+
+    return Container(
+      width: 46,
+      height: 46,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: tint.withValues(alpha: 0.14),
+        border: Border.all(
+          color: palette.cardBorder,
+          width: 1.2,
+        ),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Image.asset(
+        assetPath,
+        fit: BoxFit.cover,
+        // Placeholder while the asset is absent: a tinted disc with the crop's
+        // icon. Swapped automatically once the file exists.
+        errorBuilder: (context, error, stackTrace) => Center(
+          child: Icon(icon, size: 24, color: tint),
+        ),
+      ),
+    );
+  }
+}
+
+class _MoreTile extends StatelessWidget {
+  const _MoreTile({required this.label, required this.onTap});
+
+  final String label;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.dashboard;
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(12),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 1),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 46,
+              height: 46,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: palette.card,
+                border: Border.all(color: palette.outlinePill, width: 1.4),
+              ),
+              child: Center(
+                child: Text(
+                  '•••',
+                  style: TextStyle(
+                    fontSize: 11,
+                    height: 1,
+                    color: palette.inkSoft,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 9.5,
+                color: palette.inkSoft,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Illustration plus the handwritten-style sign-off.
+class _FooterSection extends StatelessWidget {
+  const _FooterSection();
+
+  @override
+  Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
+    final palette = context.dashboard;
+    return SizedBox(
+      height: 214,
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Positioned(
+            left: -20,
+            right: -20,
+            bottom: 0,
+            height: 190,
+            child: const LandscapeArt(height: 190),
+          ),
+          Positioned.fill(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  strings.text('home_footer_tagline'),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'serif',
+                    fontStyle: FontStyle.italic,
+                    fontSize: 19,
+                    height: 1.24,
+                    fontWeight: FontWeight.w600,
+                    color: palette.primary,
+                    letterSpacing: 0.2,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Swoosh(
+                  width: 96,
+                  height: 12,
+                  color: palette.primaryLight,
+                  strokeWidth: 2.2,
                 ),
               ],
             ),
@@ -610,8 +760,14 @@ class _HelpfulTip extends StatelessWidget {
   }
 }
 
-class _FloatingTaskbar extends StatelessWidget {
-  const _FloatingTaskbar({
+// ---------------------------------------------------------------------------
+// Taskbar
+// ---------------------------------------------------------------------------
+
+/// Frosted, full-bleed bottom bar with four destinations and an underline on
+/// the active one.
+class _GlassTaskbar extends StatelessWidget {
+  const _GlassTaskbar({
     required this.currentIndex,
     required this.onSelected,
     required this.labels,
@@ -621,38 +777,42 @@ class _FloatingTaskbar extends StatelessWidget {
   final ValueChanged<int> onSelected;
   final List<String> labels;
 
-  static const _icons = [
+  static const _icons = <IconData>[
     Icons.home_rounded,
-    Icons.camera_alt_rounded,
     Icons.history_rounded,
     Icons.bar_chart_rounded,
-    Icons.menu_book_rounded,
+    Icons.settings_rounded,
   ];
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    return Material(
-      elevation: 10,
-      shadowColor: Colors.black.withValues(alpha: .16),
-      color: colorScheme.surfaceContainerLow,
-      borderRadius: BorderRadius.circular(28),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(28),
-        child: NavigationBar(
-          height: 72,
-          backgroundColor: Colors.transparent,
-          surfaceTintColor: Colors.transparent,
-          indicatorColor: colorScheme.primaryContainer,
-          selectedIndex: currentIndex,
-          labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
-          onDestinationSelected: onSelected,
-          destinations: List.generate(
-            labels.length,
-            (index) => NavigationDestination(
-              icon: Icon(_icons[index]),
-              selectedIcon: Icon(_icons[index], color: colorScheme.primary),
-              label: labels[index],
+    final palette = context.dashboard;
+    return ClipRRect(
+      borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+      child: BackdropFilter(
+        filter: ui.ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+        child: Container(
+          decoration: BoxDecoration(
+            color: palette.glass,
+            border: Border(top: BorderSide(color: palette.glassBorder)),
+          ),
+          child: SafeArea(
+            top: false,
+            child: SizedBox(
+              height: 62,
+              child: Row(
+                children: [
+                  for (var index = 0; index < labels.length; index++)
+                    Expanded(
+                      child: _TaskbarItem(
+                        icon: _icons[index],
+                        label: labels[index],
+                        selected: index == currentIndex,
+                        onTap: () => onSelected(index),
+                      ),
+                    ),
+                ],
+              ),
             ),
           ),
         ),
@@ -661,49 +821,66 @@ class _FloatingTaskbar extends StatelessWidget {
   }
 }
 
-class _LanguageMenu extends StatelessWidget {
-  const _LanguageMenu({required this.includeAbout});
+class _TaskbarItem extends StatelessWidget {
+  const _TaskbarItem({
+    required this.icon,
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
 
-  final bool includeAbout;
+  final IconData icon;
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    final languageService = context.watch<LanguageService>();
-    return PopupMenuButton<Object>(
-      tooltip: AppLocalizations.of(context).text('language'),
-      icon: const Icon(Icons.language_rounded),
-      onSelected: (selection) {
-        if (selection is AppLanguage) {
-          languageService.setLanguage(selection);
-        } else if (selection == _HeaderAction.about) {
-          Navigator.of(
-            context,
-          ).push(MaterialPageRoute(builder: (_) => const AboutScreen()));
-        }
-      },
-      itemBuilder: (context) => [
-        for (final language in AppLanguage.values)
-          CheckedPopupMenuItem<Object>(
-            value: language,
-            checked: languageService.language == language,
-            child: Text(language.label),
-          ),
-        if (includeAbout) const PopupMenuDivider(),
-        if (includeAbout)
-          PopupMenuItem<Object>(
-            value: _HeaderAction.about,
-            child: Row(
-              children: [
-                const Icon(Icons.info_outline_rounded),
-                const SizedBox(width: 12),
-                Text(AppLocalizations.of(context).text('about')),
-              ],
+    final palette = context.dashboard;
+    final color = selected ? palette.primary : palette.inkSoft;
+
+    return Semantics(
+      button: true,
+      selected: selected,
+      label: label,
+      child: InkWell(
+        onTap: onTap,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, size: 23, color: color),
+            const SizedBox(height: 3),
+            Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+                color: color,
+              ),
             ),
-          ),
-      ],
+            const SizedBox(height: 3),
+            // Active underline. Kept as a fixed-size box (transparent when
+            // inactive) so selecting a tab never shifts the row's layout.
+            Container(
+              height: 2.5,
+              width: 20,
+              decoration: BoxDecoration(
+                color: selected ? palette.primary : Colors.transparent,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
+
+// ---------------------------------------------------------------------------
+// Header controls
+// ---------------------------------------------------------------------------
 
 class _ThemeButton extends StatelessWidget {
   const _ThemeButton();
@@ -711,49 +888,97 @@ class _ThemeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeService = context.watch<ThemeService>();
+    final palette = context.dashboard;
     final isDarkMode = themeService.isDarkMode;
-    return IconButton(
-      tooltip: AppLocalizations.of(
+    return Semantics(
+      button: true,
+      label: AppLocalizations.of(
         context,
       ).text(isDarkMode ? 'light_mode' : 'dark_mode'),
-      onPressed: themeService.toggleTheme,
-      icon: Icon(
-        isDarkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+      child: Material(
+        color: palette.ink,
+        shape: const CircleBorder(),
+        child: InkWell(
+          customBorder: const CircleBorder(),
+          onTap: themeService.toggleTheme,
+          child: SizedBox(
+            width: 40,
+            height: 40,
+            child: Icon(
+              isDarkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+              size: 20,
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? const Color(0xFF0B2E22)
+                  : Colors.white,
+            ),
+          ),
+        ),
       ),
     );
   }
 }
 
-enum _HeaderAction { about }
-
-class _HeaderOverflowMenu extends StatelessWidget {
-  const _HeaderOverflowMenu();
+/// The language selector: a white pill showing the active language code, with
+/// the menu opened from a [PopupMenuButton].
+class _LanguagePill extends StatelessWidget {
+  const _LanguagePill();
 
   @override
   Widget build(BuildContext context) {
+    final languageService = context.watch<LanguageService>();
+    // Resolved during build: `itemBuilder` runs when the popup opens, which is
+    // outside the build phase, so it must not call `AppLocalizations.of`.
     final strings = AppLocalizations.of(context);
-    return PopupMenuButton<_HeaderAction>(
-      tooltip: strings.text('about'),
-      icon: const Icon(Icons.more_vert_rounded),
-      onSelected: (action) {
-        if (action == _HeaderAction.about) {
-          Navigator.of(
-            context,
-          ).push(MaterialPageRoute(builder: (_) => const AboutScreen()));
-        }
-      },
+    final palette = context.dashboard;
+    final code = languageService.language.code.toUpperCase();
+
+    return PopupMenuButton<AppLanguage>(
+      tooltip: strings.text('language'),
+      position: PopupMenuPosition.under,
+      onSelected: languageService.setLanguage,
       itemBuilder: (context) => [
-        PopupMenuItem(
-          value: _HeaderAction.about,
-          child: Row(
-            children: [
-              const Icon(Icons.info_outline_rounded),
-              const SizedBox(width: 12),
-              Text(strings.text('about')),
-            ],
+        for (final language in AppLanguage.values)
+          CheckedPopupMenuItem<AppLanguage>(
+            value: language,
+            checked: languageService.language == language,
+            child: Text(language.label),
           ),
-        ),
       ],
+      child: Container(
+        height: 38,
+        padding: const EdgeInsets.symmetric(horizontal: 12),
+        decoration: BoxDecoration(
+          color: palette.card,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: palette.cardBorder),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              Icons.language_rounded,
+              size: 17,
+              color: palette.inkSoft,
+            ),
+            const SizedBox(width: 5),
+            Text(
+              code,
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w700,
+                color: palette.ink,
+              ),
+            ),
+            const SizedBox(width: 2),
+            Icon(
+              Icons.keyboard_arrow_down_rounded,
+              size: 16,
+              color: palette.inkSoft,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
+

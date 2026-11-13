@@ -18,7 +18,11 @@ import '../services/ml_service.dart';
 import 'result_screen.dart';
 
 class CameraScreen extends StatefulWidget {
-  const CameraScreen({super.key});
+  const CameraScreen({super.key, this.openGalleryOnStart = false});
+
+  /// When true the screen skips straight to the system photo picker, which is
+  /// what the dashboard's "Upload from Gallery" action does.
+  final bool openGalleryOnStart;
 
   @override
   State<CameraScreen> createState() => _CameraScreenState();
@@ -41,6 +45,14 @@ class _CameraScreenState extends State<CameraScreen>
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     _initializeCamera();
+    if (widget.openGalleryOnStart) {
+      // Deferred: the picker needs a mounted route and a completed first frame.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          _selectGalleryImage();
+        }
+      });
+    }
   }
 
   @override
