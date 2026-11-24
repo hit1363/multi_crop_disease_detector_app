@@ -27,14 +27,8 @@ class SettingsScreen extends StatelessWidget {
     final languageService = context.watch<LanguageService>();
     final themeService = context.watch<ThemeService>();
 
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [palette.backdropTop, palette.backdropBottom],
-        ),
-      ),
+    return ColoredBox(
+      color: palette.backdropBottom,
       child: SafeArea(
         bottom: false,
         child: ListView(

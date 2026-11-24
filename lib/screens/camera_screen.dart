@@ -468,8 +468,9 @@ class _LeafGuideOverlay extends StatelessWidget {
             ),
             child: Center(
               child: DecoratedBox(
+                // Solid, because this label floats over live camera pixels.
                 decoration: BoxDecoration(
-                  color: Colors.black.withValues(alpha: 0.35),
+                  color: Colors.black87,
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Padding(

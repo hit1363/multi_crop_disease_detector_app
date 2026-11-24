@@ -7,7 +7,6 @@ import '../services/app_localizations.dart';
 import '../services/language_service.dart';
 import '../services/theme_service.dart';
 import '../utils/dashboard_palette.dart';
-import '../widgets/home_ornaments.dart';
 import 'browse_diseases_screen.dart';
 import 'camera_screen.dart';
 import 'history_screen.dart';
@@ -84,6 +83,9 @@ class _HomeScreenState extends State<HomeScreen> {
         }
       },
       child: Scaffold(
+        // Lets the body draw behind the glass taskbar so the blur has
+        // something to frost.
+        extendBody: true,
         body: screens[_currentIndex],
         bottomNavigationBar: _GlassTaskbar(
           currentIndex: _currentIndex,
@@ -118,35 +120,46 @@ class _DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final palette = context.dashboard;
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [palette.backdropTop, palette.backdropBottom],
-          stops: const [0.0, 0.55],
-        ),
-      ),
-      child: SafeArea(
-        bottom: false,
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const _BrandHeader(),
-              const SizedBox(height: 22),
-              _HeroSection(
-                onScanWithCamera: onScanWithCamera,
-                onUploadFromGallery: onUploadFromGallery,
-              ),
-              const SizedBox(height: 22),
-              _SupportedCropsCard(onOpenLibrary: onOpenLibrary),
-              const SizedBox(height: 18),
-              const _FooterSection(),
-            ],
+    // With Scaffold.extendBody this is the taskbar's full height
+    // (bar + margin + system gesture inset).
+    final taskbarInset = MediaQuery.paddingOf(context).bottom;
+
+    return ColoredBox(
+      // Fallback behind the photo for the brief moment before it decodes.
+      color: palette.backdropBottom,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          // Fixed photographic backdrop: never scrolls, swaps with the theme.
+          Image.asset(
+            Theme.of(context).brightness == Brightness.dark
+                ? 'assets/images/bg_dark.png'
+                : 'assets/images/bg_light.png',
+            fit: BoxFit.cover,
+            alignment: Alignment.center,
+            filterQuality: FilterQuality.medium,
+            excludeFromSemantics: true,
           ),
-        ),
+          SafeArea(
+            bottom: false,
+            child: SingleChildScrollView(
+              padding: EdgeInsets.fromLTRB(20, 12, 20, taskbarInset + 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const _BrandHeader(),
+                  const SizedBox(height: 28),
+                  _HeroSection(
+                    onScanWithCamera: onScanWithCamera,
+                    onUploadFromGallery: onUploadFromGallery,
+                  ),
+                  const SizedBox(height: 28),
+                  _SupportedCropsCard(onOpenLibrary: onOpenLibrary),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -163,7 +176,13 @@ class _BrandHeader extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const LeafBrandMark(size: 48),
+        Image.asset(
+          'assets/icons/app_icon.png',
+          width: 54,
+          height: 54,
+          filterQuality: FilterQuality.medium,
+          excludeFromSemantics: true,
+        ),
         const SizedBox(width: 10),
         Expanded(
           child: Column(
@@ -191,17 +210,6 @@ class _BrandHeader extends StatelessWidget {
                   fontWeight: FontWeight.w800,
                   color: palette.primary,
                   letterSpacing: -0.3,
-                ),
-              ),
-              const SizedBox(height: 3),
-              Text(
-                strings.text('home_tagline'),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  fontSize: 10.5,
-                  color: palette.inkSoft,
-                  letterSpacing: 0.1,
                 ),
               ),
             ],
@@ -240,18 +248,18 @@ class _HeroSection extends StatelessWidget {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Headline on the left, leaf artwork bleeding off the right edge.
+            // Headline on the left, leaf artwork to its right.
             // The Column is the Stack's only non-positioned child, so the hero
             // grows with its copy instead of clipping it at large text scales.
             Stack(
               clipBehavior: Clip.none,
               children: [
                 Positioned(
-                  right: isRtl ? null : -8,
-                  left: isRtl ? -8 : null,
+                  right: isRtl ? null : 0,
+                  left: isRtl ? 0 : null,
                   top: 0,
                   bottom: 0,
-                  width: width * 0.40,
+                  width: width * 0.50,
                   child: const _LeafArtwork(),
                 ),
                 Padding(
@@ -265,40 +273,35 @@ class _HeroSection extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(
-                        strings.text('home_hero_title_lead'),
-                        style: TextStyle(
-                          fontSize: compact ? 26 : 29,
-                          height: 1.14,
-                          fontWeight: FontWeight.w800,
-                          color: palette.ink,
-                          letterSpacing: -0.9,
-                        ),
-                      ),
-                      // The trailing accent word sits on its own line so the
-                      // green reads as a headline flourish.
-                      Text(
-                        strings.text('home_hero_title_accent'),
-                        style: TextStyle(
-                          fontSize: compact ? 26 : 29,
-                          height: 1.14,
-                          fontWeight: FontWeight.w800,
-                          color: palette.primaryLight,
-                          letterSpacing: -0.9,
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      Swoosh(
-                        width: width * 0.26,
-                        color: palette.primaryLight,
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        strings.text('home_hero_description'),
-                        style: TextStyle(
-                          fontSize: 12.5,
-                          height: 1.45,
-                          color: palette.inkSoft,
+                      // "Detect Plant Diseases" with the accent word inline on
+                      // the second line, exactly as the reference mockup does.
+                      Text.rich(
+                        TextSpan(
+                          children: [
+                            TextSpan(
+                              text: strings
+                                  .text('home_hero_title_lead')
+                                  .replaceAll('\n', ' '),
+                              style: TextStyle(
+                                fontSize: compact ? 26 : 29,
+                                height: 1.14,
+                                fontWeight: FontWeight.w800,
+                                color: palette.ink,
+                                letterSpacing: -0.9,
+                              ),
+                            ),
+                            TextSpan(
+                              text:
+                                  ' ${strings.text('home_hero_title_accent')}',
+                              style: TextStyle(
+                                fontSize: compact ? 26 : 29,
+                                height: 1.14,
+                                fontWeight: FontWeight.w800,
+                                color: palette.primaryLight,
+                                letterSpacing: -0.9,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
@@ -327,35 +330,20 @@ class _HeroSection extends StatelessWidget {
   }
 }
 
-/// The photographed leaf with its scan framing.
+/// The photographed leaf with its scan framing. The asset has real
+/// transparency, so it dissolves into the page on its own.
 class _LeafArtwork extends StatelessWidget {
   const _LeafArtwork();
 
   @override
   Widget build(BuildContext context) {
-    final palette = context.dashboard;
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(26),
-        boxShadow: [
-          BoxShadow(
-            color: palette.primary.withValues(alpha: 0.16),
-            blurRadius: 30,
-            offset: const Offset(0, 12),
-          ),
-        ],
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(26),
-        child: Image.asset(
-          'assets/images/leaf_scan.png',
-          fit: BoxFit.cover,
-          alignment: Alignment.center,
-          filterQuality: FilterQuality.medium,
-          // The asset is decorative; the headline carries the meaning.
-          excludeFromSemantics: true,
-        ),
-      ),
+    return Image.asset(
+      'assets/images/Leaf_Scan_UI.png',
+      fit: BoxFit.contain,
+      alignment: Alignment.center,
+      filterQuality: FilterQuality.medium,
+      // The asset is decorative; the headline carries the meaning.
+      excludeFromSemantics: true,
     );
   }
 }
@@ -386,62 +374,42 @@ class _PillActionButton extends StatelessWidget {
     return Semantics(
       button: true,
       label: label,
-      child: Container(
-        // The drop shadow is painted by the enclosing DecoratedBox rather than
-        // by the [Ink]: an ink decoration is composited on the Material's
-        // canvas, which cuts the blur at the pill edge and leaves a flat pale
-        // rectangle behind the button.
-        decoration: BoxDecoration(
+      child: Material(
+        color: primary
+            ? palette.primary.withValues(alpha: 0.85)
+            : palette.card.withValues(alpha: 0.85),
+        clipBehavior: Clip.antiAlias,
+        shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
-          boxShadow: primary
-              ? [
-                  BoxShadow(
-                    color: palette.primaryDeep.withValues(alpha: 0.28),
-                    blurRadius: 22,
-                    spreadRadius: 2,
-                    offset: const Offset(0, 10),
-                  ),
-                ]
-              : null,
+          side: primary
+              ? BorderSide.none
+              : BorderSide(color: palette.outlinePill, width: 1.4),
         ),
-        child: Material(
-          color: Colors.transparent,
-          clipBehavior: Clip.none,
-          child: InkWell(
-            onTap: onPressed,
-            borderRadius: BorderRadius.circular(30),
-            child: Ink(
-              height: 56,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                gradient: primary ? palette.primaryGradient : null,
-                color: primary ? null : palette.card,
-                border: primary
-                    ? null
-                    : Border.all(color: palette.outlinePill, width: 1.4),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Row(
-                  children: [
-                    Icon(icon, size: 22, color: foreground),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        label,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700,
-                          color: foreground,
-                          letterSpacing: -0.1,
-                        ),
+        child: InkWell(
+          onTap: onPressed,
+          child: SizedBox(
+            height: 56,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                children: [
+                  Icon(icon, size: 22, color: foreground),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      label,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                        color: foreground,
+                        letterSpacing: -0.1,
                       ),
                     ),
-                    Icon(chevron, size: 22, color: foreground),
-                  ],
-                ),
+                  ),
+                  Icon(chevron, size: 22, color: foreground),
+                ],
               ),
             ),
           ),
@@ -457,15 +425,14 @@ class _SupportedCropsCard extends StatelessWidget {
 
   final VoidCallback onOpenLibrary;
 
-  /// Crop keys in display order, with a representative icon and tint. The
-  /// circles are placeholders until hand-authored crop photography lands in
-  /// `assets/images/crop_name.png`, at which point [_CropCircle] picks it up.
-  static const _crops = <({String key, IconData icon, Color tint})>[
-    (key: 'home_crop_tomato', icon: Icons.local_florist_rounded, tint: Color(0xFFE4574C)),
-    (key: 'home_crop_potato', icon: Icons.grain_rounded, tint: Color(0xFFC79A5B)),
-    (key: 'home_crop_corn', icon: Icons.agriculture_rounded, tint: Color(0xFFE8B93C)),
-    (key: 'home_crop_apple', icon: Icons.apple_rounded, tint: Color(0xFFD94F4F)),
-    (key: 'home_crop_grape', icon: Icons.grass_rounded, tint: Color(0xFF7B5EA7)),
+  /// These compact produce glyphs keep the crop row recognizable at phone
+  /// scale while the app's photo library remains focused on disease examples.
+  static const _crops = <({String key, String emoji, Color tint})>[
+    (key: 'home_crop_tomato', emoji: '🍅', tint: Color(0xFFE4574C)),
+    (key: 'home_crop_potato', emoji: '🥔', tint: Color(0xFFC79A5B)),
+    (key: 'home_crop_corn', emoji: '🌽', tint: Color(0xFFE8B93C)),
+    (key: 'home_crop_apple', emoji: '🍎', tint: Color(0xFFD94F4F)),
+    (key: 'home_crop_grape', emoji: '🍇', tint: Color(0xFF7B5EA7)),
   ];
 
   @override
@@ -473,86 +440,84 @@ class _SupportedCropsCard extends StatelessWidget {
     final strings = AppLocalizations.of(context);
     final palette = context.dashboard;
 
-    return Container(
-      decoration: BoxDecoration(
-        color: palette.card,
-        borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: palette.cardBorder),
-        boxShadow: [
-          BoxShadow(
-            color: palette.ink.withValues(alpha: 0.05),
-            blurRadius: 18,
-            offset: const Offset(0, 8),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(22),
+      child: BackdropFilter(
+        filter: ui.ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+        child: Container(
+          decoration: BoxDecoration(
+            color: palette.glass,
+            borderRadius: BorderRadius.circular(22),
+            border: Border.all(color: palette.cardBorder),
           ),
-        ],
-      ),
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Icon(
-                Icons.eco_rounded,
-                size: 18,
-                color: palette.primaryLight,
-              ),
-              const SizedBox(width: 6),
-              Expanded(
-                child: Text(
-                  strings.text('home_supported_crops'),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w700,
-                    color: palette.ink,
-                  ),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 10,
-                  vertical: 4,
-                ),
-                decoration: BoxDecoration(
-                  color: palette.badge,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Text(
-                  strings.text('home_crops_badge', values: {'count': '10'}),
-                  style: TextStyle(
-                    fontSize: 10.5,
-                    fontWeight: FontWeight.w700,
-                    color: palette.badgeInk,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 14),
-          Row(
+          padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              for (final crop in _crops)
-                Expanded(
-                  child: _CropTile(
-                    label: strings.text(crop.key),
-                    icon: crop.icon,
-                    tint: crop.tint,
-                    assetName: crop.key.replaceFirst('home_crop_', ''),
-                    onTap: onOpenLibrary,
+              Row(
+                children: [
+                  Icon(
+                    Icons.eco_rounded,
+                    size: 18,
+                    color: palette.primaryLight,
                   ),
-                ),
-              Expanded(
-                child: _MoreTile(
-                  label: strings.text('home_more'),
-                  onTap: onOpenLibrary,
-                ),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      strings.text('home_supported_crops'),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: palette.ink,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 4,
+                    ),
+                    decoration: BoxDecoration(
+                      color: palette.badge,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Text(
+                      strings.text('home_crops_badge', values: {'count': '16'}),
+                      style: TextStyle(
+                        fontSize: 10.5,
+                        fontWeight: FontWeight.w700,
+                        color: palette.badgeInk,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 14),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  for (final crop in _crops)
+                    Expanded(
+                      child: _CropTile(
+                        label: strings.text(crop.key),
+                        emoji: crop.emoji,
+                        tint: crop.tint,
+                        onTap: onOpenLibrary,
+                      ),
+                    ),
+                  Expanded(
+                    child: _MoreTile(
+                      label: strings.text('home_more'),
+                      onTap: onOpenLibrary,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-        ],
+        ),
       ),
     );
   }
@@ -561,16 +526,14 @@ class _SupportedCropsCard extends StatelessWidget {
 class _CropTile extends StatelessWidget {
   const _CropTile({
     required this.label,
-    required this.icon,
+    required this.emoji,
     required this.tint,
-    required this.assetName,
     required this.onTap,
   });
 
   final String label;
-  final IconData icon;
+  final String emoji;
   final Color tint;
-  final String assetName;
   final VoidCallback onTap;
 
   @override
@@ -584,11 +547,7 @@ class _CropTile extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _CropCircle(
-              assetName: assetName,
-              icon: icon,
-              tint: tint,
-            ),
+            _CropCircle(emoji: emoji, tint: tint),
             const SizedBox(height: 6),
             Text(
               label,
@@ -608,43 +567,28 @@ class _CropTile extends StatelessWidget {
   }
 }
 
-/// Round crop thumbnail. Falls back to a tinted placeholder until real
-/// photography is dropped into `assets/images/crop_name.png`.
+/// Round produce chip: the crop emoji on a solid tint of the same hue.
 class _CropCircle extends StatelessWidget {
-  const _CropCircle({
-    required this.assetName,
-    required this.icon,
-    required this.tint,
-  });
+  const _CropCircle({required this.emoji, required this.tint});
 
-  final String assetName;
-  final IconData icon;
+  final String emoji;
   final Color tint;
 
   @override
   Widget build(BuildContext context) {
-    final palette = context.dashboard;
-    final assetPath = 'assets/images/crop_$assetName.png';
-
     return Container(
       width: 46,
       height: 46,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: tint.withValues(alpha: 0.14),
-        border: Border.all(
-          color: palette.cardBorder,
-          width: 1.2,
-        ),
+        color: tint.withValues(alpha: 0.18),
+        border: Border.all(color: tint.withValues(alpha: 0.55), width: 1.5),
       ),
-      clipBehavior: Clip.antiAlias,
-      child: Image.asset(
-        assetPath,
-        fit: BoxFit.cover,
-        // Placeholder while the asset is absent: a tinted disc with the crop's
-        // icon. Swapped automatically once the file exists.
-        errorBuilder: (context, error, stackTrace) => Center(
-          child: Icon(icon, size: 24, color: tint),
+      child: Center(
+        child: Text(
+          emoji,
+          style: const TextStyle(fontSize: 27, height: 1),
+          textScaler: TextScaler.noScaling,
         ),
       ),
     );
@@ -707,65 +651,13 @@ class _MoreTile extends StatelessWidget {
   }
 }
 
-/// Illustration plus the handwritten-style sign-off.
-class _FooterSection extends StatelessWidget {
-  const _FooterSection();
-
-  @override
-  Widget build(BuildContext context) {
-    final strings = AppLocalizations.of(context);
-    final palette = context.dashboard;
-    return SizedBox(
-      height: 214,
-      child: Stack(
-        clipBehavior: Clip.none,
-        children: [
-          Positioned(
-            left: -20,
-            right: -20,
-            bottom: 0,
-            height: 190,
-            child: const LandscapeArt(height: 190),
-          ),
-          Positioned.fill(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  strings.text('home_footer_tagline'),
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'serif',
-                    fontStyle: FontStyle.italic,
-                    fontSize: 19,
-                    height: 1.24,
-                    fontWeight: FontWeight.w600,
-                    color: palette.primary,
-                    letterSpacing: 0.2,
-                  ),
-                ),
-                const SizedBox(height: 2),
-                Swoosh(
-                  width: 96,
-                  height: 12,
-                  color: palette.primaryLight,
-                  strokeWidth: 2.2,
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 // ---------------------------------------------------------------------------
 // Taskbar
 // ---------------------------------------------------------------------------
 
-/// Frosted, full-bleed bottom bar with four destinations and an underline on
-/// the active one.
+/// Tinted-glass floating pill with four destinations and an underline on the
+/// active one. Sits over the body (see [Scaffold.extendBody]) so the blur has
+/// content to frost.
 class _GlassTaskbar extends StatelessWidget {
   const _GlassTaskbar({
     required this.currentIndex,
@@ -787,31 +679,39 @@ class _GlassTaskbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final palette = context.dashboard;
-    return ClipRRect(
-      borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
-      child: BackdropFilter(
-        filter: ui.ImageFilter.blur(sigmaX: 18, sigmaY: 18),
-        child: Container(
-          decoration: BoxDecoration(
-            color: palette.glass,
-            border: Border(top: BorderSide(color: palette.glassBorder)),
-          ),
-          child: SafeArea(
-            top: false,
-            child: SizedBox(
-              height: 62,
-              child: Row(
-                children: [
-                  for (var index = 0; index < labels.length; index++)
-                    Expanded(
-                      child: _TaskbarItem(
-                        icon: _icons[index],
-                        label: labels[index],
-                        selected: index == currentIndex,
-                        onTap: () => onSelected(index),
-                      ),
-                    ),
-                ],
+
+    return SafeArea(
+      top: false,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(999),
+          child: BackdropFilter(
+            filter: ui.ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+            child: Container(
+              decoration: BoxDecoration(
+                color: palette.glass,
+                borderRadius: BorderRadius.circular(999),
+                border: Border.all(color: palette.glassBorder),
+              ),
+              child: Material(
+                type: MaterialType.transparency,
+                child: SizedBox(
+                  height: 68,
+                  child: Row(
+                    children: [
+                      for (var index = 0; index < labels.length; index++)
+                        Expanded(
+                          child: _TaskbarItem(
+                            icon: _icons[index],
+                            label: labels[index],
+                            selected: index == currentIndex,
+                            onTap: () => onSelected(index),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
@@ -845,6 +745,7 @@ class _TaskbarItem extends StatelessWidget {
       label: label,
       child: InkWell(
         onTap: onTap,
+        borderRadius: BorderRadius.circular(32),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -896,20 +797,21 @@ class _ThemeButton extends StatelessWidget {
         context,
       ).text(isDarkMode ? 'light_mode' : 'dark_mode'),
       child: Material(
-        color: palette.ink,
-        shape: const CircleBorder(),
+        color: palette.ink.withValues(alpha: 0.55),
+        shape: const StadiumBorder(),
         child: InkWell(
-          customBorder: const CircleBorder(),
+          customBorder: const StadiumBorder(),
           onTap: themeService.toggleTheme,
           child: SizedBox(
-            width: 40,
+            width: 62,
             height: 40,
-            child: Icon(
-              isDarkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
-              size: 20,
-              color: Theme.of(context).brightness == Brightness.dark
-                  ? const Color(0xFF0B2E22)
-                  : Colors.white,
+            child: Center(
+              child: Icon(
+                isDarkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+                size: 20,
+                // Inverted against the solid ink disc behind it.
+                color: isDarkMode ? palette.backdropBottom : palette.card,
+              ),
             ),
           ),
         ),
@@ -926,22 +828,53 @@ class _LanguagePill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final languageService = context.watch<LanguageService>();
-    // Resolved during build: `itemBuilder` runs when the popup opens, which is
-    // outside the build phase, so it must not call `AppLocalizations.of`.
     final strings = AppLocalizations.of(context);
     final palette = context.dashboard;
-    final code = languageService.language.code.toUpperCase();
+    final currentLanguage = languageService.language;
+    final code = currentLanguage.code.toUpperCase();
+    const accentColor = Color(0xFF1B7A3D);
 
     return PopupMenuButton<AppLanguage>(
       tooltip: strings.text('language'),
       position: PopupMenuPosition.under,
+      offset: const Offset(0, 6),
+      color: palette.card,
+      surfaceTintColor: Colors.transparent,
+      // Crucial: Clips the items so they never overflow the rounded card borders
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: BorderSide(color: palette.cardBorder),
+      ),
+      padding: EdgeInsets.zero,
+      // Clean, uniform inner padding for the entire menu list
+      menuPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 6),
       onSelected: languageService.setLanguage,
       itemBuilder: (context) => [
         for (final language in AppLanguage.values)
-          CheckedPopupMenuItem<AppLanguage>(
+          PopupMenuItem<AppLanguage>(
             value: language,
-            checked: languageService.language == language,
-            child: Text(language.label),
+            height: 42, // Clean, compact fixed height
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  language.label,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    fontWeight: currentLanguage == language
+                        ? FontWeight.w700
+                        : FontWeight.w500,
+                    color: currentLanguage == language
+                        ? accentColor
+                        : palette.ink,
+                  ),
+                ),
+                if (currentLanguage == language)
+                  const Icon(Icons.check_rounded, size: 16, color: accentColor),
+              ],
+            ),
           ),
       ],
       child: Container(
@@ -955,11 +888,7 @@ class _LanguagePill extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.language_rounded,
-              size: 17,
-              color: palette.inkSoft,
-            ),
+            Icon(Icons.language_rounded, size: 17, color: palette.inkSoft),
             const SizedBox(width: 5),
             Text(
               code,
@@ -981,4 +910,3 @@ class _LanguagePill extends StatelessWidget {
     );
   }
 }
-

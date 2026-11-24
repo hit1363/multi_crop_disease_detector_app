@@ -37,7 +37,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
     final strings = AppLocalizations.of(context);
 
     return Scaffold(
@@ -45,11 +44,27 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CircleAvatar(
-              radius: 42,
-              backgroundColor: colorScheme.primaryContainer,
-              foregroundColor: colorScheme.onPrimaryContainer,
-              child: const Icon(Icons.eco, size: 44),
+            // Same mark as the launcher icon: mint rounded tile with the
+            // Material `eco` glyph, on the dark-green plate.
+            Container(
+              width: 108,
+              height: 108,
+              padding: const EdgeInsets.all(18),
+              decoration: BoxDecoration(
+                color: const Color(0xFF005032),
+                borderRadius: BorderRadius.circular(27),
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xFF93D5AA),
+                  borderRadius: BorderRadius.circular(18),
+                ),
+                child: const Icon(
+                  Icons.eco,
+                  size: 48,
+                  color: Color(0xFF005032),
+                ),
+              ),
             ),
             const SizedBox(height: 18),
             Text(

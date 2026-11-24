@@ -7,7 +7,9 @@ void main() {
   test(
     'packaged TFLite model has the expected inference contract',
     () async {
-      final modelFile = File('assets/models/mobilenetv2_dynamic.tflite');
+      final modelFile = File(
+        'assets/models/efficientnet_b0_20261121_130717.tflite',
+      );
       final labelsFile = File('assets/labels/labels.txt');
       final interpreter = Interpreter.fromFile(modelFile);
       addTearDown(interpreter.close);
@@ -24,14 +26,14 @@ void main() {
           (_) => List.generate(224, (_) => List<double>.filled(3, 0.0)),
         ),
       ];
-      final output = [List<double>.filled(45, 0.0)];
+      final output = [List<double>.filled(67, 0.0)];
       interpreter.run(input, output);
 
       expect(inputTensor.shape, [1, 224, 224, 3]);
       expect(inputTensor.type, TensorType.float32);
-      expect(outputTensor.shape, [1, 45]);
+      expect(outputTensor.shape, [1, 67]);
       expect(outputTensor.type, TensorType.float32);
-      expect(labels, hasLength(45));
+      expect(labels, hasLength(67));
       expect(output.single, everyElement(isA<double>()));
     },
     skip: Platform.isWindows

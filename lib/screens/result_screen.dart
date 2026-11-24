@@ -361,17 +361,17 @@ class _StatusBanner extends StatelessWidget {
       AppLocalizations.of(context),
     );
 
+    // One solid severity fill; the copy on top is white for contrast.
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.1),
+        color: color,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: color, width: 1.5),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(icon, color: color, size: 28),
+          Icon(icon, color: Colors.white, size: 28),
           const SizedBox(width: 12),
           Expanded(
             child: Column(
@@ -379,16 +379,20 @@ class _StatusBanner extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w700,
-                    color: color,
+                    color: Colors.white,
                     fontSize: 16,
                   ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   message,
-                  style: const TextStyle(fontSize: 14, height: 1.4),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    height: 1.4,
+                    color: Colors.white,
+                  ),
                 ),
               ],
             ),
@@ -408,21 +412,21 @@ class _StatusBanner extends StatelessWidget {
           strings.text('severe_title'),
           strings.text('severe_message'),
           Icons.error_outline,
-          Colors.red,
+          const Color(0xFFC0392B),
         );
       case 'moderate':
         return (
           strings.text('moderate_title'),
           strings.text('moderate_message'),
           Icons.warning_amber_rounded,
-          Colors.orange,
+          const Color(0xFFB26A00),
         );
       case 'mild':
         return (
           strings.text('mild_title'),
           strings.text('mild_message'),
           Icons.info_outline,
-          Colors.lightGreen,
+          const Color(0xFF5C8A1E),
         );
       case 'none':
         return (
@@ -436,7 +440,7 @@ class _StatusBanner extends StatelessWidget {
           strings.text('unknown_title'),
           strings.text('unknown_message'),
           Icons.help_outline,
-          Colors.grey,
+          const Color(0xFF6B7A72),
         );
     }
   }

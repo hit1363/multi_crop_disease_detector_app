@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../services/app_localizations.dart';
+
+const String _trainingRepoUrl =
+    'https://github.com/hit1363/An-Efficient-Multi-Crop-Leaf-Disease-Detection-System';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(AppLocalizations.of(context).text('about')),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: Text(strings.text('about')), centerTitle: true),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -21,16 +23,18 @@ class AboutScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.eco, size: 56, color: Colors.green),
+                  Icon(
+                    Icons.eco,
+                    size: 56,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
                   const SizedBox(height: 12),
                   Text(
-                    AppLocalizations.of(context).text('app_title'),
+                    strings.text('app_title'),
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(height: 8),
-                  Text(
-                    AppLocalizations.of(context).text('offline_description'),
-                  ),
+                  Text(strings.text('offline_description')),
                 ],
               ),
             ),
@@ -39,16 +43,20 @@ class AboutScreen extends StatelessWidget {
           Card(
             child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    AppLocalizations.of(context).text('disclaimer'),
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
-                  const SizedBox(height: 8),
-                  Text(AppLocalizations.of(context).text('disclaimer')),
-                ],
+              child: Text(strings.text('disclaimer')),
+            ),
+          ),
+          const SizedBox(height: 12),
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: ListTile(
+              leading: const Icon(Icons.code),
+              title: Text(strings.text('about_training_repo')),
+              subtitle: Text(strings.text('about_training_repo_desc')),
+              trailing: const Icon(Icons.open_in_new, size: 18),
+              onTap: () => launchUrl(
+                Uri.parse(_trainingRepoUrl),
+                mode: LaunchMode.externalApplication,
               ),
             ),
           ),

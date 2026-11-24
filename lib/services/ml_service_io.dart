@@ -43,7 +43,8 @@ class MLService {
 
   static final MLService _instance = MLService._internal();
 
-  static const String modelAssetPath = 'assets/models/mobilenetv2_dynamic.tflite';
+  static const String modelAssetPath =
+      'assets/models/efficientnet_b0_20261121_130717.tflite';
   static const String labelsAssetPath = 'assets/labels/labels.txt';
   static const int inputImageSize = 224;
 
@@ -198,9 +199,12 @@ class MLService {
   num _preprocessChannel(num value, TensorType type) {
     final channel = value.clamp(0, 255);
     return switch (type) {
+      // shortcut: rescale + ImageNet normalization are baked into the
+      // EfficientNetB0 graph, so it wants raw 0-255; upgrade if a model
+      // without preprocess_input is ever shipped.
       TensorType.float32 ||
       TensorType.float64 ||
-      TensorType.float16 => channel / 255.0,
+      TensorType.float16 => channel.toDouble(),
       TensorType.int8 => channel.round() - 128,
       _ => channel.round(),
     };

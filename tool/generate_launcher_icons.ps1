@@ -14,7 +14,7 @@ if (-not (Test-Path -LiteralPath $materialFontPath)) {
 }
 $materialFonts = [System.Drawing.Text.PrivateFontCollection]::new()
 $materialFonts.AddFontFile($materialFontPath)
-$materialGlyph = [char]::ConvertFromUtf32(0xF07F8)
+$materialGlyph = [char]::ConvertFromUtf32(0xE217)
 
 function Add-RoundedRectangle {
   param([System.Drawing.Drawing2D.GraphicsPath] $Path, [float] $X, [float] $Y, [float] $Width, [float] $Height, [float] $Radius)

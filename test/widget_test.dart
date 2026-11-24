@@ -48,11 +48,17 @@ void main() {
     // Brand block.
     expect(find.text('Multi-Crop'), findsOneWidget);
     expect(find.text('Disease Detector'), findsOneWidget);
-    expect(find.text('Healthy Plants, Better Harvest'), findsOneWidget);
 
     // Hero copy, split into a dark lead and a green accent line.
-    expect(find.text('Detect Plant\nDiseases'), findsOneWidget);
-    expect(find.text('Instantly'), findsOneWidget);
+    // The lead and the accent word are one rich-text run.
+    expect(
+      find.textContaining('Detect Plant', findRichText: true),
+      findsOneWidget,
+    );
+    expect(
+      find.textContaining('Instantly', findRichText: true),
+      findsOneWidget,
+    );
 
     // The two full-width actions.
     expect(find.text('Scan with Camera'), findsOneWidget);
@@ -60,12 +66,9 @@ void main() {
 
     // Crops card.
     expect(find.text('Supported Crops'), findsOneWidget);
-    expect(find.text('10+ Crops'), findsOneWidget);
+    expect(find.text('16+ Crops'), findsOneWidget);
     expect(find.text('Tomato'), findsOneWidget);
     expect(find.text('More…'), findsOneWidget);
-
-    // Footer sign-off.
-    expect(find.text('Healthy Plants\nHappy Farmers'), findsOneWidget);
 
     // Four-item taskbar.
     expect(find.text('Home'), findsOneWidget);
@@ -96,9 +99,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('taskbar switches between all four destinations', (
-    tester,
-  ) async {
+  testWidgets('taskbar switches between all four destinations', (tester) async {
     useSize(tester, const Size(412, 915));
     await pumpApp(tester);
 
@@ -154,8 +155,11 @@ void main() {
     useSize(tester, const Size(412, 915));
     await pumpApp(tester, preferences: {'selected_language': 'bn'});
 
-    expect(find.text('গাছের রোগ\nশনাক্ত করুন'), findsOneWidget);
-    expect(find.text('সহজেই'), findsOneWidget);
+    expect(
+      find.textContaining('গাছের রোগ', findRichText: true),
+      findsOneWidget,
+    );
+    expect(find.textContaining('সহজেই', findRichText: true), findsOneWidget);
     expect(find.text('সমর্থিত ফসল'), findsOneWidget);
   });
 
@@ -163,8 +167,11 @@ void main() {
     useSize(tester, const Size(412, 915));
     await pumpApp(tester, preferences: {'selected_language': 'ur'});
 
-    expect(find.text('پودوں کی بیماریاں\nشناخت کریں'), findsOneWidget);
-    expect(find.text('فوراً'), findsOneWidget);
+    expect(
+      find.textContaining('پودوں کی بیماریاں', findRichText: true),
+      findsOneWidget,
+    );
+    expect(find.textContaining('فوراً', findRichText: true), findsOneWidget);
     expect(find.text('معاون فصلیں'), findsOneWidget);
   });
 
@@ -195,9 +202,7 @@ void main() {
     'bn': {'selected_language': 'bn'},
     'ur': {'selected_language': 'ur'},
   }.entries) {
-    testWidgets('no overflow on a 320dp screen (${entry.key})', (
-      tester,
-    ) async {
+    testWidgets('no overflow on a 320dp screen (${entry.key})', (tester) async {
       useSize(tester, const Size(320, 640));
       await pumpApp(tester, preferences: entry.value);
 

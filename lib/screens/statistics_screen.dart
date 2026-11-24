@@ -124,7 +124,13 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
               return RefreshIndicator(
                 onRefresh: _refreshScans,
                 child: ListView(
-                  padding: const EdgeInsets.all(16),
+                  // Clear the floating taskbar drawn by Scaffold.extendBody.
+                  padding: EdgeInsets.fromLTRB(
+                    16,
+                    16,
+                    16,
+                    16 + MediaQuery.paddingOf(context).bottom,
+                  ),
                   children: [
                     _TotalScansCard(totalScans: scans.length),
                     const SizedBox(height: 16),
@@ -215,7 +221,7 @@ class _HealthBalanceCard extends StatelessWidget {
                     PieChartSectionData(
                       value: diseased.toDouble(),
                       title: '${diseasedPercent.toStringAsFixed(0)}%',
-                      color: Colors.redAccent,
+                      color: const Color(0xFFC0392B),
                       radius: 72,
                       titleStyle: const TextStyle(
                         color: Colors.white,
@@ -233,7 +239,7 @@ class _HealthBalanceCard extends StatelessWidget {
               value: '${healthyPercent.toStringAsFixed(1)}%',
             ),
             _LegendRow(
-              color: Colors.redAccent,
+              color: const Color(0xFFC0392B),
               label: AppLocalizations.of(context).text('disease'),
               value: '${diseasedPercent.toStringAsFixed(1)}%',
             ),

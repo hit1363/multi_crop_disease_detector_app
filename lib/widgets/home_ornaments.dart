@@ -130,78 +130,6 @@ class _LeafBrandMarkPainter extends CustomPainter {
   }
 }
 
-/// The hand-drawn green underline used beneath the hero heading and the footer
-/// tagline.
-class Swoosh extends StatelessWidget {
-  const Swoosh({
-    super.key,
-    this.width = 108,
-    this.height = 14,
-    this.color,
-    this.strokeWidth = 2.6,
-  });
-
-  final double width;
-  final double height;
-  final Color? color;
-  final double strokeWidth;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: width,
-      height: height,
-      child: CustomPaint(
-        painter: _SwooshPainter(
-          color: color ?? context.dashboard.primaryLight,
-          strokeWidth: strokeWidth,
-        ),
-      ),
-    );
-  }
-}
-
-class _SwooshPainter extends CustomPainter {
-  _SwooshPainter({required this.color, required this.strokeWidth});
-
-  final Color color;
-  final double strokeWidth;
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final w = size.width;
-    final h = size.height;
-    final path = Path()
-      ..moveTo(w * 0.03, h * 0.80)
-      ..cubicTo(w * 0.30, h * 0.22, w * 0.66, h * 0.10, w * 0.97, h * 0.42);
-
-    canvas.drawPath(
-      path,
-      Paint()
-        ..color = color
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = strokeWidth
-        ..strokeCap = StrokeCap.round,
-    );
-    // A lighter second pass gives the stroke its tapered, drawn-by-hand feel.
-    canvas.drawPath(
-      path,
-      Paint()
-        ..color = color.withValues(alpha: 0.38)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = strokeWidth * 2.1
-        ..strokeCap = StrokeCap.round
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2),
-    );
-  }
-
-  @override
-  bool shouldRepaint(_SwooshPainter oldDelegate) {
-    return oldDelegate.color != color ||
-        oldDelegate.strokeWidth != strokeWidth;
-  }
-}
-
 /// The rolling-hills footer artwork: misty sky, layered hills, tree clusters
 /// and a small farmhouse.
 ///
@@ -275,53 +203,82 @@ class _LandscapePainter extends CustomPainter {
       Paint()..color = _tone(const Color(0xFFD9E9CE), 0.60),
     );
 
-    // Mist band softening the horizon.
-    canvas.drawRect(
-      Rect.fromLTWH(0, h * 0.26, w, h * 0.22),
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            _tone(const Color(0xFFF7FBF4), 0.72).withValues(alpha: 0.0),
-            _tone(const Color(0xFFF7FBF4), 0.72).withValues(alpha: 0.55),
-            _tone(const Color(0xFFF7FBF4), 0.72).withValues(alpha: 0.0),
-          ],
-        ).createShader(Rect.fromLTWH(0, h * 0.26, w, h * 0.22)),
+    // Hill bands, back to front.
+    _hill(
+      canvas,
+      size,
+      startY: 0.42,
+      amplitude: 0.05,
+      phase: 0.4,
+      color: hillBack,
+    );
+    _hill(
+      canvas,
+      size,
+      startY: 0.56,
+      amplitude: 0.06,
+      phase: 2.1,
+      color: hillMid,
+    );
+    _hill(
+      canvas,
+      size,
+      startY: 0.70,
+      amplitude: 0.07,
+      phase: 4.3,
+      color: hillFront,
+    );
+    _hill(
+      canvas,
+      size,
+      startY: 0.84,
+      amplitude: 0.05,
+      phase: 1.2,
+      color: hillNear,
     );
 
-    // Hill bands, back to front.
-    _hill(canvas, size, startY: 0.42, amplitude: 0.05, phase: 0.4, color: hillBack);
-    _hill(canvas, size, startY: 0.56, amplitude: 0.06, phase: 2.1, color: hillMid);
-    _hill(canvas, size, startY: 0.70, amplitude: 0.07, phase: 4.3, color: hillFront);
-    _hill(canvas, size, startY: 0.84, amplitude: 0.05, phase: 1.2, color: hillNear);
-
     // Tree clusters sitting on the middle hill.
-    _treeCluster(canvas, size, x: 0.03, y: 0.50, scale: 1.0,
-        dark: treeDark, light: treeLight);
-    _treeCluster(canvas, size, x: 0.13, y: 0.545, scale: 0.72,
-        dark: treeDark, light: treeLight);
-    _treeCluster(canvas, size, x: 0.235, y: 0.52, scale: 0.55,
-        dark: treeDark, light: treeLight);
-    _treeCluster(canvas, size, x: 0.62, y: 0.60, scale: 0.5,
-        dark: treeDark, light: treeLight, flip: true);
+    _treeCluster(
+      canvas,
+      size,
+      x: 0.03,
+      y: 0.50,
+      scale: 1.0,
+      dark: treeDark,
+      light: treeLight,
+    );
+    _treeCluster(
+      canvas,
+      size,
+      x: 0.13,
+      y: 0.545,
+      scale: 0.72,
+      dark: treeDark,
+      light: treeLight,
+    );
+    _treeCluster(
+      canvas,
+      size,
+      x: 0.235,
+      y: 0.52,
+      scale: 0.55,
+      dark: treeDark,
+      light: treeLight,
+    );
+    _treeCluster(
+      canvas,
+      size,
+      x: 0.62,
+      y: 0.60,
+      scale: 0.5,
+      dark: treeDark,
+      light: treeLight,
+      flip: true,
+    );
 
     // Farmhouse on the right, with a smaller outbuilding beside it.
     _farmhouse(canvas, size, x: 0.735, y: 0.615, scale: 1.0);
     _farmhouse(canvas, size, x: 0.855, y: 0.655, scale: 0.62);
-
-    // Subtle pasture lines on the nearest hill for texture.
-    final line = Paint()
-      ..color = _tone(const Color(0xFF2F7A26), 0.25).withValues(alpha: 0.20)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.2;
-    for (var i = 0; i < 5; i++) {
-      final y = h * (0.90 + i * 0.023);
-      final path = Path()
-        ..moveTo(0, y)
-        ..quadraticBezierTo(w * 0.5, y - h * 0.035, w, y + h * 0.01);
-      canvas.drawPath(path, line);
-    }
   }
 
   void _hill(
@@ -422,11 +379,19 @@ class _LandscapePainter extends CustomPainter {
     final shadow = _tone(const Color(0xFFD8CCB0), 0.28);
 
     // Body.
-    canvas.drawRect(Rect.fromLTWH(left, top, bodyW, bodyH), Paint()..color = wall);
+    canvas.drawRect(
+      Rect.fromLTWH(left, top, bodyW, bodyH),
+      Paint()..color = wall,
+    );
 
     // Side wall for a hint of depth.
     canvas.drawRect(
-      Rect.fromLTWH(left + bodyW, top + bodyH * 0.10, bodyW * 0.30, bodyH * 0.90),
+      Rect.fromLTWH(
+        left + bodyW,
+        top + bodyH * 0.10,
+        bodyW * 0.30,
+        bodyH * 0.90,
+      ),
       Paint()..color = shadow,
     );
 

@@ -157,9 +157,7 @@ void main() {
       await tester.tap(
         find.ancestor(
           of: find.text(language.label),
-          matching: find.byWidgetPredicate(
-            (widget) => widget is CheckedPopupMenuItem<AppLanguage>,
-          ),
+          matching: find.byType(PopupMenuItem<AppLanguage>),
         ),
       );
       await tester.pumpAndSettle();

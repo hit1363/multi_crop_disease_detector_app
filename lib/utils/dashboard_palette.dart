@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 /// Colours for the dashboard's illustration-led surfaces.
 ///
-/// The dashboard departs from the flat Material palette: it sits on a pale
-/// sage backdrop, uses a deep forest ink for text, and renders call-to-action
-/// pills with a two-stop green gradient. Expressing those as a
+/// The dashboard sits on a pale sage backdrop, uses a deep forest ink for
+/// text, and floats frosted panels over the page. Expressing those as a
 /// [ThemeExtension] keeps every colour theme-aware (dark mode included) and
 /// means no widget has to hard-code a hex value.
 @immutable
@@ -43,7 +42,7 @@ class DashboardPalette extends ThemeExtension<DashboardPalette> {
   final Color card;
   final Color cardBorder;
 
-  /// Small pill badge ("10+ Crops").
+  /// Small pill badge ("16+ Crops").
   final Color badge;
   final Color badgeInk;
 
@@ -56,7 +55,7 @@ class DashboardPalette extends ThemeExtension<DashboardPalette> {
 
   static const DashboardPalette light = DashboardPalette(
     backdropTop: Color(0xFFEDF7E9),
-    backdropBottom: Color(0xFFFFFFFF),
+    backdropBottom: Color(0xFFF7FBF4),
     ink: Color(0xFF0B2E22),
     inkSoft: Color(0xFF4A6B5C),
     primary: Color(0xFF1E6B33),
@@ -66,7 +65,7 @@ class DashboardPalette extends ThemeExtension<DashboardPalette> {
     cardBorder: Color(0xFFDCEBD8),
     badge: Color(0xFFD8F0DC),
     badgeInk: Color(0xFF1B5E2A),
-    glass: Color(0xF2FFFFFF),
+    glass: Color(0x99FFFFFF),
     glassBorder: Color(0xFFE3F0DF),
     outlinePill: Color(0xFFBFDCC2),
   );
@@ -83,16 +82,9 @@ class DashboardPalette extends ThemeExtension<DashboardPalette> {
     cardBorder: Color(0xFF1F3D2E),
     badge: Color(0xFF1B3A2A),
     badgeInk: Color(0xFFA8E6B6),
-    glass: Color(0xF2102318),
+    glass: Color(0x8C12291F),
     glassBorder: Color(0xFF1F3D2E),
     outlinePill: Color(0xFF35604A),
-  );
-
-  /// Gradient stops for the primary action pill.
-  LinearGradient get primaryGradient => LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [primaryLight, primaryDeep],
   );
 
   @override

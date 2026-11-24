@@ -441,8 +441,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "cherry_powdery_mildew",
@@ -519,8 +519,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "corn_cercospora_leaf_spot",
@@ -653,8 +653,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "grape_esca",
@@ -787,8 +787,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "invalid",
@@ -943,8 +943,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "pepper_bacterial_spot",
@@ -1021,8 +1021,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "potato_early_blight",
@@ -1096,8 +1096,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "raspberry_healthy",
@@ -1118,8 +1118,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "rice_brown_spot",
@@ -1196,8 +1196,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "rice_hispa",
@@ -1330,8 +1330,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "squash_powdery_mildew",
@@ -1464,8 +1464,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "tomato_bacterial_spot",
@@ -1934,8 +1934,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "wheat_brown_rust",
@@ -2012,8 +2012,8 @@
     "favorable_conditions_bn": [],
     "favorable_conditions_ur": [],
     "spread_en": "",
-    "spread_bn": "p>",
-    "spread_ur": "p>"
+    "spread_bn": "",
+    "spread_ur": ""
   },
   {
     "id": "wheat_yellow_rust",
@@ -2070,5 +2070,1267 @@
     "spread_en": "Windborne spores, long-distance dispersal",
     "spread_bn": "বাতাসে ভেসে যাওয়া স্পোর, দূর দূরান্তে বিস্তার",
     "spread_ur": "ہوا سے اڑنے والے اسپورز، طویل فاصلے پر پھیلاؤ"
+  },
+  {
+    "id": "banana_cordana",
+    "crop_en": "Banana",
+    "crop_bn": "কলা",
+    "crop_ur": "کیلا",
+    "name_en": "Cordana Leaf Spot",
+    "name_bn": "কর্ডানা পাতার দাগ",
+    "name_ur": "کورڈانا پتوں کے دھبے",
+    "scientific_name": "Cordana musae",
+    "severity": "moderate",
+    "description_en": "Cordana leaf spot is a fungal disease of banana that forms pale oval spots with dark brown borders on older leaves, killing leaf area and reducing bunch weight.",
+    "description_bn": "কর্ডানা পাতার দাগ কলার একটি ছত্রাকজনিত রোগ যা পুরোনো পাতায় গাঢ় বাদামি কিনারাযুক্ত ফ্যাকাশে ডিম্বাকৃতি দাগ তৈরি করে, পাতার ক্ষেত্রফল নষ্ট করে ও কাঁদির ওজন কমায়।",
+    "description_ur": "کورڈانا پتوں کے دھبے کیلے کی ایک فنگس بیماری ہے جو پرانے پتوں پر گہری بھوری حاشیے والے ہلکے بیضوی دھبے بناتی ہے، پتوں کا رقبہ ختم کرتی ہے اور گچھے کا وزن کم کرتی ہے۔",
+    "symptoms_en": [
+      "Small pale green to yellow oval spots on older leaves",
+      "Spots enlarge and develop dark brown to black margins",
+      "Spot centres turn grey and papery with a yellow halo",
+      "Severely infected leaves dry from the margins inward",
+      "Reduced bunch weight and delayed bunch filling"
+    ],
+    "symptoms_bn": [
+      "পুরোনো পাতায় ছোট ফ্যাকাশে সবুজ থেকে হলুদ ডিম্বাকৃতি দাগ",
+      "দাগ বড় হয়ে গাঢ় বাদামি থেকে কালো কিনারা তৈরি করে",
+      "দাগের কেন্দ্র ধূসর ও কাগজের মতো হয়ে হলুদ বেষ্টনী তৈরি হয়",
+      "তীব্র সংক্রমণে পাতা কিনারা থেকে ভেতরের দিকে শুকিয়ে যায়",
+      "কাঁদির ওজন কমে ও কাঁদি পুষ্ট হতে দেরি হয়"
+    ],
+    "symptoms_ur": [
+      "پرانے پتوں پر چھوٹے ہلکے سبز سے زرد بیضوی دھبے",
+      "دھبے بڑھ کر گہرے بھورے سے سیاہ حاشیے بناتے ہیں",
+      "دھبوں کے مرکز سرمئی اور کاغذی ہو کر زرد ہالہ بن جاتے ہیں",
+      "شدید حملے میں پتے کناروں سے اندر کی طرف سوکھتے ہیں",
+      "گچھے کا وزن کم اور بھرائی میں تاخیر"
+    ],
+    "favorable_conditions_en": [
+      "Warm, wet weather with frequent rain or heavy dew",
+      "Dense blocks with poor air movement between plants",
+      "Prolonged leaf wetness on older leaves",
+      "Unremoved dead leaves and crop debris in the mat"
+    ],
+    "favorable_conditions_bn": [
+      "উষ্ণ, ভেজা আবহাওয়া ও ঘন ঘন বৃষ্টি বা ভারী শিশির",
+      "গাছের মধ্যে বাতাস চলাচল কম এমন ঘন বাগান",
+      "পুরোনো পাতায় দীর্ঘসময় ভেজা থাকা",
+      "গোছা এলাকায় অপরিষ্কার মৃত পাতা ও ফসলের অবশিষ্টাংশ"
+    ],
+    "favorable_conditions_ur": [
+      "گرم، مرطوب موسم اور بار بار بارش یا بھاری شبنم",
+      "ایسی گھنی کاشت جہاں پودوں کے درمیان ہوا کا گزر کم ہو",
+      "پرانے پتوں کا طویل عرصے تک گیلا رہنا",
+      "جھرمٹ میں نہ ہٹائے گئے مردہ پتے اور فصل کی باقیات"
+    ],
+    "spread_en": "Spores spread by rain splash, wind, and contaminated pruning tools from infected leaves to healthy plants.",
+    "spread_bn": "বৃষ্টির ছিটা, বাতাস এবং দূষিত ছাঁটাই যন্ত্রের মাধ্যমে স্পোর আক্রান্ত পাতা থেকে সুস্থ গাছে ছড়ায়।",
+    "spread_ur": "بیج بارش کی چھیڑ، ہوا اور آلودہ کٹائی کے اوزار کے ذریعے متاثرہ پتوں سے صحت مند پودوں تک پھیلتے ہیں۔"
+  },
+  {
+    "id": "banana_pestalotiopsis",
+    "crop_en": "Banana",
+    "crop_bn": "কলা",
+    "crop_ur": "کیلا",
+    "name_en": "Pestalotiopsis Leaf Spot",
+    "name_bn": "পেস্টালোটিওপসিস পাতার দাগ",
+    "name_ur": "پسٹالوٹیوپسس پتوں کے دھبے",
+    "scientific_name": "Pestalotiopsis spp.",
+    "severity": "moderate",
+    "description_en": "Pestalotiopsis leaf spot is a fungal disease that produces brown spots with dark margins and black spore dots on banana leaves, usually after stress or poor nutrition.",
+    "description_bn": "পেস্টালোটিওপসিস পাতার দাগ একটি ছত্রাকজনিত রোগ যা সাধারণত চাপ বা পুষ্টিহীনতার পর কলার পাতায় গাঢ় কিনারাযুক্ত বাদামি দাগ ও কালো স্পোর-বিন্দু তৈরি করে।",
+    "description_ur": "پسٹالوٹیوپسس پتوں کے دھبے ایک فنگس بیماری ہے جو عموماً دباؤ یا غذائی کمی کے بعد کیلے کے پتوں پر گہرے حاشیے والے بھورے دھبے اور سیاہ بیج نقطے بناتی ہے۔",
+    "symptoms_en": [
+      "Brown oval spots scattered across the leaf blade",
+      "Spots have dark brown margins and lighter centres",
+      "Tiny black pimple-like fruiting bodies inside old spots",
+      "Leaf tips and margins dry and turn grey-brown",
+      "Premature leaf death and smaller bunches"
+    ],
+    "symptoms_bn": [
+      "পাতার ফলকে ছড়ানো বাদামি ডিম্বাকৃতি দাগ",
+      "দাগের কিনারা গাঢ় বাদামি ও কেন্দ্র হালকা",
+      "পুরোনো দাগের ভেতরে ক্ষুদ্র কালো বিন্দুর মতো ফলদেহ",
+      "পাতার ডগা ও কিনারা শুকিয়ে ধূসর-বাদামি হয়",
+      "অকালে পাতা মরে যাওয়া ও ছোট কাঁদি"
+    ],
+    "symptoms_ur": [
+      "پتے کے پھیلاؤ پر بکھرے بھورے بیضوی دھبے",
+      "دھبوں کے حاشیے گہرے بھورے اور مرکز ہلکا",
+      "پرانے دھبوں میں چھوٹے سیاہ دانوں جیسے پھل دار اجسام",
+      "پتوں کے سرے اور کنارے سوکھ کر سرمئی بھورے ہو جاتے ہیں",
+      "وقت سے پہلے پتے مرنا اور چھوٹے گچھے"
+    ],
+    "favorable_conditions_en": [
+      "High humidity and frequent rainfall",
+      "Plants weakened by drought, flooding, or poor nutrition",
+      "Old unpruned leaves shading the lower blocks",
+      "Wounds from wind, insects, or careless handling"
+    ],
+    "favorable_conditions_bn": [
+      "উচ্চ আর্দ্রতা ও ঘন ঘন বৃষ্টি",
+      "খরা, জলাবদ্ধতা বা পুষ্টিহীনতায় দুর্বল গাছ",
+      "নিচের বাগান ছায়া করা পুরোনো, না-ছাঁটা পাতা",
+      "বাতাস, পোকা বা অসতর্ক পরিচর্যায় তৈরি ক্ষত"
+    ],
+    "favorable_conditions_ur": [
+      "زیادہ نمی اور بار بار بارش",
+      "خشکی، سیلاب یا غذائی کمی سے کمزور پودے",
+      "نچلی کاشت کو سایہ دینے والے پرانے، نہ کٹے پتے",
+      "ہوا، کیڑوں یا لاپرواہی سے بننے والے زخم"
+    ],
+    "spread_en": "Spores are spread by wind-driven rain and by pruning knives, and the fungus enters through wounds and leaf scars.",
+    "spread_bn": "বাতাসবাহিত বৃষ্টি ও ছাঁটাইয়ের ছুরির মাধ্যমে স্পোর ছড়ায় এবং ছত্রাক ক্ষত ও পাতার চিহ্ন দিয়ে গাছে প্রবেশ করে।",
+    "spread_ur": "ہوا سے چلنے والی بارش اور کٹائی کی چھری کے ذریعے بیج پھیلتے ہیں اور فنگس زخموں اور پتوں کے نشانوں سے داخل ہوتی ہے۔"
+  },
+  {
+    "id": "banana_sigatoka",
+    "crop_en": "Banana",
+    "crop_bn": "কলা",
+    "crop_ur": "کیلا",
+    "name_en": "Black Sigatoka",
+    "name_bn": "ব্ল্যাক সিগাটোকা",
+    "name_ur": "بلیک سگاٹوکا",
+    "scientific_name": "Pseudocercospora fijiensis",
+    "severity": "severe",
+    "description_en": "Black Sigatoka is the most destructive leaf disease of banana, causing dark streaks and lesions that destroy leaf area so bunches never fill properly and losses can exceed half the yield.",
+    "description_bn": "ব্ল্যাক সিগাটোকা কলার সবচেয়ে ধ্বংসাত্মক পাতার রোগ, যা গাঢ় রেখা ও দাগ তৈরি করে পাতার ক্ষেত্রফল নষ্ট করে, ফলে কাঁদি ঠিকভাবে পরিপুষ্ট হয় না এবং অর্ধেকের বেশি ফলন হারাতে পারে।",
+    "description_ur": "بلیک سگاٹوکا کیلے کی سب سے تباہ کن پتی کی بیماری ہے، جو گہری لکیروں اور زخموں سے پتوں کا رقبہ ختم کرتی ہے، گچھے ٹھیک نہیں بھرتے اور آدھی سے زیادہ پیداوار ضائع ہو سکتی ہے۔",
+    "symptoms_en": [
+      "Narrow dark brown streaks on the underside of young leaves",
+      "Streaks expand into black lesions with grey centres and yellow halos",
+      "Large dead patches merge and the leaf turns black and dies",
+      "Only the youngest few leaves stay green on infected plants",
+      "Small, thin bunches with premature fruit ripening"
+    ],
+    "symptoms_bn": [
+      "কচি পাতার নিচের পাশে সরু গাঢ় বাদামি রেখা",
+      "রেখা বড় হয়ে ধূসর কেন্দ্র ও হলুদ বেষ্টনীযুক্ত কালো দাগে পরিণত হয়",
+      "বড় মৃত অংশ মিলে পাতা কালো হয়ে মরে যায়",
+      "আক্রান্ত গাছে কেবল কয়েকটি কচি পাতা সবুজ থাকে",
+      "ছোট, পাতলা কাঁদি ও অকালে ফল পাকা"
+    ],
+    "symptoms_ur": [
+      "نوجوان پتوں کی نچلی سطح پر پتلی گہری بھوری لکیریں",
+      "لکیریں بڑھ کر سرمئی مرکز اور زرد ہالے والے سیاہ زخم بن جاتی ہیں",
+      "بڑے مردہ حصے مل کر پتہ سیاہ ہو کر مر جاتا ہے",
+      "متاثرہ پودوں پر صرف چند نوجوان پتے سبز رہتے ہیں",
+      "چھوٹے، پتلے گچھے اور وقت سے پہلے پھل کا پکنا"
+    ],
+    "favorable_conditions_en": [
+      "Warm, humid climate with frequent rain and long dew periods",
+      "High plant density and poor drainage",
+      "Continuous banana cropping without a fallow break",
+      "Susceptible varieties such as Cavendish"
+    ],
+    "favorable_conditions_bn": [
+      "উষ্ণ, আর্দ্র জলবায়ু, ঘন ঘন বৃষ্টি ও দীর্ঘ শিশিরকাল",
+      "বেশি ঘন রোপণ ও পানি নিষ্কাশনে সমস্যা",
+      "বিশ্রামকাল ছাড়া ধারাবাহিকভাবে কলা চাষ",
+      "ক্যাভেন্ডিশের মতো সংবেদনশীল জাত"
+    ],
+    "favorable_conditions_ur": [
+      "گرم، مرطوب آب و ہوا، بار بار بارش اور طویل شبنم",
+      "زیادہ گھنی کاشت اور نکاسی کی خرابی",
+      "وقفے کے بغیر مسلسل کیلا کاشت",
+      "کیوینڈش جیسی حساس اقسام"
+    ],
+    "spread_en": "Wind-blown spores and rain splash carry the fungus from infected leaves to new leaves, and planting material moves it between farms.",
+    "spread_bn": "বাতাসে উড়ে আসা ও বৃষ্টির ছিটায় ছড়ানো স্পোর আক্রান্ত পাতা থেকে নতুন পাতায় ছত্রাক বহন করে এবং রোপণ উপকরণ কৃষি খামারებির মধ্যে এটি ছড়ায়।",
+    "spread_ur": "ہوا میں اڑنے والے اور بارش کی چھیڑ سے پھیلنے والے بیج متاثرہ پتوں سے نئے پتوں تک فنگس لے جاتے ہیں اور پودے لگانے کا مواد اسے کھیتوں کے درمیان منتقل کرتا ہے۔"
+  },
+  {
+    "id": "banana_healthy",
+    "crop_en": "Banana",
+    "crop_bn": "কলা",
+    "crop_ur": "کیلا",
+    "name_en": "Healthy",
+    "name_bn": "সুস্থ",
+    "name_ur": "صحت مند",
+    "severity": "none",
+    "description_en": "Healthy banana plants show uniform green leaves, strong pseudostems, and well-filled bunches with no spots, streaks, or lesions.",
+    "description_bn": "সুস্থ কলাগাছের পাতা সমান সবুজ, কাণ্ড মজবুত এবং কাঁদি ভালোভাবে পুষ্ট থাকে; কোনো দাগ, রেখা বা ক্ষত থাকে না।",
+    "description_ur": "صحت مند کیلے کے پودوں کے پتے یکساں سبز، تنے مضبوط اور گچھے اچھی طرح بھرے ہوتے ہیں، کوئی دھبہ، لکیر یا زخم نہیں ہوتا۔",
+    "symptoms_en": [
+      "No visible disease symptoms detected"
+    ],
+    "symptoms_bn": [
+      "দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"
+    ],
+    "symptoms_ur": [
+      "بیماری کی کوئی واضح علامات نظر نہیں آتیں"
+    ],
+    "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "",
+    "spread_ur": ""
+  },
+  {
+    "id": "jackfruit_algal_leaf_spot",
+    "crop_en": "Jackfruit",
+    "crop_bn": "কাঁঠাল",
+    "crop_ur": "کٹہل",
+    "name_en": "Algal Leaf Spot",
+    "name_bn": "শৈবালজনিত পাতার দাগ",
+    "name_ur": "الجی پتوں کا دھبہ",
+    "scientific_name": "Cephaleuros virescens",
+    "severity": "mild",
+    "description_en": "Algal leaf spot is a mild jackfruit disease caused by an alga that forms velvety patches on the leaf surface, reducing photosynthesis and slowing young trees.",
+    "description_bn": "শৈবালজনিত পাতার দাগ কাঁঠালের একটি মৃদু রোগ, যা একটি শৈবালের কারণে হয় এবং পাতার উপরিভাগে মখমলের মতো দাগ তৈরি করে, ফলে সালোকসংশ্লেষণ কমে ও অল্প বয়সী গাছের বৃদ্ধি ধীর হয়।",
+    "description_ur": "الجی سے پیدا ہونے والا پتوں کا دھبہ کٹہل کی ایک ہلکی بیماری ہے جو ایک الجی سے ہوتی ہے اور پتوں کی سطح پر مخملی دھبے بناتی ہے، جس سے ضیائی تالیف کم اور نوجوان درختوں کی نشوونما سست ہوتی ہے۔",
+    "symptoms_en": [
+      "Greenish-grey to rusty red velvety patches on the upper leaf surface",
+      "Small raised orange-brown spots on older leaves",
+      "Yellowing of affected leaves followed by premature leaf fall",
+      "Thin canopy and stunted growth of young trees"
+    ],
+    "symptoms_bn": [
+      "পাতার উপরিভাগে সবুজাভ-ধূসর থেকে মরিচা-লাল মখমলের মতো দাগ",
+      "পুরোনো পাতায় ছোট উঁচু কমলা-বাদামি দাগ",
+      "আক্রান্ত পাতা হলুদ হয়ে সময়ের আগেই ঝরে পড়ে",
+      "কম ঘন পাতার আচ্ছাদন ও অল্প বয়সী গাছের বৃদ্ধি বাধাগ্রস্ত হওয়া"
+    ],
+    "symptoms_ur": [
+      "پتے کی اوپری سطح پر سبز مائل خاکستری سے زنگ آلود سرخ مخملی دھبے",
+      "پرانے پتوں پر چھوٹے اُبھرے نارنجی بھورے دھبے",
+      "متاثرہ پتے زرد ہو کر وقت سے پہلے گر جاتے ہیں",
+      "شاخوں میں پتے کم ہونا اور نوجوان درختوں کی نشوونما رکنا"
+    ],
+    "favorable_conditions_en": [
+      "Warm, humid weather with frequent showers",
+      "Long periods of leaf wetness and heavy dew",
+      "Dense, shaded canopy with poor air movement",
+      "Trees planted too close together"
+    ],
+    "favorable_conditions_bn": [
+      "বারবার বৃষ্টিসহ উষ্ণ ও আর্দ্র আবহাওয়া",
+      "দীর্ঘ সময় পাতা ভেজা থাকা ও ভারী শিশির",
+      "বাতাস চলাচল কম, ঘন ও ছায়াযুক্ত পাতার আচ্ছাদন",
+      "খুব কাছাকাছি দূরত্বে রোপণ করা গাছ"
+    ],
+    "favorable_conditions_ur": [
+      "بار بار بارش کے ساتھ گرم اور مرطوب موسم",
+      "پتوں کا دیر تک گیلا رہنا اور بھاری شبنم",
+      "ہوا کی آمدورفت کم، گھنی اور سایہ دار شاخیں",
+      "بہت قریب قریب لگائے گئے درخت"
+    ],
+    "spread_en": "The alga spreads with wind-driven rain and splashing water onto wet leaves.",
+    "spread_bn": "শৈবাল বাতাসের সঙ্গে আসা বৃষ্টি ও ছিটকে পড়া পানির মাধ্যমে ভেজা পাতায় ছড়ায়।",
+    "spread_ur": "یہ الجی ہوا کے ساتھ آنے والی بارش اور پانی کے چھینٹوں سے گیلے پتوں پر پھیلتی ہے۔"
+  },
+  {
+    "id": "jackfruit_black_spot",
+    "crop_en": "Jackfruit",
+    "crop_bn": "কাঁঠাল",
+    "crop_ur": "کٹہل",
+    "name_en": "Black Spot",
+    "name_bn": "কালো দাগ",
+    "name_ur": "کالا دھبہ",
+    "scientific_name": "Phyllosticta artocarpina",
+    "severity": "moderate",
+    "description_en": "Black spot is a fungal leaf disease of jackfruit that forms dark spots, causes early leaf drop and weakens seedlings and young trees.",
+    "description_bn": "কালো দাগ কাঁঠালের একটি ছত্রাকজনিত পাতার রোগ, যা গাঢ় দাগ তৈরি করে, পাতা সময়ের আগেই ঝরিয়ে দেয় এবং চারা ও অল্প বয়সী গাছ দুর্বল করে।",
+    "description_ur": "کالا دھبہ کٹہل کا قارچ سے ہونے والا پتوں کا مرض ہے جو گہرے دھبے بناتا ہے، پتے وقت سے پہلے گرا دیتا ہے اور پودوں و نوجوان درختوں کو کمزور کرتا ہے۔",
+    "symptoms_en": [
+      "Small round brown to black spots with a yellow halo",
+      "Spots enlarge and merge into irregular dead patches",
+      "Greyish centres speckled with tiny black fruiting bodies",
+      "Leaves curl, dry and drop early, leaving sparse foliage"
+    ],
+    "symptoms_bn": [
+      "হলুদ বেষ্টনীযুক্ত ছোট গোল বাদামি থেকে কালো দাগ",
+      "দাগ বড় হয়ে মিলে অসমান মৃত অংশ তৈরি করে",
+      "ধূসর কেন্দ্রে ছোট কালো ফলের মতো বস্তু (পাইকনিডিয়া)",
+      "পাতা কুঁচকে, শুকিয়ে ও আগেই ঝরে পড়ে, পাতার আচ্ছাদন কমে যায়"
+    ],
+    "symptoms_ur": [
+      "زرد کنارے والے چھوٹے گول بھورے سے کالے دھبے",
+      "دھبے بڑھ کر مل کر بے قاعدہ مردہ حصے بناتے ہیں",
+      "خاکستری مرکز میں چھوٹے کالے پھل نما اجسام",
+      "پتے مڑتے، سوکھتے اور وقت سے پہلے گرتے ہیں، شاخیں کم ہو جاتی ہیں"
+    ],
+    "favorable_conditions_en": [
+      "Prolonged high humidity",
+      "Frequent rain and dew",
+      "Dense planting and shaded conditions",
+      "Evening overhead irrigation that keeps leaves wet all night"
+    ],
+    "favorable_conditions_bn": [
+      "দীর্ঘ সময় ধরে উচ্চ আর্দ্রতা",
+      "ঘন ঘন বৃষ্টি ও শিশির",
+      "ঘন রোপণ ও ছায়াযুক্ত পরিবেশ",
+      "সন্ধ্যায় উপরে সেচ দিয়ে সারা রাত পাতা ভেজা রাখা"
+    ],
+    "favorable_conditions_ur": [
+      "طویل عرصے تک زیادہ نمی",
+      "بار بار بارش اور شبنم",
+      "گھنی کاشت اور سایہ دار ماحول",
+      "شام کو اوپر سے پانی دینا جس سے پتے ساری رات گیلے رہیں"
+    ],
+    "spread_en": "Spores are carried by rain splash and wind to healthy leaves.",
+    "spread_bn": "বৃষ্টির ছিটা ও বাতাসের মাধ্যমে স্পোর সুস্থ পাতায় ছড়ায়।",
+    "spread_ur": "بیجانات بارش کے چھینٹوں اور ہوا کے ذریعے صحت مند پتوں تک پہنچتے ہیں۔"
+  },
+  {
+    "id": "jackfruit_healthy",
+    "crop_en": "Jackfruit",
+    "crop_bn": "কাঁঠাল",
+    "crop_ur": "کٹہل",
+    "name_en": "Healthy",
+    "name_bn": "সুস্থ",
+    "name_ur": "صحت مند",
+    "severity": "none",
+    "description_en": "This jackfruit leaf shows no disease symptoms and the tree is growing normally.",
+    "description_bn": "এই কাঁঠাল পাতা কোনো রোগের উপসর্গ দেখায় না এবং গাছ স্বাভাবিকভাবে বাড়ছে।",
+    "description_ur": "کٹہل کا یہ پتا کسی بیماری کی علامت نہیں دکھاتا اور درخت معمول کے مطابق بڑھ رہا ہے۔",
+    "symptoms_en": [
+      "No visible disease symptoms detected"
+    ],
+    "symptoms_bn": [
+      "দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"
+    ],
+    "symptoms_ur": [
+      "بیماری کی کوئی واضح علامات نظر نہیں آتیں"
+    ],
+    "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "",
+    "spread_ur": ""
+  },
+  {
+    "id": "mango_anthracnose",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Anthracnose",
+    "name_bn": "অ্যানথ্রাকনোজ",
+    "name_ur": "اینتھراکنوز",
+    "scientific_name": "Colletotrichum gloeosporioides",
+    "severity": "severe",
+    "description_en": "Anthracnose is the most damaging fungal disease of mango, attacking flowers, young leaves and fruit and causing heavy losses before and after harvest.",
+    "description_bn": "অ্যানথ্রাকনোজ আমের সবচেয়ে ক্ষতিকর ছত্রাকজনিত রোগ, যা ফুল, কচি পাতা ও ফল আক্রমণ করে এবং ফসল তোলার আগে ও পরে বড় ক্ষতি করে।",
+    "description_ur": "اینتھراکنوز آم کا سب سے زیادہ نقصان پہنچانے والا قارچی مرض ہے جو پھولوں، نرم پتوں اور پھل پر حملہ کرتا ہے اور کٹائی سے پہلے و بعد بھاری نقصان کرتا ہے۔",
+    "symptoms_en": [
+      "Irregular dark brown to black spots on young leaves",
+      "Blackened flowers and flower stalks causing blossom blight",
+      "Sunken dark lesions on fruit with a tear-stain pattern",
+      "Rotting of ripe fruit, especially in storage, and twig dieback"
+    ],
+    "symptoms_bn": [
+      "কচি পাতায় অসমান গাঢ় বাদামি থেকে কালো দাগ",
+      "ফুল ও ফুলের ডাঁটা কালো হয়ে ঝলসে যাওয়া",
+      "ফলে ধসে পড়া গাঢ় দাগ, যাতে অশ্রু-দাগের মতো রেখা হয়",
+      "পাকা ফলের পচন, বিশেষত সংরক্ষণে, এবং ডাল শুকিয়ে যাওয়া"
+    ],
+    "symptoms_ur": [
+      "نرم پتوں پر بے قاعدہ گہرے بھورے سے کالے دھبے",
+      "پھول اور پھولوں کے ڈنڈے کالے ہو کر جھلسنا",
+      "پھل پر دھنسے گہرے دھبے جن سے آنسو جیسی لکیریں بنتی ہیں",
+      "پکے پھل کا گلنا، خاص طور پر ذخیرے میں، اور شاخوں کا سوکھنا"
+    ],
+    "favorable_conditions_en": [
+      "Repeated rain and high humidity during flowering",
+      "Warm days around 25-30 degrees Celsius with wet nights",
+      "Dense, unpruned canopy that holds moisture",
+      "Dew and overhead irrigation on flower panicles"
+    ],
+    "favorable_conditions_bn": [
+      "ফুল আসার সময় বারবার বৃষ্টি ও উচ্চ আর্দ্রতা",
+      "প্রায় ২৫-৩০ ডিগ্রি সেলসিয়াস উষ্ণ দিন ও ভেজা রাত",
+      "ছাঁটা না হওয়া ঘন আচ্ছাদন যেখানে আর্দ্রতা জমে থাকে",
+      "মঞ্জরিতে শিশির পড়া ও ওপরে সেচ দেওয়া"
+    ],
+    "favorable_conditions_ur": [
+      "پھول آنے کے دوران بار بار بارش اور زیادہ نمی",
+      "تقریباً 25-30 ڈگری سینٹی گریڈ گرم دن اور گیلی راتیں",
+      "بغیر تراشیدہ گھنی شاخیں جہاں نمی جمع رہتی ہے",
+      "پھولوں کے گچھوں پر شبنم اور اوپر سے پانی دینا"
+    ],
+    "spread_en": "Spores splash with rain and are carried by wind from infected twigs and mummified fruit.",
+    "spread_bn": "স্পোর বৃষ্টির পানির ছিটায় এবং বাতাসে আক্রান্ত ডাল ও শুকিয়ে যাওয়া ফল থেকে ছড়ায়।",
+    "spread_ur": "بیجانات بارش کے چھینٹوں اور ہوا کے ساتھ متاثرہ شاخوں اور سوکھے پھلوں سے پھیلتے ہیں۔"
+  },
+  {
+    "id": "mango_bacterial_canker",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Bacterial Canker",
+    "name_bn": "ব্যাকটেরিয়াল ক্যানকার",
+    "name_ur": "بیکٹیریل کینکر",
+    "scientific_name": "Xanthomonas citri pv. mangiferaeindicae",
+    "severity": "severe",
+    "description_en": "Bacterial canker is a severe mango disease that blackens leaf and twig tissue, raises corky cankers and causes heavy fruit drop.",
+    "description_bn": "ব্যাকটেরিয়াল ক্যানকার আমের একটি মারাত্মক রোগ, যা পাতা ও ডালের টিস্যু কালো করে, কর্কের মতো ফোলা ক্ষত তৈরি করে এবং ভারী ফলের ঝরা ঘটায়।",
+    "description_ur": "بیکٹیریل کینکر آم کا ایک شدید مرض ہے جو پتوں اور شاخوں کے بافت کو کالا کرتا ہے، کارک جیسے اُبھرے زخم بناتا ہے اور پھلوں کی بھاری گِراوٹ کا سبب بنتا ہے۔",
+    "symptoms_en": [
+      "Water-soaked angular spots on leaves that turn black with a yellow halo",
+      "Star-shaped cracks and shot holes in the leaf blade",
+      "Raised corky cankers on twigs, petioles and fruit stalks",
+      "Black sunken lesions on fruit followed by heavy fruit drop"
+    ],
+    "symptoms_bn": [
+      "পাতায় পানিভেজা কোনাকোনি দাগ, পরে হলুদ বেষ্টনী নিয়ে কালো হয়",
+      "পাতার ফলকে তারার মতো ফাটল ও ছিদ্র তৈরি হয়",
+      "ডাল, পত্রবৃন্ত ও ফলের ডাঁটায় কর্কের মতো উঁচু ক্ষত",
+      "ফলের গায়ে কালো ধসে পড়া দাগ, পরে ফল বেশি ঝরে পড়ে"
+    ],
+    "symptoms_ur": [
+      "پتوں پر پانی بھرے کونے دار دھبے جو بعد میں زرد کنارے کے ساتھ کالے ہو جاتے ہیں",
+      "پتے کے بلیڈ میں ستارہ نما دراڑیں اور سوراخ",
+      "شاخوں، ڈنڈیوں اور پھل کی ڈنڈیوں پر کارک جیسے اُبھرے زخم",
+      "پھل پر کالے دھنسے زخم، جس کے بعد پھل زیادہ گِرتا ہے"
+    ],
+    "favorable_conditions_en": [
+      "Wind-driven rain and storms that wound leaves and twigs",
+      "Hail or dust storms followed by wet weather",
+      "Warm, humid weather near 30 degrees Celsius",
+      "Dense orchards and pruning tools that are not disinfected"
+    ],
+    "favorable_conditions_bn": [
+      "ঝড়ের সঙ্গে আসা বাতাসবাহী বৃষ্টি, যা পাতা ও ডালে ক্ষত করে",
+      "শিলাবৃষ্টি বা ধুলিঝড়ের পর ভেজা আবহাওয়া",
+      "প্রায় ৩০ ডিগ্রি সেলসিয়াস তাপমাত্রায় উষ্ণ ও আর্দ্র আবহাওয়া",
+      "ঘন বাগান ও জীবাণুমুক্ত না করা ছাঁটাইয়ের যন্ত্র"
+    ],
+    "favorable_conditions_ur": [
+      "طوفان کے ساتھ ہوا سے اڑتی بارش جو پتوں اور شاخوں کو زخمی کرتی ہے",
+      "اولوں یا گرد بھرے طوفان کے بعد گیلا موسم",
+      "تقریباً 30 ڈگری سینٹی گریڈ پر گرم اور مرطوب موسم",
+      "گھنے باغات اور جراثیم سے پاک نہ کیے گئے تراشنے کے اوزار"
+    ],
+    "spread_en": "Bacteria ooze from cankers and are splashed by rain onto wounded tissue.",
+    "spread_bn": "ক্ষত থেকে ব্যাকটেরিয়া নির্গত হয় এবং বৃষ্টির পানিতে নতুন ক্ষতে ছড়ায়।",
+    "spread_ur": "زخموں سے بیکٹیریا خارج ہوتا ہے اور بارش کے پانی سے نئے زخموں تک پہنچتا ہے۔"
+  },
+  {
+    "id": "mango_cutting_weevil",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Cutting Weevil",
+    "name_bn": "কাটিং উইভিল",
+    "name_ur": "کٹنگ ویول",
+    "scientific_name": "Deporaus marginatus",
+    "severity": "moderate",
+    "description_en": "The cutting weevil is a leaf-feeding insect of mango whose adults cut neat semicircular pieces from young leaves, weakening nursery plants and new grafts.",
+    "description_bn": "কাটিং উইভিল আমের পাতা খাওয়া একটি পোকা, যার পূর্ণাঙ্গ পোকা কচি পাতার কিনারা থেকে অর্ধবৃত্তাকার টুকরো কেটে ফেলে, ফলে চারা ও নতুন কলম দুর্বল হয়।",
+    "description_ur": "کٹنگ ویول آم کا پتے کھانے والا ایک کیڑا ہے جس کے بالغ افراد نرم پتوں کے کناروں سے نیم دائرے کٹ کر گرا دیتے ہیں، جس سے پودے اور نئے قلم کمزور ہو جاتے ہیں۔",
+    "symptoms_en": [
+      "Semicircular cuts along the margins of young leaves",
+      "Cut leaf pieces scattered on the ground under the tree",
+      "Defoliated new flush and bare seedlings in the nursery",
+      "Small feeding marks with adult weevils on tender leaves"
+    ],
+    "symptoms_bn": [
+      "কচি পাতার কিনারায় অর্ধবৃত্তাকার কাটা",
+      "গাছের নিচে ছড়িয়ে থাকা কাটা পাতার টুকরো",
+      "নতুন কুশি ও নার্সারির চারা পাতাহীন হয়ে যাওয়া",
+      "কচি পাতায় খাওয়ার দাগ ও পূর্ণাঙ্গ পোকার উপস্থিতি"
+    ],
+    "symptoms_ur": [
+      "نرم پتوں کے کناروں پر نیم دائرے کی کٹائی",
+      "درخت کے نیچے بکھرے ہوئے کٹے پتوں کے ٹکڑے",
+      "نئی ٹہنیاں اور نرسری کے پودے بے پتے ہو جانا",
+      "نرم پتوں پر کھانے کے نشان اور بالغ ویول"
+    ],
+    "favorable_conditions_en": [
+      "Fresh new flush after pruning or the first rains",
+      "Warm, humid weather that speeds weevil activity",
+      "Shaded nursery beds and dense young plantings",
+      "Continuous flushes without a break"
+    ],
+    "favorable_conditions_bn": [
+      "ছাঁটাই বা প্রথম বৃষ্টির পর নতুন কুশি",
+      "উষ্ণ ও আর্দ্র আবহাওয়া, যা পোকার সক্রিয়তা বাড়ায়",
+      "ছায়াযুক্ত নার্সারি বেড ও ঘন নতুন রোপণ",
+      "বিরতি ছাড়া একটানা নতুন কুশি"
+    ],
+    "favorable_conditions_ur": [
+      "تراشائی یا پہلی بارش کے بعد نئی ٹہنیاں",
+      "گرم مرطوب موسم جو کیڑے کی حرکت بڑھاتا ہے",
+      "سایہ دار نرسری بیڈ اور گھنی نئی کاشت",
+      "وقفے کے بغیر مسلسل نئی ٹہنیاں"
+    ],
+    "spread_en": "Adult weevils fly short distances to fresh flush and travel with infested nursery plants.",
+    "spread_bn": "পূর্ণাঙ্গ পোকারা স্বল্প দূরত্বে নতুন কুশিতে উড়ে যায় এবং আক্রান্ত নার্সারি গাছের সঙ্গে ছড়ায়।",
+    "spread_ur": "بالغ ویول تھوڑی دوری پر نئی ٹہنیوں تک اڑتے ہیں اور متاثرہ نرسری پودوں کے ساتھ پھیلتے ہیں۔"
+  },
+  {
+    "id": "mango_die_back",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Die Back",
+    "name_bn": "ডাইব্যাক",
+    "name_ur": "ڈائی بیک",
+    "scientific_name": "Lasiodiplodia theobromae",
+    "severity": "severe",
+    "description_en": "Dieback is a fungal disease of mango that dries branches from the tip inward, killing twigs and shrinking the fruiting canopy.",
+    "description_bn": "ডাইব্যাক আমের একটি ছত্রাকজনিত রোগ, যা ডালের ডগা থেকে ভেতরের দিকে শুকিয়ে যায়, কচি ডাল মেরে ফেলে এবং ফল ধরার আচ্ছাদন কমিয়ে দেয়।",
+    "description_ur": "ڈائی بیک آم کا ایک قارچی مرض ہے جو شاخوں کو سرے سے اندر کی طرف سوکھاتا ہے، نئی شاخیں مار دیتا ہے اور پھل دینے والی شاخیں کم کر دیتا ہے۔",
+    "symptoms_en": [
+      "Twigs drying from the tip downwards",
+      "Dark brown lesions spreading on the bark",
+      "Gum oozing from affected branches",
+      "Grey-brown leaves clinging to dead twigs and browning of the wood inside"
+    ],
+    "symptoms_bn": [
+      "ডালের ডগা থেকে নিচের দিকে শুকিয়ে যাওয়া",
+      "বাকলে গাঢ় বাদামি দাগ ছড়িয়ে পড়া",
+      "আক্রান্ত ডাল থেকে আঠা বের হওয়া",
+      "মরা ডালে লেগে থাকা ধূসর-বাদামি পাতা ও ভেতরের কাঠ বাদামি হয়ে যাওয়া"
+    ],
+    "symptoms_ur": [
+      "شاخیں سرے سے نیچے کی طرف سوکھنا",
+      "چھال پر گہرے بھورے دھبے پھیلنا",
+      "متاثرہ شاخوں سے گوند نکلنا",
+      "مردہ شاخوں پر چپکے خاکستری بھورے پتے اور اندرونی لکڑی کا بھورا ہونا"
+    ],
+    "favorable_conditions_en": [
+      "Prolonged drought stress followed by rain",
+      "Hot, dry weather with high evaporation",
+      "Pruning and bark wounds left untreated",
+      "Poorly nourished, unthrifty trees"
+    ],
+    "favorable_conditions_bn": [
+      "দীর্ঘ খরা-চাপের পর হঠাৎ বৃষ্টি",
+      "তীব্র বাষ্পীভবনসহ গরম ও শুকনো আবহাওয়া",
+      "ছাঁটাই ও বাকলের ক্ষতের চিকিৎসা না করা",
+      "অপুষ্ট ও দুর্বল গাছ"
+    ],
+    "favorable_conditions_ur": [
+      "طویل خشکی کے بعد اچانک بارش",
+      "تیز بخارات کے ساتھ گرم اور خشک موسم",
+      "تراشائی اور چھال کے زخموں کا علاج نہ کرنا",
+      "کمزور اور ناقص خوراک والے درخت"
+    ],
+    "spread_en": "Spores are carried by wind and rain to bark wounds and pruned ends.",
+    "spread_bn": "স্পোর বাতাস ও বৃষ্টির মাধ্যমে বাকলের ক্ষত এবং ছাঁটা ডালের প্রান্তে পৌঁছায়।",
+    "spread_ur": "بیجانات ہوا اور بارش کے ذریعے چھال کے زخموں اور تراشیدہ سروں تک پہنچتے ہیں۔"
+  },
+  {
+    "id": "mango_gall_midge",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Gall Midge",
+    "name_bn": "গল মিজ",
+    "name_ur": "گیل مِج",
+    "scientific_name": "Procontarinia matteiana",
+    "severity": "moderate",
+    "description_en": "Gall midge is a small fly whose larvae form galls on mango leaves, deforming the flush and cutting the tree's productive leaf area.",
+    "description_bn": "গল মিজ একটি ছোট মাছি, যার লার্ভা আমের পাতায় গল তৈরি করে, নতুন কুশি বিকৃত করে এবং গাছের কাজে লাগা পাতার পরিমাণ কমিয়ে দেয়।",
+    "description_ur": "گیل مِج ایک چھوٹی مکھی ہے جس کے لاروے آم کے پتوں پر گال بناتے ہیں، نئی ٹہنی کو بگاڑتے ہیں اور درخت کے کارآمد پتوں کی تعداد کم کرتے ہیں۔",
+    "symptoms_en": [
+      "Small raised galls or blisters on young leaves",
+      "Curled, distorted and thickened leaves",
+      "Tiny orange larvae inside the galls",
+      "Premature leaf fall and sparse canopy with fewer shoots"
+    ],
+    "symptoms_bn": [
+      "কচি পাতায় ছোট উঁচু গল বা ফোসকা",
+      "পাতা কুঁচকে, বিকৃত ও মোটা হয়ে যাওয়া",
+      "গলের ভেতরে ছোট কমলা রঙের লার্ভা",
+      "পাতা আগেই ঝরে পড়া ও কম কুশিসহ পাতার আচ্ছাদন কম হওয়া"
+    ],
+    "symptoms_ur": [
+      "نرم پتوں پر چھوٹے اُبھرے گال یا چھالے",
+      "پتے مڑنا، بگڑنا اور موٹے ہونا",
+      "گال کے اندر چھوٹے نارنجی لاروے",
+      "پتے وقت سے پہلے گرنا اور کم ٹہنیوں کے ساتھ شاخیں کم ہونا"
+    ],
+    "favorable_conditions_en": [
+      "Humid weather and frequent rain",
+      "Young tender flush a few weeks old",
+      "Dense shaded canopy and damp undergrowth",
+      "Continuous flushes without a break"
+    ],
+    "favorable_conditions_bn": [
+      "আর্দ্র আবহাওয়া ও ঘন ঘন বৃষ্টি",
+      "কয়েক সপ্তাহ বয়সের কচি কোমল কুশি",
+      "ঘন ছায়াযুক্ত আচ্ছাদন ও ভেজা আগাছা",
+      "বিরতি ছাড়া একটানা নতুন কুশি"
+    ],
+    "favorable_conditions_ur": [
+      "مرطوب موسم اور بار بار بارش",
+      "چند ہفتے پرانی نرم و کومل ٹہنیاں",
+      "گھنی سایہ دار شاخیں اور گیلی جڑی بوٹیاں",
+      "وقفے کے بغیر مسلسل نئی ٹہنیاں"
+    ],
+    "spread_en": "Adult midges are blown by wind onto new flush where they lay eggs.",
+    "spread_bn": "পূর্ণাঙ্গ মাছি বাতাসে উড়ে নতুন কুশিতে এসে ডিম পাড়ে।",
+    "spread_ur": "بالغ مکھی ہوا میں اڑ کر نئی ٹہنیوں پر انڈے دیتی ہے۔"
+  },
+  {
+    "id": "mango_powdery_mildew",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Powdery Mildew",
+    "name_bn": "পাউডারি মিল্ডিউ",
+    "name_ur": "پاؤڈری ملڈیو",
+    "scientific_name": "Oidium mangiferae",
+    "severity": "moderate",
+    "description_en": "Powdery mildew is a fungal disease that coats mango flowers and young leaves with white powder and causes severe flower drop and poor fruit set.",
+    "description_bn": "পাউডারি মিল্ডিউ একটি ছত্রাকজনিত রোগ, যা আমের ফুল ও কচি পাতায় সাদা গুঁড়োর আস্তরণ তৈরি করে এবং ফুল ঝরা ও ফল কম ধরার বড় কারণ হয়।",
+    "description_ur": "پاؤڈری ملڈیو ایک قارچی مرض ہے جو آم کے پھولوں اور نرم پتوں پر سفید پاؤڈر کی تہہ بناتا ہے اور پھولوں کی شدید گِراوٹ اور کم پھل لگنے کا بڑا سبب ہے۔",
+    "symptoms_en": [
+      "White powdery growth on flower panicles and young leaves",
+      "Browning and shedding of affected flowers",
+      "Grey-brown patches on young fruit",
+      "Poor fruit set, small deformed fruit and early leaf fall on flush"
+    ],
+    "symptoms_bn": [
+      "ফুলের মঞ্জরিতে ও কচি পাতায় সাদা গুঁড়োর মতো বৃদ্ধি",
+      "আক্রান্ত ফুল বাদামি হয়ে ঝরে পড়া",
+      "কচি ফলের গায়ে ধূসর-বাদামি দাগ",
+      "ফল কম ধরা, ছোট বিকৃত ফল ও কুশির পাতা আগেই ঝরা"
+    ],
+    "symptoms_ur": [
+      "پھولوں کے گچھوں اور نرم پتوں پر سفید پاؤڈر جیسی افزائش",
+      "متاثرہ پھول بھورے ہو کر گر جانا",
+      "نئے پھل پر خاکستری بھورے دھبے",
+      "پھل کم لگنا، چھوٹا بگڑا پھل اور ٹہنی کے پتے وقت سے پہلے گرنا"
+    ],
+    "favorable_conditions_en": [
+      "Cool nights with dew and warm dry days",
+      "High humidity without rain during flowering",
+      "Dense canopy with little air movement",
+      "Heavy dewy mornings while panicles emerge"
+    ],
+    "favorable_conditions_bn": [
+      "শিশিরসহ ঠান্ডা রাত ও উষ্ণ শুকনো দিন",
+      "ফুলের সময় বৃষ্টি ছাড়া উচ্চ আর্দ্রতা",
+      "বাতাস চলাচল কম এমন ঘন আচ্ছাদন",
+      "মঞ্জরি বেরোনোর সময় ভারী শিশিরযুক্ত সকাল"
+    ],
+    "favorable_conditions_ur": [
+      "شبنم والی ٹھنڈی راتیں اور گرم خشک دن",
+      "پھولوں کے وقت بارش کے بغیر زیادہ نمی",
+      "ہوا کی آمدورفت کم والی گھنی شاخیں",
+      "پھولوں کے نکلنے کے وقت بھاری شبنم والی صبح"
+    ],
+    "spread_en": "Tiny spores travel long distances on the wind and infect flowers, leaves and young fruit.",
+    "spread_bn": "অতি সূক্ষ্ম স্পোর বাতাসে দীর্ঘ দূরত্ব পাড়ি দিয়ে ফুল, পাতা ও কচি ফলে সংক্রমণ ঘটায়।",
+    "spread_ur": "باریک بیجانات ہوا میں لمبی دوری طے کر کے پھولوں، پتوں اور نئے پھل کو متاثر کرتے ہیں۔"
+  },
+  {
+    "id": "mango_sooty_mould",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Sooty Mould",
+    "name_bn": "সুটির ছাঁচ",
+    "name_ur": "سوٹی مولڈ",
+    "scientific_name": "Capnodium spp.",
+    "severity": "mild",
+    "description_en": "Sooty mould is a mild disease in which dark fungal growth covers mango leaves and fruit, reducing photosynthesis and dulling the fruit skin.",
+    "description_bn": "সুটির ছাঁচ একটি মৃদু রোগ, যেখানে গাঢ় ছত্রাকের আস্তরণ আমের পাতা ও ফলের ওপর জমে, সালোকসংশ্লেষণ কমায় এবং ফলের খোসার চেহারা নষ্ট করে।",
+    "description_ur": "سوٹی مولڈ ایک ہلکی بیماری ہے جس میں گہرے قارچ کی تہہ آم کے پتوں اور پھل پر جم جاتی ہے، ضیائی تالیف کم کرتی ہے اور پھل کی چھال کی شکل بگاڑتی ہے۔",
+    "symptoms_en": [
+      "Black sooty coating on the upper surface of leaves",
+      "Dull dark film on fruit skin that can be wiped off",
+      "Sticky honeydew on leaves where sap-sucking insects feed",
+      "Reduced photosynthesis and slower tree growth"
+    ],
+    "symptoms_bn": [
+      "পাতার উপরিভাগে কালো কালির মতো আস্তরণ",
+      "ফলের খোসায় নিস্তেজ কালচে আস্তরণ, যা মুছে ফেলা যায়",
+      "রসচোষা পোকার খাওয়ার জায়গায় আঠালো মিষ্টি রস জমা",
+      "সালোকসংশ্লেষণ কমে যাওয়া ও গাছের বৃদ্ধি ধীর হওয়া"
+    ],
+    "symptoms_ur": [
+      "پتوں کی اوپری سطح پر کالی سیاہی جیسی تہہ",
+      "پھل کی چھال پر پھیکی کالی تہہ جو صاف کی جا سکتی ہے",
+      "رس چوسنے والے کیڑوں کے مقام پر چپچپا میٹھا رس جمع ہونا",
+      "ضیائی تالیف کم ہونا اور درخت کی نشوونما سست ہونا"
+    ],
+    "favorable_conditions_en": [
+      "Honeydew from hoppers, scales and mealybugs",
+      "Humid, shaded canopy with poor air circulation",
+      "Dense, unpruned branches",
+      "Warm weather with heavy insect populations"
+    ],
+    "favorable_conditions_bn": [
+      "হপার, স্কেল পোকা ও মিলিবাগের মিষ্টি রস (হানিডিউ)",
+      "আর্দ্র, ছায়াযুক্ত আচ্ছাদন ও কম বাতাস চলাচল",
+      "ছাঁটা না হওয়া ঘন ডালপালা",
+      "ভারী পোকামাকড়ের উপস্থিতিতে উষ্ণ আবহাওয়া"
+    ],
+    "favorable_conditions_ur": [
+      "ہاپر، اسکیل کیڑوں اور میلی بگ کا میٹھا رس (ہنی ڈیو)",
+      "مرطوب، سایہ دار شاخیں اور کم ہوا کی آمدورفت",
+      "بغیر تراشیدہ گھنی شاخیں",
+      "کیڑوں کی زیادہ تعداد کے ساتھ گرم موسم"
+    ],
+    "spread_en": "Wind-blown spores of the sooty mould grow on honeydew dropped by sap-sucking insects.",
+    "spread_bn": "বাতাসে ভেসে আসা স্পোর রসচোষা পোকার ফেলা মিষ্টি রসের ওপর জন্মায় ও ছড়ায়।",
+    "spread_ur": "ہوا میں اُڑتے بیجانات رس چوسنے والے کیڑوں کے گرائے ہوئے میٹھے رس پر اگتے اور پھیلتے ہیں۔"
+  },
+  {
+    "id": "mango_healthy",
+    "crop_en": "Mango",
+    "crop_bn": "আম",
+    "crop_ur": "آم",
+    "name_en": "Healthy",
+    "name_bn": "সুস্থ",
+    "name_ur": "صحت مند",
+    "severity": "none",
+    "description_en": "This mango leaf shows no disease symptoms and the tree is growing normally.",
+    "description_bn": "এই আম পাতা কোনো রোগের উপসর্গ দেখায় না এবং গাছ স্বাভাবিকভাবে বাড়ছে।",
+    "description_ur": "آم کا یہ پتا کسی بیماری کی علامت نہیں دکھاتا اور درخت معمول کے مطابق بڑھ رہا ہے۔",
+    "symptoms_en": [
+      "No visible disease symptoms detected"
+    ],
+    "symptoms_bn": [
+      "দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"
+    ],
+    "symptoms_ur": [
+      "بیماری کی کوئی واضح علامات نظر نہیں آتیں"
+    ],
+    "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "",
+    "spread_ur": ""
+  },
+  {
+    "id": "pumpkin_bacterial_leaf_spot",
+    "crop_en": "Pumpkin",
+    "crop_bn": "কুমড়া",
+    "crop_ur": "کدو",
+    "name_en": "Bacterial Leaf Spot",
+    "name_bn": "ব্যাকটেরিয়াল পাতার দাগ",
+    "name_ur": "بیکٹیریل پتوں کے دھبے",
+    "scientific_name": "Xanthomonas cucurbitae",
+    "severity": "moderate",
+    "description_en": "Bacterial leaf spot of pumpkin, caused by Xanthomonas cucurbitae, forms small water-soaked spots that dry to brown papery lesions and blemish the fruit, cutting marketable yield.",
+    "description_bn": "জান্থোমোনাস কিউকারবিটাই ব্যাকটেরিয়ায় হওয়া কুমড়ার ব্যাকটেরিয়াল পাতার দাগ ছোট পানিভেজা দাগ তৈরি করে, যা শুকিয়ে বাদামি কাগজের মতো ক্ষতে পরিণত হয় এবং ফলে দাগ ফেলে বাজারযোগ্য ফলন কমায়।",
+    "description_ur": "Xanthomonas cucurbitae بیکٹیریا سے ہونے والا کدو کا بیکٹیریل پتوں کا دھبہ چھوٹے پانی بھرے دھبے بناتا ہے جو سوکھ کر بھورے کاغذی زخم بن جاتے ہیں اور پھل پر داغ ڈال کر قابلِ فروخت پیداوار کم کرتے ہیں۔",
+    "symptoms_en": [
+      "Small water-soaked spots on leaves that turn brown and papery",
+      "Angular lesions bounded by the leaf veins",
+      "Raised scabby spots on the fruit rind",
+      "Severely infected leaves yellow and tear at the margins"
+    ],
+    "symptoms_bn": [
+      "পাতায় ছোট পানিভেজা দাগ যা পরে বাদামি ও কাগজের মতো হয়",
+      "পাতার শিরা দ্বারা সীমাবদ্ধ কোণাকার ক্ষত",
+      "ফলের খোসায় উঁচু খসখসে দাগ",
+      "তীব্র আক্রমণে পাতা হলুদ হয়ে কিনারা ছিঁড়ে যায়"
+    ],
+    "symptoms_ur": [
+      "پتوں پر چھوٹے پانی بھرے دھبے جو بعد میں بھورے اور کاغذی ہو جاتے ہیں",
+      "پتوں کی شریانوں کی حد میں رہنے والے کونے دار زخم",
+      "پھل کے چھلکے پر ابھرے کھردرے داغ",
+      "شدید حملے میں پتے زرد ہو کر کناروں سے پھٹ جاتے ہیں"
+    ],
+    "favorable_conditions_en": [
+      "Warm rainy weather with long leaf wetness periods",
+      "Overhead sprinkler irrigation",
+      "Dense canopy that keeps leaves wet for hours",
+      "Infected seed and crop debris left in the field"
+    ],
+    "favorable_conditions_bn": [
+      "উষ্ণ বৃষ্টিবহুল আবহাওয়া ও দীর্ঘক্ষণ পাতা ভেজা থাকা",
+      "উপর থেকে স্প্রিংকলার সেচ",
+      "ঘন পাতার আচ্ছাদন যা ঘণ্টার পর ঘণ্টা পাতা ভেজা রাখে",
+      "আক্রান্ত বীজ ও জমিতে পড়ে থাকা ফসলের অবশিষ্টাংশ"
+    ],
+    "favorable_conditions_ur": [
+      "گرم بارانی موسم اور پتوں کا طویل عرصے تر رہنا",
+      "اوپر سے چھڑکاؤ والی آبپاشی",
+      "گھنی چھتری جو پتوں کو گھنٹوں تر رکھتی ہے",
+      "متاثرہ بیج اور کھیت میں پڑی فصل کی باقیات"
+    ],
+    "spread_en": "The bacteria survive in seed and crop residue and spread by rain splash, sprinkler water, and handling of wet vines.",
+    "spread_bn": "ব্যাকটেরিয়া বীজ ও ফসলের অবশিষ্টাংশে টিকে থাকে এবং বৃষ্টির ছিটা, স্প্রিংকলারের পানি ও ভেজা লতা স্পর্শের মাধ্যমে ছড়ায়।",
+    "spread_ur": "بیکٹیریا بیج اور فصل کی باقیات میں زندہ رہتے ہیں اور بارش کے چھینٹوں، چھڑکاؤ کے پانی اور گیلی بیلوں کو چھونے سے پھیلتے ہیں۔"
+  },
+  {
+    "id": "pumpkin_downy_mildew",
+    "crop_en": "Pumpkin",
+    "crop_bn": "কুমড়া",
+    "crop_ur": "کدو",
+    "name_en": "Downy Mildew",
+    "name_bn": "ডাউনি মিলডিউ",
+    "name_ur": "ڈاؤنی میلڈیو",
+    "scientific_name": "Pseudoperonospora cubensis",
+    "severity": "severe",
+    "description_en": "Downy mildew, caused by Pseudoperonospora cubensis, is the most destructive foliar disease of pumpkin and can defoliate a whole field within two weeks in humid weather.",
+    "description_bn": "সিউডোপেরোনোস্পোরা কিউবেনসিস ছত্রাকে হওয়া ডাউনি মিলডিউ কুমড়ার সবচেয়ে ধ্বংসকারী পাতার রোগ এবং আর্দ্র আবহাওয়ায় দুই সপ্তাহের মধ্যে গোটা মাঠের পাতা ঝরিয়ে দিতে পারে।",
+    "description_ur": "Pseudoperonospora cubensis پھپھوندی سے ہونے والی ڈاؤنی میلڈیو کدو کی سب سے تباہ کن پتوں کی بیماری ہے اور مرطوب موسم میں دو ہفتوں کے اندر پورے کھیت کے پتے جھڑا سکتی ہے۔",
+    "symptoms_en": [
+      "Pale yellow angular patches on the upper leaf surface, limited by veins",
+      "Grey to purplish fuzzy growth on the underside of lesions",
+      "Lesions merge until the whole leaf turns brown and dies",
+      "Rapid defoliation that exposes fruit to sunburn"
+    ],
+    "symptoms_bn": [
+      "পাতার উপরের পিঠে শিরা দ্বারা সীমাবদ্ধ হালকা হলুদ কোণাকার দাগ",
+      "দাগের নিচের পিঠে ধূসর থেকে বেগুনি রঙের তুলতুলে ছত্রাকের আস্তরণ",
+      "দাগ মিলে গিয়ে গোটা পাতা বাদামি হয়ে মরে যায়",
+      "দ্রুত পাতা ঝরে ফল রোদে পুড়ে যায়"
+    ],
+    "symptoms_ur": [
+      "پتے کی اوپری سطح پر ہلکے زرد کونے دار دھبے جو شریانوں تک محدود رہتے ہیں",
+      "دھبوں کی نچلی سطح پر بھوری مائل جامنی روئیں دار پھپھوندی",
+      "دھبے مل کر پورا پتہ بھورا اور مردہ ہو جاتا ہے",
+      "تیزی سے پتے جھڑنے سے پھل دھوپ میں جھلس جاتا ہے"
+    ],
+    "favorable_conditions_en": [
+      "Cool to mild nights with high humidity and dew",
+      "Prolonged leaf wetness from rain or overhead irrigation",
+      "Poor air movement in dense, sprawling vines",
+      "Warm days followed by cool foggy nights"
+    ],
+    "favorable_conditions_bn": [
+      "ঠান্ডা থেকে মৃদু রাত, উচ্চ আর্দ্রতা ও শিশির",
+      "বৃষ্টি বা উপরের সেচে দীর্ঘক্ষণ পাতা ভেজা থাকা",
+      "ঘন, ছড়ানো লতায় বাতাসের চলাচল কম",
+      "উষ্ণ দিনের পর ঠান্ডা কুয়াশাচ্ছন্ন রাত"
+    ],
+    "favorable_conditions_ur": [
+      "ٹھنڈی سے معتدل راتیں، زیادہ نمی اور شبنم",
+      "بارش یا اوپر کی آبپاشی سے پتوں کا دیر تک تر رہنا",
+      "گھنی پھیلی ہوئی بیلوں میں ہوا کی آمدورفت کم",
+      "گرم دن کے بعد ٹھنڈی دھندلی راتیں"
+    ],
+    "spread_en": "Wind carries sporangia over long distances and rain splash moves them leaf to leaf; the pathogen survives between seasons on volunteer cucurbits and living hosts.",
+    "spread_bn": "বাতাস স্পোরাঞ্জিয়া বহু দূরে বহন করে এবং বৃষ্টির ছিটা তা এক পাতা থেকে অন্য পাতায় নেয়; মৌসুমের মাঝে রোগজীবাণু স্বেচ্ছাবীজী কিউকারবিট ও জীবিত পোষকে টিকে থাকে।",
+    "spread_ur": "ہوا اسپورانجیا کو بہت دور تک لے جاتی ہے اور بارش کے چھینٹے انہیں پتے سے پتے تک پہنچاتے ہیں؛ موسموں کے درمیان یہ خود رو کدو خاندان کے پودوں اور زندہ میزبانوں میں زندہ رہتا ہے۔"
+  },
+  {
+    "id": "pumpkin_mosaic",
+    "crop_en": "Pumpkin",
+    "crop_bn": "কুমড়া",
+    "crop_ur": "کدو",
+    "name_en": "Mosaic",
+    "name_bn": "মোজাইক",
+    "name_ur": "موزیک",
+    "scientific_name": "Zucchini yellow mosaic virus",
+    "severity": "moderate",
+    "description_en": "Zucchini yellow mosaic virus reaches pumpkin through aphid feeding and causes mottled, blistered leaves and lumpy discoloured fruit, with heavy losses in late plantings.",
+    "description_bn": "জুকিনি ইয়েলো মোজাইক ভাইরাস জাবপোকার খাওয়ার সময় কুমড়ায় প্রবেশ করে পাতায় নানা রঙের দাগ ও ফোস্কা এবং ফলে উঁচুনিচু বিবর্ণতা সৃষ্টি করে, দেরিতে রোপণে বড় ক্ষতি হয়।",
+    "description_ur": "زچینی یلو موزیک وائرس جوؤں کے چوسنے سے کدو میں داخل ہو کر پتوں پر رنگ برنگے دھبے اور چھالے اور پھل پر ابھار اور بے رنگی پیدا کرتا ہے، دیر سے کاشت میں بھاری نقصان ہوتا ہے۔",
+    "symptoms_en": [
+      "Yellow and green mottled mosaic pattern on leaves",
+      "Leaves blister, narrow, and distort at the growing tip",
+      "Fruit is lumpy, mottled, and may be hard or bitter",
+      "Vines are stunted with fewer female flowers"
+    ],
+    "symptoms_bn": [
+      "পাতায় হলুদ ও সবুজ মিশ্র মোজাইক দাগ",
+      "বর্ধনশীল ডগায় পাতা ফুলে ওঠে, সরু ও বিকৃত হয়",
+      "ফল উঁচুনিচু, দাগযুক্ত এবং শক্ত বা তেতো হতে পারে",
+      "লতা খাটো থাকে ও স্ত্রী ফুল কম হয়"
+    ],
+    "symptoms_ur": [
+      "پتوں پر زرد اور سبز ملا جلا موزیک نمونہ",
+      "بڑھتی نوک پر پتے پھولتے، پتلے اور بگڑ جاتے ہیں",
+      "پھل ابھرواں، داغ دار اور سخت یا کڑوا ہو سکتا ہے",
+      "بیلیں بونی رہتی ہیں اور مادہ پھول کم آتے ہیں"
+    ],
+    "favorable_conditions_en": [
+      "High aphid populations moving through the field",
+      "Warm dry weather that favours aphid flight",
+      "Weedy borders with volunteer cucurbits as virus reservoirs",
+      "Continuous cucurbit planting with no break between crops"
+    ],
+    "favorable_conditions_bn": [
+      "মাঠে জাবপোকার উচ্চ সংখ্যা",
+      "উষ্ণ শুষ্ক আবহাওয়া যা জাবপোকার উড়ানকে সুবিধা দেয়",
+      "ভাইরাসের আধার হিসেবে সীমানায় আগাছা ও স্বেচ্ছাবীজী কিউকারবিট",
+      "ফসলের মাঝে বিরতি ছাড়া একটানা কিউকারবিট চাষ"
+    ],
+    "favorable_conditions_ur": [
+      "کھیت میں جوؤں کی زیادہ آبادی",
+      "گرم خشک موسم جو جوؤں کی پرواز کو آسان بناتا ہے",
+      "کناروں پر جڑی بوٹیاں اور خود رو کدو خاندان کے پودے بطور وائرس ذخیرہ",
+      "فصلوں کے درمیان وقفے کے بغیر مسلسل کدو کی کاشت"
+    ],
+    "spread_en": "Aphids transmit the virus within seconds of probing a leaf, and it also moves in infected seed and volunteer cucurbit plants.",
+    "spread_bn": "জাবপোকা পাতা পরীক্ষা করার কয়েক সেকেন্ডের মধ্যেই ভাইরাস ছড়ায়, আর তা আক্রান্ত বীজ ও স্বেচ্ছাবীজী কিউকারবিট গাছের মাধ্যমেও ছড়ায়।",
+    "spread_ur": "جوئیں پتہ چکھنے کے چند سیکنڈ میں وائرس منتقل کر دیتی ہیں، اور یہ متاثرہ بیج اور خود رو کدو خاندان کے پودوں سے بھی پھیلتا ہے۔"
+  },
+  {
+    "id": "pumpkin_powdery_mildew",
+    "crop_en": "Pumpkin",
+    "crop_bn": "কুমড়া",
+    "crop_ur": "کدو",
+    "name_en": "Powdery Mildew",
+    "name_bn": "পাউডারি মিলডিউ",
+    "name_ur": "پاؤڈری میلڈیو",
+    "scientific_name": "Podosphaera xanthii",
+    "severity": "moderate",
+    "description_en": "Powdery mildew, caused by Podosphaera xanthii, coats pumpkin leaves with white powder, weakens the vines and exposes fruit to sunburn.",
+    "description_bn": "পোডোস্ফেয়ারা জানথি ছত্রাকে হওয়া পাউডারি মিলডিউ কুমড়ার পাতায় সাদা গুঁড়ার আস্তরণ ফেলে লতা দুর্বল করে এবং ফল রোদে পুড়ে যাওয়ার ঝুঁকি বাড়ায়।",
+    "description_ur": "Podosphaera xanthii پھپھوندی سے ہونے والی پاؤڈری میلڈیو کدو کے پتوں پر سفید پاؤڈر کی تہہ چڑھاتی ہے، بیلیں کمزور کرتی ہے اور پھل کو دھوپ سے جھلسنے کے خطرے میں ڈالتی ہے۔",
+    "symptoms_en": [
+      "White powdery patches on the upper leaf surface",
+      "Patches spread until the whole leaf is covered",
+      "Leaves yellow, curl upward and die early",
+      "Sunscald on fruit where the canopy opens"
+    ],
+    "symptoms_bn": [
+      "পাতার উপরের পিঠে সাদা গুঁড়ার দাগ",
+      "দাগ ছড়িয়ে গোটা পাতা ঢেকে ফেলে",
+      "পাতা হলুদ হয়, উপরের দিকে কুঁচকে যায় ও আগেভাগে মরে",
+      "আচ্ছাদন ফাঁকা হলে ফলে রোদে পোড়া দাগ"
+    ],
+    "symptoms_ur": [
+      "پتے کی اوپری سطح پر سفید پاؤڈر کے دھبے",
+      "دھبے پھیل کر پورا پتہ ڈھانپ لیتے ہیں",
+      "پتے زرد ہو کر اوپر مڑتے اور جلدی مر جاتے ہیں",
+      "چھتری کھلنے پر پھل پر دھوپ سے جھلسنے کے داغ"
+    ],
+    "favorable_conditions_en": [
+      "Warm days and cool nights with high humidity",
+      "Dense canopy with poor air circulation",
+      "Humid air even when the leaf surface stays dry",
+      "Excess nitrogen that pushes soft crowded growth"
+    ],
+    "favorable_conditions_bn": [
+      "উষ্ণ দিন, ঠান্ডা রাত ও উচ্চ আর্দ্রতা",
+      "দুর্বল বাতাস চলাচলযুক্ত ঘন পাতার আচ্ছাদন",
+      "পাতা শুকনো থাকলেও বাতাসে বেশি আর্দ্রতা",
+      "অতিরিক্ত নাইট্রোজেন যা নরম ও ঘন বৃদ্ধি ঘটায়"
+    ],
+    "favorable_conditions_ur": [
+      "گرم دن، ٹھنڈی راتیں اور زیادہ نمی",
+      "کم ہوا آمدورفت والی گھنی چھتری",
+      "پتہ خشک ہونے کے باوجود ہوا میں زیادہ نمی",
+      "زائد نائٹروجن جو نرم اور گھنی بڑھوتری کرتی ہے"
+    ],
+    "spread_en": "Wind carries conidia for long distances and the fungus overwinters on cucurbit crop residue and weed hosts.",
+    "spread_bn": "বাতাস কোনিডিয়া বহু দূরে বহন করে এবং ছত্রাক কিউকারবিট ফসলের অবশিষ্টাংশ ও আগাছা পোষকে শীতকাল পার করে।",
+    "spread_ur": "ہوا کونیدیا کو بہت دور تک لے جاتی ہے اور پھپھوندی کدو خاندان کی فصل کی باقیات اور جڑی بوٹیوں میں سردیاں گزارتی ہے۔"
+  },
+  {
+    "id": "pumpkin_healthy",
+    "crop_en": "Pumpkin",
+    "crop_bn": "কুমড়া",
+    "crop_ur": "کدو",
+    "name_en": "Healthy",
+    "name_bn": "সুস্থ",
+    "name_ur": "صحت مند",
+    "severity": "none",
+    "description_en": "The pumpkin crop shows no signs of disease; leaves, vines and fruit are healthy and uniform.",
+    "description_bn": "কুমড়ার ফসলে রোগের কোনো লক্ষণ নেই; পাতা, লতা ও ফল সুস্থ এবং সমানভাবে বেড়ে উঠছে।",
+    "description_ur": "کدو کی فصل میں بیماری کی کوئی علامت نہیں؛ پتے، بیلیں اور پھل صحت مند اور یکساں ہیں۔",
+    "symptoms_en": [
+      "No visible disease symptoms detected"
+    ],
+    "symptoms_bn": [
+      "দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"
+    ],
+    "symptoms_ur": [
+      "بیماری کی کوئی واضح علامات نظر نہیں آتیں"
+    ],
+    "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "",
+    "spread_ur": ""
+  },
+  {
+    "id": "sugarcane_bacterial_blights",
+    "crop_en": "Sugarcane",
+    "crop_bn": "আখ",
+    "crop_ur": "گنا",
+    "name_en": "Bacterial Blights",
+    "name_bn": "ব্যাকটেরিয়াল ব্লাইট",
+    "name_ur": "بیکٹیریل بلائٹ",
+    "scientific_name": "Xanthomonas albilineans",
+    "severity": "severe",
+    "description_en": "Leaf scald, caused by Xanthomonas albilineans, draws white pencil-line streaks along the leaf and can wilt whole stools suddenly, with losses up to half the crop in susceptible varieties.",
+    "description_bn": "জান্থোমোনাস আলবিলিনানস ব্যাকটেরিয়ায় হওয়া লিফ স্ক্যাল্ড পাতায় সাদা পেন্সিলের মতো রেখা টানে এবং গোটা আখ হঠাৎ ঢলে পড়তে পারে; সংবেদনশীল জাতিতে ফসলের অর্ধেক পর্যন্ত ক্ষতি হয়।",
+    "description_ur": "Xanthomonas albilineans بیکٹیریا سے ہونے والا لیف اسکالڈ پتوں پر سفید پنسل جیسی لکیریں بناتا ہے اور پورے گنے کو اچانک گرا سکتا ہے؛ حساس اقسام میں آدھی فصل تک نقصان ہوتا ہے۔",
+    "symptoms_en": [
+      "Thin white pencil-line streaks running the length of the leaf",
+      "Leaf margins scorch and dry from the tip inward",
+      "Sudden wilting or collapse of poles, often after rain",
+      "Side shoots sprout from nodes of affected canes"
+    ],
+    "symptoms_bn": [
+      "পাতার দৈর্ঘ্য বরাবর সরু সাদা পেন্সিল-রেখা",
+      "পাতার কিনারা ডগা থেকে ভেতরের দিকে পুড়ে ও শুকিয়ে যায়",
+      "প্রায়ই বৃষ্টির পর আখ হঠাৎ ঢলে পড়ে বা শুকিয়ে যায়",
+      "আক্রান্ত আখের গিঁট থেকে পার্শ্ব অঙ্কুর গজায়"
+    ],
+    "symptoms_ur": [
+      "پتے کی لمبائی کے ساتھ باریک سفید پنسل جیسی لکیریں",
+      "پتے کے کنارے نوک سے اندر کی طرف جھلس کر سوکھ جاتے ہیں",
+      "اکثر بارش کے بعد گنے کا اچانک گرنا یا سوکھنا",
+      "متاثرہ گنے کے گرہوں سے طرفی کونپلیں نکلتی ہیں"
+    ],
+    "favorable_conditions_en": [
+      "Hot humid weather with heavy rain and standing water",
+      "Planting infected setts from an affected crop",
+      "Continuous cane cropping on the same field",
+      "Injury from cutting tools, rats or borers that lets bacteria enter"
+    ],
+    "favorable_conditions_bn": [
+      "ভারী বৃষ্টি ও জলাবদ্ধতাসহ উষ্ণ আর্দ্র আবহাওয়া",
+      "আক্রান্ত ফসল থেকে সংক্রমিত বীজ-আখ (সেট) রোপণ",
+      "একই জমিতে একটানা আখ চাষ",
+      "কাটার যন্ত্র, ইঁদুর বা কাণ্ড ছিদ্রকারী পোকার আঘাতে ব্যাকটেরিয়ার প্রবেশ"
+    ],
+    "favorable_conditions_ur": [
+      "بھاری بارش اور کھڑے پانی کے ساتھ گرم مرطوب موسم",
+      "متاثرہ فصل سے متاثرہ سیٹ کا کاشت کرنا",
+      "ایک ہی کھیت میں مسلسل گنے کی کاشت",
+      "کاٹنے کے اوزار، چوہوں یا تنے میں سوراخ کرنے والے کیڑوں سے زخم اور بیکٹیریا کا داخلہ"
+    ],
+    "spread_en": "The bacterium spreads mainly through infected seed cane and contaminated cutting knives, and rain splash carries it between neighbouring stools.",
+    "spread_bn": "ব্যাকটেরিয়া মূলত সংক্রমিত বীজ-আখ ও দূষিত কাটার ছুরির মাধ্যমে ছড়ায়, আর বৃষ্টির ছিটা তা পাশের আখের গোছায় পৌঁছে দেয়।",
+    "spread_ur": "بیکٹیریا بنیادی طور پر متاثرہ سیٹ اور آلودہ کاٹنے والے چھریوں سے پھیلتا ہے، اور بارش کے چھینٹے اسے پڑوسی گنے کے جھنڈ تک پہنچاتے ہیں۔"
+  },
+  {
+    "id": "sugarcane_mosaic",
+    "crop_en": "Sugarcane",
+    "crop_bn": "আখ",
+    "crop_ur": "گنا",
+    "name_en": "Mosaic",
+    "name_bn": "মোজাইক",
+    "name_ur": "موزیک",
+    "scientific_name": "Sugarcane mosaic virus",
+    "severity": "moderate",
+    "description_en": "Sugarcane mosaic virus shows as light green to yellow mottling that stunts young cane and reduces sucrose yield, especially in plant cane grown from infected setts.",
+    "description_bn": "আখের মোজাইক ভাইরাস পাতায় হালকা সবুজ থেকে হলুদ দাগ দেখায়, যা অল্প বয়সী আখের বৃদ্ধি খাটো করে ও সুক্রোজের ফলন কমায়, বিশেষত সংক্রমিত সেট থেকে জন্মানো নতুন আখে।",
+    "description_ur": "گنے کا موزیک وائرس پتوں پر ہلکے سبز سے زرد دھبے پیدا کرتا ہے جو نوجوان گنے کی بڑھوتری روکتا اور سوکروز کی پیداوار کم کرتا ہے، خاص طور پر متاثرہ سیٹ سے اگے نئے گنے میں۔",
+    "symptoms_en": [
+      "Yellow and light green mosaic mottle on young leaves",
+      "Chlorotic streaks alternating with normal green tissue",
+      "Reddish or purplish discolouration on older infected leaves",
+      "Stunted stools with thin short internodes"
+    ],
+    "symptoms_bn": [
+      "অল্প বয়সী পাতায় হলুদ ও হালকা সবুজ মোজাইক দাগ",
+      "স্বাভাবিক সবুজ অংশের সঙ্গে পালাক্রমে ক্লোরোটিক রেখা",
+      "পুরোনো আক্রান্ত পাতায় লালচে বা রক্তবর্ণ বিবর্ণতা",
+      "পাতলা ও খাটো পর্বসন্ধিযুক্ত খাটো আখের গোছা"
+    ],
+    "symptoms_ur": [
+      "نوجوان پتوں پر زرد اور ہلکے سبز موزیک دھبے",
+      "عام سبز حصوں کے ساتھ باری باری زردی مائل لکیریں",
+      "پرانو متاثرہ پتوں پر سرخی مائل یا جامنی بے رنگی",
+      "پتلے اور چھوٹے گرہوں والے بونے جھنڈ"
+    ],
+    "favorable_conditions_en": [
+      "High aphid populations and mild dry weather",
+      "Planting virus-infected setts",
+      "Volunteer cane and grassy hosts growing nearby",
+      "Continuous cropping of susceptible varieties"
+    ],
+    "favorable_conditions_bn": [
+      "জাবপোকার উচ্চ সংখ্যা ও মৃদু শুষ্ক আবহাওয়া",
+      "ভাইরাস-সংক্রমিত সেট রোপণ",
+      "কাছাকাছি স্বেচ্ছাবীজী আখ ও ঘাসজাতীয় পোষক",
+      "সংবেদনশীল জাতের একটানা চাষ"
+    ],
+    "favorable_conditions_ur": [
+      "جوؤں کی زیادہ آبادی اور معتدل خشک موسم",
+      "وائرس سے متاثرہ سیٹ کی کاشت",
+      "قریب اگنے والا خود رو گنا اور گھاس جیسے میزبان",
+      "حساس اقسام کی مسلسل کاشت"
+    ],
+    "spread_en": "Aphids transmit the virus while feeding, and the main long-distance movement is through infected setts carried to new fields.",
+    "spread_bn": "জাবপোকা খাওয়ার সময় ভাইরাস ছড়ায়, আর দূরবর্তী বিস্তার মূলত নতুন মাঠে নেওয়া সংক্রমিত সেটের মাধ্যমে হয়।",
+    "spread_ur": "جوئیں چستے وقت وائرس منتقل کرتی ہیں، اور دور دراز تک پھیلاؤ بنیادی طور پر نئے کھیتوں میں لے جانے والے متاثرہ سیٹ سے ہوتا ہے۔"
+  },
+  {
+    "id": "sugarcane_red_rot",
+    "crop_en": "Sugarcane",
+    "crop_bn": "আখ",
+    "crop_ur": "گنا",
+    "name_en": "Red Rot",
+    "name_bn": "রেড রট (লাল পচা)",
+    "name_ur": "سرخ سڑن",
+    "scientific_name": "Colletotrichum falcatum",
+    "severity": "severe",
+    "description_en": "Red rot, caused by Colletotrichum falcatum, rots the pith of sugarcane, turning it red with white cross patches and giving the cane a sour alcoholic smell.",
+    "description_bn": "কোলেটোট্রিকাম ফ্যালক্যাটাম ছত্রাকে হওয়া রেড রট আখের ভেতরের নরম অংশ পচিয়ে লাল করে তোলে, সাদা আড়াআড়ি দাগ ফেলে এবং আখে টক মদির গন্ধ তৈরি করে।",
+    "description_ur": "Colletotrichum falcatum پھپھوندی سے ہونے والا سرخ سڑن گنے کا اندرونی گودا گل کر سرخ کر دیتا ہے، سفید عرضی دھبے بناتا ہے اور گنے میں کھٹی شرابی بو پیدا کرتا ہے۔",
+    "symptoms_en": [
+      "Yellowing and drying of leaves from the lower side upward",
+      "Split canes show reddish internal tissue with white cross bands",
+      "Sour alcoholic smell from infected cane",
+      "Hollowing and shrinkage of the pith"
+    ],
+    "symptoms_bn": [
+      "নিচের দিক থেকে উপরের দিকে পাতা হলুদ হওয়া ও শুকানো",
+      "ফাটানো আখের ভেতরে সাদা আড়াআড়ি দাগসহ লালচে টিস্যু",
+      "আক্রান্ত আখ থেকে টক মদির গন্ধ",
+      "ভেতরের নরম অংশ ফাঁপা ও সংকুচিত হওয়া"
+    ],
+    "symptoms_ur": [
+      "نچلی طرف سے اوپر کی جانب پتوں کا زرد ہونا اور سوکھنا",
+      "پھاڑے گنے کے اندر سفید عرضی پٹیوں کے ساتھ سرخی مائل نسیج",
+      "متاثرہ گنے سے کھٹی شرابی بو",
+      "اندرونی گودے کا کھوکھلا اور سکڑ جانا"
+    ],
+    "favorable_conditions_en": [
+      "Prolonged waterlogging or drought stress",
+      "Infected setts and cane debris left in the field",
+      "Warm humid weather during the grand growth stage",
+      "Repeated ratooning of the same variety"
+    ],
+    "favorable_conditions_bn": [
+      "দীর্ঘস্থায়ী জলাবদ্ধতা বা খরার চাপ",
+      "জমিতে পড়ে থাকা সংক্রমিত সেট ও আখের অবশিষ্টাংশ",
+      "দ্রুত বৃদ্ধির পর্যায়ে উষ্ণ আর্দ্র আবহাওয়া",
+      "একই জাতের বারবার রেটুন চাষ"
+    ],
+    "favorable_conditions_ur": [
+      "طویل عرصے کھڑا پانی یا خشکی کا دباؤ",
+      "کھیت میں پڑے متاثرہ سیٹ اور گنے کی باقیات",
+      "تیز بڑھوتری کے مرحلے میں گرم مرطوب موسم",
+      "ایک ہی قسم کی بار بار رتون کاشت"
+    ],
+    "spread_en": "The fungus survives in infected setts, stubble and soil, and spreads through irrigation water, wind-borne spores and cutting knives.",
+    "spread_bn": "ছত্রাক সংক্রমিত সেট, আখের ঠোঁট ও মাটিতে টিকে থাকে এবং সেচের পানি, বাতাসে ভাসা স্পোর ও কাটার ছুরির মাধ্যমে ছড়ায়।",
+    "spread_ur": "پھپھوندی متاثرہ سیٹ، ٹھوٹھے اور مٹی میں زندہ رہتی ہے اور آبپاشی کے پانی، ہوا میں اڑنے والے اسپور اور کاٹنے والے چھریوں سے پھیلتی ہے۔"
+  },
+  {
+    "id": "sugarcane_rust",
+    "crop_en": "Sugarcane",
+    "crop_bn": "আখ",
+    "crop_ur": "گنا",
+    "name_en": "Rust",
+    "name_bn": "মরিচা রোগ",
+    "name_ur": "زنگ",
+    "scientific_name": "Puccinia melanocephala",
+    "severity": "moderate",
+    "description_en": "Sugarcane rust, caused by Puccinia melanocephala, forms orange-brown pustules on both leaf surfaces, killing leaf tissue early and reducing cane and sugar yield.",
+    "description_bn": "পুকিনিয়া মেলানোসেফালা ছত্রাকে হওয়া আখের মরিচা রোগ পাতার দুই পিঠেই কমলা-বাদামি ফোস্কা তৈরি করে, আগেভাগে পাতার টিস্যু মেরে ফেলে এবং আখ ও চিনির ফলন কমায়।",
+    "description_ur": "Puccinia melanocephala پھپھوندی سے ہونے والا گنے کا زنگ پتے کی دونوں سطحوں پر نارنجی بھورے دانے بناتا ہے، پتے کے نسیج کو جلدی مار دیتا ہے اور گنے اور چینی کی پیداوار کم کرتا ہے۔",
+    "symptoms_en": [
+      "Small elongated orange-brown pustules on both leaf surfaces",
+      "Pustules cluster on the underside along the veins",
+      "Leaf tissue around pustules yellows and dies",
+      "Premature drying of older leaves"
+    ],
+    "symptoms_bn": [
+      "পাতার দুই পিঠে ছোট লম্বাটে কমলা-বাদামি ফোস্কা",
+      "শিরা বরাবর পাতার নিচের পিঠে ফোস্কার গুচ্ছ",
+      "ফোস্কার চারপাশের টিস্যু হলুদ হয়ে মরে যায়",
+      "পুরোনো পাতা আগেভাগে শুকিয়ে যাওয়া"
+    ],
+    "symptoms_ur": [
+      "پتے کی دونوں سطحوں پر چھوٹے لمبے نارنجی بھورے دانے",
+      "شریانوں کے ساتھ نچلی سطح پر دانوں کے جھرمٹ",
+      "دانوں کے گرد نسیج زرد ہو کر مر جاتا ہے",
+      "پرانے پتوں کا وقت سے پہلے سوکھنا"
+    ],
+    "favorable_conditions_en": [
+      "Warm humid weather with frequent dew",
+      "Susceptible varieties grown over large areas",
+      "Dense high nitrogen crop with a closed canopy",
+      "Prolonged leaf wetness from rain or fog"
+    ],
+    "favorable_conditions_bn": [
+      "ঘন ঘন শিশিরসহ উষ্ণ আর্দ্র আবহাওয়া",
+      "বড় এলাকাজুড়ে সংবেদনশীল জাত চাষ",
+      "বন্ধ আচ্ছাদনযুক্ত ঘন ও উচ্চ নাইট্রোজেনপুষ্ট ফসল",
+      "বৃষ্টি বা কুয়াশায় দীর্ঘক্ষণ পাতা ভেজা থাকা"
+    ],
+    "favorable_conditions_ur": [
+      "بار بار شبنم کے ساتھ گرم مرطوب موسم",
+      "بڑے رقبے پر حساس اقسام کی کاشت",
+      "بند چھتری والی گھنی اور زیادہ نائٹروجن والی فصل",
+      "بارش یا دھند سے پتوں کا دیر تک تر رہنا"
+    ],
+    "spread_en": "Wind carries rust spores for many kilometres and they land on new cane leaves to start fresh infections.",
+    "spread_bn": "বাতাস মরিচার স্পোর বহু কিলোমিটার দূরে বহন করে এবং তা নতুন আখের পাতায় পড়ে নতুন সংক্রমণ শুরু করে।",
+    "spread_ur": "ہوا زنگ کے اسپور کئی کلومیٹر دور تک لے جاتی ہے اور وہ نئے گنے کے پتوں پر اتر کر نئے حملے شروع کرتے ہیں۔"
+  },
+  {
+    "id": "sugarcane_yellowing",
+    "crop_en": "Sugarcane",
+    "crop_bn": "আখ",
+    "crop_ur": "گنا",
+    "name_en": "Yellowing",
+    "name_bn": "হলুদ পাতা রোগ",
+    "name_ur": "پیلا پن",
+    "scientific_name": "Sugarcane yellow leaf virus",
+    "severity": "moderate",
+    "description_en": "Sugarcane yellow leaf virus yellows the underside of the midrib and kills leaf tips, and because it builds up in ratoons the yield falls year after year.",
+    "description_bn": "আখের হলুদ পাতা ভাইরাস মধ্যশিরার নিচের পিঠ হলুদ করে ও পাতার ডগা মেরে ফেলে; রেটুন ফসলে তা জমে থাকায় বছরের পর বছর ফলন কমতে থাকে।",
+    "description_ur": "گنے کا پیلا پتہ وائرس درمیانی رگ کی نچلی سطح کو زرد کرتا ہے اور پتے کی نوک مار دیتا ہے؛ رتون فصل میں جمع ہونے سے سال بہ سال پیداوار گرتی ہے۔",
+    "symptoms_en": [
+      "Bright yellow discolouration on the underside of the midrib",
+      "Yellowing spreads into the lamina from the leaf tip",
+      "Leaf tips dry and die back prematurely",
+      "Stunted growth with thin short canes"
+    ],
+    "symptoms_bn": [
+      "মধ্যশিরার নিচের পিঠে উজ্জ্বল হলুদ বিবর্ণতা",
+      "পাতার ডগা থেকে ফলকের ভেতরে হলুদ ছড়ায়",
+      "পাতার ডগা শুকিয়ে আগেভাগে মরে যায়",
+      "পাতলা ও খাটো আখসহ খাটো বৃদ্ধি"
+    ],
+    "symptoms_ur": [
+      "درمیانی رگ کی نچلی سطح پر چمکدار زردی",
+      "پتے کی نوک سے پتے کے اندر زردی پھیلتی ہے",
+      "پتے کی نوکیں سوکھ کر وقت سے پہلے مر جاتی ہیں",
+      "پتلے اور چھوٹے گنے کے ساتھ بونی بڑھوتری"
+    ],
+    "favorable_conditions_en": [
+      "Infected setts carried into a new planting",
+      "High aphid populations, especially in dry weather",
+      "Ratooning an infected crop year after year",
+      "Susceptible varieties with no resistant alternative"
+    ],
+    "favorable_conditions_bn": [
+      "নতুন রোপণে সংক্রমিত সেট বহন করে আনা",
+      "বিশেষত শুষ্ক আবহাওয়ায় জাবপোকার উচ্চ সংখ্যা",
+      "সংক্রমিত ফসল বছরের পর বছর রেটুন করা",
+      "প্রতিরোধী বিকল্পহীন সংবেদনশীল জাত"
+    ],
+    "favorable_conditions_ur": [
+      "نئی کاشت میں متاثرہ سیٹ لے جانا",
+      "خاص طور پر خشک موسم میں جوؤں کی زیادہ آبادی",
+      "متاثرہ فصل کو سال بہ سال رتون کرنا",
+      "مزاحم متبادل کے بغیر حساس اقسام"
+    ],
+    "spread_en": "The virus is carried in infected setts and spread plant to plant by aphids such as Melanaphis sacchari.",
+    "spread_bn": "ভাইরাস সংক্রমিত সেটে বাহিত হয় এবং মেলানাফিস স্যাকারি জাতীয় জাবপোকার মাধ্যমে গাছ থেকে গাছে ছড়ায়।",
+    "spread_ur": "وائرس متاثرہ سیٹ میں منتقل ہوتا ہے اور Melanaphis sacchari جیسی جوؤں کے ذریعے پودے سے پودے تک پھیلتا ہے۔"
+  },
+  {
+    "id": "sugarcane_healthy",
+    "crop_en": "Sugarcane",
+    "crop_bn": "আখ",
+    "crop_ur": "گنا",
+    "name_en": "Healthy",
+    "name_bn": "সুস্থ",
+    "name_ur": "صحت مند",
+    "severity": "none",
+    "description_en": "The sugarcane crop shows no signs of disease; tillers, leaves and canes are healthy and evenly grown.",
+    "description_bn": "আখের ফসলে রোগের কোনো লক্ষণ নেই; কুশি, পাতা ও আখ সুস্থ এবং সমানভাবে বেড়েছে।",
+    "description_ur": "گنے کی فصل میں بیماری کی کوئی علامت نہیں؛ کلّے، پتے اور گنے صحت مند اور یکساں بڑھے ہوئے ہیں۔",
+    "symptoms_en": [
+      "No visible disease symptoms detected"
+    ],
+    "symptoms_bn": [
+      "দৃশ্যমান রোগের উপসর্গ দেখা যায়নি"
+    ],
+    "symptoms_ur": [
+      "بیماری کی کوئی واضح علامات نظر نہیں آتیں"
+    ],
+    "favorable_conditions_en": [],
+    "favorable_conditions_bn": [],
+    "favorable_conditions_ur": [],
+    "spread_en": "",
+    "spread_bn": "",
+    "spread_ur": ""
   }
 ]

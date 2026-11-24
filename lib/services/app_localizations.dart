@@ -37,13 +37,7 @@ class AppLocalizations {
   }
 
   String severity(String value) {
-    const knownSeverities = {
-      'severe',
-      'moderate',
-      'mild',
-      'none',
-      'unknown',
-    };
+    const knownSeverities = {'severe', 'moderate', 'mild', 'none', 'unknown'};
     final normalized = value.trim().toLowerCase();
 
     return text(
@@ -61,12 +55,8 @@ class AppLocalizations {
       'app_subtitle': 'AI-assisted crop care',
       'brand_title_line_1': 'Multi-Crop',
       'brand_title_line_2': 'Disease Detector',
-      'home_tagline': 'Healthy Plants, Better Harvest',
-      'home_hero_title': 'Detect Plant\nDiseases Early',
       'home_hero_title_lead': 'Detect Plant\nDiseases',
       'home_hero_title_accent': 'Instantly',
-      'home_hero_description':
-          'Scan leaves, get accurate results and treatment advice.',
       'home_scan_with_camera': 'Scan with Camera',
       'home_upload_from_gallery': 'Upload from Gallery',
       'home_crops_badge': '{count}+ Crops',
@@ -117,6 +107,9 @@ class AppLocalizations {
       'browse_hint': 'Explore the offline disease encyclopedia',
       'disclaimer':
           'This application provides AI-assisted disease detection and should not replace professional agricultural consultation.',
+      'about_training_repo': 'Model Training Repository',
+      'about_training_repo_desc':
+          'Dataset, training and quantization code behind this model',
       'scan_leaf': 'Scan Leaf',
       'live_preview': 'Live Camera Preview',
       'capture_image': 'Capture Image',
@@ -162,6 +155,7 @@ class AppLocalizations {
       'disease': 'Disease',
       'crop_scan_counts': 'Crop Scan Counts',
       'conditions': '{count} conditions',
+      'condition_one': '{count} condition',
       'encyclopedia_failed': 'Could not load disease encyclopedia.\n{error}',
       'offline_description':
           'Offline crop disease prediction with scan history, statistics, disease encyclopedia, and PDF reporting.',
@@ -191,12 +185,8 @@ class AppLocalizations {
       'app_subtitle': 'এআই-সহায়তায় ফসল পরিচর্যা',
       'brand_title_line_1': 'বহু-ফসল',
       'brand_title_line_2': 'রোগ শনাক্তকারী',
-      'home_tagline': 'সুস্থ গাছ, ভালো ফলন',
-      'home_hero_title': 'গাছের রোগ\nআগেই শনাক্ত করুন',
       'home_hero_title_lead': 'গাছের রোগ\nশনাক্ত করুন',
       'home_hero_title_accent': 'সহজেই',
-      'home_hero_description':
-          'পাতা স্ক্যান করুন, নির্ভুল ফলাফল ও চিকিৎসার পরামর্শ পান।',
       'home_scan_with_camera': 'ক্যামেরা দিয়ে স্ক্যান করুন',
       'home_upload_from_gallery': 'গ্যালারি থেকে আপলোড করুন',
       'home_crops_badge': '{count}+ ফসল',
@@ -247,6 +237,9 @@ class AppLocalizations {
       'browse_hint': 'অফলাইন রোগ বিশ্বকোষ দেখুন',
       'disclaimer':
           'এই অ্যাপটি এআই-সহায়তায় রোগ শনাক্ত করে এবং পেশাদার কৃষি পরামর্শের বিকল্প নয়।',
+      'about_training_repo': 'মডেল ট্রেনিং রিপোজিটরি',
+      'about_training_repo_desc':
+          'এই মডেলের ডেটাসেট, ট্রেনিং ও কোয়ান্টাইজেশন কোড',
       'scan_leaf': 'পাতা স্ক্যান করুন',
       'live_preview': 'সরাসরি ক্যামেরা প্রিভিউ',
       'capture_image': 'ছবি তুলুন',
@@ -293,6 +286,7 @@ class AppLocalizations {
       'disease': 'রোগ',
       'crop_scan_counts': 'ফসলভিত্তিক স্ক্যান সংখ্যা',
       'conditions': '{count}টি অবস্থা',
+      'condition_one': '{count}টি অবস্থা',
       'encyclopedia_failed': 'রোগ বিশ্বকোষ লোড করা যায়নি।\n{error}',
       'offline_description':
           'স্ক্যান ইতিহাস, পরিসংখ্যান, রোগ বিশ্বকোষ ও পিডিএফ প্রতিবেদনসহ অফলাইন ফসল রোগ পূর্বাভাস।',
@@ -322,12 +316,8 @@ class AppLocalizations {
       'app_subtitle': 'اے آئی معاون فصل نگہداشت',
       'brand_title_line_1': 'کثیر فصل',
       'brand_title_line_2': 'بیماری شناخت کار',
-      'home_tagline': 'صحت مند پودے، بہتر فصل',
-      'home_hero_title': 'پودوں کی بیماریاں\nجلد شناخت کریں',
       'home_hero_title_lead': 'پودوں کی بیماریاں\nشناخت کریں',
       'home_hero_title_accent': 'فوراً',
-      'home_hero_description':
-          'پتے اسکین کریں، درست نتائج اور علاج کے مشورے حاصل کریں۔',
       'home_scan_with_camera': 'کیمرے سے اسکین کریں',
       'home_upload_from_gallery': 'گیلری سے اپ لوڈ کریں',
       'home_crops_badge': '{count}+ فصلیں',
@@ -378,6 +368,9 @@ class AppLocalizations {
       'browse_hint': 'آف لائن بیماری انسائیکلوپیڈیا دیکھیں',
       'disclaimer':
           'یہ ایپ اے آئی معاون بیماری شناخت فراہم کرتی ہے اور پیشہ ور زرعی مشورے کا متبادل نہیں ہے۔',
+      'about_training_repo': 'ماڈل ٹریننگ ریپوزٹری',
+      'about_training_repo_desc':
+          'اس ماڈل کا ڈیٹاسیٹ، ٹریننگ اور کوانٹائزیشن کوڈ',
       'scan_leaf': 'پتہ اسکین کریں',
       'live_preview': 'براہ راست کیمرہ پیش منظر',
       'capture_image': 'تصویر لیں',
@@ -424,6 +417,7 @@ class AppLocalizations {
       'disease': 'بیماری',
       'crop_scan_counts': 'فصل کے اسکین کی تعداد',
       'conditions': '{count} حالتیں',
+      'condition_one': '{count} حالت',
       'encyclopedia_failed': 'بیماری انسائیکلوپیڈیا لوڈ نہیں ہو سکا۔\n{error}',
       'offline_description':
           'اسکین تاریخچہ، اعداد و شمار، بیماری انسائیکلوپیڈیا اور پی ڈی ایف رپورٹ کے ساتھ آف لائن فصل بیماری پیش گوئی۔',

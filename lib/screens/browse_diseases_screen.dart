@@ -41,13 +41,12 @@ class BrowseDiseasesScreen extends StatelessWidget {
             );
           }
 
-          final diseases =
-              (snapshot.data ?? const <DiseaseInfo>[])
-                  // The "invalid" entry is a sentinel for unrecognized
-                  // images, not a real disease — keep it out of the
-                  // encyclopedia.
-                  .where((disease) => disease.id != 'invalid')
-                  .toList(growable: false);
+          final diseases = (snapshot.data ?? const <DiseaseInfo>[])
+              // The "invalid" entry is a sentinel for unrecognized
+              // images, not a real disease — keep it out of the
+              // encyclopedia.
+              .where((disease) => disease.id != 'invalid')
+              .toList(growable: false);
           final groupedDiseases = _groupByCrop(diseases);
 
           return ListView(
@@ -60,7 +59,9 @@ class BrowseDiseasesScreen extends StatelessWidget {
                     title: Text(entry.key),
                     subtitle: Text(
                       strings.text(
-                        'conditions',
+                        entry.value.length == 1
+                            ? 'condition_one'
+                            : 'conditions',
                         values: {'count': '${entry.value.length}'},
                       ),
                     ),

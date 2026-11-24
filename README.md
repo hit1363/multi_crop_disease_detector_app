@@ -1,15 +1,15 @@
 # multi_crop_disease_detector
 
-Flutter mobile application for detecting plant diseases using Lightweight TensorFlow Lite model with on-device inference.
+Flutter mobile application for detecting plant diseases using an EfficientNetB0 TensorFlow Lite model with on-device inference.
 
 ##  Features
 
 ### Core Functionality
 - **Real-time Disease Detection**: Use camera to capture leaf images and get instant diagnosis
-- **Multi-Crop Support**: Detects diseases across 10+ crops (Tomato, Potato, Corn, Apple, Grape, etc.)
+- **Multi-Crop Support**: Detects 67 classes across 16 crops (Tomato, Potato, Corn, Apple, Grape, Banana, Mango, Rice, Sugarcane, Wheat, etc.)
 - **Offline Inference**: All processing happens on-device using TensorFlow Lite
-- **High Accuracy**: 92%+ accuracy with INT8 quantized MobileNetV2 model
-- **Fast Performance**: <200ms inference time on modern mobile devices
+- **High Accuracy**: 87.1% test accuracy with an EfficientNetB0 model
+- **Fast Performance**: Fully on-device float32 inference, no network round trip
 
 ### User Features
 - **Scan History**: SQLite database stores all previous scans with timestamps
@@ -30,28 +30,27 @@ Flutter mobile application for detecting plant diseases using Lightweight Tensor
 
 ### Supported Crops & Diseases
 - The app currently targets the training dataset labels in `assets/labels/labels.txt`
-- This project configuration uses **45 classes** across multiple crops and categories
-- If you retrain with a different class set, regenerate and replace `assets/labels/labels.txt`
+- This project configuration uses **67 classes** (16 crops plus an explicit `Invalid` class)
+- If you retrain with a different class set, regenerate `assets/labels/labels.txt` and replace the model in `assets/models/`, then update `MLService.modelAssetPath`
 
 ### Model Performance
-- **Architecture**: MobileNetV2 with transfer learning
-- **Quantization**: INT8 post-training quantization
-- **Accuracy**: 92.1%
-- **Precision**: 91.8%
-- **Recall**: 92.4%
-- **F1 Score**: 92.1%
-- **Model Size**: 3.8 MB (75% reduction from FP32)
-- **Inference Time**: ~45ms on mid-range Android (Snapdragon 660)
-- **Memory Usage**: ~25 MB during inference
+- **Architecture**: EfficientNetB0, ImageNet pre-trained, fine-tuned
+- **Input**: 224x224 float32 RGB, raw 0-255 (the graph bakes in rescaling and ImageNet normalization)
+- **Output**: 67-class softmax
+- **Accuracy**: 87.1% on the held-out test split
+- **Model Size**: ~16.7 MB (float32, no post-training quantization applied)
+
+Precision/recall/F1 and the per-backbone comparison (MobileNetV1/V2/V3, NASNetMobile,
+EfficientNetB0, EfficientNetV2-B0, ShuffleNetV2-0.5) live in the training repository.
 
 ### Training Details
-- **Base Model**: ImageNet pre-trained MobileNetV2
-- **Dataset**: PlantVillage + custom collected (~67K images)
-- **Augmentation**: Rotation, flip, brightness, contrast, zoom
-- **Optimizer**: Adam
-- **Learning Rate**: 0.001 with ReduceLROnPlateau
-- **Batch Size**: 32
-- **Epochs**: 50 with early stopping
+- **Training repository**: [An-Efficient-Multi-Crop-Leaf-Disease-Detection-System](https://github.com/hit1363/An-Efficient-Multi-Crop-Leaf-Disease-Detection-System) - dataset preparation, training, comparison and quantization scripts
+- **Base Model**: ImageNet pre-trained EfficientNetB0
+- **Dataset**: 67 canonical classes over 16 crops, prepared with a deterministic 70/15/15 split
+- **Input pipeline**: 224x224 Lanczos center-crop
+- **Recipe**: head frozen for 20 epochs, then the top layers unfrozen for 30 fine-tune epochs
+- **Optimizer**: Adam (3e-4) with gradient clipping
+- **Loss**: categorical cross-entropy with label smoothing
 
 ## 📄 License
 
@@ -74,8 +73,6 @@ Contributions welcome! Please:
 ## 🔮 Future Enhancements
 
 - [ ] Cloud sync for scan history
-- [ ] Export reports as PDF
-- [ ] Multiple language support
 - [ ] Crop health tracking over time
 - [ ] Community features (share results)
 - [ ] Weather integration

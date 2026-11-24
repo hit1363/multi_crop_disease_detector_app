@@ -43,7 +43,8 @@ class MLService {
 
   static final MLService _instance = MLService._internal();
 
-  static const String modelAssetPath = 'assets/models/mobilenetv2_dynamic.tflite';
+  static const String modelAssetPath =
+      'assets/models/efficientnet_b0_20261121_130717.tflite';
   static const String labelsAssetPath = 'assets/labels/labels.txt';
   static const int inputImageSize = 224;
 
@@ -225,9 +226,10 @@ class MLService {
       for (var y = 0; y < inputImageSize; y++) {
         for (var x = 0; x < inputImageSize; x++) {
           final pixel = image.getPixel(x, y);
-          input[offset++] = pixel.r / 255.0;
-          input[offset++] = pixel.g / 255.0;
-          input[offset++] = pixel.b / 255.0;
+          // Raw 0-255: the EfficientNetB0 graph does its own normalization.
+          input[offset++] = pixel.r.toDouble();
+          input[offset++] = pixel.g.toDouble();
+          input[offset++] = pixel.b.toDouble();
         }
       }
       return input;

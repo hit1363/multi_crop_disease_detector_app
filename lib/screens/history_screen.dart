@@ -105,7 +105,13 @@ class _HistoryScreenState extends State<HistoryScreen> {
           return RefreshIndicator(
             onRefresh: _refreshScans,
             child: ListView(
-              padding: const EdgeInsets.all(12),
+              // Clear the floating taskbar drawn by Scaffold.extendBody.
+              padding: EdgeInsets.fromLTRB(
+                12,
+                12,
+                12,
+                12 + MediaQuery.paddingOf(context).bottom,
+              ),
               children: [
                 for (final entry in groupedScans.entries) ...[
                   Padding(

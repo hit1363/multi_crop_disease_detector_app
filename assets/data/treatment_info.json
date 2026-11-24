@@ -2377,5 +2377,1397 @@
       "بیماری برداشت کرنے والی اقسام بوئیں؛ بہت پہلے بوائی نہ کریں",
       "اگلے موسم کے لیے باقاعدہ رسٹ نگرانی کا شیڈول بنائیں"
     ]
+  },
+  {
+    "id": "banana_cordana",
+    "cultural_control_en": [
+      "Remove and bury or compost infected and dead leaves every week",
+      "Space plants and sucker-select to keep air moving through the block",
+      "Avoid overhead irrigation late in the day and keep the mat weed-free"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে আক্রান্ত ও মৃত পাতা সরিয়ে মাটিতে পুঁতে ফেলুন বা কম্পোস্ট করুন",
+      "গাছের মধ্যে দূরত্ব রাখুন ও সঠিক সাকার বাছাই করুন যাতে বাগানে বাতাস চলাচল করে",
+      "দিনের শেষে মাথার ওপর সেচ এড়িয়ে চলুন এবং গোছা এলাকা আগাছামুক্ত রাখুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے متاثرہ اور مردہ پتے ہٹا کر دفن کریں یا کمپوسٹ بنائیں",
+      "پودوں کے درمیان فاصلہ اور مناسب سوکر منتخب کریں تاکہ کاشت میں ہوا چلتی رہے",
+      "دن کے آخر میں اوپر سے آبپاشی سے بچیں اور جھرمٹ کو جڑی بوٹیوں سے پاک رکھیں"
+    ],
+    "chemical_control_en": [
+      "Where spotting spreads, apply a registered fungicide such as mancozeb or chlorothalonil to lower leaves",
+      "Rotate fungicide groups and follow the product label and your local extension service rates"
+    ],
+    "chemical_control_bn": [
+      "দাগ ছড়ালে নিচের পাতায় ম্যানকোজেব বা ক্লোরোথালোনিল জাতীয় নিবন্ধিত ছত্রাকনাশক প্রয়োগ করুন",
+      "ছত্রাকনাশকের গ্রুপ পালাক্রমে ব্যবহার করুন এবং পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের মাত্রা অনুসরণ করুন"
+    ],
+    "chemical_control_ur": [
+      "دھبے پھیلنے پر نچلے پتوں پر مینکوزیب یا کلوروتھالونل جیسی رجسٹرڈ فنگس کش دوا لگائیں",
+      "فنگس کش ادویات کے گروپ باری باری استعمال کریں اور مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کی مقدار پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Encourage antagonistic fungi and bacteria with compost-rich soil and mulch",
+      "Apply Bacillus subtilis based biofungicides on the lower leaf surface as a preventive spray"
+    ],
+    "biological_control_bn": [
+      "কম্পোস্টসমৃদ্ধ মাটি ও মালচ দিয়ে রোগ প্রতিরোধী ছত্রাক ও ব্যাকটেরিয়ার বৃদ্ধি উৎসাহিত করুন",
+      "প্রতিরোধমূলক স্প্রে হিসেবে নিচের পাতার পৃষ্ঠে ব্যাসিলাস সাবটিলিস ভিত্তিক জৈব ছত্রাকনাশক প্রয়োগ করুন"
+    ],
+    "biological_control_ur": [
+      "کمپوسٹ سے بھرپور مٹی اور ملچ سے مخالف فنگس اور بیکٹیریا کی افزائش کی حوصلہ افزائی کریں",
+      "حفاظتی اسپرے کے طور پر نچلی پتی کی سطح پر بیکیلس سبٹیلس پر مبنی حیاتیاتی فنگس کش لگائیں"
+    ],
+    "prevention_tips_en": [
+      "Plant tissue-culture seedlings from a clean nursery and space them for airflow",
+      "Scout weekly during the rainy season and defoliate old leaves before they mat",
+      "Keep pruning tools disinfected between plants to avoid carrying spores"
+    ],
+    "prevention_tips_bn": [
+      "পরিচ্ছন্ন নার্সারি থেকে টিস্যু কালচার চারা রোপণ করুন এবং বাতাস চলাচলের জন্য দূরত্ব রাখুন",
+      "বর্ষাকালে প্রতি সপ্তাহে মাঠ পরিদর্শন করুন এবং পুরোনো পাতা জট বাঁধার আগেই কেটে দিন",
+      "স্পোর বহন এড়াতে প্রতিটি গাছের পর ছাঁটাই যন্ত্র জীবাণুমুক্ত করুন"
+    ],
+    "prevention_tips_ur": [
+      "صاف نرسری سے ٹشو کلچر پودے لگائیں اور ہوا کے گزر کے لیے فاصلہ رکھیں",
+      "بارش کے موسم میں ہر ہفتے معائنہ کریں اور پرانے پتے جڑنے سے پہلے کاٹ دیں",
+      "بیج کی منتقلی سے بچنے کے لیے ہر پودے کے بعد کٹائی کے اوزار جراثیم سے پاک کریں"
+    ]
+  },
+  {
+    "id": "banana_pestalotiopsis",
+    "cultural_control_en": [
+      "Remove infected and dried leaves and destroy them away from the block",
+      "Improve drainage and irrigation so plants are not water-stressed",
+      "Apply balanced potassium-rich fertilizer and avoid wounding stems"
+    ],
+    "cultural_control_bn": [
+      "আক্রান্ত ও শুকনো পাতা সরিয়ে বাগান থেকে দূরে ধ্বংস করুন",
+      "পানি নিষ্কাশন ও সেচ উন্নত করুন যাতে গাছ জলের অভাবে না থাকে",
+      "পটাশসমৃদ্ধ সুষম সার প্রয়োগ করুন এবং কাণ্ডে ক্ষত এড়িয়ে চলুন"
+    ],
+    "cultural_control_ur": [
+      "متاثرہ اور خشک پتے ہٹا کر کاشت سے دور تباہ کریں",
+      "نکاسی اور آبپاشی بہتر بنائیں تاکہ پودے پانی کی کمی کا شکار نہ ہوں",
+      "پوٹاش سے بھرپور متوازن کھاد دیں اور تنوں کو زخمی ہونے سے بچائیں"
+    ],
+    "chemical_control_en": [
+      "Spray a registered protectant fungicide such as mancozeb when spots appear on young leaves",
+      "Do not exceed the label dose, respect the pre-harvest interval, and confirm timings with your extension officer"
+    ],
+    "chemical_control_bn": [
+      "কচি পাতায় দাগ দেখা দিলে ম্যানকোজেব জাতীয় নিবন্ধিত প্রতিরক্ষামূলক ছত্রাকনাশক স্প্রে করুন",
+      "লেবেলের মাত্রা অতিক্রম করবেন না, ফসল কাটার পূর্ববর্তী বিরতি মানুন এবং সময়সূচি সম্প্রসারণ কর্মকর্তার সঙ্গে নিশ্চিত করুন"
+    ],
+    "chemical_control_ur": [
+      "نوجوان پتوں پر دھبے ظاہر ہوں تو مینکوزیب جیسی رجسٹرڈ حفاظتی فنگس کش چھڑکیں",
+      "لیبل کی مقدار سے تجاوز نہ کریں، کٹائی سے پہلے کا وقفہ برقرار رکھیں اور اوقات ایکسٹینشن افسر سے تصدیق کریں"
+    ],
+    "biological_control_en": [
+      "Spray Trichoderma or Bacillus based biocontrol agents on leaf litter and soil",
+      "Keep compost and mulch active to support microbes that compete with the fungus"
+    ],
+    "biological_control_bn": [
+      "পাতার আবর্জনা ও মাটিতে ট্রাইকোডার্মা বা ব্যাসিলাস ভিত্তিক জৈব নিয়ন্ত্রণ উপাদান স্প্রে করুন",
+      "কম্পোস্ট ও মালচ সক্রিয় রাখুন যাতে ছত্রাকের সঙ্গে প্রতিযোগিতা করা অণুজীব বাড়ে"
+    ],
+    "biological_control_ur": [
+      "پتوں کے کوڑے اور مٹی پر ٹرائیکوڈرما یا بیکیلس پر مبنی حیاتیاتی کنٹرول چھڑکیں",
+      "کمپوسٹ اور ملچ فعال رکھیں تاکہ فنگس سے مقابلہ کرنے والے جراثیم بڑھیں"
+    ],
+    "prevention_tips_en": [
+      "Use clean suckers and disinfect knives between plants",
+      "Maintain mulch, organic matter, and potassium to keep plants vigorous",
+      "Remove old leaves on schedule so the canopy dries quickly after rain"
+    ],
+    "prevention_tips_bn": [
+      "পরিচ্ছন্ন সাকার ব্যবহার করুন এবং প্রতিটি গাছের পর ছুরি জীবাণুমুক্ত করুন",
+      "গাছ সবল রাখতে মালচ, জৈব পদার্থ ও পটাশ বজায় রাখুন",
+      "নির্ধারিত সময়ে পুরোনো পাতা সরান যাতে বৃষ্টির পর ছায়া দ্রুত শুকায়"
+    ],
+    "prevention_tips_ur": [
+      "صاف سوکر استعمال کریں اور ہر پودے کے بعد چھری جراثیم سے پاک کریں",
+      "پودوں کو مضبوط رکھنے کے لیے ملچ، نامیاتی مادہ اور پوٹاش برقرار رکھیں",
+      "مقررہ وقت پر پرانے پتے ہٹائیں تاکہ بارش کے بعد سایہ جلد خشک ہو"
+    ]
+  },
+  {
+    "id": "banana_sigatoka",
+    "cultural_control_en": [
+      "Deleaf infected leaves every week and bury or compost them away from the block",
+      "Remove suckers and keep spacing wide so leaves dry quickly",
+      "Bag bunches early and keep the block free of weeds and standing water"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে আক্রান্ত পাতা কেটে ফেলুন এবং বাগান থেকে দূরে পুঁতে বা কম্পোস্ট করে ধ্বংস করুন",
+      "সাকার সরিয়ে ফেলুন এবং পর্যাপ্ত দূরত্ব রাখুন যাতে পাতা দ্রুত শুকায়",
+      "কাঁদি আগেভাগে ব্যাগ করুন এবং বাগান আগাছা ও জমা পানি মুক্ত রাখুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے متاثرہ پتے کاٹیں اور کاشت سے دور دفن یا کمپوسٹ کریں",
+      "سوکر ہٹائیں اور کافی فاصلہ رکھیں تاکہ پتے جلد خشک ہوں",
+      "گچھوں کو جلدی تھیلی میں ڈالیں اور کاشت کو جڑی بوٹیوں اور کھڑے پانی سے پاک رکھیں"
+    ],
+    "chemical_control_en": [
+      "In high-risk blocks apply a systemic fungicide such as propiconazole or difenoconazole in rotation",
+      "Alternate chemical groups, follow the product label strictly, and get a spray calendar from your local extension service"
+    ],
+    "chemical_control_bn": [
+      "উচ্চ ঝুঁকির বাগানে প্রোপিকোনাজল বা ডাইফেনোকোনাজল জাতীয় অন্তঃশোষক ছত্রাকনাশক পালাক্রমে প্রয়োগ করুন",
+      "রাসায়নিক গ্রুপ বদলান, পণ্যের লেবেল কঠোরভাবে মানুন এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তর থেকে স্প্রে সময়সূচি নিন"
+    ],
+    "chemical_control_ur": [
+      "زیادہ خطرے والی کاشت میں پروپیکونازول یا ڈائفینوکونازول جیسی اندر سے اثر کرنے والی فنگس کش باری باری لگائیں",
+      "کیمیائی گروپ بدلیں، مصنوعات کے لیبل کی سختی سے پابندی کریں اور مقامی زرعی ایکسٹینشن سے اسپرے کیلنڈر لیں"
+    ],
+    "biological_control_en": [
+      "Apply Bacillus subtilis or Trichoderma products on new leaves to slow early infection",
+      "Support beneficial leaf microbes with compost tea and avoid broad-spectrum sprays"
+    ],
+    "biological_control_bn": [
+      "প্রাথমিক সংক্রমণ ধীর করতে নতুন পাতায় ব্যাসিলাস সাবটিলিস বা ট্রাইকোডার্মা জাতীয় পণ্য প্রয়োগ করুন",
+      "কম্পোস্ট চা দিয়ে উপকারী পাতার অণুজীব সহায়তা করুন এবং বিস্তৃত পরিসরের স্প্রে এড়িয়ে চলুন"
+    ],
+    "biological_control_ur": [
+      "ابتدائی حملہ سست کرنے کے لیے نئے پتوں پر بیکیلس سبٹیلس یا ٹرائیکوڈرما مصنوعات لگائیں",
+      "کمپوسٹ چائے سے فائدہ مند پتی کے جراثیم کی مدد کریں اور وسیع اثر والے اسپرے سے بچیں"
+    ],
+    "prevention_tips_en": [
+      "Plant resistant or tolerant varieties and use clean tissue-culture seedlings",
+      "Keep a wide between-row spacing and prune leaves before they overlap",
+      "Plan a break crop or fallow and consult your extension service before the next cycle"
+    ],
+    "prevention_tips_bn": [
+      "রোগ প্রতিরোধী বা সহনশীল জাত রোপণ করুন এবং পরিচ্ছন্ন টিস্যু কালচার চারা ব্যবহার করুন",
+      "সারির মাঝে পর্যাপ্ত দূরত্ব রাখুন এবং পাতা একটির ওপর আরেকটি পড়ার আগেই ছেঁটে দিন",
+      "পরবর্তী চক্রের আগে বিরতি ফসল বা পতিত জমির পরিকল্পনা করুন এবং সম্প্রসারণ অধিদপ্তরের পরামর্শ নিন"
+    ],
+    "prevention_tips_ur": [
+      "بیماری کے خلاف مزاحم یا برداشت کرنے والی اقسام لگائیں اور صاف ٹشو کلچر پودے استعمال کریں",
+      "قطاروں کے درمیان کافی فاصلہ رکھیں اور پتے اوپر چڑھنے سے پہلے کاٹیں",
+      "اگلے چکر سے پہلے وقفہ فصل یا پڑتی زمین کی منصوبہ بندی کریں اور ایکسٹینشن سے مشورہ لیں"
+    ]
+  },
+  {
+    "id": "banana_healthy",
+    "cultural_control_en": [
+      "Scout the block weekly for leaf spots, streaks, and suckers that look off-colour",
+      "Keep the mat weeded and deleaf old leaves on a regular schedule",
+      "Maintain steady irrigation and balanced fertilizer through bunch filling"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে বাগানে পাতার দাগ, রেখা এবং অস্বাভাবিক রঙের সাকারের জন্য নজর রাখুন",
+      "গোছা এলাকা আগাছামুক্ত রাখুন এবং নিয়মিত সময়সূচিতে পুরোনো পাতা ছেঁটে দিন",
+      "কাঁদি পুষ্ট হওয়ার সময় পর্যন্ত নিয়মিত সেচ ও সুষম সার বজায় রাখুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے کاشت میں پتوں کے دھبے، لکیریں اور بے رنگ سوکر تلاش کریں",
+      "جھرمٹ کو جڑی بوٹیوں سے پاک رکھیں اور مقررہ شیڈول پر پرانے پتے کاٹیں",
+      "گچھے کی بھرائی تک مسلسل آبپاشی اور متوازن کھاد برقرار رکھیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Plant certified, disease-free tissue-culture seedlings from a trusted nursery",
+      "Disinfect pruning tools between plants and keep visitors out of the block",
+      "Record weekly scouting notes and share them with your local extension service so any new spot is caught in its first days"
+    ],
+    "prevention_tips_bn": [
+      "বিশ্বস্ত নার্সারি থেকে প্রত্যয়িত, রোগমুক্ত টিস্যু কালচার চারা রোপণ করুন",
+      "প্রতিটি গাছের পর ছাঁটাই যন্ত্র জীবাণুমুক্ত করুন এবং বাইরের লোকের প্রবেশ নিয়ন্ত্রণ করুন",
+      "সাপ্তাহিক পর্যবেক্ষণের নোট রাখুন এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরকে জানান যাতে নতুন দাগ প্রথম দিনেই ধরা পড়ে"
+    ],
+    "prevention_tips_ur": [
+      "قابل اعتماد نرسری سے تصدیق شدہ، بیماری سے پاک ٹشو کلچر پودے لگائیں",
+      "ہر پودے کے بعد کٹائی کے اوزار جراثیم سے پاک کریں اور باہر کے لوگوں کا داخلہ روکیں",
+      "ہفتہ وار معائنے کے نوٹس رکھیں اور مقامی زرعی ایکسٹینشن کو بتائیں تاکہ کوئی نیا دھبہ پہلے دنوں میں پکڑا جائے"
+    ]
+  },
+  {
+    "id": "jackfruit_algal_leaf_spot",
+    "cultural_control_en": [
+      "Prune crowded lower branches to open the canopy and speed leaf drying",
+      "Space new jackfruit seedlings widely so air moves freely between trees",
+      "Remove badly affected leaves and fallen litter from around the tree"
+    ],
+    "cultural_control_bn": [
+      "নিচের ঘন ডাল ছেঁটে আচ্ছাদন খুলে দিন যাতে পাতা দ্রুত শুকায়",
+      "নতুন কাঁঠালের চারা যথেষ্ট ফাঁকা দূরত্বে লাগান যাতে গাছের মাঝে বাতাস চলাচল করে",
+      "খুব আক্রান্ত পাতা ও ঝরে পড়া আবর্জনা গাছের চারপাশ থেকে সরিয়ে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "نیچے کی گھنی شاخیں تراش کر شاخیں کھلیں تاکہ پتے جلدی سوکھیں",
+      "نئے کٹہل کے پودے مناسب فاصلے پر لگائیں تاکہ درختوں کے درمیان ہوا چلے",
+      "شدید متاثرہ پتے اور گرے ہوئے کوڑے کرکٹ درخت کے ارد گرد سے ہٹا دیں"
+    ],
+    "chemical_control_en": [
+      "For severe cases, spray a copper-based fungicide on both leaf surfaces",
+      "Follow the product label for dose and waiting period, and consult your local extension service"
+    ],
+    "chemical_control_bn": [
+      "তীব্র আক্রমণে কপারভিত্তিক ছত্রাকনাশক পাতার দুই পিঠে স্প্রে করুন",
+      "মাত্রা ও অপেক্ষাকালের জন্য পণ্যের লেবেল মানুন এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ নিন"
+    ],
+    "chemical_control_ur": [
+      "شدید حملے میں تانبے پر مبنی پھپھوندی کش پتے کی دونوں سطحوں پر چھڑکیں",
+      "مقدار اور انتظار کی مدت کے لیے مصنوعات کا لیبل مانیں اور مقامی زرعی ایکسٹینشن سے مشورہ کریں"
+    ],
+    "biological_control_en": [
+      "Encourage the blue-green algae-eating microfauna and generalist predators by avoiding broad-spectrum sprays",
+      "Keep organic mulch and a living ground cover to support beneficial soil and canopy organisms"
+    ],
+    "biological_control_bn": [
+      "বিস্তৃত পরিসরের ঔষধি স্প্রে এড়িয়ে শৈবাল খাওয়া প্রাণীকুল ও সাধারণ শিকারি পোকার বিস্তার বাড়ান",
+      "জৈব মালচ ও জীবন্ত মাটির আচ্ছাদন রাখুন যাতে উপকারী মাটির ও পাতার প্রাণী টিকে থাকে"
+    ],
+    "biological_control_ur": [
+      "وسیع اثر والے سپرے سے بچ کر الجی کھانے والے خرد جانداروں اور عام شکار کیڑوں کی افزائش کریں",
+      "نامیاتی ملچ اور زمین کی زندہ تہہ رکھیں تاکہ فائدہ مند مٹی و شاخوں کے جاندار زندہ رہیں"
+    ],
+    "prevention_tips_en": [
+      "Prune and thin trees every dry season to keep the canopy open",
+      "Irrigate at ground level in the morning instead of wetting the leaves late",
+      "Inspect older leaves on shaded branches every week during the rainy season"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি শুষ্ক মৌসুমে গাছ ছেঁটে পাতলা করুন যাতে আচ্ছাদন খোলা থাকে",
+      "সন্ধ্যায় পাতা ভেজানোর বদলে সকালে মাটির উপরিভাগে সেচ দিন",
+      "বর্ষাকালে সপ্তাহে একবার ছায়াযুক্ত ডালের পুরোনো পাতা পরীক্ষা করুন"
+    ],
+    "prevention_tips_ur": [
+      "ہر خشک موسم میں درخت تراش کر شاخیں کھلی رکھیں",
+      "شام کو پتے گیلا کرنے کے بجائے صبح زمین کی سطح پر پانی دیں",
+      "بارش کے موسم میں ہر ہفتے سایہ دار شاخوں کے پرانے پتے معائنہ کریں"
+    ]
+  },
+  {
+    "id": "jackfruit_black_spot",
+    "cultural_control_en": [
+      "Collect and destroy fallen diseased leaves under the tree",
+      "Prune dense inner branches so the canopy dries quickly after rain",
+      "Avoid overhead irrigation in the evening during wet spells"
+    ],
+    "cultural_control_bn": [
+      "গাছের নিচে ঝরা আক্রান্ত পাতা কুড়িয়ে ধ্বংস করুন",
+      "ভেতরের ঘন ডাল ছেঁটে দিন যাতে বৃষ্টির পর আচ্ছাদন দ্রুত শুকায়",
+      "ভেজা আবহাওয়ায় সন্ধ্যায় ওপরে সেচ দেওয়া এড়িয়ে চলুন"
+    ],
+    "cultural_control_ur": [
+      "درخت کے نیچے گرے متاثرہ پتے جمع کر کے تباہ کریں",
+      "اندر کی گھنی شاخیں تراشیں تاکہ بارش کے بعد شاخیں جلدی سوکھیں",
+      "گیلے موسم میں شام کو اوپر سے پانی دینے سے بچیں"
+    ],
+    "chemical_control_en": [
+      "Spray a labeled protectant fungicide such as mancozeb at first sign of spotting",
+      "Repeat at the interval on the product label, and get dose advice from your local extension service"
+    ],
+    "chemical_control_bn": [
+      "দাগ দেখা দেওয়ার শুরুতে ম্যানকোজেব জাতীয় নির্ধারিত প্রতিরোধক ছত্রাকনাশক স্প্রে করুন",
+      "পণ্যের লেবেলে লেখা বিরতিতে পুনরায় স্প্রে করুন এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তর থেকে মাত্রার পরামর্শ নিন"
+    ],
+    "chemical_control_ur": [
+      "دھبے نظر آنے پر مینکوزیب جیسی منظور شدہ حفاظتی پھپھوندی کش چھڑکیں",
+      "مصوعات کے لیبل پر دیے وقفے پر دوبارہ چھڑکیں اور مقدار کا مشورہ مقامی زرعی ایکسٹینشن سے لیں"
+    ],
+    "biological_control_en": [
+      "Spray neem oil or a biofungicide such as Bacillus subtilis on nursery seedlings",
+      "Preserve leaf-litter predators and avoid broad-spectrum fungicide overuse that disrupts them"
+    ],
+    "biological_control_bn": [
+      "নার্সারির চারায় নিম তেল বা ব্যাসিলাস সাবটিলিস জাতীয় জৈব ছত্রাকনাশক স্প্রে করুন",
+      "পাতার আবর্জনায় থাকা শিকারি প্রাণী রক্ষা করুন এবং তাদের ক্ষতি করে এমন বিস্তৃত ছত্রাকনাশক বেশি ব্যবহার করবেন না"
+    ],
+    "biological_control_ur": [
+      "نرسری کے پودوں پر نیم کا تیل یا بیکیلس سبٹیلس جیسی حیاتیاتی پھپھوندی کش چھڑکیں",
+      "پتوں کے کوڑے میں رہنے والے شکار جانداروں کی حفاظت کریں اور وسیع اثر والی پھپھوندی کش زیادہ استعمال نہ کریں"
+    ],
+    "prevention_tips_en": [
+      "Use certified, disease-free seedlings from a trusted nursery",
+      "Plant jackfruit with enough spacing for the canopy to dry in the sun",
+      "Remove old infected leaves before the monsoon each year"
+    ],
+    "prevention_tips_bn": [
+      "বিশ্বস্ত নার্সারি থেকে প্রত্যয়িত, রোগমুক্ত চারা ব্যবহার করুন",
+      "কাঁঠাল যথেষ্ট দূরত্বে লাগান যাতে রোদে আচ্ছাদন শুকাতে পারে",
+      "প্রতি বছর বর্ষার আগে পুরোনো আক্রান্ত পাতা সরিয়ে ফেলুন"
+    ],
+    "prevention_tips_ur": [
+      "قابل اعتماد نرسری سے تصدیق شدہ، بیماری سے پاک پودے لیں",
+      "کٹہل مناسب فاصلے پر لگائیں تاکہ دھوپ میں شاخیں سوکھ سکیں",
+      "ہر سال مون سون سے پہلے پرانے متاثرہ پتے ہٹا دیں"
+    ]
+  },
+  {
+    "id": "jackfruit_healthy",
+    "cultural_control_en": [
+      "Scout the tree every week for leaf spots, wilting or pest damage",
+      "Keep the base clear of weeds and fallen fruit",
+      "Water and fertilize in a steady, balanced schedule"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে গাছে পাতার দাগ, শুকিয়ে যাওয়া বা পোকার ক্ষতি খুঁজুন",
+      "গাছের গোড়া আগাছা ও ঝরা ফল থেকে পরিষ্কার রাখুন",
+      "নিয়মিত ও সুষমভাবে সেচ ও সার দিন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے درخت پر پتوں کے دھبے، مرجھاؤ یا کیڑوں کا نقصان دیکھیں",
+      "درخت کی جڑ کے قریب جڑی بوٹیاں اور گرے پھل صاف رکھیں",
+      "پانی اور کھاد کا باقاعدہ اور متوازن شیڈول رکھیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Keep good orchard sanitation and prune only in dry weather",
+      "Support natural enemies by avoiding unnecessary pesticide sprays",
+      "Ask your local extension service about suitable jackfruit varieties for your area"
+    ],
+    "prevention_tips_bn": [
+      "বাগানের পরিচ্ছন্নতা বজায় রাখুন এবং শুধু শুকনো আবহাওয়ায় ছাঁটাই করুন",
+      "অপ্রয়োজনীয় কীটনাশক স্প্রে এড়িয়ে প্রাকৃতিক শত্রুদের সহায়তা করুন",
+      "আপনার এলাকার উপযোগী কাঁঠালের জাত সম্পর্কে স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ নিন"
+    ],
+    "prevention_tips_ur": [
+      "باغ کی صفائی برقرار رکھیں اور تراشائی صرف خشک موسم میں کریں",
+      "غیر ضروری کیڑے مار سپرے سے بچ کر قدرتی دشمنوں کی مدد کریں",
+      "اپنے علاقے کے لیے موزوں کٹہل کی اقسام کے بارے میں مقامی زرعی ایکسٹینشن سے مشورہ کریں"
+    ]
+  },
+  {
+    "id": "mango_anthracnose",
+    "cultural_control_en": [
+      "Prune dead twigs and mummified fruit during the dry season and burn them",
+      "Open the canopy so flowers and leaves dry quickly after rain",
+      "Collect and bury fallen infected fruit instead of leaving it under the tree"
+    ],
+    "cultural_control_bn": [
+      "শুষ্ক মৌসুমে মরা ডাল ও শুকিয়ে যাওয়া ফল ছেঁটে পুড়িয়ে ফেলুন",
+      "আচ্ছাদন খুলে দিন যাতে বৃষ্টির পর ফুল ও পাতা দ্রুত শুকায়",
+      "ঝরা আক্রান্ত ফল গাছের নিচে ফেলে না রেখে কুড়িয়ে মাটিতে পুঁতে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "خشک موسم میں مردہ شاخیں اور سوکھے پھل تراش کر جلا دیں",
+      "شاخیں کھلی رکھیں تاکہ بارش کے بعد پھول اور پتے جلدی سوکھیں",
+      "گرے متاثرہ پھل درخت کے نیچے چھوڑنے کے بجائے جمع کر کے دفن کریں"
+    ],
+    "chemical_control_en": [
+      "Spray a labeled fungicide such as carbendazim or copper oxychloride at panicle emergence and again at pea-size fruit",
+      "Follow the product label for dose, interval and pre-harvest waiting period, and confirm with your local extension service"
+    ],
+    "chemical_control_bn": [
+      "মঞ্জরি বেরোনোর সময় এবং মটর দানার মতো ফল হওয়ার সময় কার্বেন্ডাজিম বা কপার অক্সিক্লোরাইড জাতীয় নির্ধারিত ছত্রাকনাশক স্প্রে করুন",
+      "মাত্রা, বিরতি ও ফসল তোলার আগের অপেক্ষাকালের জন্য পণ্যের লেবেল মানুন এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের সঙ্গে নিশ্চিত করুন"
+    ],
+    "chemical_control_ur": [
+      "پھولوں کے نکلنے اور مٹر کے دانے جیسے پھل کے وقت کاربینڈازم یا کاپر آکسی کلورائیڈ جیسی منظور شدہ پھپھوندی کش چھڑکیں",
+      "مقدار، وقفے اور کٹائی سے پہلے انتظار کی مدت کے لیے مصنوعات کا لیبل مانیں اور مقامی زرعی ایکسٹینشن سے تصدیق کریں"
+    ],
+    "biological_control_en": [
+      "Apply Bacillus subtilis-based biofungicide during flowering as a softer option",
+      "Keep orchard floor vegetation to harbor predators and avoid needless broad-spectrum sprays"
+    ],
+    "biological_control_bn": [
+      "ফুলের সময় ব্যাসিলাস সাবটিলিস ভিত্তিক জৈব ছত্রাকনাশক একটি নরম বিকল্প হিসেবে প্রয়োগ করুন",
+      "বাগানের মাটিতে উদ্ভিদের আচ্ছাদন রাখুন যাতে শিকারি প্রাণী থাকে এবং অপ্রয়োজনীয় বিস্তৃত স্প্রে এড়ান"
+    ],
+    "biological_control_ur": [
+      "پھولوں کے وقت بیکیلس سبٹیلس پر مبنی حیاتیاتی پھپھوندی کش ہلکے متبادل کے طور پر لگائیں",
+      "باغ کی زمین پر پودوں کی تہہ رکھیں تاکہ شکار جاندار رہیں اور غیر ضروری وسیع سپرے سے بچیں"
+    ],
+    "prevention_tips_en": [
+      "Choose anthracnose-tolerant varieties for humid areas",
+      "Harvest fruit in dry weather and cool it quickly after picking",
+      "Hot-water treat fruit for storage as advised by your extension service"
+    ],
+    "prevention_tips_bn": [
+      "আর্দ্র এলাকার জন্য অ্যানথ্রাকনোজ সহনশীল জাত বেছে নিন",
+      "শুকনো আবহাওয়ায় ফল সংগ্রহ করুন এবং তোলার পর দ্রুত ঠান্ডা করুন",
+      "সংরক্ষণের জন্য কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুযায়ী গরম পানিতে ফল শোধন করুন"
+    ],
+    "prevention_tips_ur": [
+      "مرطوب علاقوں کے لیے اینتھراکنوز برداشت کرنے والی اقسام منتخب کریں",
+      "خشک موسم میں پھل توڑیں اور توڑنے کے بعد جلدی ٹھنڈا کریں",
+      "ذخیرے کے لیے زرعی ایکسٹینشن کے مشورے کے مطابق گرم پانی سے پھل کا علاج کریں"
+    ]
+  },
+  {
+    "id": "mango_bacterial_canker",
+    "cultural_control_en": [
+      "Prune and burn cankered twigs in dry weather, cutting well below the lesion",
+      "Disinfect pruning blades between trees with alcohol or bleach solution",
+      "Avoid working in the orchard when foliage is wet from rain or dew"
+    ],
+    "cultural_control_bn": [
+      "শুকনো আবহাওয়ায় ক্যানকারযুক্ত ডাল ক্ষতের অনেক নিচ থেকে কেটে পুড়িয়ে ফেলুন",
+      "প্রতিটি গাছের পর ছাঁটাইয়ের ব্লেড অ্যালকোহল বা ব্লিচ দ্রবণে জীবাণুমুক্ত করুন",
+      "বৃষ্টি বা শিশিরে পাতা ভেজা থাকলে বাগানে কাজ করা এড়িয়ে চলুন"
+    ],
+    "cultural_control_ur": [
+      "خشک موسم میں کینکر والی شاخیں زخم سے کافی نیچے کاٹ کر جلا دیں",
+      "ہر درخت کے بعد تراشنے کے بلیڈ کو الکحل یا بلیچ محلول سے جراثیم سے پاک کریں",
+      "بارش یا شبنم سے پتے گیلے ہوں تو باغ میں کام کرنے سے بچیں"
+    ],
+    "chemical_control_en": [
+      "Spray copper hydroxide or copper oxychloride as labeled before and after the rainy season",
+      "Use only doses and intervals stated on the product label, and check with your local extension service"
+    ],
+    "chemical_control_bn": [
+      "বর্ষার আগে ও পরে লেবেল অনুযায়ী কপার হাইড্রোক্সাইড বা কপার অক্সিক্লোরাইড স্প্রে করুন",
+      "শুধু পণ্যের লেবেলে লেখা মাত্রা ও বিরতি ব্যবহার করুন এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের সঙ্গে যাচাই করুন"
+    ],
+    "chemical_control_ur": [
+      "بارش کے موسم سے پہلے اور بعد لیبل کے مطابق کاپر ہائیڈروکسائیڈ یا کاپر آکسی کلورائیڈ چھڑکیں",
+      "صرف مصنوعات کے لیبل پر لکھی مقدار اور وقفہ استعمال کریں اور مقامی زرعی ایکسٹینشن سے تصدیق کریں"
+    ],
+    "biological_control_en": [
+      "Spray a copper-tolerant Bacillus subtilis product to reduce bacterial load on leaves",
+      "Encourage generalist predators and avoid sprays that disrupt beneficial insects"
+    ],
+    "biological_control_bn": [
+      "পাতায় ব্যাকটেরিয়ার পরিমাণ কমাতে কপার সহনশীল ব্যাসিলাস সাবটিলিস পণ্য স্প্রে করুন",
+      "সাধারণ শিকারি পোকার বিস্তার বাড়ান এবং উপকারী পোকা ক্ষতিগ্রস্ত করে এমন স্প্রে এড়ান"
+    ],
+    "biological_control_ur": [
+      "پتوں پر بیکٹیریا کی مقدار کم کرنے کے لیے تانبے کو برداشت کرنے والی بیکیلس سبٹیلس مصنوعات چھڑکیں",
+      "عام شکار کیڑوں کی افزائش کریں اور فائدہ مند کیڑوں کو متاثر کرنے والے سپرے سے بچیں"
+    ],
+    "prevention_tips_en": [
+      "Plant windbreaks to cut storm-driven rain injury",
+      "Use healthy, certified planting material from a reliable nursery",
+      "Skip high-nitrogen fertilizer during wet spells and follow your extension service guidance"
+    ],
+    "prevention_tips_bn": [
+      "ঝড়ের সঙ্গে আসা বৃষ্টির আঘাত কমাতে বায়ুপ্রতিরোধক গাছের সারি লাগান",
+      "বিশ্বস্ত নার্সারির সুস্থ, প্রত্যয়িত রোপণ উপকরণ ব্যবহার করুন",
+      "ভেজা আবহাওয়ায় অতিরিক্ত নাইট্রোজেন সার বাদ দিন এবং কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ মানুন"
+    ],
+    "prevention_tips_ur": [
+      "طوفانی بارش کے نقصان کو کم کرنے کے لیے ہوا روکنے والی قطاریں لگائیں",
+      "قابل اعتماد نرسری سے صحت مند، تصدیق شدہ کاشت کا مواد استعمال کریں",
+      "گیلے موسم میں زیادہ نائٹروجن کھاد نہ دیں اور زرعی ایکسٹینشن کی ہدایت مانیں"
+    ]
+  },
+  {
+    "id": "mango_cutting_weevil",
+    "cultural_control_en": [
+      "Collect and destroy cut leaf pieces and fallen larvae under young trees",
+      "Shake nursery seedlings gently and catch the adult weevils on a sheet",
+      "Remove volunteer mango seedlings that carry weevils into the orchard"
+    ],
+    "cultural_control_bn": [
+      "কচি গাছের নিচে কাটা পাতার টুকরো ও ঝরা লার্ভা কুড়িয়ে ধ্বংস করুন",
+      "নার্সারির চারা আলতো করে নাড়িয়ে চাদরের ওপর পূর্ণাঙ্গ পোকা ধরে ফেলুন",
+      "বাগানে পোকা বহন করে আনে এমন স্বেচ্ছাবীজী আমের চারা সরিয়ে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "نوجوان درختوں کے نیچے کٹے پتوں کے ٹکڑے اور گرے لاروے جمع کر کے تباہ کریں",
+      "نرسری کے پودوں کو آہستہ ہلا کر چادر پر بالغ ویول پکڑیں",
+      "باغ میں ویول لانے والے خود رو آم کے پودے ہٹا دیں"
+    ],
+    "chemical_control_en": [
+      "Spray a labeled contact insecticide such as carbaryl only when new flush is heavily cut",
+      "Respect the product label rate, interval and pre-harvest period, and ask your extension service first"
+    ],
+    "chemical_control_bn": [
+      "শুধু নতুন কুশি বেশি কাটা পড়লে কার্বারিল জাতীয় নির্ধারিত সংস্পর্শ কীটনাশক স্প্রে করুন",
+      "পণ্যের লেবেলের মাত্রা, বিরতি ও ফসল তোলার আগের সময় মানুন এবং আগে কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ নিন"
+    ],
+    "chemical_control_ur": [
+      "صرف نئی ٹہنی زیادہ کٹنے پر کاربیرل جیسی منظور شدہ رابطہ کیڑے مار دوا چھڑکیں",
+      "مصنوعات کے لیبل کی مقدار، وقفہ اور کٹائی سے پہلے کی مدت کا خیال رکھیں اور پہلے زرعی ایکسٹینشن سے پوچھیں"
+    ],
+    "biological_control_en": [
+      "Conserve predatory ants, spiders and birds that feed on weevil adults",
+      "Apply neem kernel extract on nursery flush as a feeding deterrent"
+    ],
+    "biological_control_bn": [
+      "পূর্ণাঙ্গ পোকার খাদক শিকারি পিঁপড়া, মাকড়সা ও পাখি সংরক্ষণ করুন",
+      "নার্সারির নতুন কুশিতে খাওয়া কমাতে নিম বীজের নির্যাস প্রয়োগ করুন"
+    ],
+    "biological_control_ur": [
+      "بالغ ویول کھانے والی شکاری چیونٹیوں، مکڑیوں اور پرندوں کی حفاظت کریں",
+      "نرسری کی نئی ٹہنیوں پر کھانا کم کرنے کے لیے نیم کے بیج کا عرق لگائیں"
+    ],
+    "prevention_tips_en": [
+      "Inspect new nursery stock before moving it into the orchard",
+      "Prune and fertilize so flushes emerge together, limiting continuous tender food",
+      "Use light traps near nurseries during flush emergence, as advised by your extension service"
+    ],
+    "prevention_tips_bn": [
+      "বাগানে আনার আগে নতুন নার্সারির চারা পরীক্ষা করুন",
+      "ছাঁটাই ও সার এমনভাবে দিন যাতে কুশি একসঙ্গে আসে, একটানা কচি পাতার খাদ্য কমে",
+      "কুশি বেরোনোর সময় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ অনুযায়ী নার্সারির কাছে আলোক ফাঁদ ব্যবহার করুন"
+    ],
+    "prevention_tips_ur": [
+      "باغ میں لانے سے پہلے نرسری کے نئے پودوں کا معائنہ کریں",
+      "تراشائی اور کھاد سے ٹہنیاں ایک ساتھ نکلیں تاکہ مسلسل نرم خوراک کم ہو",
+      "ٹہنیوں کے نکلنے پر زرعی ایکسٹینشن کے مشورے سے نرسری کے قریب روشنی کے جال لگائیں"
+    ]
+  },
+  {
+    "id": "mango_die_back",
+    "cultural_control_en": [
+      "Prune dead branches 10-15 cm below visible damage and burn the cuttings",
+      "Seal large pruning cuts with a wound dressing or copper paste",
+      "Irrigate during dry spells to prevent drought stress that invites infection"
+    ],
+    "cultural_control_bn": [
+      "দৃশ্যমান ক্ষতির ১০-১৫ সেন্টিমিটার নিচ থেকে মরা ডাল কেটে কাটা অংশ পুড়িয়ে ফেলুন",
+      "বড় ছাঁটাইয়ের ক্ষত ক্ষত-লেপ বা কপার পেস্ট দিয়ে ঢেকে দিন",
+      "খরার সময় সেচ দিন যাতে সংক্রমণ ডেকে আনে এমন খরা-চাপ না হয়"
+    ],
+    "cultural_control_ur": [
+      "نظر آنے والے نقصان سے 10-15 سینٹی میٹر نیچے سے مردہ شاخیں کاٹ کر جلا دیں",
+      "بڑے تراشے زخموں پر زخم کی لپیٹ یا تانبے کا پیسٹ لگائیں",
+      "خشک موسم میں پانی دیں تاکہ خشکی کا دباؤ نہ ہو جو بیماری کو دعوت دیتا ہے"
+    ],
+    "chemical_control_en": [
+      "Paint pruning cuts with a labeled copper fungicide paste right after cutting",
+      "Follow the product label and local extension service advice for dose and timing"
+    ],
+    "chemical_control_bn": [
+      "কাটার সঙ্গে সঙ্গে ছাঁটাইয়ের ক্ষতে নির্ধারিত কপার ছত্রাকনাশকের পেস্ট লাগান",
+      "মাত্রা ও সময়ের জন্য পণ্যের লেবেল এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ মানুন"
+    ],
+    "chemical_control_ur": [
+      "کاٹنے کے فوراً بعد تراشے زخموں پر منظور شدہ تانبے کی پھپھوندی کش پیسٹ لگائیں",
+      "مقدار اور وقت کے لیے مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن کا مشورہ مانیں"
+    ],
+    "biological_control_en": [
+      "Apply Trichoderma-based biocontrol to soil and pruned surfaces to outcompete the fungus",
+      "Keep tree vigour high with organic matter so wounds heal quickly"
+    ],
+    "biological_control_bn": [
+      "ছত্রাককে প্রতিযোগিতায় হারাতে মাটি ও ছাঁটা অংশে ট্রাইকোডার্মা ভিত্তিক জৈব নিয়ন্ত্রণ প্রয়োগ করুন",
+      "জৈব পদার্থ দিয়ে গাছের সতেজতা বজায় রাখুন যাতে ক্ষত দ্রুত সারায়"
+    ],
+    "biological_control_ur": [
+      "قارچ کو مقابلے میں ہرانے کے لیے مٹی اور تراشیدہ سطحوں پر ٹرائیکوڈرما پر مبنی حیاتیاتی علاج لگائیں",
+      "نامیاتی مادے سے درخت کی طاقت برقرار رکھیں تاکہ زخم جلدی بھریں"
+    ],
+    "prevention_tips_en": [
+      "Prune only in dry weather and never leave jagged stubs",
+      "Keep trees well watered and fed, especially in the first dry season after planting",
+      "Remove and burn dead wood from the orchard every year"
+    ],
+    "prevention_tips_bn": [
+      "শুধু শুকনো আবহাওয়ায় ছাঁটাই করুন এবং কখনো খসখসে ডালের গোড়া রাখবেন না",
+      "বিশেষ করে লাগানোর পর প্রথম শুষ্ক মৌসুমে গাছে পর্যাপ্ত পানি ও সার দিন",
+      "প্রতি বছর বাগান থেকে মরা কাঠ সরিয়ে পুড়িয়ে ফেলুন"
+    ],
+    "prevention_tips_ur": [
+      "صرف خشک موسم میں تراشائی کریں اور کبھی کھردرے ڈنٹھل نہ چھوڑیں",
+      "خاص طور پر لگانے کے بعد پہلے خشک موسم میں درخت کو پانی اور کھاد دیں",
+      "ہر سال باغ سے مردہ لکڑی ہٹا کر جلا دیں"
+    ]
+  },
+  {
+    "id": "mango_gall_midge",
+    "cultural_control_en": [
+      "Remove and burn heavily galled leaves and shoots from nursery plants",
+      "Prune to open the canopy and reduce the damp shade midges prefer",
+      "Avoid forcing continuous new flush with heavy nitrogen"
+    ],
+    "cultural_control_bn": [
+      "নার্সারির গাছে বেশি গলযুক্ত পাতা ও কুশি সরিয়ে পুড়িয়ে ফেলুন",
+      "আচ্ছাদন খুলতে ছাঁটাই করুন এবং মাছির পছন্দের ভেজা ছায়া কমিয়ে দিন",
+      "অতিরিক্ত নাইট্রোজেন দিয়ে একটানা নতুন কুশি বের করা এড়িয়ে চলুন"
+    ],
+    "cultural_control_ur": [
+      "نرسری کے پودوں سے زیادہ گال والے پتے اور ٹہنیاں ہٹا کر جلا دیں",
+      "شاخیں کھلی کرنے کے لیے تراشائی کریں اور وہ گیلا سایہ کم کریں جو مکھی کو پسند ہے",
+      "زیادہ نائٹروجن سے مسلسل نئی ٹہنیاں نکلوانے سے بچیں"
+    ],
+    "chemical_control_en": [
+      "Spray a labeled systemic insecticide such as imidacloprid when new flush shows first galls",
+      "Use only the label dose and interval, and confirm the choice with your local extension service"
+    ],
+    "chemical_control_bn": [
+      "নতুন কুশিতে প্রথম গল দেখা গেলে ইমিডাক্লোপ্রিড জাতীয় নির্ধারিত অন্তঃশোষী কীটনাশক স্প্রে করুন",
+      "শুধু লেবেলের মাত্রা ও বিরতি ব্যবহার করুন এবং স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের সঙ্গে পছন্দ নিশ্চিত করুন"
+    ],
+    "chemical_control_ur": [
+      "نئی ٹہنی پر پہلے گال نظر آنے پر امیڈاکلوپرڈ جیسی منظور شدہ اندر جذب ہونے والی کیڑے مار دوا چھڑکیں",
+      "صرف لیبل کی مقدار اور وقفہ استعمال کریں اور انتخاب کی تصدیق مقامی زرعی ایکسٹینشن سے کریں"
+    ],
+    "biological_control_en": [
+      "Conserve parasitoid wasps and predatory mites that attack midge larvae",
+      "Spray neem oil on new flush to deter egg laying"
+    ],
+    "biological_control_bn": [
+      "মাছির লার্ভা আক্রমণ করে এমন পরজীবী ওয়েস্প ও শিকারি মাইট সংরক্ষণ করুন",
+      "ডিম পাড়া কমাতে নতুন কুশিতে নিম তেল স্প্রে করুন"
+    ],
+    "biological_control_ur": [
+      "مکھی کے لاروے پر حملہ کرنے والے پیراسائٹائیڈ تتیے اور شکاری مائٹ کی حفاظت کریں",
+      "انڈے دینے سے روکنے کے لیے نئی ٹہنیوں پر نیم کا تیل چھڑکیں"
+    ],
+    "prevention_tips_en": [
+      "Inspect nursery flush every week and destroy galled leaves early",
+      "Keep good spacing and weed control so humidity does not build up",
+      "Time pruning so new flush avoids peak midge season, on extension service advice"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি সপ্তাহে নার্সারির নতুন কুশি পরীক্ষা করুন এবং গলযুক্ত পাতা আগেই ধ্বংস করুন",
+      "যথেষ্ট দূরত্ব ও আগাছা নিয়ন্ত্রণ রাখুন যাতে আর্দ্রতা জমে না থাকে",
+      "কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শে এমন সময়ে ছাঁটাই করুন যাতে নতুন কুশি মাছির মৌসুম এড়ায়"
+    ],
+    "prevention_tips_ur": [
+      "ہر ہفتے نرسری کی نئی ٹہنیوں کا معائنہ کریں اور گال والے پتے جلدی تباہ کریں",
+      "مناسب فاصلہ اور جڑی بوٹیوں کا کنٹرول رکھیں تاکہ نمی جمع نہ ہو",
+      "زرعی ایکسٹینشن کے مشورے سے تراشائی ایسے وقت کریں کہ نئی ٹہنیاں مکھی کے موسم سے بچیں"
+    ]
+  },
+  {
+    "id": "mango_powdery_mildew",
+    "cultural_control_en": [
+      "Prune the canopy before flowering so sunlight reaches flower panicles",
+      "Keep the orchard floor free of weeds that hold humidity",
+      "Avoid evening overhead irrigation while panicles are out"
+    ],
+    "cultural_control_bn": [
+      "ফুল আসার আগে আচ্ছাদন ছেঁটে দিন যাতে সূর্যের আলো মঞ্জরিতে পৌঁছায়",
+      "আর্দ্রতা ধরে রাখে এমন আগাছা থেকে বাগানের মাটি মুক্ত রাখুন",
+      "মঞ্জরি থাকা অবস্থায় সন্ধ্যায় ওপরে সেচ দেওয়া এড়িয়ে চলুন"
+    ],
+    "cultural_control_ur": [
+      "پھول آنے سے پہلے شاخیں تراشیں تاکہ دھوپ پھولوں کے گچھوں تک پہنچے",
+      "جو نمی روکتی ہیں ایسی جڑی بوٹیوں سے باغ کی زمین صاف رکھیں",
+      "پھولوں کے گچھے موجود ہوں تو شام کو اوپر سے پانی دینے سے بچیں"
+    ],
+    "chemical_control_en": [
+      "Spray a labeled sulfur or triadimefon fungicide at first sign of white powder on panicles",
+      "Respect the product label for dose, number of sprays and the pre-harvest interval, and confirm with your extension service"
+    ],
+    "chemical_control_bn": [
+      "মঞ্জরিতে সাদা গুঁড়ো দেখার শুরুতে সালফার বা ট্রায়াডিমেফন জাতীয় নির্ধারিত ছত্রাকনাশক স্প্রে করুন",
+      "মাত্রা, স্প্রের সংখ্যা ও ফসল তোলার আগের বিরতির জন্য পণ্যের লেবেল মানুন এবং কৃষি সম্প্রসারণ অধিদপ্তরের সঙ্গে নিশ্চিত করুন"
+    ],
+    "chemical_control_ur": [
+      "پھولوں کے گچھوں پر سفید پاؤڈر نظر آنے پر سلفر یا ٹرائی ڈائم فون جیسی منظور شدہ پھپھوندی کش چھڑکیں",
+      "مقدار، سپرے کی تعداد اور کٹائی سے پہلے کے وقفے کے لیے مصنوعات کا لیبل مانیں اور زرعی ایکسٹینشن سے تصدیق کریں"
+    ],
+    "biological_control_en": [
+      "Use sulfur-free neem or potassium bicarbonate sprays early in flowering",
+      "Apply Bacillus subtilis biofungicide in rotation to slow resistance"
+    ],
+    "biological_control_bn": [
+      "ফুলের শুরুতে সালফারমুক্ত নিম বা পটাশিয়াম বাইকার্বোনেট স্প্রে ব্যবহার করুন",
+      "প্রতিরোধ ক্ষমতা ধীর করতে পালাক্রমে ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক প্রয়োগ করুন"
+    ],
+    "biological_control_ur": [
+      "پھولوں کے شروع میں سلفر کے بغیر نیم یا پوٹاشیم بائی کاربونیٹ سپرے استعمال کریں",
+      "مزاحمت سست کرنے کے لیے باری باری بیکیلس سبٹیلس حیاتیاتی پھپھوندی کش لگائیں"
+    ],
+    "prevention_tips_en": [
+      "Plant tolerant varieties where powdery mildew is a yearly problem",
+      "Monitor panicles every 2-3 days as soon as flowering starts",
+      "Keep records of spray dates to follow a rotation advised by your extension service"
+    ],
+    "prevention_tips_bn": [
+      "যেখানে পাউডারি মিল্ডিউ প্রতি বছর সমস্যা, সেখানে সহনশীল জাত লাগান",
+      "ফুল শুরু হওয়ার সঙ্গে সঙ্গে প্রতি ২-৩ দিনে মঞ্জরি পর্যবেক্ষণ করুন",
+      "কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শে পালাক্রম মানতে স্প্রের তারিখের হিসাব রাখুন"
+    ],
+    "prevention_tips_ur": [
+      "جہاں پاؤڈری ملڈیو ہر سال مسئلہ ہو وہاں برداشت کرنے والی اقسام لگائیں",
+      "پھول شروع ہوتے ہی ہر 2-3 دن میں پھولوں کے گچھوں کا معائنہ کریں",
+      "زرعی ایکسٹینشن کے مشورے کی باری باری ترتیب ماننے کے لیے سپرے کی تاریخیں لکھیں"
+    ]
+  },
+  {
+    "id": "mango_sooty_mould",
+    "cultural_control_en": [
+      "Control the sap-sucking insects that produce honeydew, starting with leafhopper and scale management",
+      "Open the canopy by pruning and improve air movement through the orchard",
+      "Wash black coating off fruit before grading so it does not spoil the sale"
+    ],
+    "cultural_control_bn": [
+      "মিষ্টি রস তৈরি করে এমন রসচোষা পোকা নিয়ন্ত্রণ করুন, শুরু করুন হপার ও স্কেল পোকা দমন দিয়ে",
+      "ছাঁটাই করে আচ্ছাদন খুলে দিন এবং বাগানে বাতাস চলাচল বাড়ান",
+      "ফসল বাছাইয়ের আগে ফলের কালো আস্তরণ ধুয়ে ফেলুন যাতে বিক্রি নষ্ট না হয়"
+    ],
+    "cultural_control_ur": [
+      "میٹھا رس پیدا کرنے والے رس چوس کیڑوں کا کنٹرول کریں، شروع ہاپر اور اسکیل کیڑوں سے کریں",
+      "تراشائی سے شاخیں کھلیں اور باغ میں ہوا کی آمدورفت بڑھائیں",
+      "درجہ بندی سے پہلے پھل سے کالی تہہ دھو دیں تاکہ فروخت خراب نہ ہو"
+    ],
+    "chemical_control_en": [
+      "Spray a labeled insecticide for the honeydew insects such as imidacloprid, not a fungicide, because the mould itself needs no spray",
+      "Check the product label and your local extension service before treating, especially near harvest"
+    ],
+    "chemical_control_bn": [
+      "মিষ্টি রসের পোকার জন্য ইমিডাক্লোপ্রিড জাতীয় নির্ধারিত কীটনাশক স্প্রে করুন, ছত্রাকনাশক নয়, কারণ ছাঁচে সরাসরি স্প্রের দরকার নেই",
+      "বিশেষত ফসল তোলার কাছে চিকিৎসার আগে পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণ অধিদপ্তরের পরামর্শ নিন"
+    ],
+    "chemical_control_ur": [
+      "میٹھے رس والے کیڑوں کے لیے امیڈاکلوپرڈ جیسی منظور شدہ کیڑے مار دوا چھڑکیں، پھپھوندی کش نہیں، کیونکہ مولڈ پر براہ راست سپرے ضروری نہیں",
+      "خاص طور پر کٹائی کے قریب علاج سے پہلے مصنوعات کا لیبل اور مقامی زرعی ایکسٹینشن سے مشورہ لیں"
+    ],
+    "biological_control_en": [
+      "Release or conserve ladybirds and lacewings that feed on hoppers and scales",
+      "Apply a mild soap or horticultural oil spray to dislodge the insects under the sooty layer"
+    ],
+    "biological_control_bn": [
+      "হপার ও স্কেল পোকার খাদক মুখি পোকা ও লেসউইং সংরক্ষণ বা ছেড়ে দিন",
+      "কালি আস্তরণের নিচের পোকা সরাতে হালকা সাবান বা উদ্যান তেলের স্প্রে প্রয়োগ করুন"
+    ],
+    "biological_control_ur": [
+      "ہاپر اور اسکیل کھانے والی لیڈی برڈز اور لیس ونگز کی حفاظت یا رہائی کریں",
+      "کالی تہہ کے نیچے موجود کیڑوں کو ہٹانے کے لیے ہلکے صابن یا باغی تیل کا سپرے لگائیں"
+    ],
+    "prevention_tips_en": [
+      "Monitor leaf undersides for hoppers and scales every two weeks",
+      "Avoid excess nitrogen that builds up sap-sucking insect populations",
+      "Wash and shade fruit after harvest so sooty film does not set on the skin"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি দুই সপ্তাহে পাতার নিচে হপার ও স্কেল পোকার খোঁজ নিন",
+      "অতিরিক্ত নাইট্রোজেন এড়িয়ে চলুন, যা রসচোষা পোকার সংখ্যা বাড়ায়",
+      "ফসল তোলার পর ফল ধুয়ে ছায়ায় রাখুন যাতে কালো আস্তরণ খোসায় বসে না যায়"
+    ],
+    "prevention_tips_ur": [
+      "ہر دو ہفتے بعد پتوں کے نیچے ہاپر اور اسکیل کیڑے تلاش کریں",
+      "زائد نائٹروجن سے بچیں جو رس چوس کیڑوں کی تعداد بڑھاتا ہے",
+      "کٹائی کے بعد پھل دھو کر سایہ میں رکھیں تاکہ کالی تہہ چھال پر نہ جمے"
+    ]
+  },
+  {
+    "id": "mango_healthy",
+    "cultural_control_en": [
+      "Scout the orchard every week for spots, wilting or insect damage",
+      "Prune dead wood and keep the canopy open to light and air",
+      "Maintain steady irrigation and balanced fertilizer through the season"
+    ],
+    "cultural_control_bn": [
+      "প্রতি সপ্তাহে বাগানে দাগ, শুকিয়ে যাওয়া বা পোকার ক্ষতি খুঁজুন",
+      "মরা কাঠ ছেঁটে আচ্ছাদন আলো ও বাতাসের জন্য খোলা রাখুন",
+      "মৌসুমজুড়ে নিয়মিত সেচ ও সুষম সার বজায় রাখুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے باغ میں دھبے، مرجھاؤ یا کیڑوں کا نقصان دیکھیں",
+      "مردہ لکڑی تراش کر شاخیں روشنی اور ہوا کے لیے کھلی رکھیں",
+      "پورے موسم میں باقاعدہ پانی اور متوازن کھاد برقرار رکھیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Keep orchard sanitation and disinfect pruning tools between trees",
+      "Avoid unnecessary sprays so natural enemies and pollinators stay in the orchard",
+      "Follow your extension service recommendation for variety and spray schedule"
+    ],
+    "prevention_tips_bn": [
+      "বাগানের পরিচ্ছন্নতা বজায় রাখুন এবং গাছ থেকে গাছে ছাঁটাইয়ের যন্ত্র জীবাণুমুক্ত করুন",
+      "অপ্রয়োজনীয় স্প্রে এড়িয়ে চলুন যাতে প্রাকৃতিক শত্রু ও পরাগায়নকারী বাগানে থাকে",
+      "জাত ও স্প্রের সময়সূচির জন্য কৃষি সম্প্রসারণ অধিদপ্তরের সুপারিশ অনুসরণ করুন"
+    ],
+    "prevention_tips_ur": [
+      "باغ کی صفائی برقرار رکھیں اور ایک درخت سے دوسرے پر تراشنے کے اوزار جراثیم سے پاک کریں",
+      "غیر ضروری سپرے سے بچیں تاکہ قدرتی دشمن اور پھول گرانے والے کیڑے باغ میں رہیں",
+      "قسم اور سپرے کے شیڈول کے لیے زرعی ایکسٹینشن کی سفارش پر عمل کریں"
+    ]
+  },
+  {
+    "id": "pumpkin_bacterial_leaf_spot",
+    "cultural_control_en": [
+      "Plant on raised beds and space vines so foliage dries quickly",
+      "Use drip irrigation instead of overhead sprinklers",
+      "Remove and bury infected crop debris after harvest"
+    ],
+    "cultural_control_bn": [
+      "উঁচু বেডে রোপণ করুন ও লতার মাঝে ফাঁক রাখুন যাতে পাতা দ্রুত শুকায়",
+      "উপর থেকে স্প্রিংকলার সেচের বদলে ড্রিপ সেচ ব্যবহার করুন",
+      "ফসল কাটার পর আক্রান্ত অবশিষ্টাংশ সরিয়ে মাটিতে পুঁতে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "اونچی کیاریوں پر کاشت کریں اور بیلوں میں فاصلہ رکھیں تاکہ پتے جلدی خشک ہوں",
+      "اوپر سے چھڑکاؤ کی بجائے ڈرپ آبپاشی استعمال کریں",
+      "کٹائی کے بعد متاثرہ باقیات ہٹا کر مٹی میں دبا دیں"
+    ],
+    "chemical_control_en": [
+      "Apply a copper-based bactericide at the first leaf spots and follow the product label",
+      "Repeat on a 7 to 10 day interval in wet weather and check local extension advice"
+    ],
+    "chemical_control_bn": [
+      "প্রথম দাগ দেখা দেওয়াতেই তামাভিত্তিক ব্যাকটেরিয়ানাশক প্রয়োগ করুন এবং পণ্যের লেবেল মেনে চলুন",
+      "ভেজা আবহাওয়ায় ৭ থেকে ১০ দিন পর পর পুনরায় প্রয়োগ করুন এবং স্থানীয় কৃষি সম্প্রসারণের পরামর্শ নিন"
+    ],
+    "chemical_control_ur": [
+      "پہلے دھبے نظر آتے ہی تانبے والی بیکٹیریا کش دوا لگائیں اور مصنوعات کے لیبل کی پابندی کریں",
+      "تر موسم میں ۷ سے ۱۰ دن کے وقفے سے دہرائیں اور مقامی زرعی ایکسٹینشن کا مشورہ لیں"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis based biocontrol as a preventive",
+      "Build beneficial soil microbes with compost and mulch"
+    ],
+    "biological_control_bn": [
+      "প্রতিরোধ হিসেবে ব্যাসিলাস সাবটিলিস ভিত্তিক জৈব নিয়ন্ত্রণ স্প্রে করুন",
+      "কম্পোস্ট ও মালচ দিয়ে উপকারী মাটির অণুজীব বাড়ান"
+    ],
+    "biological_control_ur": [
+      "حفاظتی طور پر Bacillus subtilis پر مبنی حیاتیاتی کنٹرول چھڑکیں",
+      "کھاد اور ملچ سے مٹی کے فائدہ مند جراثیم بڑھائیں"
+    ],
+    "prevention_tips_en": [
+      "Use certified pathogen-free seed and rotate away from cucurbits for two years",
+      "Avoid working in the field while vines are wet",
+      "Clean tools and boots between blocks"
+    ],
+    "prevention_tips_bn": [
+      "প্রত্যয়িত রোগমুক্ত বীজ ব্যবহার করুন এবং দুই বছর কিউকারবিট এড়িয়ে ফসল পর্যায়াবৃত্তি করুন",
+      "লতা ভেজা থাকা অবস্থায় মাঠে কাজ এড়িয়ে চলুন",
+      "ব্লক পরিবর্তনের সময় যন্ত্রপাতি ও জুতা পরিষ্কার করুন"
+    ],
+    "prevention_tips_ur": [
+      "تصدیق شدہ بیماری سے پاک بیج استعمال کریں اور دو سال کدو خاندان سے پرہیز کرتے ہوئے فصل بدلیں",
+      "بیلیں تر ہوں تو کھیت میں کام کرنے سے بچیں",
+      "بلاک بدلتے وقت اوزار اور جوتے صاف کریں"
+    ]
+  },
+  {
+    "id": "pumpkin_downy_mildew",
+    "cultural_control_en": [
+      "Plant on raised beds with wide spacing so foliage dries quickly",
+      "Switch from overhead sprinklers to drip or furrow irrigation",
+      "Remove and bury heavily infected vines after harvest"
+    ],
+    "cultural_control_bn": [
+      "প্রশস্ত ফাঁকসহ উঁচু বেডে রোপণ করুন যাতে পাতা দ্রুত শুকায়",
+      "উপরের স্প্রিংকলারের বদলে ড্রিপ বা নালা সেচে যান",
+      "ফসল কাটার পর তীব্র আক্রান্ত লতা সরিয়ে পুঁতে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "کشادہ فاصلے کے ساتھ اونچی کیاریوں پر کاشت کریں تاکہ پتے جلدی خشک ہوں",
+      "اوپر کی چھڑکاؤ آبپاشی کی بجائے ڈرپ یا نالی آبپاشی اختیار کریں",
+      "کٹائی کے بعد شدید متاثرہ بیلیں ہٹا کر دبا دیں"
+    ],
+    "chemical_control_en": [
+      "At the first lesions apply a labeled fungicide such as chlorothalonil or metalaxyl on a 7 to 10 day schedule",
+      "Rotate active ingredients and follow the product label and local extension recommendations"
+    ],
+    "chemical_control_bn": [
+      "প্রথম ক্ষত দেখা দেওয়াতেই ক্লোরোথ্যালোনিল বা মেটালাক্সিল জাতীয় নির্ধারিত ছত্রাকনাশক ৭-১০ দিনের ব্যবধানে প্রয়োগ করুন",
+      "সক্রিয় উপাদান পাল্টান এবং পণ্যের লেবেল ও স্থানীয় কৃষি সম্প্রসারণের সুপারিশ অনুসরণ করুন"
+    ],
+    "chemical_control_ur": [
+      "پہلے زخم پر کلوروتھالونیل یا میٹالاکسیل جیسی منظور شدہ پھپھوندی کش دوا ۷ سے ۱۰ دن کے وقفے سے لگائیں",
+      "فعال اجزاء بدلیں اور مصنوعات کے لیبل اور مقامی زرعی ایکسٹینشن کی سفارشات پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Spray Bacillus subtilis or a copper biofungicide early as a preventive",
+      "Avoid broad-spectrum sprays that disrupt beneficial fungi and insects"
+    ],
+    "biological_control_bn": [
+      "প্রতিরোধ হিসেবে আগেভাগে ব্যাসিলাস সাবটিলিস বা তামাভিত্তিক জৈব ছত্রাকনাশক স্প্রে করুন",
+      "উপকারী ছত্রাক ও পোকা নষ্ট করে এমন বিস্তৃত পরিসরের স্প্রে এড়িয়ে চলুন"
+    ],
+    "biological_control_ur": [
+      "حفاظتی طور پر ابتدا ہی Bacillus subtilis یا تانبے والی حیاتیاتی دوا چھڑکیں",
+      "ایسی وسیع اثر والی ادویات سے بچیں جو فائدہ مند پھپھوندی اور کیڑے مار دیں"
+    ],
+    "prevention_tips_en": [
+      "Choose downy mildew tolerant pumpkin varieties where available",
+      "Rotate away from cucurbits for at least two years",
+      "Water early in the day so leaves dry before nightfall"
+    ],
+    "prevention_tips_bn": [
+      "যেখানে পাওয়া যায় সেখানে ডাউনি মিলডিউ সহনশীল কুমড়ার জাত বাছুন",
+      "কমপক্ষে দুই বছর কিউকারবিট এড়িয়ে ফসল পর্যায়াবৃত্তি করুন",
+      "দিনের প্রথম ভাগে সেচ দিন যাতে সন্ধ্যার আগে পাতা শুকায়"
+    ],
+    "prevention_tips_ur": [
+      "جہاں دستیاب ہوں ڈاؤنی میلڈیو برداشت کرنے والی کدو کی اقسام چنیں",
+      "کم از کم دو سال کدو خاندان سے پرہیز کرتے ہوئے فصل بدلیں",
+      "دن کے شروع میں پانی دیں تاکہ رات ہونے سے پہلے پتے خشک ہوں"
+    ]
+  },
+  {
+    "id": "pumpkin_mosaic",
+    "cultural_control_en": [
+      "Rogue out and destroy plants showing mosaic symptoms at once",
+      "Remove volunteer cucurbits and weedy hosts around the field",
+      "Use straw or plastic mulch to reduce aphid landing"
+    ],
+    "cultural_control_bn": [
+      "মোজাইক লক্ষণ দেখা গেলেই গাছ তুলে ধ্বংস করুন",
+      "মাঠের চারপাশের স্বেচ্ছাবীজী কিউকারবিট ও আগাছা পোষক সরান",
+      "জাবপোকা কম নামে সে জন্য খড় বা প্লাস্টিক মালচ ব্যবহার করুন"
+    ],
+    "cultural_control_ur": [
+      "موزیک کی علامات دکھنے والے پودے فوراً اکھاڑ کر تباہ کریں",
+      "کھیت کے ارد گرد خود رو کدو خاندان کے پودے اور جڑی بوٹیاں ہٹائیں",
+      "جوئیں کم اتریں اس لیے بھوسا یا پلاسٹک ملچ استعمال کریں"
+    ],
+    "chemical_control_en": [
+      "Mosaic virus cannot be cured by spraying; use a labeled insecticide for aphid vectors only when pressure is high",
+      "Follow the product label and extension advice so pollinators and natural enemies survive"
+    ],
+    "chemical_control_bn": [
+      "মোজাইক ভাইরাস স্প্রে করে সারানো যায় না; কেবল জাবপোকার আক্রমণ তীব্র হলে নির্ধারিত কীটনাশক ব্যবহার করুন",
+      "পণ্যের লেবেল ও সম্প্রসারণ পরামর্শ মেনে চলুন যাতে পরাগযোগকারী ও প্রাকৃতিক শত্রু টিকে থাকে"
+    ],
+    "chemical_control_ur": [
+      "موزیک وائرس چھڑکاؤ سے ختم نہیں ہوتا؛ صرف جوؤں کا دباؤ زیادہ ہونے پر منظور شدہ کیڑے مار دوا استعمال کریں",
+      "مصنوعات کے لیبل اور ایکسٹینشن کے مشورے پر عمل کریں تاکہ شہد کی مکھیاں اور قدرتی دشمن بچیں"
+    ],
+    "biological_control_en": [
+      "Conserve ladybirds, lacewings and parasitoid wasps that prey on aphids",
+      "Apply neem oil or insecticidal soap for light aphid infestations"
+    ],
+    "biological_control_bn": [
+      "জাবপোকা খায় এমন মুখি পোকা, লেসউইং ও পরজীবী ভিমরুল সংরক্ষণ করুন",
+      "হালকা জাবপোকার আক্রমণে নিম তেল বা কীটনাশক সাবান প্রয়োগ করুন"
+    ],
+    "biological_control_ur": [
+      "جوؤں کا شکار کرنے والی لیڈی بیٹلز، لیس ونگز اور پیراسائٹائیڈ تتییاں محفوظ رکھیں",
+      "ہلکے حملے پر نیم کا تیل یا کیڑے مار صابن لگائیں"
+    ],
+    "prevention_tips_en": [
+      "Plant mosaic resistant or tolerant pumpkin varieties",
+      "Avoid overlapping cucurbit plantings that let the virus carry over",
+      "Use reflective mulch and row covers early in the season"
+    ],
+    "prevention_tips_bn": [
+      "মোজাইক প্রতিরোধী বা সহনশীল কুমড়ার জাত রোপণ করুন",
+      "কিউকারবিটের ওভারল্যাপিং রোপণ এড়িয়ে চলুন যাতে ভাইরাস টিকে না থাকে",
+      "মৌসুমের শুরুতে প্রতিফলক মালচ ও সারি ঢাকনা ব্যবহার করুন"
+    ],
+    "prevention_tips_ur": [
+      "موزیک کے خلاف مزاحم یا برداشت کرنے والی کدو کی اقسام لگائیں",
+      "کدو خاندان کی ایسی کاشت سے بچیں جو دوسری کاشت سے مل جائے اور وائرس زندہ رہے",
+      "موسم کے شروع میں چمکدار ملچ اور قطار ڈھانکنے والی چادریں استعمال کریں"
+    ]
+  },
+  {
+    "id": "pumpkin_powdery_mildew",
+    "cultural_control_en": [
+      "Space plants and prune to open the canopy for airflow",
+      "Avoid excess nitrogen and keep irrigation water at the base",
+      "Remove infected leaves and crop residue after harvest"
+    ],
+    "cultural_control_bn": [
+      "গাছের মাঝে ফাঁক রাখুন ও 가지 ছেঁটে বাতাস চলাচলের পথ খুলুন",
+      "অতিরিক্ত নাইট্রোজেন এড়িয়ে সেচের পানি গোড়ায় দিন",
+      "ফসল কাটার পর আক্রান্ত পাতা ও অবশিষ্টাংশ সরিয়ে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "پودوں میں فاصلہ رکھیں اور چھانٹ کر ہوا کی آمدورفت کے لیے چھتری کھولیں",
+      "زائد نائٹروجن سے بچیں اور پانی جڑ کے قریب دیں",
+      "کٹائی کے بعد متاثرہ پتے اور باقیات ہٹا دیں"
+    ],
+    "chemical_control_en": [
+      "At the first white patches spray a labeled fungicide such as sulphur, potassium bicarbonate or a triazole",
+      "Rotate modes of action and follow the product label and extension guidance"
+    ],
+    "chemical_control_bn": [
+      "প্রথম সাদা দাগেই গন্ধক, পটাশিয়াম বাইকার্বোনেট বা ট্রায়াজল জাতীয় নির্ধারিত ছত্রাকনাশক স্প্রে করুন",
+      "কার্যপদ্ধতি পাল্টান এবং পণ্যের লেবেল ও সম্প্রসারণ নির্দেশনা মানুন"
+    ],
+    "chemical_control_ur": [
+      "پہلے سفید دھبوں پر گندھک، پوٹاشیم بائی کاربونیٹ یا ٹرائیازول جیسی منظور شدہ دوا چھڑکیں",
+      "طریقۂ کار بدلیں اور مصنوعات کے لیبل اور ایکسٹینشن کی ہدایات پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Apply Bacillus subtilis or Ampelomyces quisqualis biofungicide preventively",
+      "Spray dilute milk or potassium bicarbonate on light infections"
+    ],
+    "biological_control_bn": [
+      "প্রতিরোধমূলকভাবে ব্যাসিলাস সাবটিলিস বা অ্যাম্পেলোমাইসেস কুইসকুয়ালিস জৈব ছত্রাকনাশক দিন",
+      "হালকা সংক্রমণে পাতলা দুধ বা পটাশিয়াম বাইকার্বোনেট স্প্রে করুন"
+    ],
+    "biological_control_ur": [
+      "حفاظتی طور پر Bacillus subtilis یا Ampelomyces quisqualis حیاتیاتی دوا لگائیں",
+      "ہلکے حملے پر پتلا دودھ یا پوٹاشیم بائی کاربونیٹ چھڑکیں"
+    ],
+    "prevention_tips_en": [
+      "Plant powdery mildew tolerant varieties",
+      "Grow in full sun with wide rows and drip irrigation",
+      "Rotate away from cucurbits for two seasons"
+    ],
+    "prevention_tips_bn": [
+      "পাউডারি মিলডিউ সহনশীল জাত রোপণ করুন",
+      "প্রচুর রোদ, প্রশস্ত সারি ও ড্রিপ সেচে চাষ করুন",
+      "দুই মৌসুম কিউকারবিট এড়িয়ে ফসল পর্যায়াবৃত্তি করুন"
+    ],
+    "prevention_tips_ur": [
+      "پاؤڈری میلڈیو برداشت کرنے والی اقسام لگائیں",
+      "پوری دھوپ، کشادہ قطاروں اور ڈرپ آبپاشی کے ساتھ کاشت کریں",
+      "دو موسم کدو خاندان سے پرہیز کرتے ہوئے فصل بدلیں"
+    ]
+  },
+  {
+    "id": "pumpkin_healthy",
+    "cultural_control_en": [
+      "Scout the vines twice a week for leaf spots, mildew or wilting",
+      "Keep rows weeded and water at the base to keep leaves dry",
+      "Remove volunteer cucurbits and crop debris around the field"
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে দুইবার লতায় দাগ, ছত্রাক বা শুকিয়ে যাওয়ার লক্ষণ খুঁজুন",
+      "সারি আগাছামুক্ত রাখুন এবং গোড়ায় পানি দিন যাতে পাতা শুকনো থাকে",
+      "মাঠের চারপাশের স্বেচ্ছাবীজী কিউকারবিট ও ফসলের অবশিষ্টাংশ সরান"
+    ],
+    "cultural_control_ur": [
+      "ہفتے میں دو بار بیلوں پر دھبے، پھپھوندی یا مرجھانے کی جانچ کریں",
+      "قطاریں جڑی بوٹیوں سے پاک رکھیں اور پانی جڑ پر دیں تاکہ پتے خشک رہیں",
+      "کھیت کے ارد گرد خود رو کدو خاندان کے پودے اور باقیات ہٹائیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Rotate pumpkin with a non-cucurbit crop for at least two seasons",
+      "Use certified seed and disease-free transplants",
+      "Ask the local extension service about resistant varieties and plant spacing"
+    ],
+    "prevention_tips_bn": [
+      "কমপক্ষে দুই মৌসুম কুমড়ার সঙ্গে অ-কিউকারবিট ফসলের পর্যায়াবৃত্তি করুন",
+      "প্রত্যয়িত বীজ ও রোগমুক্ত চারা ব্যবহার করুন",
+      "প্রতিরোধী জাত ও রোপণ দূরত্ব সম্পর্কে স্থানীয় কৃষি সম্প্রসারণের পরামর্শ নিন"
+    ],
+    "prevention_tips_ur": [
+      "کم از کم دو موسم کدو کو غیر کدو خاندان کی فصل کے ساتھ بدلیں",
+      "تصدیق شدہ بیج اور بیماری سے پاک پودے استعمال کریں",
+      "مزاحم اقسام اور کاشت کے فاصلے کے بارے میں مقامی زرعی ایکسٹینشن سے پوچھیں"
+    ]
+  },
+  {
+    "id": "sugarcane_bacterial_blights",
+    "cultural_control_en": [
+      "Plant disease-free seed cane from an approved nursery or hot-water treated setts",
+      "Disinfect cutting knives between stools with a labeled sanitizer",
+      "Rogue out and burn affected stools as soon as streaks appear"
+    ],
+    "cultural_control_bn": [
+      "অনুমোদিত নার্সারির রোগমুক্ত বীজ-আখ বা গরম পানিতে শোধন করা সেট রোপণ করুন",
+      "প্রতিটি আখের গোছা কাটার পর ছুরি নির্ধারিত জীবাণুনাশক দিয়ে পরিষ্কার করুন",
+      "রেখা দেখা গেলেই আক্রান্ত গোছা তুলে পুড়িয়ে ফেলুন"
+    ],
+    "cultural_control_ur": [
+      "منظور شدہ نرسری کا بیماری سے پاک سیٹ یا گرم پانی سے علاج شدہ سیٹ لگائیں",
+      "ہر جھنڈ کاٹنے کے بعد چھری کو منظور شدہ جراثیم کش سے صاف کریں",
+      "لکیریں نظر آتے ہی متاثرہ جھنڈ اکھاڑ کر جلا دیں"
+    ],
+    "chemical_control_en": [
+      "No chemical cure exists; a copper-based bactericide gives only partial protection as a labeled protectant",
+      "Consult the local extension service before spraying, because antibiotic use on cane is restricted"
+    ],
+    "chemical_control_bn": [
+      "কোনো রাসায়নিক প্রতিকার নেই; তামাভিত্তিক ব্যাকটেরিয়ানাশক নির্ধারিত প্রতিরক্ষক হিসেবে আংশিক সুরক্ষা দেয়",
+      "আখে অ্যান্টিবায়োটিক ব্যবহার নিয়ন্ত্রিত, তাই স্প্রে করার আগে স্থানীয় কৃষি সম্প্রসারণের পরামর্শ নিন"
+    ],
+    "chemical_control_ur": [
+      "کوئی کیمیائی علاج نہیں؛ تانبے والی بیکٹیریا کش دوا منظور شدہ حفاظتی طور پر صرف جزوی تحفظ دیتی ہے",
+      "گنے پر اینٹی بائیوٹک کا استعمال محدود ہے، اس لیے چھڑکاؤ سے پہلے مقامی زرعی ایکسٹینشن سے مشورہ کریں"
+    ],
+    "biological_control_en": [
+      "Apply compost and Trichoderma enriched amendments to improve soil health",
+      "Encourage antagonistic soil microbes around the stool base"
+    ],
+    "biological_control_bn": [
+      "মাটির স্বাস্থ্য উন্নত করতে কম্পোস্ট ও ট্রাইকোডার্মা সমৃদ্ধ উপাদান দিন",
+      "আখের গোছার গোড়ায় প্রতিদ্বন্দ্বী মাটির অণুজীব বাড়ান"
+    ],
+    "biological_control_ur": [
+      "مٹی کی صحت بہتر کرنے کے لیے کھاد اور Trichoderma سے بھرپور اضافے دیں",
+      "گنے کے جھنڈ کی جڑ کے گرد مخالف مٹی جراثیم بڑھائیں"
+    ],
+    "prevention_tips_en": [
+      "Use resistant sugarcane varieties recommended for your district",
+      "Rotate cane with a legume or rice for one season",
+      "Avoid moving machinery between infected and clean blocks"
+    ],
+    "prevention_tips_bn": [
+      "আপনার জেলার জন্য সুপারিশকৃত রোগ প্রতিরোধী আখের জাত ব্যবহার করুন",
+      "এক মৌসুম আখের সঙ্গে ডাল বা ধানের পর্যায়াবৃত্তি করুন",
+      "আক্রান্ত ও পরিষ্কার ব্লকের মধ্যে যন্ত্রপাতি চলাচল এড়িয়ে চলুন"
+    ],
+    "prevention_tips_ur": [
+      "اپنے ضلع کے لیے تجویز کردہ مزاحم گنے کی اقسام استعمال کریں",
+      "ایک موسم گنے کو دالوں یا دھان کے ساتھ بدلیں",
+      "متاثرہ اور صاف بلاک کے درمیان مشینری کی آمدورفت سے بچیں"
+    ]
+  },
+  {
+    "id": "sugarcane_mosaic",
+    "cultural_control_en": [
+      "Plant only virus-free setts from a certified seed nursery",
+      "Rogue out and destroy mosaic infected stools early",
+      "Keep fields free of volunteer cane and grassy weeds"
+    ],
+    "cultural_control_bn": [
+      "প্রত্যয়িত বীজ নার্সারির কেবল ভাইরাসমুক্ত সেট রোপণ করুন",
+      "শুরুতেই মোজাইক আক্রান্ত গোছা তুলে ধ্বংস করুন",
+      "মাঠ স্বেচ্ছাবীজী আখ ও ঘাসজাতীয় আগাছামুক্ত রাখুন"
+    ],
+    "cultural_control_ur": [
+      "صرف تصدیق شدہ بیج نرسری کے وائرس سے پاک سیٹ لگائیں",
+      "شروع ہی میں موزیک سے متاثرہ جھنڈ اکھاڑ کر تباہ کریں",
+      "کھیت کو خود رو گنے اور گھاس جیسی جڑی بوٹیوں سے پاک رکھیں"
+    ],
+    "chemical_control_en": [
+      "Mosaic cannot be cured by spraying; manage aphid vectors with a labeled systemic insecticide only when the threshold is crossed",
+      "Follow the product label and extension guidance to avoid resistance and harm to natural enemies"
+    ],
+    "chemical_control_bn": [
+      "মোজাইক স্প্রে করে সারানো যায় না; আক্রমণের মাত্রা সীমা ছাড়ালে কেবল নির্ধারিত পদ্ধতিগত কীটনাশক দিয়ে জাবপোকা নিয়ন্ত্রণ করুন",
+      "প্রতিরোধ ও প্রাকৃতিক শত্রুর ক্ষতি এড়াতে পণ্যের লেবেল ও সম্প্রসারণ নির্দেশনা মানুন"
+    ],
+    "chemical_control_ur": [
+      "موزیک چھڑکاؤ سے ختم نہیں ہوتا؛ حد بڑھنے پر صرف منظور شدہ اندرونی اثر والی دوا سے جوؤں کو قابو کریں",
+      "مزاحمت اور قدرتی دشمنوں کے نقصان سے بچنے کے لیے مصنوعات کا لیبل اور ایکسٹینشن ہدایات مانیں"
+    ],
+    "biological_control_en": [
+      "Conserve ladybirds, syrphid flies and parasitoid wasps that control aphids",
+      "Use neem-based botanical sprays that spare natural enemies"
+    ],
+    "biological_control_bn": [
+      "জাবপোকা নিয়ন্ত্রণ করে এমন মুখি পোকা, সিরফিড মাছি ও পরজীবী ভিমরুল সংরক্ষণ করুন",
+      "প্রাকৃতিক শত্রু বাঁচিয়ে রাখে এমন নিমভিত্তিক উদ্ভিদ-নাশক স্প্রে ব্যবহার করুন"
+    ],
+    "biological_control_ur": [
+      "جوؤں کو قابو کرنے والی لیڈی بیٹلز، سرفڈ مکھیاں اور پیراسائٹائیڈ تتییاں محفوظ رکھیں",
+      "نیم پر مبنی ایسی نباتاتی ادویات استعمال کریں جو قدرتی دشمنوں کو نہ ماریں"
+    ],
+    "prevention_tips_en": [
+      "Grow mosaic resistant varieties and renew seed cane every three years",
+      "Avoid planting next to an infected cane block",
+      "Heat-treat setts before planting where the facility exists"
+    ],
+    "prevention_tips_bn": [
+      "মোজাইক প্রতিরোধী জাত চাষ করুন এবং প্রতি তিন বছরে বীজ-আখ নতুন করে নিন",
+      "আক্রান্ত আখের ব্লকের পাশে রোপণ এড়িয়ে চলুন",
+      "সুবিধা থাকলে রোপণের আগে সেট গরম পানিতে শোধন করুন"
+    ],
+    "prevention_tips_ur": [
+      "موزیک کے خلاف مزاحم اقسام اگائیں اور ہر تین سال بعد بیج سیٹ کی تجدید کریں",
+      "متاثرہ گنے کے بلاک کے ساتھ کاشت سے بچیں",
+      "سہولت ہو تو کاشت سے پہلے سیٹ کو گرم پانی سے علاج دیں"
+    ]
+  },
+  {
+    "id": "sugarcane_red_rot",
+    "cultural_control_en": [
+      "Use healthy three-bud setts from an irrigated disease-free seed crop",
+      "Remove and destroy infected stools and stubble instead of leaving them in the field",
+      "Improve drainage and avoid waterlogging on heavy soils"
+    ],
+    "cultural_control_bn": [
+      "সেচযুক্ত রোগমুক্ত বীজ ফসল থেকে সুস্থ তিন-কুঁড়ির সেট ব্যবহার করুন",
+      "আক্রান্ত গোছা ও আখের ঠোঁট জমিতে ফেলে না রেখে তুলে ধ্বংস করুন",
+      "নিকাশ উন্নত করুন এবং ভারী মাটিতে জলাবদ্ধতা এড়িয়ে চলুন"
+    ],
+    "cultural_control_ur": [
+      "آبپاشی والی بیماری سے پاک بیج فصل سے صحت مند تین کونپل والے سیٹ لیں",
+      "متاثرہ جھنڈ اور ٹھوٹھا کھیت میں چھوڑنے کے بجائے ہٹا کر تباہ کریں",
+      "نکاس بہتر کریں اور بھاری مٹی میں کھڑا پانی نہ رہنے دیں"
+    ],
+    "chemical_control_en": [
+      "Treat setts with a labeled fungicide such as carbendazim before planting",
+      "Follow the product label; soil drenches give only limited control once the cane is infected"
+    ],
+    "chemical_control_bn": [
+      "রোপণের আগে কার্বেন্ডাজিম জাতীয় নির্ধারিত ছত্রাকনাশক দিয়ে সেট শোধন করুন",
+      "পণ্যের লেবেল মেনে চলুন; আখ আক্রান্ত হয়ে গেলে মাটিতে ওষুধ দেওয়া সীমিত কাজ করে"
+    ],
+    "chemical_control_ur": [
+      "کاشت سے پہلے کاربینڈازیم جیسی منظور شدہ پھپھوندی کش دوا سے سیٹ کا علاج کریں",
+      "مصنوعات کے لیبل کی پابندی کریں؛ گنا متاثر ہونے کے بعد مٹی میں دوا صرف محدود فائدہ دیتی ہے"
+    ],
+    "biological_control_en": [
+      "Treat setts and soil with Trichoderma harzianum or Bacillus formulations",
+      "Add well-rotted organic matter to support antagonistic soil microbes"
+    ],
+    "biological_control_bn": [
+      "ট্রাইকোডার্মা হারজিয়ানাম বা ব্যাসিলাস ফর্মুলেশন দিয়ে সেট ও মাটি শোধন করুন",
+      "ভালোভাবে পচা জৈব পদার্থ দিয়ে প্রতিদ্বন্দ্বী মাটির অণুজীব বাড়ান"
+    ],
+    "biological_control_ur": [
+      "Trichoderma harzianum یا Bacillus کی تیاریوں سے سیٹ اور مٹی کا علاج کریں",
+      "اچھی طرح گلائی ہوئی نامیاتی کھاد ڈال کر مخالف مٹی جراثیم بڑھائیں"
+    ],
+    "prevention_tips_en": [
+      "Rotate sugarcane with rice, pulses or vegetables for at least one season",
+      "Plant red rot resistant varieties and avoid repeated ratooning",
+      "Keep irrigation water from flowing through infected blocks"
+    ],
+    "prevention_tips_bn": [
+      "কমপক্ষে এক মৌসুম আখের সঙ্গে ধান, ডাল বা সবজির পর্যায়াবৃত্তি করুন",
+      "রেড রট প্রতিরোধী জাত রোপণ করুন এবং বারবার রেটুন চাষ এড়িয়ে চলুন",
+      "আক্রান্ত ব্লক হয়ে সেচের পানি প্রবাহিত হতে দেবেন না"
+    ],
+    "prevention_tips_ur": [
+      "کم از کم ایک موسم گنے کو دھان، دالوں یا سبزیوں کے ساتھ بدلیں",
+      "سرخ سڑن کے خلاف مزاحم اقسام لگائیں اور بار بار رتون سے بچیں",
+      "متاثرہ بلاک سے ہو کر آبپاشی کا پانی نہ گزاریں"
+    ]
+  },
+  {
+    "id": "sugarcane_rust",
+    "cultural_control_en": [
+      "Remove and burn badly rusted leaves and trash after harvest",
+      "Avoid excess nitrogen that produces soft susceptible leaves",
+      "Plant within the recommended window to escape peak rust weather"
+    ],
+    "cultural_control_bn": [
+      "ফসল কাটার পর তীব্র মরিচাযুক্ত পাতা ও আবর্জনা সরিয়ে পুড়িয়ে ফেলুন",
+      "নরম ও সংবেদনশীল পাতা তৈরি করে এমন অতিরিক্ত নাইট্রোজেন এড়িয়ে চলুন",
+      "মরিচার প্রাদুর্ভাবের সময় এড়াতে সুপারিশকৃত সময়ে রোপণ করুন"
+    ],
+    "cultural_control_ur": [
+      "کٹائی کے بعد شدید زنگ زدہ پتے اور کوڑا ہٹا کر جلا دیں",
+      "نرم اور حساس پتے پیدا کرنے والی زائد نائٹروجن سے بچیں",
+      "زنگ کے عروج کے موسم سے بچنے کے لیے تجویز کردہ وقت پر کاشت کریں"
+    ],
+    "chemical_control_en": [
+      "Spray a labeled triazole fungicide when pustules appear on young leaves",
+      "Rotate fungicide groups and follow the product label and extension advice"
+    ],
+    "chemical_control_bn": [
+      "অল্প বয়সী পাতায় ফোস্কা দেখা দিলে নির্ধারিত ট্রায়াজল ছত্রাকনাশক স্প্রে করুন",
+      "ছত্রাকনাশকের গ্রুপ পাল্টান এবং পণ্যের লেবেল ও সম্প্রসারণ পরামর্শ মানুন"
+    ],
+    "chemical_control_ur": [
+      "نوجوان پتوں پر دانے نمودار ہوں تو منظور شدہ ٹرائیازول پھپھوندی کش چھڑکیں",
+      "پھپھوندی کش گروپ بدلیں اور مصنوعات کے لیبل اور ایکسٹینشن مشورے پر عمل کریں"
+    ],
+    "biological_control_en": [
+      "Apply silicon and potassium amendments to strengthen leaf tissue",
+      "Avoid calendar spraying so beneficial fungi and insects survive"
+    ],
+    "biological_control_bn": [
+      "পাতার টিস্যু শক্ত করতে সিলিকন ও পটাশিয়াম সমৃদ্ধ উপাদান দিন",
+      "সময়সূচি মেনে অন্ধভাবে স্প্রে করা এড়িয়ে চলুন যাতে উপকারী ছত্রাক ও পোকা টিকে থাকে"
+    ],
+    "biological_control_ur": [
+      "پتے کے نسیج کو مضبوط کرنے کے لیے سلیکان اور پوٹاشیم والے اضافے دیں",
+      "بلا سوچے سمجھے شیڈول کے مطابق چھڑکاؤ سے بچیں تاکہ فائدہ مند پھپھوندی اور کیڑے بچیں"
+    ],
+    "prevention_tips_en": [
+      "Plant rust resistant varieties where available",
+      "Monitor lower leaves weekly during humid weather",
+      "Maintain balanced potassium and phosphorus nutrition"
+    ],
+    "prevention_tips_bn": [
+      "যেখানে পাওয়া যায় মরিচা প্রতিরোধী জাত রোপণ করুন",
+      "আর্দ্র আবহাওয়ায় সপ্তাহে একবার নিচের পাতা পর্যবেক্ষণ করুন",
+      "সুষম পটাশিয়াম ও ফসফরাস পুষ্টি বজায় রাখুন"
+    ],
+    "prevention_tips_ur": [
+      "جہاں دستیاب ہوں زنگ کے خلاف مزاحم اقسام لگائیں",
+      "مرطوب موسم میں ہر ہفتے نچلے پتوں کی نگرانی کریں",
+      "متوازن پوٹاشیم اور فاسفورس کی غذائیت برقرار رکھیں"
+    ]
+  },
+  {
+    "id": "sugarcane_yellowing",
+    "cultural_control_en": [
+      "Plant yellow leaf virus-free setts from a certified nursery",
+      "Rogue out and destroy infected stools during the first three months",
+      "Replant instead of ratooning an infected crop"
+    ],
+    "cultural_control_bn": [
+      "প্রত্যয়িত নার্সারির হলুদ পাতা ভাইরাসমুক্ত সেট রোপণ করুন",
+      "প্রথম তিন মাসে আক্রান্ত গোছা তুলে ধ্বংস করুন",
+      "আক্রান্ত ফসল রেটুন না করে নতুন করে রোপণ করুন"
+    ],
+    "cultural_control_ur": [
+      "تصدیق شدہ نرسری سے زرد پتہ وائرس سے پاک سیٹ لگائیں",
+      "پہلے تین مہینوں میں متاثرہ جھنڈ اکھاڑ کر تباہ کریں",
+      "متاثرہ فصل کو رتون کرنے کے بجائے نئی کاشت کریں"
+    ],
+    "chemical_control_en": [
+      "No chemical controls the virus; target the aphid vector with a labeled insecticide only when colonies are heavy",
+      "Follow the product label and local extension recommendations to protect beneficials"
+    ],
+    "chemical_control_bn": [
+      "কোনো রাসায়নিক ভাইরাস নিয়ন্ত্রণ করে না; জাবপোকার উপনিবেশ তীব্র হলে কেবল নির্ধারিত কীটনাশক দিয়ে বাহক নিয়ন্ত্রণ করুন",
+      "উপকারী পোকা রক্ষায় পণ্যের লেবেল ও স্থানীয় সম্প্রসারণের সুপারিশ মানুন"
+    ],
+    "chemical_control_ur": [
+      "کوئی کیمیائی دوا وائرس پر قابو نہیں پاتی؛ جوؤں کی بستی زیادہ ہونے پر صرف منظور شدہ دوا سے ناقل کو نشانہ بنائیں",
+      "فائدہ مند کیڑوں کے تحفظ کے لیے مصنوعات کا لیبل اور مقامی ایکسٹینشن سفارشات مانیں"
+    ],
+    "biological_control_en": [
+      "Release or conserve parasitoids and predators of sugarcane aphid",
+      "Spray neem oil on aphid colonies early in the season"
+    ],
+    "biological_control_bn": [
+      "আখের জাবপোকার পরজীবী ও শিকারীর সংরক্ষণ বা অবমুক্তি করুন",
+      "মৌসুমের শুরুতে জাবপোকার উপনিবেশে নিম তেল স্প্রে করুন"
+    ],
+    "biological_control_ur": [
+      "گنے کی جوؤں کے پیراسائٹائیڈز اور شکاریوں کو چھوڑیں یا محفوظ رکھیں",
+      "موسم کے شروع میں جوؤں کی بستیوں پر نیم کا تیل چھڑکیں"
+    ],
+    "prevention_tips_en": [
+      "Choose yellow leaf resistant or tolerant cane varieties",
+      "Heat-treat setts at 50 C for two hours before planting",
+      "Keep a clean seed nursery away from commercial cane"
+    ],
+    "prevention_tips_bn": [
+      "হলুদ পাতা রোগ প্রতিরোধী বা সহনশীল আখের জাত বাছুন",
+      "রোপণের আগে ৫০ ডিগ্রি সেলসিয়াসে দুই ঘণ্টা সেট শোধন করুন",
+      "বাণিজ্যিক আখ থেকে দূরে পরিষ্কার বীজ নার্সারি রাখুন"
+    ],
+    "prevention_tips_ur": [
+      "زرد پتہ برداشت کرنے والی یا مزاحم گنے کی اقسام چنیں",
+      "کاشت سے پہلے سیٹ کو ۵۰ ڈگری سینٹی گریڈ پر دو گھنٹے رکھیں",
+      "تجارتی گنے سے الگ صاف بیج نرسری رکھیں"
+    ]
+  },
+  {
+    "id": "sugarcane_healthy",
+    "cultural_control_en": [
+      "Scout cane blocks weekly for streak, mosaic or rust symptoms",
+      "Keep field borders and irrigation channels free of volunteer cane",
+      "Maintain balanced nutrition and timely irrigation"
+    ],
+    "cultural_control_bn": [
+      "সপ্তাহে একবার আখের ব্লকে রেখা, মোজাইক বা মরিচার লক্ষণ খুঁজুন",
+      "মাঠের সীমানা ও সেচের নালা স্বেচ্ছাবীজী আখমুক্ত রাখুন",
+      "সুষম পুষ্টি ও সময়মতো সেচ বজায় রাখুন"
+    ],
+    "cultural_control_ur": [
+      "ہر ہفتے گنے کے بلاک میں لکیر، موزیک یا زنگ کی علامات دیکھیں",
+      "کھیت کی حدود اور آبپاشی کی نالیاں خود رو گنے سے پاک رکھیں",
+      "متوازن غذائیت اور بروقت آبپاشی برقرار رکھیں"
+    ],
+    "chemical_control_en": [],
+    "chemical_control_bn": [],
+    "chemical_control_ur": [],
+    "biological_control_en": [],
+    "biological_control_bn": [],
+    "biological_control_ur": [],
+    "prevention_tips_en": [
+      "Plant certified disease-free setts each season",
+      "Rotate cane with a non-host crop and incorporate trash",
+      "Ask the local extension service about the best variety for your soil"
+    ],
+    "prevention_tips_bn": [
+      "প্রতি মৌসুমে প্রত্যয়িত রোগমুক্ত সেট রোপণ করুন",
+      "আখের সঙ্গে অ-পোষক ফসলের পর্যায়াবৃত্তি করুন এবং আবর্জনা মাটিতে মিশিয়ে দিন",
+      "আপনার মাটির জন্য সেরা জাত সম্পর্কে স্থানীয় কৃষি সম্প্রসারণের পরামর্শ নিন"
+    ],
+    "prevention_tips_ur": [
+      "ہر موسم میں تصدیق شدہ بیماری سے پاک سیٹ لگائیں",
+      "گنے کو غیر میزبان فصل کے ساتھ بدلیں اور کوڑا مٹی میں ملائیں",
+      "اپنی مٹی کے لیے بہترین قسم کے بارے میں مقامی زرعی ایکسٹینشن سے پوچھیں"
+    ]
   }
 ]
