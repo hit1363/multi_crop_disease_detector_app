@@ -13,6 +13,9 @@ import 'history_screen.dart';
 import 'settings_screen.dart';
 import 'statistics_screen.dart';
 
+const double _taskbarBarHeight = 68;
+const double _taskbarBottomGap = 10;
+
 /// Root of the signed-in app: four tabs behind a frosted taskbar.
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -120,9 +123,12 @@ class _DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final palette = context.dashboard;
-    // With Scaffold.extendBody this is the taskbar's full height
-    // (bar + margin + system gesture inset).
-    final taskbarInset = MediaQuery.paddingOf(context).bottom;
+    final taskbarClearance =
+        MediaQuery.paddingOf(context).bottom +
+        _taskbarBarHeight +
+        _taskbarBottomGap;
+    const topPadding = 12.0;
+    final bottomPadding = taskbarClearance + 24;
 
     return ColoredBox(
       // Fallback behind the photo for the brief moment before it decodes.
@@ -142,21 +148,44 @@ class _DashboardPage extends StatelessWidget {
           ),
           SafeArea(
             bottom: false,
-            child: SingleChildScrollView(
-              padding: EdgeInsets.fromLTRB(20, 12, 20, taskbarInset + 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const _BrandHeader(),
-                  const SizedBox(height: 28),
-                  _HeroSection(
-                    onScanWithCamera: onScanWithCamera,
-                    onUploadFromGallery: onUploadFromGallery,
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final minContentHeight =
+                    constraints.maxHeight - topPadding - bottomPadding;
+
+                return SingleChildScrollView(
+                  padding: EdgeInsets.fromLTRB(
+                    20,
+                    topPadding,
+                    20,
+                    bottomPadding,
                   ),
-                  const SizedBox(height: 28),
-                  _SupportedCropsCard(onOpenLibrary: onOpenLibrary),
-                ],
-              ),
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      minHeight: minContentHeight > 0 ? minContentHeight : 0,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            const _BrandHeader(),
+                            const SizedBox(height: 28),
+                            _HeroSection(
+                              onScanWithCamera: onScanWithCamera,
+                              onUploadFromGallery: onUploadFromGallery,
+                            ),
+                          ],
+                        ),
+                        _SupportedCropsCard(onOpenLibrary: onOpenLibrary),
+                      ],
+                    ),
+                  ),
+                );
+              },
             ),
           ),
         ],
@@ -244,6 +273,7 @@ class _HeroSection extends StatelessWidget {
       builder: (context, constraints) {
         final width = constraints.maxWidth;
         final compact = width < 360;
+        final minHeroHeight = width < 300 ? 170.0 : 200.0;
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -251,63 +281,66 @@ class _HeroSection extends StatelessWidget {
             // Headline on the left, leaf artwork to its right.
             // The Column is the Stack's only non-positioned child, so the hero
             // grows with its copy instead of clipping it at large text scales.
-            Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Positioned(
-                  right: isRtl ? null : 0,
-                  left: isRtl ? 0 : null,
-                  top: 0,
-                  bottom: 0,
-                  width: width * 0.50,
-                  child: const _LeafArtwork(),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    right: isRtl ? 0 : width * 0.40,
-                    left: isRtl ? width * 0.40 : 0,
-                    top: 6,
-                    bottom: 6,
+            ConstrainedBox(
+              constraints: BoxConstraints(minHeight: minHeroHeight),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Positioned(
+                    right: isRtl ? null : 0,
+                    left: isRtl ? 0 : null,
+                    top: 0,
+                    bottom: 0,
+                    width: width * 0.55,
+                    child: const _LeafArtwork(),
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      // "Detect Plant Diseases" with the accent word inline on
-                      // the second line, exactly as the reference mockup does.
-                      Text.rich(
-                        TextSpan(
-                          children: [
-                            TextSpan(
-                              text: strings
-                                  .text('home_hero_title_lead')
-                                  .replaceAll('\n', ' '),
-                              style: TextStyle(
-                                fontSize: compact ? 26 : 29,
-                                height: 1.14,
-                                fontWeight: FontWeight.w800,
-                                color: palette.ink,
-                                letterSpacing: -0.9,
+                  Padding(
+                    padding: EdgeInsets.only(
+                      right: isRtl ? 0 : width * 0.50,
+                      left: isRtl ? width * 0.50 : 0,
+                      top: 6,
+                      bottom: 6,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        // "Detect Plant Diseases" with the accent word inline on
+                        // the second line, exactly as the reference mockup does.
+                        Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: strings
+                                    .text('home_hero_title_lead')
+                                    .replaceAll('\n', ' '),
+                                style: TextStyle(
+                                  fontSize: compact ? 26 : 29,
+                                  height: 1.14,
+                                  fontWeight: FontWeight.w800,
+                                  color: palette.ink,
+                                  letterSpacing: -0.9,
+                                ),
                               ),
-                            ),
-                            TextSpan(
-                              text:
-                                  ' ${strings.text('home_hero_title_accent')}',
-                              style: TextStyle(
-                                fontSize: compact ? 26 : 29,
-                                height: 1.14,
-                                fontWeight: FontWeight.w800,
-                                color: palette.primaryLight,
-                                letterSpacing: -0.9,
+                              TextSpan(
+                                text:
+                                    ' ${strings.text('home_hero_title_accent')}',
+                                style: TextStyle(
+                                  fontSize: compact ? 26 : 29,
+                                  height: 1.14,
+                                  fontWeight: FontWeight.w800,
+                                  color: palette.primaryLight,
+                                  letterSpacing: -0.9,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             const SizedBox(height: 18),
             _PillActionButton(
@@ -683,7 +716,7 @@ class _GlassTaskbar extends StatelessWidget {
     return SafeArea(
       top: false,
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, _taskbarBottomGap),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(999),
           child: BackdropFilter(
@@ -697,7 +730,7 @@ class _GlassTaskbar extends StatelessWidget {
               child: Material(
                 type: MaterialType.transparency,
                 child: SizedBox(
-                  height: 68,
+                  height: _taskbarBarHeight,
                   child: Row(
                     children: [
                       for (var index = 0; index < labels.length; index++)

@@ -79,6 +79,57 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
+  testWidgets('dashboard uses vertical space above the taskbar', (
+    tester,
+  ) async {
+    useSize(tester, const Size(360, 800));
+    await pumpApp(tester);
+
+    final leafImage = find.byWidgetPredicate(
+      (widget) =>
+          widget is Image &&
+          widget.image is AssetImage &&
+          (widget.image as AssetImage).assetName ==
+              'assets/images/Leaf_Scan_UI.png',
+    );
+    final headline = find.textContaining('Detect Plant', findRichText: true);
+    final headlineRight = tester.getRect(headline).right;
+    final leafLeft = tester.getRect(leafImage).left;
+    final cropsCardBottom = tester.getRect(find.text('More…')).bottom;
+    final taskbarTop = tester.getRect(find.text('Home')).top;
+
+    expect(tester.getSize(leafImage).width, greaterThan(170));
+    expect(tester.getSize(leafImage).height, greaterThanOrEqualTo(200));
+    expect(headlineRight - leafLeft, lessThanOrEqualTo(20));
+    expect(cropsCardBottom, lessThan(taskbarTop));
+    expect(taskbarTop - cropsCardBottom, lessThan(160));
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('dashboard scrolls when content exceeds the viewport', (
+    tester,
+  ) async {
+    useSize(tester, const Size(320, 480));
+    await pumpApp(tester);
+
+    final scrollable = tester.state<ScrollableState>(
+      find.descendant(
+        of: find.byType(SingleChildScrollView),
+        matching: find.byType(Scrollable),
+      ),
+    );
+    expect(scrollable.position.maxScrollExtent, greaterThan(0));
+
+    await tester.drag(
+      find.byType(SingleChildScrollView),
+      const Offset(0, -160),
+    );
+    await tester.pumpAndSettle();
+
+    expect(scrollable.position.pixels, greaterThan(0));
+    expect(tester.takeException(), isNull);
+  });
+
   testWidgets('scan and upload actions open the camera screen', (tester) async {
     useSize(tester, const Size(412, 915));
     await pumpApp(tester);
