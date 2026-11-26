@@ -1,5 +1,5 @@
-<#!
-Generates all platform launcher icon bitmaps from the homepage leaf mark.
+<#
+Generates every platform launcher icon from the Android foreground PNG.
 Run from the repository root: .\tool\generate_launcher_icons.ps1
 #>
 
@@ -7,60 +7,51 @@ Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
-$flutterRoot = if ($env:FLUTTER_ROOT) { $env:FLUTTER_ROOT } else { 'C:\Users\Tamim\flutter' }
-$materialFontPath = Join-Path $flutterRoot 'bin\cache\artifacts\material_fonts\materialicons-regular.otf'
-if (-not (Test-Path -LiteralPath $materialFontPath)) {
-  throw "Material Icons font was not found at $materialFontPath. Set FLUTTER_ROOT before running this script."
-}
-$materialFonts = [System.Drawing.Text.PrivateFontCollection]::new()
-$materialFonts.AddFontFile($materialFontPath)
-$materialGlyph = [char]::ConvertFromUtf32(0xE217)
+$sourcePath = Join-Path $root 'android\app\src\main\res\drawable\ic_launcher_foreground.png'
+$source = [System.Drawing.Bitmap]::FromFile($sourcePath)
 
-function Add-RoundedRectangle {
-  param([System.Drawing.Drawing2D.GraphicsPath] $Path, [float] $X, [float] $Y, [float] $Width, [float] $Height, [float] $Radius)
-  $diameter = $Radius * 2
-  $Path.AddArc($X, $Y, $diameter, $diameter, 180, 90)
-  $Path.AddArc($X + $Width - $diameter, $Y, $diameter, $diameter, 270, 90)
-  $Path.AddArc($X + $Width - $diameter, $Y + $Height - $diameter, $diameter, $diameter, 0, 90)
-  $Path.AddArc($X, $Y + $Height - $diameter, $diameter, $diameter, 90, 90)
-  $Path.CloseFigure()
+function Get-VisibleBounds {
+  param([System.Drawing.Bitmap] $Bitmap)
+  $left = $Bitmap.Width
+  $top = $Bitmap.Height
+  $right = -1
+  $bottom = -1
+  for ($y = 0; $y -lt $Bitmap.Height; $y++) {
+    for ($x = 0; $x -lt $Bitmap.Width; $x++) {
+      if ($Bitmap.GetPixel($x, $y).A -gt 0) {
+        $left = [Math]::Min($left, $x)
+        $top = [Math]::Min($top, $y)
+        $right = [Math]::Max($right, $x)
+        $bottom = [Math]::Max($bottom, $y)
+      }
+    }
+  }
+  if ($right -lt $left -or $bottom -lt $top) { throw 'The launcher source has no visible pixels.' }
+  $bounds = [System.Drawing.Rectangle]::new($left, $top, $right - $left + 1, $bottom - $top + 1)
+  if ($bounds.Width -ne $bounds.Height) { throw 'The visible launcher artwork must be square.' }
+  return $bounds
 }
+
+$sourceBounds = Get-VisibleBounds $source
 
 function New-LauncherBitmap {
-  param([int] $Size, [switch] $ForegroundOnly)
+  param([int] $Size)
   $bitmap = [System.Drawing.Bitmap]::new($Size, $Size, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
   $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
   $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
-  $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
-  $scale = $Size / 1024.0
-  $graphics.ScaleTransform($scale, $scale)
-
-  if (-not $ForegroundOnly) {
-    $graphics.Clear([System.Drawing.Color]::FromArgb(255, 0, 80, 50))
-  }
-
-  $tile = [System.Drawing.Drawing2D.GraphicsPath]::new()
-  Add-RoundedRectangle $tile 288 288 448 448 112
-  $graphics.FillPath([System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(255, 147, 213, 170)), $tile)
-  $tile.Dispose()
-
-  $format = [System.Drawing.StringFormat]::new()
-  $format.Alignment = [System.Drawing.StringAlignment]::Center
-  $format.LineAlignment = [System.Drawing.StringAlignment]::Center
-  $font = [System.Drawing.Font]::new($materialFonts.Families[0], 280, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
-  $graphics.DrawString($materialGlyph, $font, [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(255, 0, 80, 50)), [System.Drawing.RectangleF]::new(288, 288, 448, 448), $format)
-  $font.Dispose()
-  $format.Dispose()
+  $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBilinear
+  $graphics.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
+  $graphics.Clear([System.Drawing.Color]::Transparent)
+  $graphics.DrawImage($source, [System.Drawing.Rectangle]::new(0, 0, $Size, $Size), $sourceBounds, [System.Drawing.GraphicsUnit]::Pixel)
   $graphics.Dispose()
   return $bitmap
 }
 
 function Save-Png {
-  param([string] $RelativePath, [int] $Size, [switch] $ForegroundOnly)
+  param([string] $RelativePath, [int] $Size)
   $path = Join-Path $root $RelativePath
-  $directory = Split-Path -Parent $path
-  [System.IO.Directory]::CreateDirectory($directory) | Out-Null
-  $bitmap = New-LauncherBitmap $Size -ForegroundOnly:$ForegroundOnly
+  [System.IO.Directory]::CreateDirectory((Split-Path -Parent $path)) | Out-Null
+  $bitmap = New-LauncherBitmap $Size
   $bitmap.Save($path, [System.Drawing.Imaging.ImageFormat]::Png)
   $bitmap.Dispose()
 }
@@ -68,13 +59,16 @@ function Save-Png {
 function Save-Ico {
   param([string] $RelativePath)
   $sizes = @(16, 20, 24, 32, 40, 48, 64, 128, 256)
-  $streams = foreach ($size in $sizes) {
+  $streams = [System.Collections.Generic.List[byte[]]]::new()
+  foreach ($size in $sizes) {
     $bitmap = New-LauncherBitmap $size
     $stream = [System.IO.MemoryStream]::new()
     $bitmap.Save($stream, [System.Drawing.Imaging.ImageFormat]::Png)
+    $streams.Add($stream.ToArray())
+    $stream.Dispose()
     $bitmap.Dispose()
-    $stream.ToArray()
   }
+
   $path = Join-Path $root $RelativePath
   [System.IO.Directory]::CreateDirectory((Split-Path -Parent $path)) | Out-Null
   $writer = [System.IO.BinaryWriter]::new([System.IO.File]::Open($path, [System.IO.FileMode]::Create))
@@ -82,8 +76,8 @@ function Save-Ico {
   $offset = 6 + 16 * $sizes.Count
   for ($i = 0; $i -lt $sizes.Count; $i++) {
     $size = $sizes[$i]; $data = $streams[$i]
-    $writer.Write([byte]($(if ($size -eq 256) { 0 } else { $size })))
-    $writer.Write([byte]($(if ($size -eq 256) { 0 } else { $size })))
+    $writer.Write([byte]$(if ($size -eq 256) { 0 } else { $size }))
+    $writer.Write([byte]$(if ($size -eq 256) { 0 } else { $size }))
     $writer.Write([byte]0); $writer.Write([byte]0); $writer.Write([UInt16]1); $writer.Write([UInt16]32)
     $writer.Write([UInt32]$data.Length); $writer.Write([UInt32]$offset)
     $offset += $data.Length
@@ -92,14 +86,13 @@ function Save-Ico {
   $writer.Dispose()
 }
 
-# A project-local 1024px master PNG, plus Android legacy and adaptive assets.
-Save-Png 'assets/icons/app_icon.png' 1024
-Save-Png 'android/app/src/main/res/drawable/ic_launcher_foreground.png' 432 -ForegroundOnly
+# Android launcher densities. The adaptive-icon resource is intentionally not used.
 @{ 'mdpi' = 48; 'hdpi' = 72; 'xhdpi' = 96; 'xxhdpi' = 144; 'xxxhdpi' = 192 }.GetEnumerator() | ForEach-Object {
   Save-Png "android/app/src/main/res/mipmap-$($_.Key)/ic_launcher.png" $_.Value
 }
 
-# Web/PWA and Windows.
+# Shared master used by Linux, plus web and Windows icons.
+Save-Png 'assets/icons/app_icon.png' 1024
 Save-Png 'web/favicon.png' 32
 Save-Png 'web/icons/Icon-192.png' 192
 Save-Png 'web/icons/Icon-512.png' 512
@@ -115,4 +108,5 @@ Save-Ico 'windows/runner/resources/app_icon.ico'
   Save-Png "ios/Runner/Assets.xcassets/AppIcon.appiconset/$($_.Key)" $_.Value
 }
 
+$source.Dispose()
 Write-Output 'Launcher icon assets generated.'
